@@ -12,6 +12,46 @@ namespace prospectScraper
     {
         static void Main(string[] args)
         {
+            // Initial attempt to handle command line arguments.
+            // "b" for the big boards, "m" for mock drafts, "e" for everything
+            if (args.Length == 0)
+            {
+                Console.WriteLine("No Arguments");
+                RunTheBigBoards();
+            }
+            else
+            {
+                string s = args[0].ToString();
+                switch(s)
+                {
+                    case "b":
+                        Console.WriteLine("first argument is: " + s);
+                        RunTheBigBoards();
+                        break;
+                    case "m":
+                        Console.WriteLine("first argument is: " + s);
+                        RunTheMockDraft();
+                        break;
+                    case "e":
+                        Console.WriteLine("first argument is: " + s);
+                        RunTheBigBoards();
+                        RunTheMockDraft();
+                        break;
+                    default:
+                        Console.WriteLine("first argument is: " + s);
+                        RunTheBigBoards();
+                        break;
+
+                }
+                
+            }
+
+
+            //RunTheBigBoards();
+        }
+
+        private static void RunTheBigBoards()
+        {
             File.WriteAllText($"logs{Path.DirectorySeparatorChar}Status.log", "");
             File.WriteAllText($"logs{Path.DirectorySeparatorChar}Prospects.log", "");
 
@@ -70,6 +110,11 @@ namespace prospectScraper
             CreateCombinedCSVWithExtras();
 
             Console.WriteLine("Completed.");
+        }
+
+        private static void RunTheMockDraft()
+        {
+            //TODO - Implement Mock Draft
         }
 
         private static void CreateCombinedCSV()
