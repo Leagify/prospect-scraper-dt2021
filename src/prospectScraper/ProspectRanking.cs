@@ -1,6 +1,6 @@
 using System;
 
-namespace prospect-scraper-dt2021
+namespace prospectScraper
 {
 
     public class ProspectRanking

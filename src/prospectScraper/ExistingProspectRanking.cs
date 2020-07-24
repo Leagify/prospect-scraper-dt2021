@@ -1,7 +1,7 @@
 using System;
 using CsvHelper.Configuration;
 
-namespace prospect-scraper-dt2021
+namespace prospectScraper
 {
 
     public class ExistingProspectRanking

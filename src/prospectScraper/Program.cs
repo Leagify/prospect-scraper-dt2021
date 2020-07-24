@@ -6,7 +6,7 @@ using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
 
-namespace prospect-scraper-dt2021
+namespace prospectScraper
 {
 	class Program
     {

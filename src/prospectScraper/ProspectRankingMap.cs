@@ -1,7 +1,7 @@
 using CsvHelper;
 using CsvHelper.Configuration;
 
-namespace prospect-scraper-dt2021
+namespace prospectScraper
 {
     public sealed class ProspectRankingMap : ClassMap<ProspectRanking>
     {

@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28922.388
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "prospect-scraper-dt2021", "prospect-scraper-dt2021.csproj", "{A01B34CD-2E2E-4D74-9C9B-25BA27729970}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "prospectScraper", "prospectScraper.csproj", "{A01B34CD-2E2E-4D74-9C9B-25BA27729970}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
