@@ -1,7 +1,7 @@
 using CsvHelper;
 using CsvHelper.Configuration;
 
-namespace scrapysharp_dt2020
+namespace prospect-scraper-dt2021
 {
     public sealed class ProspectRankingMap : ClassMap<ProspectRanking>
     {

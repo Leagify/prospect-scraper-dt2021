@@ -1,6 +1,6 @@
 using System;
 
-namespace scrapysharp_dt2020
+namespace prospect-scraper-dt2021
 {
 
     public class ProspectRanking

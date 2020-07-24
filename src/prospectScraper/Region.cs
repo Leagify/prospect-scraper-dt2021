@@ -1,6 +1,6 @@
-﻿using CsvHelper.Configuration;
+using CsvHelper.Configuration;
 
-namespace scrapysharp_dt2020
+namespace prospect-scraper-dt2021
 {
 	public class Region
 	{
