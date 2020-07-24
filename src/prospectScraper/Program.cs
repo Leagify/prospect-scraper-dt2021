@@ -17,6 +17,7 @@ namespace prospectScraper
             if (args.Length == 0)
             {
                 Console.WriteLine("No Arguments");
+                RunTheBigBoards();
             }
             else
             {
