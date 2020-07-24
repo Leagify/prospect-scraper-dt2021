@@ -19,11 +19,11 @@ namespace prospectScraper
 
             var webGet = new HtmlWeb();
             webGet.UserAgent = "Mozilla/5.0 (Windows NT 6.3; WOW64; rv:31.0) Gecko/20100101 Firefox/31.0";
-            var document1 = webGet.Load("https://www.drafttek.com/2020-NFL-Draft-Big-Board/Top-NFL-Draft-Prospects-2020-Page-1.asp");
-            var document2 = webGet.Load("https://www.drafttek.com/2020-NFL-Draft-Big-Board/Top-NFL-Draft-Prospects-2020-Page-2.asp");
-            var document3 = webGet.Load("https://www.drafttek.com/2020-NFL-Draft-Big-Board/Top-NFL-Draft-Prospects-2020-Page-3.asp");
-            var document4 = webGet.Load("https://www.drafttek.com/2020-NFL-Draft-Big-Board/Top-NFL-Draft-Prospects-2020-Page-4.asp");
-            var document5 = webGet.Load("https://www.drafttek.com/2020-NFL-Draft-Big-Board/Top-NFL-Draft-Prospects-2020-Page-5.asp");
+            var document1 = webGet.Load("https://www.drafttek.com/2021-NFL-Draft-Big-Board/Top-NFL-Draft-Prospects-2021-Page-1.asp");
+            var document2 = webGet.Load("https://www.drafttek.com/2020-NFL-Draft-Big-Board/Top-NFL-Draft-Prospects-2021-Page-2.asp");
+            var document3 = webGet.Load("https://www.drafttek.com/2020-NFL-Draft-Big-Board/Top-NFL-Draft-Prospects-2021-Page-3.asp");
+            var document4 = webGet.Load("https://www.drafttek.com/2020-NFL-Draft-Big-Board/Top-NFL-Draft-Prospects-2021-Page-4.asp");
+            var document5 = webGet.Load("https://www.drafttek.com/2020-NFL-Draft-Big-Board/Top-NFL-Draft-Prospects-2021-Page-5.asp");
 
             Console.WriteLine("Parsing data...");
 
@@ -78,7 +78,7 @@ namespace prospectScraper
             var filePaths = Directory.GetFiles($"ranks{Path.DirectorySeparatorChar}", "20??-??-??-ranks.csv").ToList<String>();
             //The results are probably already sorted, but I don't trust that, so I'm going to sort manually.
             filePaths.Sort();
-            string destinationFile = $"ranks{Path.DirectorySeparatorChar}combinedRanks2020.csv";
+            string destinationFile = $"ranks{Path.DirectorySeparatorChar}combinedRanks2021.csv";
 
             // Specify wildcard search to match CSV files that will be combined
             StreamWriter fileDest = new StreamWriter(destinationFile, false);
@@ -147,7 +147,7 @@ namespace prospectScraper
             var filePaths = Directory.GetFiles($"ranks{Path.DirectorySeparatorChar}", "20??-??-??-ranks.csv").ToList<String>();
             //The results are probably already sorted, but I don't trust that, so I'm going to sort manually.
             filePaths.Sort();
-            string destinationFile = $"ranks{Path.DirectorySeparatorChar}joinedRanks2020.csv";
+            string destinationFile = $"ranks{Path.DirectorySeparatorChar}joinedRanks2021.csv";
 
             // Specify wildcard search to match CSV files that will be combined
             StreamWriter fileDest = new StreamWriter(destinationFile, false);
@@ -174,7 +174,7 @@ namespace prospectScraper
 
             // Get ranks from the newly created CSV file.
             List<ExistingProspectRanking> prospectRanks;
-            using (var reader = new StreamReader($"ranks{Path.DirectorySeparatorChar}joinedRanks2020.csv"))
+            using (var reader = new StreamReader($"ranks{Path.DirectorySeparatorChar}joinedRanks2021.csv"))
             using (var csv = new CsvReader(reader))
             {
                 csv.Configuration.RegisterClassMap<ExistingProspectRankingCsvMap>();
@@ -209,7 +209,7 @@ namespace prospectScraper
 
 
             //Write everything back to CSV, only better!
-            using (var writer = new StreamWriter($"ranks{Path.DirectorySeparatorChar}joinedRanks2020.csv"))
+            using (var writer = new StreamWriter($"ranks{Path.DirectorySeparatorChar}joinedRanks2021.csv"))
             using (var csv = new CsvWriter(writer))
             {
                 csv.WriteRecords(combinedHistoricalRanks);

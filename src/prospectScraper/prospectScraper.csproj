@@ -38,10 +38,10 @@
     <None Update="logs\Status.log">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="ranks\combinedRanks2020.csv">
+    <None Update="ranks\combinedRanks2021.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="ranks\joinedRanks2020.csv">
+    <None Update="ranks\joinedRanks2021.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>

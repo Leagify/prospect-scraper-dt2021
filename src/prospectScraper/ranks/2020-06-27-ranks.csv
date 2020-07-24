@@ -1,0 +1,101 @@
+Rank,Change,Player,School,Position,Height,Weight,CollegeClass,Date,DraftStatus
+1,--,Trevor Lawrence,Clemson,QB,"6'6""",220,JR,2020-06-27,Eligible
+2,+2,Penei Sewell,Oregon,OT,"6'5""",325,JR,2020-06-27,Eligible
+3,-1,Justin Fields,Ohio State,QB,"6'2""",223,JR,2020-06-27,Eligible
+4,-1,Gregory Rousseau,Miami (FL),EDGE,"6'5""",260,RSO,2020-06-27,Eligible
+5,--,Ja'Marr Chase,LSU,WR,"6'1""",200,JR,2020-06-27,Eligible
+6,+1,Patrick Surtain II,Alabama,CB,"6'1""",203,JR,2020-06-27,Eligible
+7,+1,Shaun Wade,Ohio State,CB,"6'1""",194,RJR,2020-06-27,Eligible
+8,+1,Marvin Wilson,Florida State,DL3T,"6'5""",311,SR,2020-06-27,Eligible
+9,+1,Alex Leatherwood,Alabama,OT,"6'6""",310,SR,2020-06-27,Eligible
+10,+2,Walker Little,Stanford,OT,"6'7""",309,SR,2020-06-27,Eligible
+11,+11,Creed Humphrey,Oklahoma,OC,"6'5""",316,RJR,2020-06-27,Eligible
+12,+2,Carlos Basham Jr.,Wake Forest,DL5T,"6'5""",275,JR,2020-06-27,Eligible
+13,+2,Andre Cisco,Syracuse,S,"6'0""",203,JR,2020-06-27,Eligible
+14,-3,DeVonta Smith,Alabama,WR,"6'1""",175,SR,2020-06-27,Eligible
+15,+16,Rondale Moore,Purdue,WRS,"5'9""",175,JR,2020-06-27,Eligible
+16,--,Richard LeCounte III,Georgia,S,"5'11""",190,SR,2020-06-27,Eligible
+17,+16,Jamie Newman,Georgia,QB,"6'4""",230,RSR,2020-06-27,Eligible
+18,+8,Rashod Bateman,Minnesota,WR,"6'1""",210,JR,2020-06-27,Eligible
+19,-1,Jaylen Twyman,Pitt,DL3T,"6'2""",290,RJR,2020-06-27,Eligible
+20,-7,Travis Etienne,Clemson,RB,"5'10""",210,SR,2020-06-27,Eligible
+21,--,Brock Purdy,Iowa State,QB,"6'0""",202,JR,2020-06-27,Eligible
+22,+37,Jalen Mayfield,Michigan,OT,"6'5""",319,RSO,2020-06-27,Eligible
+23,-3,Micah Parsons,Penn State,ILB,"6'2""",245,JR,2020-06-27,Eligible
+24,-1,Israel Mukuamu,South Carolina,CB,"6'3""",205,JR,2020-06-27,Eligible
+25,-1,Hamilcar Rashed,Oregon State,EDGE,6'4'',233,RSR,2020-06-27,Eligible
+26,+3,Tyler Shelvin,LSU,DL1T,"6'3""",346,RJR,2020-06-27,Eligible
+27,+1,Wyatt Davis,Ohio State,OG,"6'4""",310,RJR,2020-06-27,Eligible
+28,+2,Xavier Thomas,Clemson,EDGE,"6'2""",265,JR,2020-06-27,Eligible
+29,+9,Deonte Brown,Alabama,OG,6'4'',338,SR,2020-06-27,Eligible
+30,-13,Dylan Moses,Alabama,OLB,"6'3""",235,SR,2020-06-27,Eligible
+31,+3,Jaylen Waddle,Alabama,WRS,"5'10""",182,JR,2020-06-27,Eligible
+32,-5,Paulson Adebo,Stanford,CB,"6'1""",190,SR,2020-06-27,Eligible
+33,+2,Tyson Campbell,Georgia,CB,"6'2""",180,JR,2020-06-27,Eligible
+34,+3,Tanner Morgan,Minnesota,QB,"6'2""",215,RJR,2020-06-27,Eligible
+35,+10,Kyle Pitts,Florida,TE,"6'5""",239,JR,2020-06-27,Eligible
+36,-17,Samuel Cosmi,Texas,OT,"6'7""",300,RJR,2020-06-27,Eligible
+37,-1,Tedarrell Slaton,Florida,DL1T,"6'5""",358,JR,2020-06-27,Eligible
+38,+2,Josh Myers,Ohio State,OC,6'5'',305,RJR,2020-06-27,Eligible
+39,+2,Jevon Holland,Oregon,S,"6'1""",196,JR,2020-06-27,Eligible
+40,+3,Josh Jobe,Alabama,CB,6'1'',189,JR,2020-06-27,Eligible
+41,+7,Trey Lance,North Dakota State,QB,"6'3""",221,RSO,2020-06-27,Eligible
+42,--,Liam Eichenberg,Notre Dame,OT,"6'6""",294,RSR,2020-06-27,Eligible
+43,+14,Caden Sterns,Texas,S,"6'0""",210,JR,2020-06-27,Eligible
+44,+6,Seth Williams,Auburn,WR,"6'2""",224,JR,2020-06-27,Eligible
+45,+2,Jaycee Horn,South Carolina,CB,"6'0""",200,JR,2020-06-27,Eligible
+46,-20,Najee Harris,Alabama,RB,"6'2""",230,SR,2020-06-27,Eligible
+47,-14,Thayer Munford,Ohio State,OT,"6'6""",310,SR,2020-06-27,Eligible
+48,+4,Chuba Hubbard,Oklahoma State,RB,"6'1""",207,RJR,2020-06-27,Eligible
+49,+4,Cade Mays,Tennessee,OG,"6'5""",318,JR,2020-06-27,Eligible
+50,-6,Trey Smith,Tennessee,OG,"6'6""",325,SR,2020-06-27,Eligible
+51,+5,Baron Browning,Ohio State,ILB,"6'3""",248,SR,2020-06-27,Eligible
+52,+2,Patrick Jones II,Pitt,EDGE,"6'5""",260,RSR,2020-06-27,Eligible
+53,+2,Amon-Ra St. Brown,USC,WR,"6'1""",195,JR,2020-06-27,Eligible
+54,-5,Brevin Jordan,Miami (FL),TE,"6'3""",245,JR,2020-06-27,Eligible
+55,+9,Alaric Jackson,Iowa,OT,"6'6""",320,RSR,2020-06-27,Eligible
+56,-11,Jackson Carman,Clemson,OT,"6'5""",345,JR,2020-06-27,Eligible
+57,-17,Marlon Tuipulotu,USC,DL3T,6'3'',305,JR,2020-06-27,Eligible
+58,--,Quincy Roche,Miami (FL),EDGE,"6'4""",235,RSR,2020-06-27,Eligible
+59,+7,Trey Hill,Georgia,OC,"6'4""",330,JR,2020-06-27,Eligible
+60,+1,Sage Surratt,Wake Forest,WR,"6'2""",215,RJR,2020-06-27,Eligible
+61,+2,Zamir White,Georgia,RB,"5'11""",215,SO,2020-06-27,Eligible
+62,--,Marco Wilson,Florida,CB,"6'0""",190,RJR,2020-06-27,Eligible
+63,+2,Amen Ogbongbemiga,Oklahoma State,ILB,"6'1""",231,RSR,2020-06-27,Eligible
+64,+3,Tommy Kraemer,Notre Dame,OG,"6'6""",319,RSR,2020-06-27,Eligible
+65,+7,Tylan Wallace,Oklahoma State,WR,"6'0""",185,SR,2020-06-27,Eligible
+66,-15,Jay Tufele,USC,DL3T,"6'3""",305,RJR,2020-06-27,Eligible
+67,+10,Erroll Thompson,Mississippi State,ILB,"6'1""",250,RSR,2020-06-27,Eligible
+68,+1,Richie Grant,UCF,S,"6'0""",194,RSR,2020-06-27,Eligible
+69,-11,Kyle Trask,Florida,QB,6'4'',234,RSR,2020-06-27,Eligible
+70,+3,Chris Olave,Ohio State,WR,"6'0""",185,JR,2020-06-27,Eligible
+71,-1,Eric Stokes,Georgia,CB,"6'1""",185,RJR,2020-06-27,Eligible
+72,+2,Jimmy Morrissey,Pitt,OC,"6'3""",300,RSR,2020-06-27,Eligible
+73,-1,Jordan Smith,UAB,EDGE,"6'7""",250,RJR,2020-06-27,Eligible
+74,+1,Hamsah Nasirildeen,Florida State,S,"6'4""",215,SR,2020-06-27,Eligible
+75,-8,Pooka Williams,Kansas,RBC,"5'10""",170,JR,2020-06-27,Eligible
+76,+3,Damone Clark,LSU,ILB,"6'3""",239,JR,2020-06-27,Eligible
+77,+107,Trey Sermon,Oklahoma,RB,"6'0""",224,SR,2020-06-27,Eligible
+78,+17,Ben Cleveland,Georgia,OG,"6'6""",341,RSR,2020-06-27,Eligible
+79,+3,C.J. Verdell,Oregon,RB,"5'9""",210,JR,2020-06-27,Eligible
+80,--,Terrace Marshall,LSU,WR,"6'3""",200,JR,2020-06-27,Eligible
+81,+8,Joe Tryon,Washington,EDGE,"6'5""",262,RJR,2020-06-27,Eligible
+82,-4,Caleb Farley,Virginia Tech,CB,"6'2""",197,RJR,2020-06-27,Eligible
+83,-6,Jabril Cox,LSU,OLB,"6'2""",233,RSR,2020-06-27,Eligible
+84,-3,Pat Freiermuth,Penn State,TE,"6'5""",250,JR,2020-06-27,Eligible
+85,+7,Donovan Stiner,Florida,S,"6'1""",203,JR,2020-06-27,Eligible
+86,-2,Jeremiah Owusu-Koramoah,Notre Dame,OLB,6'1'',216,JR,2020-06-27,Eligible
+87,-1,Tutu Atwell,Louisville,WRS,"5'9""",156,JR,2020-06-27,Eligible
+88,+13,Alec Lindstrom,Boston College,OC,6'4'',275,RJR,2020-06-27,Eligible
+89,+23,Cole Van Lanen,Wisconsin,OT,"6'5""",312,RSR,2020-06-27,Eligible
+90,-3,Cameron Goode,California,EDGE,"6'3""",235,RJR,2020-06-27,Eligible
+91,--,Dazz Newsome,North Carolina,WR,"5'11""",175,SR,2020-06-27,Eligible
+92,+27,Jordan Davis,Georgia,DL1T,6'6'',330,JR,2020-06-27,Eligible
+93,-5,Sam Ehlinger,Texas,QB,"6'3""",230,SR,2020-06-27,Eligible
+94,-4,Derion Kendrick,Clemson,CB,"6'0""",190,JR,2020-06-27,Eligible
+95,-12,Daniel Faalele,Minnesota,OT,"6'8""",400,JR,2020-06-27,Eligible
+96,+10,Asante Samuel Jr.,Florida State,CB,"5'10""",180,JR,2020-06-27,Eligible
+97,-4,Chazz Surratt,North Carolina,OLB,"6'3""",230,RSR,2020-06-27,Eligible
+98,+26,Kevin Jarvis,Michigan State,OG,"6'5""",312,SR,2020-06-27,Eligible
+99,+8,Ben Brown,Ole Miss,OG,6'5'',315,RJR,2020-06-27,Eligible
+100,-2,K.J. Costello,Mississippi State,QB,"6'5""",222,RSR,2020-06-27,Eligible
