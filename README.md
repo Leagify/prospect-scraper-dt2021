@@ -1,4 +1,4 @@
-# prospect-scraper-dt2021
+# prospectScraper
 
 This is a webscraper that uses [ScrapySharp](https://github.com/rflechner/ScrapySharp) to obtain american football draft prospect information.
 

@@ -35,6 +35,6 @@ project.lock.json
 
 # Visual Studio 2015
 .vs/
-**/obj/prospect-scraper-dt2021.csproj.nuget.dgspec.json
-**/obj/prospect-scraper-dt2021.csproj.nuget.cache
+**/obj/prospectScraper.csproj.nuget.dgspec.json
+**/obj/prospectScraper.csproj.nuget.cache
 **/obj/project.assets.json
