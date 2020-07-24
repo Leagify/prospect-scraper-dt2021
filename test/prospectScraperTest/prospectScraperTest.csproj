@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\prospectScraper\prospect-scraper-dt2021.csproj" />
+    <ProjectReference Include="..\..\src\prospectScraper\prospectScraper.csproj" />
   </ItemGroup>
 
 </Project>
