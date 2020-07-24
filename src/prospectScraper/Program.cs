@@ -20,10 +20,10 @@ namespace prospectScraper
             var webGet = new HtmlWeb();
             webGet.UserAgent = "Mozilla/5.0 (Windows NT 6.3; WOW64; rv:31.0) Gecko/20100101 Firefox/31.0";
             var document1 = webGet.Load("https://www.drafttek.com/2021-NFL-Draft-Big-Board/Top-NFL-Draft-Prospects-2021-Page-1.asp");
-            var document2 = webGet.Load("https://www.drafttek.com/2020-NFL-Draft-Big-Board/Top-NFL-Draft-Prospects-2021-Page-2.asp");
-            var document3 = webGet.Load("https://www.drafttek.com/2020-NFL-Draft-Big-Board/Top-NFL-Draft-Prospects-2021-Page-3.asp");
-            var document4 = webGet.Load("https://www.drafttek.com/2020-NFL-Draft-Big-Board/Top-NFL-Draft-Prospects-2021-Page-4.asp");
-            var document5 = webGet.Load("https://www.drafttek.com/2020-NFL-Draft-Big-Board/Top-NFL-Draft-Prospects-2021-Page-5.asp");
+            var document2 = webGet.Load("https://www.drafttek.com/2021-NFL-Draft-Big-Board/Top-NFL-Draft-Prospects-2021-Page-2.asp");
+            var document3 = webGet.Load("https://www.drafttek.com/2021-NFL-Draft-Big-Board/Top-NFL-Draft-Prospects-2021-Page-3.asp");
+            var document4 = webGet.Load("https://www.drafttek.com/2021-NFL-Draft-Big-Board/Top-NFL-Draft-Prospects-2021-Page-4.asp");
+            var document5 = webGet.Load("https://www.drafttek.com/2021-NFL-Draft-Big-Board/Top-NFL-Draft-Prospects-2021-Page-5.asp");
 
             Console.WriteLine("Parsing data...");
 
@@ -66,7 +66,7 @@ namespace prospectScraper
 
             CheckForMismatches(csvFileName);
             CreateCombinedCSV();
-            CheckForMismatches($"ranks{Path.DirectorySeparatorChar}combinedRanks2020.csv");
+            CheckForMismatches($"ranks{Path.DirectorySeparatorChar}combinedRanks2021.csv");
             CreateCombinedCSVWithExtras();
 
             Console.WriteLine("Completed.");
@@ -461,6 +461,14 @@ namespace prospectScraper
                     return "North Dakota State";
                 case "SE Missouri State":
                     return "Southeast Missouri State";
+                case "Appalachian St":
+                    return "Appalachian State";
+                case "N Illinois":
+                    return "Northern Illinois";
+                case "UL Monroe":
+                    return "Louisiana-Monroe";
+                case "Central Missouri St":
+                    return "Central Missouri";
                 default:
                     return school;
             }
