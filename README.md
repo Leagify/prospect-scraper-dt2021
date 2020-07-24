@@ -11,7 +11,7 @@ This program is written in .NET Core 3.1.
 Part of this project was made possible by the help of Hacktoberfest.
 
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io#https://github.com/Leagify/scrapysharp-dt2020
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io#https://github.com/Leagify/prospect-scraper-dt2021
 )
 
 Note- I assume that you are going to run this in GitPod (which runs Ubuntu 18.04), so it uses the `linux-x64` by default.  If you're in Windows, make sure to use the `-r win-x64` parameter when building or running, since the .csproj file has a linux runtime set by default.
