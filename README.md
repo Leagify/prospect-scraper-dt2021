@@ -15,3 +15,11 @@ Part of this project was made possible by the help of Hacktoberfest.
 )
 
 Note- I assume that you are going to run this in GitPod (which runs Ubuntu 18.04), so it uses the `linux-x64` by default.  If you're in Windows, make sure to use the `-r win-x64` parameter when building or running, since the .csproj file has a linux runtime set by default.
+
+### Running the application
+- Go to the `prospect-scraper-dt2021/src/prospectScraper` directory.
+- Type `dotnet run` and add one of three parameters: 
+  + `bb` runs the big board scraper
+  + `md` runs the mock draft scraper 
+  + `all` runs both big board and mock draft scrapers
+  + when in doubt, do `dotnet run all`
