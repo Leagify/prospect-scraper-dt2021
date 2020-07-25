@@ -109,7 +109,7 @@ namespace prospectScraper
             CheckForMismatches($"ranks{Path.DirectorySeparatorChar}combinedRanks2021.csv");
             CreateCombinedCSVWithExtras();
 
-            Console.WriteLine("Completed.");
+            Console.WriteLine("Big Board Completed.");
         }
 
         private static void RunTheMockDraft()
@@ -158,24 +158,21 @@ namespace prospectScraper
                 csv.WriteRecords(list6);
             }
 
-            CheckForMockDraftMismatches(list1);
-            CheckForMockDraftMismatches(list2);
-            CheckForMockDraftMismatches(list3);
-            CheckForMockDraftMismatches(list4);
-            CheckForMockDraftMismatches(list5);
-            CheckForMockDraftMismatches(list6);
+            Console.WriteLine("Checking for mock draft mismatches...");
+            CheckForMockDraftMismatches(list1, "top of the first round");
+            CheckForMockDraftMismatches(list2, "second half of the first round");
+            CheckForMockDraftMismatches(list3, "second round");
+            CheckForMockDraftMismatches(list4, "third round");
+            CheckForMockDraftMismatches(list5, "fourth/fifth round");
+            CheckForMockDraftMismatches(list6, "sixth/seventh round");
 
             CheckForMockDraftMismatches($"mocks{Path.DirectorySeparatorChar}{draftDate}-mock.csv");
-            //CheckForMismatches($"mocks{Path.DirectorySeparatorChar}2020-01-11-mock.csv");
-            //CheckForMismatches($"mocks{Path.DirectorySeparatorChar}2020-01-15-mock.csv");
             
-
-
             // Document data is of type HtmlAgilityPack.HtmlDocument - need to parse it to find info.
             // I'm pretty sure I'm looking for tables with this attribute: background-image: linear-gradient(to bottom right, #0b3661, #5783ad);
 
             
-            Console.WriteLine("Behold, the draft!");
+            Console.WriteLine("Behold, the draft! Mock Draft Completed.");
         }
 
         public static List<MockDraftPick> getMockDraft(HtmlAgilityPack.HtmlDocument doc, string pickDate)
@@ -242,22 +239,25 @@ namespace prospectScraper
             
             
             MockDraftPick mdp = new MockDraftPick(pickNumber, teamCity, playerName, playerSchool, playerPosition, reachValue, pickDate);
-            Console.WriteLine(mdp.round);
-            Console.WriteLine(mdp.leagifyPoints);
-            Console.WriteLine(mdp.pickNumber);
-            Console.WriteLine(mdp.teamCity);
-            Console.WriteLine(mdp.playerName);
-            Console.WriteLine(mdp.school);
-            Console.WriteLine(mdp.position);
-            Console.WriteLine(mdp.reachValue);
-            Console.WriteLine(mdp.state);
+            File.AppendAllText($"logs{Path.DirectorySeparatorChar}Prospects.log", "Mock Draft Round: " + mdp.round + Environment.NewLine);
+            File.AppendAllText($"logs{Path.DirectorySeparatorChar}Prospects.log", "Pick Number: " + mdp.pickNumber + Environment.NewLine);
+            File.AppendAllText($"logs{Path.DirectorySeparatorChar}Prospects.log", "Player: " + mdp.playerName + Environment.NewLine);
+            //Console.WriteLine(mdp.round);
+            //Console.WriteLine(mdp.leagifyPoints);
+            //Console.WriteLine(mdp.pickNumber);
+            //Console.WriteLine(mdp.teamCity);
+            //Console.WriteLine(mdp.playerName);
+            //Console.WriteLine(mdp.school);
+            //Console.WriteLine(mdp.position);
+            //Console.WriteLine(mdp.reachValue);
+            //Console.WriteLine(mdp.state);
             return mdp;
         }
         public static string getDraftDate(HtmlAgilityPack.HtmlDocument doc)
         {
             HtmlNode hn = doc.DocumentNode;
             HtmlNode hi1 = hn.SelectSingleNode("//*[@id='HeadlineInfo1']");
-            Console.WriteLine(hi1.InnerText);
+            //Console.WriteLine(hi1.InnerText);
             string hi2 = hi1.InnerText.Replace(" EST", "").Trim();
             //Change date to proper date. The original format should be like this:
             //" May 21, 2019 2:00 AM EST"
@@ -273,7 +273,7 @@ namespace prospectScraper
                 dateInNiceFormat = DateTime.Now.ToString("yyyy-MM-dd");
             }
             
-            Console.WriteLine("Date parsed: " + parsedDate + " DateTime parse worked?: " + parseWorks + "date output" + dateInNiceFormat);
+            Console.WriteLine("Mock Draft - Date parsed: " + parsedDate + " - File name will be: "+  dateInNiceFormat + "-mock.csv");
             return dateInNiceFormat;
         }
         private static void CreateCombinedCSV()
@@ -516,7 +516,7 @@ namespace prospectScraper
                                     // td[1]= Rank
                                     if (Int32.TryParse(cell.InnerText, out int rankNumber))
                                         rank = rankNumber;
-                                    File.AppendAllText($"logs{Path.DirectorySeparatorChar}Prospects.log", "Rank: " + cell.InnerText + Environment.NewLine);
+                                    File.AppendAllText($"logs{Path.DirectorySeparatorChar}Prospects.log", "Big Board Rank: " + cell.InnerText + Environment.NewLine);
                                     break;
                                 case '2':
                                     // td[2]= Change
@@ -703,11 +703,11 @@ namespace prospectScraper
             }
         }
 
-        private static void CheckForMockDraftMismatches(List<MockDraftPick> listOfPicks)
+        private static void CheckForMockDraftMismatches(List<MockDraftPick> listOfPicks, string description)
         {
-            //File.AppendAllText($"logs{Path.DirectorySeparatorChar}Status.log", "Checking for mismatches in " + csvFileName + "....." + Environment.NewLine);
+            File.AppendAllText($"logs{Path.DirectorySeparatorChar}Status.log", "Checking for mismatches in " + description + "....." + Environment.NewLine);
 
-            Console.WriteLine("Checking for mismatches....");
+            //Console.WriteLine("Checking for Mock Draft mismatches in "+ description + "....");
             // Read in data from a different project.
             List<School> schoolsAndConferences;
             using (var reader = new StreamReader($"info{Path.DirectorySeparatorChar}SchoolStatesAndConferences.csv"))
@@ -734,32 +734,32 @@ namespace prospectScraper
 
             if (schoolMismatches.Count() > 0)
             {
-                //File.WriteAllText($"logs{Path.DirectorySeparatorChar}Mismatches.log", "");
+                File.WriteAllText($"logs{Path.DirectorySeparatorChar}Mismatches.log", "");
             }
 
             foreach (var s in schoolMismatches){
                 noMismatches = false;
-                //File.AppendAllText($"logs{Path.DirectorySeparatorChar}Mismatches.log", $"{s.rank}, {s.name}, {s.college}" + Environment.NewLine);
-                Console.WriteLine($"{s.rank}, {s.name}, {s.college}");
+                File.AppendAllText($"logs{Path.DirectorySeparatorChar}Mismatches.log", $"Mock draft mismatch: {s.rank}, {s.name}, {s.college}" + Environment.NewLine);
+                //Console.WriteLine($"{s.rank}, {s.name}, {s.college}");
             }
 
             if (noMismatches)
             {
-                //File.AppendAllText($"logs{Path.DirectorySeparatorChar}Status.log", "No mismatches in " + csvFileName + "....." + Environment.NewLine);
-                Console.WriteLine("No mismatches in " + listOfPicks.ToString() + ".....");
+                File.AppendAllText($"logs{Path.DirectorySeparatorChar}Status.log", "No mismatches in " + description + "....." + Environment.NewLine);
+                //Console.WriteLine("No mismatches in " + listOfPicks.ToString() + ".....");
             }
             else
             {
-                //File.AppendAllText($"logs{Path.DirectorySeparatorChar}Status.log", schoolMismatches.Count() + " mismatches in " + csvFileName + ".....Check Mismatches.log." + Environment.NewLine);
-                Console.WriteLine(schoolMismatches.Count() + " mismatches in " + listOfPicks.ToString() + ".....");
+                File.AppendAllText($"logs{Path.DirectorySeparatorChar}Status.log", schoolMismatches.Count() + " mismatches in list of picks from " + description + ".....Check Mismatches.log." + Environment.NewLine);
+                //Console.WriteLine(schoolMismatches.Count() + " mismatches in " + listOfPicks.ToString() + ".....");
             }
         }
 
 
         private static void CheckForMockDraftMismatches(string csvFileName)
         {
-            //File.AppendAllText($"logs{Path.DirectorySeparatorChar}Status.log", "Checking for mismatches in " + csvFileName + "....." + Environment.NewLine);
-            Console.WriteLine("Checking for mismatches in " + csvFileName + ".....");
+            File.AppendAllText($"logs{Path.DirectorySeparatorChar}Status.log", "Checking for mismatches in " + csvFileName + "....." + Environment.NewLine);
+            //Console.WriteLine("Checking for mismatches in " + csvFileName + ".....");
             // Read in data from a different project.
             List<School> schoolsAndConferences;
             using (var reader = new StreamReader($"info{Path.DirectorySeparatorChar}SchoolStatesAndConferences.csv"))
@@ -797,19 +797,19 @@ namespace prospectScraper
 
             foreach (var s in schoolMismatches){
                 noMismatches = false;
-                //File.AppendAllText($"logs{Path.DirectorySeparatorChar}Mismatches.log", $"{s.rank}, {s.name}, {s.college}" + Environment.NewLine);
-                Console.WriteLine($"{s.rank}, {s.name}, {s.college}");
+                File.AppendAllText($"logs{Path.DirectorySeparatorChar}Mismatches.log", $"{s.rank}, {s.name}, {s.college}" + Environment.NewLine);
+                //Console.WriteLine($"{s.rank}, {s.name}, {s.college}");
             }
 
             if (noMismatches)
             {
-                //File.AppendAllText($"logs{Path.DirectorySeparatorChar}Status.log", "No mismatches in " + csvFileName + "....." + Environment.NewLine);
-                Console.WriteLine("No mismatches in " + csvFileName + ".....");
+                File.AppendAllText($"logs{Path.DirectorySeparatorChar}Status.log", "No mismatches in " + csvFileName + "....." + Environment.NewLine);
+                //Console.WriteLine("No mismatches in " + csvFileName + ".....");
             }
             else
             {
-                //File.AppendAllText($"logs{Path.DirectorySeparatorChar}Status.log", schoolMismatches.Count() + " mismatches in " + csvFileName + ".....Check Mismatches.log." + Environment.NewLine);
-                Console.WriteLine(schoolMismatches.Count() + " mismatches in " + csvFileName + ".....");
+                File.AppendAllText($"logs{Path.DirectorySeparatorChar}Status.log", schoolMismatches.Count() + " mismatches in " + csvFileName + ".....Check Mismatches.log." + Environment.NewLine);
+                //Console.WriteLine(schoolMismatches.Count() + " mismatches in " + csvFileName + ".....");
             }
         }
     }
