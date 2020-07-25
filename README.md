@@ -8,7 +8,7 @@ Some limited error checking is included to verify whether the school matches up 
 
 This program is written in .NET Core 3.1.
 
-Part of this project was made possible by the help of Hacktoberfest.
+For the previous year, this project existed in two separate projects, one for the [big board](https://github.com/Leagify/scrapysharp-dt2020), and one for the [mock draft](https://github.com/Leagify/mockdraft-2020). Part of these projects were made possible by the help of Hacktoberfest.
 
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io#https://github.com/Leagify/prospect-scraper-dt2021
