@@ -23,3 +23,9 @@ Note- I assume that you are going to run this in GitPod (which runs Ubuntu 18.04
   + `md` runs the mock draft scraper 
   + `all` runs both big board and mock draft scrapers
   + when in doubt, do `dotnet run all`
+  
+#### Running tests
+There is rudimentary support for tests built in.
+- To run tests, go to the `prospect-scraper-dt2021/test/prospectScraperTest` directory
+- Type `dotnet test` and watch the test(s) run.
+- For more info, check out the [docs](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-test).
