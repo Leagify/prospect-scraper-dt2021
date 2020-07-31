@@ -673,6 +673,8 @@ namespace prospectScraper
                     return "Louisiana-Monroe";
                 case "Central Missouri St":
                     return "Central Missouri";
+                case "North Carolina State":
+                    return "NC State";
                 default:
                     return school;
             }
