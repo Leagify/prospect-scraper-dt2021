@@ -16,7 +16,7 @@ namespace prospectScraper
             // "b" for the big boards, "m" for mock drafts, "e" for everything
             if (args.Length == 0)
             {
-                Console.WriteLine("No Arguments");
+                Console.WriteLine("No Arguments- Type bb for big board, md for mock draft, all for both. Running both by default.....");
                 RunTheBigBoards();
             }
             else
@@ -593,91 +593,52 @@ namespace prospectScraper
 
         public static string checkSchool(string school)
         {
-            switch(school)
+            school = school switch
             {
-                case "Miami":
-                    return "Miami (FL)";
-                case "Mississippi":
-                    return "Ole Miss";
-                case "Central Florida":
-                    return "UCF";
-                case "MTSU":
-                    return "Middle Tennessee";
-                case "Eastern Carolina":
-                    return "East Carolina";
-                case "Pittsburgh":
-                    return "Pitt";
-                case "FIU":
-                    return "Florida International";
-                case "Florida St":
-                    return "Florida State";
-                case "Penn St":
-                    return "Penn State";
-                case "Minneosta":
-                    return "Minnesota";
-                case "Mississippi St.":
-                    return "Mississippi State";
-                case "Mississippi St":
-                    return "Mississippi State";
-                case "Oklahoma St":
-                    return "Oklahoma State";
-                case "Boise St":
-                    return "Boise State";
-                case "Lenoir-Rhyne":
-                    return "Lenoir–Rhyne";
-                case "NCState":
-                    return "NC State";
-                case "W Michigan":
-                    return "Western Michigan";
-                case "UL Lafayette":
-                    return "Louisiana-Lafayette";
-                case "Cal":
-                    return "California";
-                case "S. Illinois":
-                    return "Southern Illinois";
-                case "UConn":
-                    return "Connecticut";
-                case "LA Tech":
-                    return "Louisiana Tech";
-                case "Louisiana":
-                    return "Louisiana-Lafayette";
-                case "San Diego St":
-                    return "San Diego State";
-                case "South Carolina St":
-                    return "South Carolina State";
-                case "Wake Forrest":
-                    return "Wake Forest";
-                case "NM State":
-                    return "New Mexico State";
-                case "New Mexico St":
-                    return "New Mexico State";
-                case "Southern Cal":
-                    return "USC";
-                case "Mempis":
-                    return "Memphis";
-                case "Southeast Missouri":
-                    return "Southeast Missouri State";
-                case "Berry College":
-                    return "Berry";
-                case "USF":
-                    return "South Florida";
-                case "N Dakota State":
-                    return "North Dakota State";
-                case "SE Missouri State":
-                    return "Southeast Missouri State";
-                case "Appalachian St":
-                    return "Appalachian State";
-                case "N Illinois":
-                    return "Northern Illinois";
-                case "UL Monroe":
-                    return "Louisiana-Monroe";
-                case "Central Missouri St":
-                    return "Central Missouri";
-                case "North Carolina State":
-                    return "NC State";
-                default:
-                    return school;
-            }
+                "Miami" => "Miami (FL)",
+                "Mississippi" => "Ole Miss",
+                "Central Florida" => "UCF",
+                "MTSU"=> "Middle Tennessee",
+                "Eastern Carolina" => "East Carolina",
+                "Pittsburgh" => "Pitt",
+                "FIU" => "Florida International",
+                "Florida St" => "Florida State",
+                "Penn St" => "Penn State",
+                "Minneosta" => "Minnesota",
+                "Mississippi St" => "Mississippi State",
+                "Mississippi St." => "Mississippi State",
+                "Oklahoma St" => "Oklahoma State",
+                "Boise St" => "Boise State",
+                "Lenoir-Rhyne" => "Lenoir–Rhyne",
+                "NCState" => "NC State",
+                "W Michigan" => "Western Michigan",
+                "UL Lafayette" => "Louisiana-Lafayette",
+                "Cal" => "California",
+                "S. Illinois" => "Southern Illinois",
+                "UConn" => "Connecticut",
+                "LA Tech" => "Louisiana Tech",
+                "Louisiana" => "Louisiana-Lafayette",
+                "San Diego St" => "San Diego State",
+                "South Carolina St" => "South Carolina State",
+                "Wake Forrest" => "Wake Forest",
+                "NM State" => "New Mexico State",
+                "New Mexico St" => "New Mexico State",
+                "Southern Cal" => "USC",
+                "x-USC" => "USC",
+                "Mempis"=> "Memphis",
+                "Southeast Missouri" => "Southeast Missouri State",
+                "Berry College" => "Berry",
+                "USF" => "South Florida",
+                "N Dakota State" => "North Dakota State",
+                "SE Missouri State" => "Southeast Missouri State",
+                "Appalachian St" => "Appalachian State",
+                "N Illinois" => "Northern Illinois",
+                "UL Monroe" => "Louisiana-Monroe",
+                "Central Missouri St" => "Central Missouri",
+                "North Carolina State" => "NC State",
+                _ => school,
+            };
+            return school;
         }
         public static int convertHeightToInches(string height, string playerName)
         {
