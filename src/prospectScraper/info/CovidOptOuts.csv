@@ -1,0 +1,15 @@
+Conference,FallFootball,SpringFootball
+ACC,true,false
+Big 12,true,false
+Big Ten,true,false
+Pac 12,false,false
+SEC,true,false
+FBS - AAC,true,false
+FBS - Mountain West,false,true
+FBS - Independent,true,false
+FBS - CUSA,true,false
+FBS - MAC,false,true
+FBS - Sun Belt,true,false
+FCS,false,false
+D2,false,false
+D3,false,false
