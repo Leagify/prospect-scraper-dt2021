@@ -8,7 +8,7 @@ using System.Text.RegularExpressions;
 
 namespace prospectScraper
 {
-	class Program
+	public class Program
     {
         static void Main(string[] args)
         {
@@ -257,8 +257,14 @@ namespace prospectScraper
         {
             HtmlNode hn = doc.DocumentNode;
             HtmlNode hi1 = hn.SelectSingleNode("//*[@id='HeadlineInfo1']");
+
+            return FormatDraftDate(hi1.InnerText);
+        }
+
+        public static string FormatDraftDate(string headlineInfo)
+        {
             //Console.WriteLine(hi1.InnerText);
-            string hi2 = hi1.InnerText.Replace(" EST", "").Trim();
+            string hi2 = headlineInfo.Replace(" EST", "").Trim();
             //Change date to proper date. The original format should be like this:
             //" May 21, 2019 2:00 AM EST"
             DateTime parsedDate;
@@ -272,10 +278,11 @@ namespace prospectScraper
             {
                 dateInNiceFormat = DateTime.Now.ToString("yyyy-MM-dd");
             }
-            
-            Console.WriteLine("Mock Draft - Date parsed: " + parsedDate + " - File name will be: "+  dateInNiceFormat + "-mock.csv");
+
+            Console.WriteLine("Mock Draft - Date parsed: " + parsedDate + " - File name will be: " + dateInNiceFormat + "-mock.csv");
             return dateInNiceFormat;
         }
+
         private static void CreateCombinedCSV()
         {
             //Combine ranks from CSV files to create a master CSV.
