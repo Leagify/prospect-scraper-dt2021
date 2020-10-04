@@ -1,22 +1,11 @@
-using CsvHelper;
 using CsvHelper.Configuration;
 
-namespace prospectScraper
+namespace prospectScraper.Maps
 {
     public sealed class MockDraftPickMap : ClassMap<MockDraftPick>
     {
         public MockDraftPickMap()
         {
-            //AutoMap();
-            // public int round;
-            // public string teamCity;
-            // public string pickNumber;
-            // public string playerName;
-            // public string school;
-            // public string position;
-            // public string reachValue;
-            // public int leagifyPoints;
-            // public string pickDate;
             Map(m => m.pickNumber).Index(0).Name("Pick");
             Map(m => m.round).Index(1).Name("Round");
             Map(m => m.playerName).Index(2).Name("Player");

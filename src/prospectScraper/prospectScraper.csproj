@@ -15,33 +15,33 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="CsvHelper" Version="12.1.2" />
+    <PackageReference Include="CsvHelper" Version="15.0.6" />
     <PackageReference Include="ScrapySharp" Version="3.0.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="info\PositionInfo.csv">
+    <None Update="Info\PositionInfo.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="info\RanksToProjectedPoints.csv">
+    <None Update="Info\RanksToProjectedPoints.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="info\SchoolStatesAndConferences.csv">
+    <None Update="Info\SchoolStatesAndConferences.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="info\StatesToRegions.csv">
+    <None Update="Info\StatesToRegions.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="logs\Prospects.log">
+    <None Update="Logs\Prospects.log">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="logs\Status.log">
+    <None Update="Logs\Status.log">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="ranks\combinedRanks2021.csv">
+    <None Update="Ranks\combinedRanks2021.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="ranks\joinedRanks2021.csv">
+    <None Update="Ranks\joinedRanks2021.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
