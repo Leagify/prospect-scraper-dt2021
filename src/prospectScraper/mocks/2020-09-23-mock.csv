@@ -15,22 +15,6 @@ Pick,Round,Player,School,Position,Team,ReachValue,Points,Date,State
 14,1,DeVonta Smith,Alabama,WR,Cleveland,+1,30,2020-09-23,Alabama
 15,1,Rashod Bateman,Minnesota,WR,Chicago,-4,30,2020-09-23,Minnesota
 16,1,Israel Mukuamu,South Carolina,CB,LA Chargers,+0,30,2020-09-23,South Carolina
-17,1,Jaylen Twyman,Pitt,DL3T,Indianapolis,+5,30,2020-09-23,Pennsylvania
-18,1,Paulson Adebo,Stanford,CB,San Francisco,-9,30,2020-09-23,California
-19,1,Tyler Shelvin,LSU,DL1T,Dallas,+2,30,2020-09-23,Louisiana
-20,1,Richard LeCounte III,Georgia,S,Las Vegas,-9,30,2020-09-23,Georgia
-21,1,Samuel Cosmi,Texas,OT,Tampa Bay,-2,25,2020-09-23,Texas
-22,1,Jayson Oweh,Penn State,EDGE,Tennessee,-4,25,2020-09-23,Pennsylvania
-23,1,Creed Humphrey,Oklahoma,OC,New England,+2,25,2020-09-23,Oklahoma
-24,1,Dylan Moses,Alabama,OLB,New Orleans,+2,25,2020-09-23,Alabama
-25,1,Tyson Campbell,Georgia,CB,Arizona,-3,25,2020-09-23,Georgia
-26,1,Wyatt Davis,Ohio State,OG,Pittsburgh,+8,25,2020-09-23,Ohio
-27,1,Walker Little,Stanford,OT,Jacksonville (Trade),+2,25,2020-09-23,California
-28,1,Josh Jobe,Alabama,CB,Buffalo,-6,25,2020-09-23,Alabama
-29,1,Rondale Moore,Purdue,WRS,Green Bay,+5,25,2020-09-23,Indiana
-30,1,Seth Williams,Auburn,WR,NY Jets,-7,25,2020-09-23,Alabama
-31,1,Hamilcar Rashed,Oregon State,EDGE,Kansas City (Trade),-10,25,2020-09-23,Oregon
-32,1,Caden Sterns,Texas,S,Baltimore,-4,25,2020-09-23,Texas
 33,2,Jaycee Horn,South Carolina,CB,NY Jets,-5,20,2020-09-23,South Carolina
 34,2,Patrick Jones II,Pitt,EDGE,NY Giants,-13,20,2020-09-23,Pennsylvania
 35,2,Kyle Pitts,Florida,TE,Carolina,+5,20,2020-09-23,Florida
@@ -222,3 +206,19 @@ Pick,Round,Player,School,Position,Team,ReachValue,Points,Date,State
 221,7,William Bradley-King,Arkansas State,EDGE,Seattle,-3,5,2020-09-23,Arkansas
 222,7,Jack Jones,Arizona State,S,Kansas City,+5,5,2020-09-23,Arizona
 223,7,Spencer Sanders,Oklahoma State,QB,Pittsburgh (Trade),+18,5,2020-09-23,Oklahoma
+17,1,Jaylen Twyman,Pitt,DL3T,Indianapolis,+5,30,2020-09-23,Pennsylvania
+18,1,Paulson Adebo,Stanford,CB,San Francisco,-9,30,2020-09-23,California
+19,1,Tyler Shelvin,LSU,DL1T,Dallas,+2,30,2020-09-23,Louisiana
+20,1,Richard LeCounte III,Georgia,S,Las Vegas,-9,30,2020-09-23,Georgia
+21,1,Samuel Cosmi,Texas,OT,Tampa Bay,-2,25,2020-09-23,Texas
+22,1,Jayson Oweh,Penn State,EDGE,Tennessee,-4,25,2020-09-23,Pennsylvania
+23,1,Creed Humphrey,Oklahoma,OC,New England,+2,25,2020-09-23,Oklahoma
+24,1,Dylan Moses,Alabama,OLB,New Orleans,+2,25,2020-09-23,Alabama
+25,1,Tyson Campbell,Georgia,CB,Arizona,-3,25,2020-09-23,Georgia
+26,1,Wyatt Davis,Ohio State,OG,Pittsburgh,+8,25,2020-09-23,Ohio
+27,1,Walker Little,Stanford,OT,Jacksonville (Trade),+2,25,2020-09-23,California
+28,1,Josh Jobe,Alabama,CB,Buffalo,-6,25,2020-09-23,Alabama
+29,1,Rondale Moore,Purdue,WRS,Green Bay,+5,25,2020-09-23,Indiana
+30,1,Seth Williams,Auburn,WR,NY Jets,-7,25,2020-09-23,Alabama
+31,1,Hamilcar Rashed,Oregon State,EDGE,Kansas City (Trade),-10,25,2020-09-23,Oregon
+32,1,Caden Sterns,Texas,S,Baltimore,-4,25,2020-09-23,Texas

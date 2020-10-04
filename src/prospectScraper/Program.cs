@@ -50,8 +50,44 @@ namespace prospectScraper
             //RunTheBigBoards();
         }
 
+        private static string[] GenerateDataURLs(string template, string sequenceToken, int sequenceStart, int sequenceEnd,  string[] extraTokens, string[] extraURLs) {
+            Queue<string> URLs = new Queue<string>();
+        
+            if (sequenceStart >= sequenceEnd)
+            {
+                Console.WriteLine("Error: Invalid Range");
+                return new string[]{};
+            }
+
+            while (sequenceStart <= sequenceEnd)
+            {
+                URLs.Enqueue(template.Replace(sequenceToken, sequenceStart.ToString()));
+                sequenceStart++;
+            }
+
+            foreach (string token in extraTokens)
+                URLs.Enqueue(template.Replace(sequenceToken, token));
+
+            foreach (string url in extraURLs)
+                URLs.Enqueue(url);
+
+            return URLs.ToArray();
+        }
+
         private static void RunTheBigBoards()
         {
+            string[] URLs = GenerateDataURLs(
+                "https://www.drafttek.com/2021-NFL-Draft-Big-Board/Top-NFL-Draft-Prospects-2021-Page-<PageNo>.asp",
+                "<PageNo>", 1, 5, new string[]{}, new string[]{});
+            HtmlDocument[] Docs = new HtmlDocument[URLs.Length]; 
+            List<ProspectRanking>[] ProspectLists = new List<ProspectRanking>[URLs.Length];
+
+            if (URLs.Length == 0)
+            {
+                System.Console.WriteLine("Error: Not URLs");
+                return;
+            }
+
             File.WriteAllText($"logs{Path.DirectorySeparatorChar}Status.log", "");
             File.WriteAllText($"logs{Path.DirectorySeparatorChar}Prospects.log", "");
 
@@ -59,27 +95,26 @@ namespace prospectScraper
 
             var webGet = new HtmlWeb();
             webGet.UserAgent = "Mozilla/5.0 (Windows NT 6.3; WOW64; rv:31.0) Gecko/20100101 Firefox/31.0";
-            var document1 = webGet.Load("https://www.drafttek.com/2021-NFL-Draft-Big-Board/Top-NFL-Draft-Prospects-2021-Page-1.asp");
-            var document2 = webGet.Load("https://www.drafttek.com/2021-NFL-Draft-Big-Board/Top-NFL-Draft-Prospects-2021-Page-2.asp");
-            var document3 = webGet.Load("https://www.drafttek.com/2021-NFL-Draft-Big-Board/Top-NFL-Draft-Prospects-2021-Page-3.asp");
-            var document4 = webGet.Load("https://www.drafttek.com/2021-NFL-Draft-Big-Board/Top-NFL-Draft-Prospects-2021-Page-4.asp");
-            var document5 = webGet.Load("https://www.drafttek.com/2021-NFL-Draft-Big-Board/Top-NFL-Draft-Prospects-2021-Page-5.asp");
+
+            for (int i = 0; i < Docs.Length; i++)
+            {
+                Docs[i] = webGet.Load(URLs[i]);
+            }
 
             Console.WriteLine("Parsing data...");
 
             //Get ranking date
-            var dateOfRanks = document1.DocumentNode.SelectSingleNode("//*[@id='HeadlineInfo1']").InnerText.Replace(" EST", "").Trim();
+            var dateOfRanks = Docs[0].DocumentNode.SelectSingleNode("//*[@id='HeadlineInfo1']").InnerText.Replace(" EST", "").Trim();
             //Change date to proper date. The original format should be like this:
             //" May 21, 2019 2:00 AM EST"
             DateTime parsedDate;
             DateTime.TryParse(dateOfRanks, out parsedDate);
             string dateInNiceFormat = parsedDate.ToString("yyyy-MM-dd");
 
-            List<ProspectRanking> list1 = GetProspects(document1, parsedDate, 1);
-            List<ProspectRanking> list2 = GetProspects(document2, parsedDate, 2);
-            List<ProspectRanking> list3 = GetProspects(document3, parsedDate, 3);
-            List<ProspectRanking> list4 = GetProspects(document4, parsedDate, 4);
-            List<ProspectRanking> list5 = GetProspects(document5, parsedDate, 5);
+            for (int i = 0; i < ProspectLists.Length; i++)
+            {
+                ProspectLists[i] = GetProspects(Docs[i], parsedDate, i+1);
+            }
 
             //This is the file name we are going to write.
             var csvFileName = $"ranks{Path.DirectorySeparatorChar}{dateInNiceFormat}-ranks.csv";
@@ -91,17 +126,10 @@ namespace prospectScraper
             using (var csv = new CsvWriter(writer))
             {
                 csv.Configuration.RegisterClassMap<ProspectRankingMap>();
-                csv.WriteRecords(list1);
-                csv.WriteRecords(list2);
-                csv.WriteRecords(list3);
-                if (list4.Count > 0)
-                {
-                    csv.WriteRecords(list4);
-                }
-                if (list5.Count > 0)
-                {
-                    csv.WriteRecords(list5);
-                }
+
+                foreach (List<ProspectRanking> list in ProspectLists)
+                    if (list.Count > 0)
+                        csv.WriteRecords(list);
             }
 
             CheckForMismatches(csvFileName);
@@ -117,12 +145,37 @@ namespace prospectScraper
             //TODO - Implement Mock Draft
             var webGet = new HtmlWeb();
             webGet.UserAgent = "Mozilla/5.0 (Windows NT 6.3; WOW64; rv:31.0) Gecko/20100101 Firefox/31.0";
-            var document1 = webGet.Load("https://www.drafttek.com/2021-NFL-Mock-Draft/2021-NFL-Mock-Draft-Round-1.asp");
-            var document2 = webGet.Load("https://www.drafttek.com/2021-NFL-Mock-Draft/2021-NFL-Mock-Draft-Round-1b.asp");
-            var document3 = webGet.Load("https://www.drafttek.com/2021-NFL-Mock-Draft/2021-NFL-Mock-Draft-Round-2.asp");
-            var document4 = webGet.Load("https://www.drafttek.com/2021-NFL-Mock-Draft/2021-NFL-Mock-Draft-Round-3.asp");
-            var document5 = webGet.Load("https://www.drafttek.com/2021-NFL-Mock-Draft/2021-NFL-Mock-Draft-Round-4.asp");
-            var document6 = webGet.Load("https://www.drafttek.com/2021-NFL-Mock-Draft/2021-NFL-Mock-Draft-Round-6.asp");
+            
+            // Generate all the needed URL's
+            string[] URLs = GenerateDataURLs(
+                "https://www.drafttek.com/2021-NFL-Mock-Draft/2021-NFL-Mock-Draft-Round-<PageNo>.asp",
+                "<PageNo>", 1, 6, new string[]{"1b"}, new string[]{});
+
+            // Initialize documents and lists            
+            HtmlDocument[] Docs = new HtmlDocument[URLs.Length]; 
+            List<MockDraftPick>[] MockDreaftPickLists = new List<MockDraftPick>[URLs.Length];
+            
+            // Set the labels (will be same Length of urls)
+            string[] labels = {
+                "top of the first round",
+                "second round",
+                "third round",
+                "fourth/fifth round",
+                "invalid URL", // this is not used
+                "sixth/seventh round",
+                "second half of the first round"
+            };
+
+            // check for errors
+            if (URLs.Length == 0)
+            {
+                System.Console.WriteLine("Error: Not URLs");
+                return;
+            }
+
+            // Load the documents
+            for (int i = 0; i < Docs.Length; i++)
+                Docs[i] = webGet.Load(URLs[i]);
 
             //Console.WriteLine(document1.ParsedText);
             //#content > table:nth-child(9)
@@ -131,14 +184,12 @@ namespace prospectScraper
             
             
             // Need to get date of mock draft eventually.
-            string draftDate = getDraftDate(document1);
+            string draftDate = getDraftDate(Docs[0]);
 
-            List<MockDraftPick> list1 = getMockDraft(document1, draftDate);
-            List<MockDraftPick> list2 = getMockDraft(document2, draftDate);
-            List<MockDraftPick> list3 = getMockDraft(document3, draftDate);
-            List<MockDraftPick> list4 = getMockDraft(document4, draftDate);
-            List<MockDraftPick> list5 = getMockDraft(document5, draftDate);
-            List<MockDraftPick> list6 = getMockDraft(document6, draftDate);
+            // generate the lists
+            for (int i = 0; i < MockDreaftPickLists.Length; i++)
+                MockDreaftPickLists[i] = getMockDraft(Docs[i], draftDate);
+
 
             //This is the file name we are going to write.
             var csvFileName = $"mocks{Path.DirectorySeparatorChar}{draftDate}-mock.csv";
@@ -150,21 +201,18 @@ namespace prospectScraper
             using (var csv = new CsvWriter(writer))
             {
                 csv.Configuration.RegisterClassMap<MockDraftPickMap>();
-                csv.WriteRecords(list1);
-                csv.WriteRecords(list2);
-                csv.WriteRecords(list3);
-                csv.WriteRecords(list4);
-                csv.WriteRecords(list5);
-                csv.WriteRecords(list6);
+                //write valid list elements
+                foreach (List<MockDraftPick> list in MockDreaftPickLists)
+                    if (list.Count > 0)
+                        csv.WriteRecords(list);
             }
 
             Console.WriteLine("Checking for mock draft mismatches...");
-            CheckForMockDraftMismatches(list1, "top of the first round");
-            CheckForMockDraftMismatches(list2, "second half of the first round");
-            CheckForMockDraftMismatches(list3, "second round");
-            CheckForMockDraftMismatches(list4, "third round");
-            CheckForMockDraftMismatches(list5, "fourth/fifth round");
-            CheckForMockDraftMismatches(list6, "sixth/seventh round");
+
+            //Check For Mock Draft Mismatches
+            for (int i = 0; i < MockDreaftPickLists.Length; i++)
+                CheckForMockDraftMismatches(MockDreaftPickLists[i], labels[i]);
+                
 
             CheckForMockDraftMismatches($"mocks{Path.DirectorySeparatorChar}{draftDate}-mock.csv");
             
@@ -179,8 +227,14 @@ namespace prospectScraper
         {
             List<MockDraftPick> mdpList = new List<MockDraftPick>();
             // This is still messy from debugging the different values.  It should be optimized.
+            
             var dn = doc.DocumentNode;
             var dns = dn.SelectNodes("/html/body/div/div/div/table");
+
+            // if the documets is invalid go out
+            if (dns == null || dns.Count == 0)
+                return mdpList;
+
             var attr = dns[1].Attributes;
             var attrs = attr.ToArray();
             var style = attr.FirstOrDefault().Value;
