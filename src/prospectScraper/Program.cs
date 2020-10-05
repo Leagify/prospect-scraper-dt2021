@@ -11,7 +11,7 @@ using System.Text.RegularExpressions;
 
 namespace prospectScraper
 {
-    class Program
+	public class Program
     {
         static void Main(string[] args)
         {
@@ -247,8 +247,14 @@ namespace prospectScraper
         {
             HtmlNode hn = doc.DocumentNode;
             HtmlNode hi1 = hn.SelectSingleNode("//*[@id='HeadlineInfo1']");
+
+            return FormatDraftDate(hi1.InnerText);
+        }
+
+        public static string FormatDraftDate(string headlineInfo)
+        {
             //Console.WriteLine(hi1.InnerText);
-            string hi2 = hi1.InnerText.Replace(" EST", "").Trim();
+            string hi2 = headlineInfo.Replace(" EST", "").Trim();
             //Change date to proper date. The original format should be like this:
             //" May 21, 2019 2:00 AM EST"
             bool parseWorks = DateTime.TryParse(hi2, out DateTime parsedDate);
