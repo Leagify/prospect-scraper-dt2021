@@ -1,5 +1,3 @@
-using CsvHelper.Configuration;
-
 namespace prospectScraper
 {
     public class PointProjection
@@ -15,12 +13,5 @@ namespace prospectScraper
         }
     }
 
-    public sealed class PointProjectionCsvMap : ClassMap<PointProjection>
-    {
-        public PointProjectionCsvMap()
-        {
-            Map(m => m.rank).Name("Rank");
-            Map(m => m.projectedPoints).Name("Points");
-        }
-    }
+
 }
