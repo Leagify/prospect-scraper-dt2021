@@ -1,7 +1,9 @@
+using CsvHelper;
+using CsvHelper.Configuration;
+using prospectScraper.Maps;
 using System;
 using System.Collections.Generic;
-using CsvHelper.Configuration;
-using CsvHelper;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 
@@ -26,16 +28,16 @@ namespace prospectScraper
         {
             this.pickNumber = pick;
             this.teamCity = team;
-            this.round = convertPickToRound(pick);
+            this.round = ConvertPickToRound(pick);
             this.playerName = name;
             this.school = school;
             this.position = pos;
             this.reachValue = relativeVal;
             this.leagifyPoints = convertPickToPoints(pick, this.round);
             this.pickDate = pickDate;
-            this.state = getState(school);
+            this.state = GetState(school);
         }
-        public static int convertPickToRound(string pick)
+        public static int ConvertPickToRound(string pick)
         {
             // Compensatory picks added on 2/1/20
             int intpick = 0;
@@ -157,12 +159,13 @@ namespace prospectScraper
             }
             return 0;
         }
-        public static string getState(string school)
+
+        public static string GetState(string school)
         {
             // Get Schools and the States where they are located.
             List<School> schoolsAndConferences;
             using (var reader = new StreamReader($"info{Path.DirectorySeparatorChar}SchoolStatesAndConferences.csv"))
-            using (var csv = new CsvReader(reader))
+            using (var csv = new CsvReader(reader, CultureInfo.CurrentCulture))
             {
                 csv.Configuration.RegisterClassMap<SchoolCsvMap>();
                 schoolsAndConferences = csv.GetRecords<School>().ToList();
@@ -190,11 +193,12 @@ namespace prospectScraper
             }
             else
             {
-                return "";
+                return string.Empty;
             }
             //return stateResult.FirstOrDefault().ToString();
         }
     }
+
     public sealed class MockDraftPickCsvMap : ClassMap<MockDraftPick>
     {
         public MockDraftPickCsvMap()
