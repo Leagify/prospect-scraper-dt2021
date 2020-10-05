@@ -28,6 +28,14 @@ namespace scrapysharpTest
         }
 
         [Theory]
+        [InlineData("", 0)]
+        [InlineData("-33", 0)]
+        public void ConvertPickToRound_Returns_Zero(string pick, int expectedRoundValue)
+        {
+            Assert.Equal(expectedRoundValue, MockDraftPick.ConvertPickToRound(pick));
+        }
+
+        [Theory]
         [InlineData("1", 0, 40)]
         [InlineData("2", 0, 35)]
         [InlineData("11", 0, 30)]
