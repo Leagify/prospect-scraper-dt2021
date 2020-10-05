@@ -10,7 +10,7 @@ namespace prospectScraperTest
         [InlineData(12, "1'0")]
         public void Converts_Height_To_Inches(int expectedHeightInInches, string heightInFt)
         {
-            var actual = prospectScraper.Program.convertHeightToInches(heightInFt, "FOO");
+            var actual = prospectScraper.Program.ConvertHeightToInches(heightInFt, "FOO");
 
             Assert.Equal(expectedHeightInInches, actual);
         }
@@ -38,7 +38,7 @@ namespace prospectScraperTest
         [Fact]
         public void Invalid_Schools_Returns_Unmodified()
         {
-            Assert.Equal("hogWarts", prospectScraper.Program.checkSchool("hogWarts"));
+            Assert.Equal("hogWarts", prospectScraper.Program.CheckSchool("hogWarts"));
         }
 
         [Theory]
@@ -46,7 +46,7 @@ namespace prospectScraperTest
         [InlineData("North Carolina State", "NC State")]
         public void Valid_Schools(string input, string expected)
         {
-            var actual = prospectScraper.Program.checkSchool(input);
+            var actual = prospectScraper.Program.CheckSchool(input);
 
             Assert.Equal(expected, actual);
         }
