@@ -5,10 +5,14 @@ namespace scrapysharpTest
 {
     public class MockDraftPickTests
     {
+
+        private const string StateFullName = "Florida";
+        private const string CityStateAbr = "Miami (FL)";
+
         [Fact]
         public void GetState_Returns_Correct_State_From_School()
         {
-            Assert.Equal("Florida", MockDraftPick.getState("Miami (FL)"));
+            Assert.Equal(StateFullName, MockDraftPick.getState(CityStateAbr));
         }
 
         [Theory]
