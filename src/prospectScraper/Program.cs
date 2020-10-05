@@ -50,7 +50,7 @@ namespace prospectScraper
             //RunTheBigBoards();
         }
 
-        private static string[] GenerateDataURLs(string template, string sequenceToken, int sequenceStart, int sequenceEnd,  string[] extraTokens, string[] extraURLs) {
+        private static string[] GenerateDataURLs(string template, string sequenceToken, int sequenceStart, int sequenceEnd,  string[] extraTokenAppend, string[] extraURLs) {
             Queue<string> URLs = new Queue<string>();
         
             if (sequenceStart >= sequenceEnd)
@@ -62,11 +62,13 @@ namespace prospectScraper
             while (sequenceStart <= sequenceEnd)
             {
                 URLs.Enqueue(template.Replace(sequenceToken, sequenceStart.ToString()));
+
+                //add other variants (all invalid urls are descarted later)
+                foreach (string token in extraTokenAppend)
+                    URLs.Enqueue(template.Replace(sequenceToken, sequenceStart + token));
+
                 sequenceStart++;
             }
-
-            foreach (string token in extraTokens)
-                URLs.Enqueue(template.Replace(sequenceToken, token));
 
             foreach (string url in extraURLs)
                 URLs.Enqueue(url);
@@ -149,21 +151,21 @@ namespace prospectScraper
             // Generate all the needed URL's
             string[] URLs = GenerateDataURLs(
                 "https://www.drafttek.com/2021-NFL-Mock-Draft/2021-NFL-Mock-Draft-Round-<PageNo>.asp",
-                "<PageNo>", 1, 6, new string[]{"1b"}, new string[]{});
+                "<PageNo>", 1, 6, new string[]{"b"}, new string[]{});
 
             // Initialize documents and lists            
             HtmlDocument[] Docs = new HtmlDocument[URLs.Length]; 
             List<MockDraftPick>[] MockDreaftPickLists = new List<MockDraftPick>[URLs.Length];
+            int labelIndx = 0;
             
             // Set the labels (will be same Length of urls)
             string[] labels = {
                 "top of the first round",
+                "second half of the first round",
                 "second round",
                 "third round",
                 "fourth/fifth round",
-                "invalid URL", // this is not used
-                "sixth/seventh round",
-                "second half of the first round"
+                "sixth/seventh round"
             };
 
             // check for errors
@@ -211,7 +213,9 @@ namespace prospectScraper
 
             //Check For Mock Draft Mismatches
             for (int i = 0; i < MockDreaftPickLists.Length; i++)
-                CheckForMockDraftMismatches(MockDreaftPickLists[i], labels[i]);
+                CheckForMockDraftMismatches(MockDreaftPickLists[i], 
+                    labels[MockDreaftPickLists[i].Count > 0 ? labelIndx++ : Math.Min(labelIndx, labels.Length - 1)] // discard index of invalid document/url
+                );
                 
 
             CheckForMockDraftMismatches($"mocks{Path.DirectorySeparatorChar}{draftDate}-mock.csv");
@@ -744,8 +748,7 @@ namespace prospectScraper
                                         rank = r.pickNumber,
                                         name = r.playerName,
                                         college = r.school
-                                    }
-                                    ;
+                                    };
 
             bool noMismatches = true;
 
