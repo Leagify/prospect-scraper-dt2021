@@ -13,4 +13,4 @@ jobs:
       with:
         dotnet-version: 3.1.201
     - name: Build .NET
-      run: dotnet build --configuration Release
+      run: dotnet build src\prospectScraper\prospectScraper.sln --configuration Release
