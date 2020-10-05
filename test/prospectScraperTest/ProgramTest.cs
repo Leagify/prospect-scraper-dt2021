@@ -1,4 +1,5 @@
-﻿using System;
+﻿using prospectScraper;
+using System;
 using Xunit;
 
 namespace prospectScraperTest
@@ -10,35 +11,44 @@ namespace prospectScraperTest
         [InlineData(12, "1'0")]
         public void Converts_Height_To_Inches(int expectedHeightInInches, string heightInFt)
         {
-            var actual = prospectScraper.Program.ConvertHeightToInches(heightInFt, "FOO");
+            //Act
+            var actual = Program.ConvertHeightToInches(heightInFt, "FOO");
 
+            //Assert
             Assert.Equal(expectedHeightInInches, actual);
         }
 
         [Fact]
         public void Draft_Date_Defaults_To_Today()
         {
+            //Arrange
             var expected = DateTime.Now.ToString("yyyy-MM-dd");
 
-            var actual = prospectScraper.Program.FormatDraftDate("TEST");
+            //Act
+            var actual = Program.FormatDraftDate("TEST");
 
+            //Assert
             Assert.Equal(expected, actual);
         }
 
         [Fact]
         public void Formats_Draft_Date()
         {
+            //Arrange
             var expected = "2019-05-21";
 
-            var actual = prospectScraper.Program.FormatDraftDate(" May 21, 2019 2:00 AM EST");
+            //Act
+            var actual = Program.FormatDraftDate(" May 21, 2019 2:00 AM EST");
 
+            //Assert
             Assert.Equal(expected, actual);
         }
 
         [Fact]
         public void Invalid_Schools_Returns_Unmodified()
         {
-            Assert.Equal("hogWarts", prospectScraper.Program.CheckSchool("hogWarts"));
+            //Assert
+            Assert.Equal("hogWarts", School.CheckSchool("hogWarts"));
         }
 
         [Theory]
@@ -46,8 +56,10 @@ namespace prospectScraperTest
         [InlineData("North Carolina State", "NC State")]
         public void Valid_Schools(string input, string expected)
         {
-            var actual = prospectScraper.Program.CheckSchool(input);
+            //Act
+            var actual = School.CheckSchool(input);
 
+            //Assert
             Assert.Equal(expected, actual);
         }
     }

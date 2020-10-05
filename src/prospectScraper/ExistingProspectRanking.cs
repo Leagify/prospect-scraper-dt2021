@@ -1,6 +1,5 @@
 namespace prospectScraper
 {
-
     public class ExistingProspectRanking
     {
         public string rank;
@@ -29,6 +28,4 @@ namespace prospectScraper
             this.draftStatus = status;
         }
     }
-
-
 }

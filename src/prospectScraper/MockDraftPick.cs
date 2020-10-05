@@ -22,7 +22,6 @@ namespace prospectScraper
         public string pickDate;
         public string state;
 
-
         public MockDraftPick(){}
         public MockDraftPick(string pick, string team, string name, string school, string pos, string relativeVal, string pickDate)
         {
@@ -33,36 +32,17 @@ namespace prospectScraper
             this.school = school;
             this.position = pos;
             this.reachValue = relativeVal;
-            this.leagifyPoints = convertPickToPoints(pick, this.round);
+            this.leagifyPoints = ConvertPickToPoints(pick, this.round);
             this.pickDate = pickDate;
             this.state = GetState(school);
         }
+
         public static int ConvertPickToRound(string pick)
         {
-            // Compensatory picks added on 2/1/20
-            int intpick = 0;
-            var canParse = int.TryParse(pick, out intpick);
+            var canParse = int.TryParse(pick, out int intpick);
+
             if (canParse)
             {
-                /* 
-                    Pick numbers without comp picks:
-                    Picks 1-32 : Round 1
-                    Picks 33-64: Round 2
-                    Picks 65-96: Round 3
-                    Picks 97-128: Round 4
-                    Picks 129-159: Round 5
-                    Picks 160-191: Round 6
-                    Picks 192-223: Round 7
-
-                    Pick numbers with comp picks:
-                    Round 1 = picks 1-32
-                    Round 2 = picks 33-64 
-                    Round 3 = picks 65-103
-                    Round 4 = picks 104-146
-                    Round 5 = picks 147-179
-                    Round 6 = picks 180-214
-                    Round 7 = picks 215-255
-                */
                 if(intpick >= 1 && intpick <= 32)
                 {
                     return 1;
@@ -93,25 +73,12 @@ namespace prospectScraper
             }
             
         }
-        public static int convertPickToPoints(string pick, int round)
+
+        public static int ConvertPickToPoints(string pick, int round)
         {
-            int intpick = 0;
-            var canParse = int.TryParse(pick, out intpick);
+            var canParse = int.TryParse(pick, out int intpick);
             if (canParse)
             {
-                /* 
-                    Top Pick: 40 Points
-                    Picks 2-10: 35 Points
-                    Picks 11-20: 30 Points
-                    Picks 21-32: 25 Points
-                    Picks 33-48: 20 Points
-                    Picks 49-64: 15 Points
-                    Round 3: 10 Points
-                    Round 4: 8 Points
-                    Round 5: 7 Points
-                    Round 6: 6 Points
-                    Round 7: 5 Points
-                */
                 if(intpick == 1)
                 {
                     return 40;
@@ -162,7 +129,6 @@ namespace prospectScraper
 
         public static string GetState(string school)
         {
-            // Get Schools and the States where they are located.
             List<School> schoolsAndConferences;
             using (var reader = new StreamReader($"info{Path.DirectorySeparatorChar}SchoolStatesAndConferences.csv"))
             using (var csv = new CsvReader(reader, CultureInfo.CurrentCulture))
@@ -185,7 +151,6 @@ namespace prospectScraper
             {
                 Console.WriteLine("Error matching school!");
             }
-            
 
             if(sr.Length > 0)
             {
@@ -195,7 +160,6 @@ namespace prospectScraper
             {
                 return string.Empty;
             }
-            //return stateResult.FirstOrDefault().ToString();
         }
     }
 

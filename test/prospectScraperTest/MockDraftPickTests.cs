@@ -5,13 +5,13 @@ namespace scrapysharpTest
 {
     public class MockDraftPickTests
     {
-
         private const string StateFullName = "Florida";
         private const string CityStateAbr = "Miami (FL)";
 
         [Fact]
         public void GetState_Returns_Correct_State_From_School()
         {
+            //Assert
             Assert.Equal(StateFullName, MockDraftPick.GetState(CityStateAbr));
         }
 
@@ -24,6 +24,7 @@ namespace scrapysharpTest
         [InlineData("215", 7)]
         public void ConvertPickToRound_Returns_Correct_Round(string pick, int expectedRoundValue)
         {
+            //Assert
             Assert.Equal(expectedRoundValue, MockDraftPick.ConvertPickToRound(pick));
         }
 
@@ -41,7 +42,8 @@ namespace scrapysharpTest
         [InlineData("0", 7, 5)]
         public void ConvertPickToPoints_Returns_Correct_Points(string pick, int round, int expectedPointsValue)
         {
-            Assert.Equal(expectedPointsValue, MockDraftPick.convertPickToPoints(pick, round));
+            //Assert
+            Assert.Equal(expectedPointsValue, MockDraftPick.ConvertPickToPoints(pick, round));
         }
     }
 }
