@@ -12,7 +12,7 @@ namespace scrapysharpTest
         [Fact]
         public void GetState_Returns_Correct_State_From_School()
         {
-            Assert.Equal(StateFullName, MockDraftPick.getState(CityStateAbr));
+            Assert.Equal(StateFullName, MockDraftPick.GetState(CityStateAbr));
         }
 
         [Theory]
@@ -24,7 +24,7 @@ namespace scrapysharpTest
         [InlineData("215", 7)]
         public void ConvertPickToRound_Returns_Correct_Round(string pick, int expectedRoundValue)
         {
-            Assert.Equal(expectedRoundValue, MockDraftPick.convertPickToRound(pick));
+            Assert.Equal(expectedRoundValue, MockDraftPick.ConvertPickToRound(pick));
         }
 
         [Theory]
