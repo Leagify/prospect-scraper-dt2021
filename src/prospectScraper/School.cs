@@ -1,5 +1,3 @@
-using CsvHelper.Configuration;
-
 namespace prospectScraper
 {
     public class School
@@ -14,16 +12,6 @@ namespace prospectScraper
             this.schoolName = schoolName;
             this.conference = conference;
             this.state = state;
-        }
-    }
-
-    public sealed class SchoolCsvMap : ClassMap<School>
-    {
-        public SchoolCsvMap()
-        {
-            Map(m => m.schoolName).Name("School");
-            Map(m => m.conference).Name("Conference");
-            Map(m => m.state).Name("State");
         }
     }
 }
