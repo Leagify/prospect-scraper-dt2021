@@ -12,7 +12,7 @@ namespace prospectScraperTest
         public void Converts_Height_To_Inches(int expectedHeightInInches, string heightInFt)
         {
             //Act
-            var actual = Program.ConvertHeightToInches(heightInFt, "FOO");
+            var actual = Player.ConvertHeightToInches(heightInFt, "FOO");
 
             //Assert
             Assert.Equal(expectedHeightInInches, actual);
@@ -25,7 +25,7 @@ namespace prospectScraperTest
             var expected = DateTime.Now.ToString("yyyy-MM-dd");
 
             //Act
-            var actual = Program.FormatDraftDate("TEST");
+            var actual = ProspectScraper.FormatDraftDate("TEST");
 
             //Assert
             Assert.Equal(expected, actual);
@@ -38,7 +38,7 @@ namespace prospectScraperTest
             var expected = "2019-05-21";
 
             //Act
-            var actual = Program.FormatDraftDate(" May 21, 2019 2:00 AM EST");
+            var actual = ProspectScraper.FormatDraftDate(" May 21, 2019 2:00 AM EST");
 
             //Assert
             Assert.Equal(expected, actual);
