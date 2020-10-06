@@ -1,4 +1,5 @@
 using CsvHelper;
+using CsvHelper.Configuration;
 using HtmlAgilityPack;
 using prospectScraper.DTOs;
 using prospectScraper.Maps;
@@ -304,44 +305,35 @@ namespace prospectScraper
             fileDest.Close();
         }
 
+        // Takes in CSV file name, class, and class map and returns a list of the class passed in
+        private static List<T> ListMapper<T , TMap>(string csvFileName) where TMap : ClassMap<T>
+        {
+            List<T> newListT;
+
+            using (var reader = new StreamReader($"info{Path.DirectorySeparatorChar}{csvFileName}"))
+            using (var csv = new CsvReader(reader, CultureInfo.CurrentCulture))
+            {
+                csv.Configuration.RegisterClassMap<TMap>();
+                newListT = csv.GetRecords<T>().ToList();
+            }
+
+            return newListT;
+        }
+
         private static void CreateCombinedCSVWithExtras()
         {
             File.AppendAllText($"logs{Path.DirectorySeparatorChar}Status.log", "Creating the big CSV....." + Environment.NewLine);
 
             // Get Schools and the States where they are located.
-            List<School> schoolsAndConferences;
-            using (var reader = new StreamReader($"info{Path.DirectorySeparatorChar}SchoolStatesAndConferences.csv"))
-            using (var csv = new CsvReader(reader, CultureInfo.CurrentCulture))
-            {
-                csv.Configuration.RegisterClassMap<SchoolCsvMap>();
-                schoolsAndConferences = csv.GetRecords<School>().ToList();
-            }
+            List<School> schoolsAndConferences = ListMapper<School, SchoolCsvMap>("SchoolStatesAndConferences.csv");
 
-            List<Region> statesAndRegions;
-            using (var reader = new StreamReader($"info{Path.DirectorySeparatorChar}StatesToRegions.csv"))
-            using (var csv = new CsvReader(reader, CultureInfo.CurrentCulture))
-            {
-                csv.Configuration.RegisterClassMap<RegionCsvMap>();
-                statesAndRegions = csv.GetRecords<Region>().ToList();
-            }
+            List<Region> statesAndRegions = ListMapper<Region, RegionCsvMap>("");
 
             //Get position types
-            List<PositionType> positionsAndTypes;
-            using (var reader = new StreamReader($"info{Path.DirectorySeparatorChar}PositionInfo.csv"))
-            using (var csv = new CsvReader(reader, CultureInfo.CurrentCulture))
-            {
-                csv.Configuration.RegisterClassMap<PositionTypeCsvMap>();
-                positionsAndTypes = csv.GetRecords<PositionType>().ToList();
-            }
+            List<PositionType> positionsAndTypes = ListMapper<PositionType, PositionTypeCsvMap>("PositionInfo.csv");
 
             // Let's assign these ranks point values.
-            List<PointProjection> ranksToProjectedPoints;
-            using (var reader = new StreamReader($"info{Path.DirectorySeparatorChar}RanksToProjectedPoints.csv"))
-            using (var csv = new CsvReader(reader, CultureInfo.CurrentCulture))
-            {
-                csv.Configuration.RegisterClassMap<PointProjectionCsvMap>();
-                ranksToProjectedPoints = csv.GetRecords<PointProjection>().ToList();
-            }
+            List<PointProjection> ranksToProjectedPoints = ListMapper<PointProjection, PointProjectionCsvMap>("RanksToProjectedPoints.csv");
 
             //Combine ranks from CSV files to create a master CSV.
             var filePaths = Directory.GetFiles($"ranks{Path.DirectorySeparatorChar}", "20??-??-??-ranks.csv").ToList<String>();
@@ -373,13 +365,7 @@ namespace prospectScraper
             fileDest.Close();
 
             // Get ranks from the newly created CSV file.
-            List<ExistingProspectRanking> prospectRanks;
-            using (var reader = new StreamReader($"ranks{Path.DirectorySeparatorChar}joinedRanks2021.csv"))
-            using (var csv = new CsvReader(reader, CultureInfo.CurrentCulture))
-            {
-                csv.Configuration.RegisterClassMap<ExistingProspectRankingCsvMap>();
-                prospectRanks = csv.GetRecords<ExistingProspectRanking>().ToList();
-            }
+            List<ExistingProspectRanking> prospectRanks = ListMapper<ExistingProspectRanking, ExistingProspectRankingCsvMap>("joinedRanks2021.csv");
 
             // Use linq to join the stuff back together, then write it out again.
             var combinedHistoricalRanks = from r in prospectRanks
@@ -424,21 +410,9 @@ namespace prospectScraper
             File.AppendAllText($"logs{Path.DirectorySeparatorChar}Status.log", "Checking for mismatches in " + csvFileName + "....." + Environment.NewLine);
 
             // Read in data from a different project.
-            List<School> schoolsAndConferences;
-            using (var reader = new StreamReader($"info{Path.DirectorySeparatorChar}SchoolStatesAndConferences.csv"))
-            using (var csv = new CsvReader(reader, CultureInfo.CurrentCulture))
-            {
-                csv.Configuration.RegisterClassMap<SchoolCsvMap>();
-                schoolsAndConferences = csv.GetRecords<School>().ToList();
-            }
+            List<School> schoolsAndConferences = ListMapper<School, SchoolCsvMap>("SchoolStatesAndConferences.csv");
 
-            List<ProspectRankSimple> ranks;
-            using (var reader = new StreamReader(csvFileName))
-            using (var csv = new CsvReader(reader, CultureInfo.CurrentCulture))
-            {
-                csv.Configuration.RegisterClassMap<ProspectRankSimpleCsvMap>();
-                ranks = csv.GetRecords<ProspectRankSimple>().ToList();
-            }
+            List<ProspectRankSimple> ranks = ListMapper<ProspectRankSimple, ProspectRankSimpleCsvMap>(csvFileName);
 
             var schoolMismatches = from r in ranks
                                    join school in schoolsAndConferences 
@@ -665,13 +639,7 @@ namespace prospectScraper
         {
             File.AppendAllText($"logs{Path.DirectorySeparatorChar}Status.log", "Checking for mismatches in " + description + "....." + Environment.NewLine);
 
-            List<School> schoolsAndConferences;
-            using (var reader = new StreamReader($"info{Path.DirectorySeparatorChar}SchoolStatesAndConferences.csv"))
-            using (var csv = new CsvReader(reader, CultureInfo.CurrentCulture))
-            {
-                csv.Configuration.RegisterClassMap<SchoolCsvMap>();
-                schoolsAndConferences = csv.GetRecords<School>().ToList();
-            }
+            List<School> schoolsAndConferences = ListMapper<School, SchoolCsvMap>("SchoolStatesAndConferences.csv");
 
             List<MockDraftPick> ranks = listOfPicks;
 
@@ -701,21 +669,9 @@ namespace prospectScraper
         {
             File.AppendAllText($"logs{Path.DirectorySeparatorChar}Status.log", "Checking for mismatches in " + csvFileName + "....." + Environment.NewLine);
 
-            var schoolsAndConferences = new List<School>();
-            using (var reader = new StreamReader($"info{Path.DirectorySeparatorChar}SchoolStatesAndConferences.csv"))
-            using (var csv = new CsvReader(reader, CultureInfo.CurrentCulture))
-            {
-                csv.Configuration.RegisterClassMap<SchoolCsvMap>();
-                schoolsAndConferences = csv.GetRecords<School>().ToList();
-            }
+            List<School> schoolsAndConferences = ListMapper<School, SchoolCsvMap>("SchoolStatesAndConferences.csv");
 
-            List<MockDraftPick> ranks;
-            using (var reader = new StreamReader(csvFileName))
-            using (var csv = new CsvReader(reader, CultureInfo.CurrentCulture))
-            {
-                csv.Configuration.RegisterClassMap<MockDraftPickCsvMap>();
-                ranks = csv.GetRecords<MockDraftPick>().ToList();
-            }
+            List<MockDraftPick> ranks = ListMapper<MockDraftPick, MockDraftPickCsvMap>(csvFileName);
 
             var schoolMismatches = Mismatches(ranks, schoolsAndConferences);
 
