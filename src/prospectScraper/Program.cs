@@ -159,7 +159,7 @@ namespace prospectScraper
 
             // Initialize documents and lists            
             HtmlDocument[] Docs = new HtmlDocument[URLs.Length]; 
-            List<MockDraftPick>[] MockDreaftPickLists = new List<MockDraftPick>[URLs.Length];
+            List<MockDraftPick>[] MockDraftPicks = new List<MockDraftPick>[URLs.Length];
             int labelIndx = 0;
             
             // Set the labels (will be same Length of urls)
@@ -193,8 +193,8 @@ namespace prospectScraper
             string draftDate = getDraftDate(Docs[0]);
 
             // generate the lists
-            for (int i = 0; i < MockDreaftPickLists.Length; i++)
-                MockDreaftPickLists[i] = getMockDraft(Docs[i], draftDate);
+            for (int i = 0; i < MockDraftPicks.Length; i++)
+                MockDraftPicks[i] = getMockDraft(Docs[i], draftDate);
 
             //This is the file name we are going to write.
             var csvFileName = $"mocks{Path.DirectorySeparatorChar}{draftDate}-mock.csv";
@@ -207,7 +207,7 @@ namespace prospectScraper
             {
                 csv.Configuration.RegisterClassMap<MockDraftPickMap>();
                 //write valid list elements
-                foreach (List<MockDraftPick> list in MockDreaftPickLists)
+                foreach (List<MockDraftPick> list in MockDraftPicks)
                     if (list.Count > 0)
                         csv.WriteRecords(list);
             }
@@ -215,9 +215,9 @@ namespace prospectScraper
             Console.WriteLine("Checking for mock draft mismatches...");
 
             //Check For Mock Draft Mismatches
-            for (int i = 0; i < MockDreaftPickLists.Length; i++)
-                CheckForMockDraftMismatches(MockDreaftPickLists[i], 
-                    labels[MockDreaftPickLists[i].Count > 0 ? labelIndx++ : Math.Min(labelIndx, labels.Length - 1)] // discard index of invalid document/url
+            for (int i = 0; i < MockDraftPicks.Length; i++)
+                CheckForMockDraftMismatches(MockDraftPicks[i], 
+                    labels[MockDraftPicks[i].Count > 0 ? labelIndx++ : Math.Min(labelIndx, labels.Length - 1)] // discard index of invalid document/url
                 );
                 
 
