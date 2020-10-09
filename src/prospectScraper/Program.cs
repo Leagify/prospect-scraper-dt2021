@@ -20,38 +20,45 @@ namespace prospectScraper
             if (args.Length == 0)
             {
                 Console.WriteLine("No Arguments- Type bb for big board, md for mock draft, all for both. Running both by default.....");
-                RunTheBigBoards();
+                RunTheBigBoards(true);
             }
             else
             {
-                string s = args[0].ToString().ToLower();
-                switch (s)
+                bool parseDate = true;
+                string context = args[0].ToString().ToLower();
+                if (args.Length >= 2)
+                {
+                    string ignoreDate = args[1].ToString().ToLower();
+                    if (ignoreDate == "ignoredate")
+                    {
+                        parseDate = false;
+                    }
+                }
+
+                switch (context)
                 {
                     case "bb":
                         Console.WriteLine("Running Big Board");
-                        RunTheBigBoards();
+                        RunTheBigBoards(parseDate);
                         break;
                     case "md":
                         Console.WriteLine("Running Mock Draft");
-                        RunTheMockDraft();
+                        RunTheMockDraft(parseDate);
                         break;
                     case "all":
                         Console.WriteLine("Running Big Board and Mock Draft");
-                        RunTheBigBoards();
-                        RunTheMockDraft();
+                        RunTheBigBoards(parseDate);
+                        RunTheMockDraft(parseDate);
                         break;
                     default:
-                        Console.WriteLine("Input argument of " + s + " not recognized.  Please try running again.");
-                        RunTheBigBoards();
+                        Console.WriteLine("Input argument of " + context + " not recognized.  Please try running again.");
+                        RunTheBigBoards(parseDate);
                         break;
-
                 }
-
             }
-            //RunTheBigBoards();
         }
 
-        private static void RunTheBigBoards()
+        private static void RunTheBigBoards(bool parseDate)
         {
             File.WriteAllText($"logs{Path.DirectorySeparatorChar}Status.log", "");
             File.WriteAllText($"logs{Path.DirectorySeparatorChar}Prospects.log", "");
@@ -74,8 +81,10 @@ namespace prospectScraper
             var dateOfRanks = document1.DocumentNode.SelectSingleNode("//*[@id='HeadlineInfo1']").InnerText.Replace(" EST", "").Trim();
             //Change date to proper date. The original format should be like this:
             //" May 21, 2019 2:00 AM EST"
-            DateTime.TryParse(dateOfRanks, out DateTime parsedDate);
-            string dateInNiceFormat = parsedDate.ToString("yyyy-MM-dd");
+            //DateTime.TryParse(dateOfRanks, out DateTime parsedDate);
+            DateTime parsedDate = ChangeDateStringToDateTime(dateOfRanks, parseDate);
+            //(string dateInNiceFormat, parsedDate) 
+            string dateInNiceFormat = FormatScrapedDate(parsedDate); //parsedDate.ToString("yyyy-MM-dd");
 
             List<ProspectRanking> list1 = GetProspects(document1, parsedDate, 1);
             List<ProspectRanking> list2 = GetProspects(document2, parsedDate, 2);
@@ -114,7 +123,7 @@ namespace prospectScraper
             Console.WriteLine("Big Board Completed.");
         }
 
-        private static void RunTheMockDraft()
+        private static void RunTheMockDraft(bool parseDate)
         {
             //TODO - Implement Mock Draft
             var webGet = new HtmlWeb
@@ -135,7 +144,12 @@ namespace prospectScraper
 
 
             // Need to get date of mock draft eventually.
-            string draftDate = GetDraftDate(document1);
+            //(string draftDate, DateTime parsedDate)
+            HtmlNode hn = document1.DocumentNode;
+            HtmlNode hi1 = hn.SelectSingleNode("//*[@id='HeadlineInfo1']");
+            DateTime mockDraftDate = ChangeDateStringToDateTime(hi1.InnerText.Replace(" EST", "").Trim(), parseDate);
+            string draftDate = FormatScrapedDate(mockDraftDate);
+            
 
             List<MockDraftPick> list1 = GetMockDraft(document1, draftDate);
             List<MockDraftPick> list2 = GetMockDraft(document2, draftDate);
@@ -243,33 +257,25 @@ namespace prospectScraper
             return mdp;
         }
 
-        public static string GetDraftDate(HtmlDocument doc)
+        public static DateTime ChangeDateStringToDateTime(string scrapedDate, bool parseDate)
         {
-            HtmlNode hn = doc.DocumentNode;
-            HtmlNode hi1 = hn.SelectSingleNode("//*[@id='HeadlineInfo1']");
-
-            return FormatDraftDate(hi1.InnerText);
-        }
-
-        public static string FormatDraftDate(string headlineInfo)
-        {
-            //Console.WriteLine(hi1.InnerText);
-            string hi2 = headlineInfo.Replace(" EST", "").Trim();
             //Change date to proper date. The original format should be like this:
             //" May 21, 2019 2:00 AM EST"
-            bool parseWorks = DateTime.TryParse(hi2, out DateTime parsedDate);
-            string dateInNiceFormat;
-            if (parseWorks)
+            bool parseWorks = DateTime.TryParse(scrapedDate, out DateTime parsedDate);
+            string dateInNiceFormat =  String.Empty;
+
+            if (parseDate && parseWorks)
             {
-                dateInNiceFormat = parsedDate.ToString("yyyy-MM-dd");
+                return parsedDate;
             }
             else
             {
-                dateInNiceFormat = DateTime.Now.ToString("yyyy-MM-dd");
+                return DateTime.Now;
             }
-
-            Console.WriteLine("Mock Draft - Date parsed: " + parsedDate + " - File name will be: " + dateInNiceFormat + "-mock.csv");
-            return dateInNiceFormat;
+        }
+        public static string FormatScrapedDate(DateTime scrapedDate)
+        {
+            return scrapedDate.ToString("yyyy-MM-dd");
         }
 
         private static void CreateCombinedCSV()
