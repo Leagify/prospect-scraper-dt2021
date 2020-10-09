@@ -22,6 +22,7 @@ Note- I assume that you are going to run this in GitPod (which runs Ubuntu 18.04
   + `bb` runs the big board scraper
   + `md` runs the mock draft scraper 
   + `all` runs both big board and mock draft scrapers
+  + If, for some reason, you need to ignore the date on the webpage, add `ignoredate` as the second parameter. Otherwise, don't add it. 
   + when in doubt, do `dotnet run all`
   
 #### Running tests
