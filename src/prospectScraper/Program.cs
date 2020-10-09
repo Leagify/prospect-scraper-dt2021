@@ -327,7 +327,7 @@ namespace prospectScraper
             // Get Schools and the States where they are located.
             List<School> schoolsAndConferences = ListMapper<School, SchoolCsvMap>("SchoolStatesAndConferences.csv");
 
-            List<Region> statesAndRegions = ListMapper<Region, RegionCsvMap>("");
+            List<Region> statesAndRegions = ListMapper<Region, RegionCsvMap>("StatesToRegions.csv");
 
             //Get position types
             List<PositionType> positionsAndTypes = ListMapper<PositionType, PositionTypeCsvMap>("PositionInfo.csv");
