@@ -15,7 +15,7 @@ namespace prospectScraper
 {
     public class ProspectScraper
     {
-        public void RunTheBigBoards()
+        public void RunTheBigBoards(bool parseDate)
         {
             File.WriteAllText($"logs{Path.DirectorySeparatorChar}Status.log", "");
             File.WriteAllText($"logs{Path.DirectorySeparatorChar}Prospects.log", "");
@@ -36,9 +36,9 @@ namespace prospectScraper
 
             //Get ranking date
             var dateOfRanks = document1.DocumentNode.SelectSingleNode("//*[@id='HeadlineInfo1']").InnerText.Replace(" EST", "").Trim();
+            var parsedDate = ChangeDateStringToDateTime(dateOfRanks, parseDate);
             //Change date to proper date. The original format should be like this:
             //" May 21, 2019 2:00 AM EST"
-            DateTime.TryParse(dateOfRanks, out DateTime parsedDate);
             string dateInNiceFormat = parsedDate.ToString("yyyy-MM-dd");
 
             List<ProspectRanking> list1 = GetProspects(document1, parsedDate, 1);
@@ -78,7 +78,7 @@ namespace prospectScraper
             Console.WriteLine("Big Board Completed.");
         }
 
-        public void RunTheMockDraft()
+        public void RunTheMockDraft(bool parseDate)
         {
             //TODO - Implement Mock Draft
             var webGet = new HtmlWeb
@@ -92,7 +92,11 @@ namespace prospectScraper
             var document6 = webGet.Load("https://www.drafttek.com/2021-NFL-Mock-Draft/2021-NFL-Mock-Draft-Round-6.asp");
 
             // Need to get date of mock draft eventually.
-            string draftDate = GetDraftDate(document1);
+            HtmlNode hn = document1.DocumentNode;
+            HtmlNode hi1 = hn.SelectSingleNode("//*[@id='HeadlineInfo1']");
+            DateTime mockDraftDate = ChangeDateStringToDateTime(hi1.InnerText.Replace(" EST", "").Trim(), parseDate);
+            string draftDate = FormatScrapedDate(mockDraftDate);
+
 
             List<MockDraftPick> list1 = GetMockDraft(document1, draftDate);
             List<MockDraftPick> list2 = GetMockDraft(webGet.Load("https://www.drafttek.com/2021-NFL-Mock-Draft/2021-NFL-Mock-Draft-Round-1b.asp"), draftDate);
