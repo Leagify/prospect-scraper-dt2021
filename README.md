@@ -6,7 +6,7 @@ Output is stored as a CSV file, made with the help of LINQ and [CSVHelper](https
 
 Some limited error checking is included to verify whether the school matches up to a pre-existing list of schools and the states they are found.
 
-This program is written in .NET Core 3.1.
+This program is written in .NET 5.
 
 For the previous year, this project existed in two separate projects, one for the [big board](https://github.com/Leagify/scrapysharp-dt2020), and one for the [mock draft](https://github.com/Leagify/mockdraft-2020). Part of these projects were made possible by the help of Hacktoberfest.
 
@@ -22,6 +22,7 @@ Note- I assume that you are going to run this in GitPod (which runs Ubuntu 18.04
   + `bb` runs the big board scraper
   + `md` runs the mock draft scraper 
   + `all` runs both big board and mock draft scrapers
+  + If, for some reason, you need to ignore the date on the webpage, add `ignoredate` as the second parameter. Otherwise, don't add it. 
   + when in doubt, do `dotnet run all`
   
 #### Running tests
