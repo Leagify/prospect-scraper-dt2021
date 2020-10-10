@@ -80,7 +80,6 @@ namespace prospectScraper
 
         public void RunTheMockDraft(bool parseDate)
         {
-            //TODO - Implement Mock Draft
             var webGet = new HtmlWeb
             {
                 UserAgent = "Mozilla/5.0 (Windows NT 6.3; WOW64; rv:31.0) Gecko/20100101 Firefox/31.0"
@@ -95,7 +94,7 @@ namespace prospectScraper
             HtmlNode hn = document1.DocumentNode;
             HtmlNode hi1 = hn.SelectSingleNode("//*[@id='HeadlineInfo1']");
             DateTime mockDraftDate = ChangeDateStringToDateTime(hi1.InnerText.Replace(" EST", "").Trim(), parseDate);
-            string draftDate = FormatScrapedDate(mockDraftDate);
+            string draftDate = mockDraftDate.ToString("yyyy-MM-dd");
 
 
             List<MockDraftPick> list1 = GetMockDraft(document1, draftDate);
@@ -134,6 +133,23 @@ namespace prospectScraper
             CheckForMockDraftMismatches($"mocks{Path.DirectorySeparatorChar}{draftDate}-mock.csv");
 
             Console.WriteLine("Behold, the draft! Mock Draft Completed.");
+        }
+
+        public static DateTime ChangeDateStringToDateTime(string scrapedDate, bool parseDate)
+        {
+            //Change date to proper date. The original format should be like this:
+            //" May 21, 2019 2:00 AM EST"
+            bool parseWorks = DateTime.TryParse(scrapedDate, out DateTime parsedDate);
+            string dateInNiceFormat = String.Empty;
+
+            if (parseDate && parseWorks)
+            {
+                return parsedDate;
+            }
+            else
+            {
+                return DateTime.Now;
+            }
         }
 
         public static List<MockDraftPick> GetMockDraft(HtmlDocument doc, string pickDate)

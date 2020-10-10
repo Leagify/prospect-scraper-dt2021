@@ -1,3 +1,5 @@
+using System;
+
 namespace prospectScraper
 {
     public class Program
@@ -12,10 +14,10 @@ namespace prospectScraper
             {
                 Console.WriteLine(
                     "No Arguments provided - Type \"bb\" for big board, \"md\" for mock draft, \"all\" for both. Running both by default...");
-                prospectScraper.RunTheBigBoards();
+                prospectScraper.RunTheBigBoards(parseDate);
                 Console.WriteLine(
                     "No Arguments- Type bb for big board, md for mock draft, all for both. Running both by default.....");
-                RunTheBigBoards(parseDate);
+                prospectScraper.RunTheBigBoards(parseDate);
             }
             else
             {
@@ -47,7 +49,7 @@ namespace prospectScraper
                         prospectScraper.RunTheMockDraft(parseDate);
                         break;
                     default:
-                        Console.WriteLine("Input argument of " + s + " not recognized. Please try running again.");
+                        Console.WriteLine("Input argument of " + context + " not recognized. Please try running again.");
                         Console.WriteLine(
                             "Input argument of " + context + " not recognized.  Please try running again.");
                         prospectScraper.RunTheBigBoards(parseDate);
