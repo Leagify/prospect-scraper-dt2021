@@ -27,7 +27,7 @@ namespace prospectScraperTest
             //Arrange
             string expected = DateTime.Now.ToString("yyyy-MM-dd");
 
-            var actual = prospectScraper.Program.ChangeDateStringToDateTime(InvalidDateString, true).ToString("yyyy-MM-dd");
+            string actual = ProspectScraper.ChangeDateStringToDateTime(InvalidDateString, true).ToString("yyyy-MM-dd");
 
             //Assert
             Assert.Equal(expected, actual);
@@ -39,7 +39,7 @@ namespace prospectScraperTest
             //Arrange
             string expected = "2019-05-21";
 
-            var actual = prospectScraper.Program.ChangeDateStringToDateTime(ValidDateString, true).ToString("yyyy-MM-dd");
+            string actual = ProspectScraper.ChangeDateStringToDateTime(ValidDateString, true).ToString("yyyy-MM-dd");
 
             //Assert
             Assert.Equal(expected, actual);
