@@ -215,11 +215,6 @@ namespace prospectScraper
             return mdp;
         }
 
-        public static string GetDraftDate(HtmlDocument doc)
-        {
-            return FormatDraftDate(doc.DocumentNode.SelectSingleNode("//*[@id='HeadlineInfo1']").InnerText);
-        }
-
         public static string FormatDraftDate(string headlineInfo)
         {
             string hi2 = headlineInfo.Replace(" EST", "").Trim();
