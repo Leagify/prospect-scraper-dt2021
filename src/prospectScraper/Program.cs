@@ -36,11 +36,9 @@ namespace prospectScraper
                     case "bb":
                         Console.WriteLine("Running Big Board");
                         prospectScraper.RunTheBigBoards(parseDate);
-                        prospectScraper.RunTheBigBoards(parseDate);
                         break;
                     case "md":
                         Console.WriteLine("Running Mock Draft");
-                        prospectScraper.RunTheMockDraft(parseDate);
                         prospectScraper.RunTheMockDraft(parseDate);
                         break;
                     case "all":
@@ -49,9 +47,7 @@ namespace prospectScraper
                         prospectScraper.RunTheMockDraft(parseDate);
                         break;
                     default:
-                        Console.WriteLine("Input argument of " + context + " not recognized. Please try running again.");
-                        Console.WriteLine(
-                            "Input argument of " + context + " not recognized.  Please try running again.");
+                        Console.WriteLine("Input argument of " + context + " not recognized.  Please try running again.");
                         prospectScraper.RunTheBigBoards(parseDate);
                         break;
                 }

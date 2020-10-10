@@ -15,7 +15,7 @@ namespace prospectScraper
 {
     public class ProspectScraper
     {
-        public void RunTheBigBoards(bool parseDate)
+        public void RunTheBigBoards(bool parseDate = true)
         {
             File.WriteAllText($"logs{Path.DirectorySeparatorChar}Status.log", "");
             File.WriteAllText($"logs{Path.DirectorySeparatorChar}Prospects.log", "");

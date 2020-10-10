@@ -17,12 +17,12 @@ namespace prospectScraper
             string regexHeight = Regex.Match(height, @"\d'\d+").Value;
             string[] feetAndInches = regexHeight.Split("'");
 
-            bool parseFeet = Int32.TryParse(feetAndInches[0], out int feet);
+            bool parseFeet = int.TryParse(feetAndInches[0], out int feet);
             int inches = 0;
             bool parseInches = false;
             if (feetAndInches.Length > 1 && feetAndInches[1] != null)
             {
-                parseInches = Int32.TryParse(feetAndInches[1], out inches);
+                parseInches = int.TryParse(feetAndInches[1], out inches);
             }
 
             if (parseFeet && parseInches)
@@ -32,7 +32,7 @@ namespace prospectScraper
             }
             else
             {
-                File.AppendAllText($"logs{Path.DirectorySeparatorChar}Mismatches.log", $"Player {playerName} height of {height} not converted properly, entring 0 instead" + Environment.NewLine);
+                File.AppendAllText($"logs{Path.DirectorySeparatorChar}Mismatches.log", $"Player {playerName} height of {height} not converted properly, entering 0 instead" + Environment.NewLine);
                 return 0;
             }
         }
