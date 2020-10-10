@@ -8,7 +8,7 @@ namespace scrapysharpTest
         private const string StateFullName = "Florida";
         private const string CityStateAbr = "Miami (FL)";
 
-        [Fact]
+        [Fact(Skip="Work needs to be done to automatically create/copy csv to specific directory.")]
         public void GetState_Returns_Correct_State_From_School()
         {
             //Assert

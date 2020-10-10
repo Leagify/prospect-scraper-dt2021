@@ -6,6 +6,9 @@ namespace prospectScraperTest
 {
     public class ProgramTest
     {
+        private const string InvalidDateString = "TEST";
+        private const string ValidDateString = "May 21, 2019 2:00 AM";
+
         [Theory]
         [InlineData(73, "6'1")]
         [InlineData(12, "1'0")]
@@ -24,8 +27,7 @@ namespace prospectScraperTest
             //Arrange
             string expected = DateTime.Now.ToString("yyyy-MM-dd");
 
-            //Act
-            string actual = ProspectScraper.FormatDraftDate("TEST");
+            var actual = prospectScraper.Program.ChangeDateStringToDateTime(InvalidDateString, true).ToString("yyyy-MM-dd");
 
             //Assert
             Assert.Equal(expected, actual);
@@ -37,8 +39,7 @@ namespace prospectScraperTest
             //Arrange
             string expected = "2019-05-21";
 
-            //Act
-            string actual = ProspectScraper.FormatDraftDate(" May 21, 2019 2:00 AM EST");
+            var actual = prospectScraper.Program.ChangeDateStringToDateTime(ValidDateString, true).ToString("yyyy-MM-dd");
 
             //Assert
             Assert.Equal(expected, actual);
