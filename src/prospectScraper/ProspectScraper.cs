@@ -348,9 +348,9 @@ namespace prospectScraper
                                           join region in statesAndRegions
                                             on school.state equals region.state
                                           join positions in positionsAndTypes
-                                            on r.position1 equals positions.positionName
+                                            on r.position1 equals positions.PositionName
                                           join rank in ranksToProjectedPoints
-                                            on r.rank equals rank.rank
+                                            on r.rank equals rank.Rank
                                           select new
                                           {
                                               Rank = r.rank,
@@ -364,11 +364,11 @@ namespace prospectScraper
                                               Height = r.height,
                                               Weight = r.weight,
                                               CollegeClass = r.collegeClass,
-                                              PositionGroup = positions.positionGroup,
-                                              PositionAspect = positions.positionAspect,
+                                              positions.PositionGroup,
+                                              positions.PositionAspect,
                                               ProspectStatus = r.draftStatus,
                                               Date = r.rankingDateString,
-                                              Points = rank.projectedPoints
+                                              Points = rank.ProjectedPoints
                                           };
 
 

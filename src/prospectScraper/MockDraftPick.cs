@@ -23,6 +23,7 @@ namespace prospectScraper
         public string state;
 
         public MockDraftPick() { }
+
         public MockDraftPick(string pick, string team, string name, string school, string pos, string relativeVal, string pickDate)
         {
             this.pickNumber = pick;
@@ -39,11 +40,12 @@ namespace prospectScraper
 
         public static int ConvertPickToRound(string pick)
         {
-            var canParse = int.TryParse(pick, out int intpick);
+            bool canParse = int.TryParse(pick, out int intPick);
 
-            if (canParse)
-            {
-                /*
+            if (!canParse)
+                return 0;
+
+            /*
                 Pick numbers without comp picks:
                 Picks 1 - 32 : Round 1
                     Picks 33 - 64: Round 2
@@ -61,48 +63,35 @@ namespace prospectScraper
                     Round 6 = picks 180 - 214
                     Round 7 = picks 215 - 255
                 */
-                if (intpick >= 1 && intpick <= 32)
-                {
-                    return 1;
-                }
-                else if (intpick >= 33 && intpick <= 64)
-                {
-                    return 2;
-                }
-                else if (intpick >= 65 && intpick <= 103)
-                {
-                    return 3;
-                }
-                else if (intpick >= 104 && intpick <= 146)
-                {
-                    return 4;
-                }
-                else if (intpick >= 147 && intpick <= 179)
-                {
-                    return 5;
-                }
-                else if (intpick >= 180 && intpick <= 214)
-                {
-                    return 6;
-                }
-                else if (intpick >= 215 && intpick <= 255)
-                {
-                    return 7;
-                }
-                return 0;
-            }
-            else
-            {
-                return 0;
-            }
+            if (intPick >= 1 && intPick <= 32)
+                return 1;
 
+            if (intPick >= 33 && intPick <= 64)
+                return 2;
+
+            if (intPick >= 65 && intPick <= 103)
+                return 3;
+
+            if (intPick >= 104 && intPick <= 146)
+                return 4;
+
+            if (intPick >= 147 && intPick <= 179)
+                return 5;
+
+            if (intPick >= 180 && intPick <= 214)
+                return 6;
+
+            if (intPick >= 215 && intPick <= 255)
+                return 7;
+
+            return 0;
         }
 
         public static int ConvertPickToPoints(string pick, int round)
         {
-            var canParse = int.TryParse(pick, out int intpick);
-            if (canParse)
-            {/*
+            bool canParse = int.TryParse(pick, out int intPick);
+            if (!canParse) return 0;
+            /*
                 Top Pick: 40 Points
                 Picks 2 - 10: 35 Points
                 Picks 11 - 20: 30 Points
@@ -115,52 +104,33 @@ namespace prospectScraper
                 Round 6: 6 Points
                 Round 7: 5 Points
                 */
-                if (intpick == 1)
-                {
-                    return 40;
-                }
-                else if (intpick >= 2 && intpick <= 10)
-                {
-                    return 35;
-                }
-                else if (intpick >= 11 && intpick <= 20)
-                {
-                    return 30;
-                }
-                else if (intpick >= 21 && intpick <= 32)
-                {
-                    return 25;
-                }
-                else if (intpick >= 33 && intpick <= 48)
-                {
-                    return 20;
-                }
-                else if (intpick >= 49 && intpick <= 64)
-                {
-                    return 15;
-                }
-                else if (round == 3)
-                {
-                    return 10;
-                }
-                else if (round == 4)
-                {
-                    return 8;
-                }
-                else if (round == 5)
-                {
-                    return 7;
-                }
-                else if (round == 6)
-                {
-                    return 6;
-                }
-                else if (round == 7)
-                {
-                    return 5;
-                }
-            }
-            return 0;
+            if (intPick == 1)
+                return 40;
+
+            if (intPick >= 2 && intPick <= 10)
+                return 35;
+
+            if (intPick >= 11 && intPick <= 20)
+                return 30;
+
+            if (intPick >= 21 && intPick <= 32)
+                return 25;
+
+            if (intPick >= 33 && intPick <= 48)
+                return 20;
+
+            if (intPick >= 49 && intPick <= 64)
+                return 15;
+
+            return round switch
+            {
+                3 => 10,
+                4 => 8,
+                5 => 7,
+                6 => 6,
+                7 => 5,
+                _ => 0
+            };
         }
 
         public static string GetState(string school)
@@ -176,26 +146,19 @@ namespace prospectScraper
                               where s.schoolName == school
                               select s.state;
 
-            var srfd = stateResult.FirstOrDefault();
-            string sr = "";
+            string? srfd = stateResult.FirstOrDefault();
+            string sr = string.Empty;
 
             if (srfd != null)
             {
-                sr = srfd.ToString();
+                sr = srfd;
             }
             else
             {
                 Console.WriteLine("Error matching school!");
             }
 
-            if (sr.Length > 0)
-            {
-                return sr;
-            }
-            else
-            {
-                return string.Empty;
-            }
+            return sr.Length > 0 ? sr : string.Empty;
         }
     }
 

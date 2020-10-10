@@ -6,9 +6,9 @@ namespace prospectScraper.Maps
     {
         public PositionTypeCsvMap()
         {
-            Map(m => m.positionName).Name("Pos");
-            Map(m => m.positionGroup).Name("Group");
-            Map(m => m.positionAspect).Name("Type");
+            Map(m => m.PositionName).Name("Pos");
+            Map(m => m.PositionGroup).Name("Group");
+            Map(m => m.PositionAspect).Name("Type");
         }
     }
 }

@@ -12,7 +12,7 @@ namespace prospectScraperTest
         public void Converts_Height_To_Inches(int expectedHeightInInches, string heightInFt)
         {
             //Act
-            var actual = Player.ConvertHeightToInches(heightInFt, "FOO");
+            int actual = Player.ConvertHeightToInches(heightInFt, "FOO");
 
             //Assert
             Assert.Equal(expectedHeightInInches, actual);
@@ -22,10 +22,10 @@ namespace prospectScraperTest
         public void Draft_Date_Defaults_To_Today()
         {
             //Arrange
-            var expected = DateTime.Now.ToString("yyyy-MM-dd");
+            string expected = DateTime.Now.ToString("yyyy-MM-dd");
 
             //Act
-            var actual = ProspectScraper.FormatDraftDate("TEST");
+            string actual = ProspectScraper.FormatDraftDate("TEST");
 
             //Assert
             Assert.Equal(expected, actual);
@@ -35,10 +35,10 @@ namespace prospectScraperTest
         public void Formats_Draft_Date()
         {
             //Arrange
-            var expected = "2019-05-21";
+            string expected = "2019-05-21";
 
             //Act
-            var actual = ProspectScraper.FormatDraftDate(" May 21, 2019 2:00 AM EST");
+            string actual = ProspectScraper.FormatDraftDate(" May 21, 2019 2:00 AM EST");
 
             //Assert
             Assert.Equal(expected, actual);
@@ -57,7 +57,7 @@ namespace prospectScraperTest
         public void Valid_Schools(string input, string expected)
         {
             //Act
-            var actual = School.CheckSchool(input);
+            string actual = School.CheckSchool(input);
 
             //Assert
             Assert.Equal(expected, actual);

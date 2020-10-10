@@ -13,7 +13,10 @@ namespace prospectScraper
         public string rankingDateString;
         public string draftStatus;
 
-        public ExistingProspectRanking() {}
+        public ExistingProspectRanking()
+        {
+        }
+
         public ExistingProspectRanking(string rank, string chg, string name, string school, string pos1, string height, string weight, string year, string date, string status)
         {
             this.rank = rank;
