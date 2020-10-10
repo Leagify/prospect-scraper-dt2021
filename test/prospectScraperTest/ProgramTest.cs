@@ -20,7 +20,7 @@ namespace prospectScraperTest
         {
             var expected = DateTime.Now.ToString("yyyy-MM-dd");
 
-            var actual = prospectScraper.Program.FormatDraftDate("TEST");
+            var actual = prospectScraper.Program.FormatScrapedDate("TEST");
 
             Assert.Equal(expected, actual);
         }
@@ -30,7 +30,7 @@ namespace prospectScraperTest
         {
             var expected = "2019-05-21";
 
-            var actual = prospectScraper.Program.FormatDraftDate(" May 21, 2019 2:00 AM EST");
+            var actual = prospectScraper.Program.FormatScrapedDate(" May 21, 2019 2:00 AM EST");
 
             Assert.Equal(expected, actual);
         }
