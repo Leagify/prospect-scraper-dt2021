@@ -6,7 +6,7 @@ namespace prospectScraperTest
     public class ProgramTest
     {
         private const string InvalidDateString = "TEST";
-        private const string ValidDateString = "May 21, 2019 2:00 AM EST";
+        private const string ValidDateString = "May 21, 2019 2:00 AM";
 
         [Theory]
         [InlineData(73, "6'1")]
@@ -28,7 +28,7 @@ namespace prospectScraperTest
             Assert.Equal(expected, actual);
         }
 
-        [Fact(Skip="Needs to be investigated.")]
+        [Fact]
         public void Formats_Draft_Date()
         {
             var expected = "2019-05-21";
