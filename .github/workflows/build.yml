@@ -14,5 +14,5 @@ jobs:
         dotnet-version: 5.0.100-rc.1.20452.10
     - name: Build .NET Solution
       run: dotnet build "src\prospectScraper\ProspectScraper.sln" --configuration Release
-    # - name: Run Unit Tests
-    #   run: dotnet test 
+    - name: Run Unit Tests
+      run: dotnet test "src\prospectScraper\ProspectScraper.sln"
