@@ -1,241 +1,665 @@
 School,Conference,2020ScheduledFallGames
-Air Force,American,1.0
-Air Force,MWC,6.0
-Air Force,Ind,1.0
-Akron,MAC,6.0
-Alabama,SEC,10.0
-Appalachian State,CUSA,2.0
-Appalachian State,Non-Major,1.0
-Appalachian State,Sun Belt,8.0
-Arizona,Pac-12,6.0
-Arizona State,Pac-12,6.0
-Arkansas,SEC,10.0
-Arkansas State,American,1.0
-Arkansas State,Big 12,1.0
-Arkansas State,Sun Belt,9.0
-Arkansas State,Non-Major,1.0
-Army,CUSA,2.0
-Army,Sun Belt,2.0
-Army,American,3.0
-Army,Non-Major,3.0
-Army,MWC,1.0
-Army,Ind,0.0
-Auburn,SEC,10.0
-Ball State,MAC,6.0
-Baylor,Big 12,9.0
-Boise State,MWC,7.0
-Boise State,Ind,1.0
-Boston College,ACC,10.0
-Boston College,Sun Belt,1.0
-Bowling Green State,MAC,6.0
-Buffalo,MAC,6.0
-BYU,American,2.0
-BYU,Sun Belt,2.0
-BYU,CUSA,3.0
-BYU,MWC,1.0
-BYU,Ind,0.0
-California,Pac-12,6.0
-Central Michigan,MAC,6.0
-Charlotte,Sun Belt,1.0
-Charlotte,CUSA,7.0
-Charlotte,ACC,1.0
-Cincinnati,Non-Major,1.0
-Cincinnati,Ind,1.0
-Cincinnati,American,9.0
-Clemson,ACC,10.0
-Clemson,Non-Major,1.0
-Coastal Carolina,Big 12,1.0
-Coastal Carolina,Non-Major,1.0
-Coastal Carolina,Sun Belt,10.0
-Coastal Carolina,Ind,1.0
-Colorado,Pac-12,6.0
-Colorado State,MWC,8.0
-Connecticut,American,0.0
-Duke,ACC,11.0
-Duke,CUSA,1.0
-East Carolina,American,9.0
-East Carolina,Sun Belt,1.0
-Eastern Michigan,MAC,6.0
-Florida,SEC,10.0
-Florida Atlantic,CUSA,8.0
-Florida International,Ind,1.0
-Florida International,CUSA,9.0
-Florida State,ACC,10.0
-Florida State,Non-Major,1.0
-Fresno State,MWC,8.0
-Georgia,SEC,10.0
-Georgia Southern,Non-Major,1.0
-Georgia Southern,Sun Belt,9.0
-Georgia Southern,Ind,2.0
-Georgia State,Sun Belt,8.0
-Georgia State,American,1.0
-Georgia Tech,ACC,10.0
-Georgia Tech,American,1.0
-Hawaii,MWC,8.0
-Houston,American,7.0
-Houston,Ind,1.0
-Illinois,Big Ten,8.0
-Indiana,Big Ten,8.0
-Iowa,Big Ten,8.0
-Iowa State,Sun Belt,1.0
-Iowa State,Big 12,10.0
-Kansas,Sun Belt,1.0
-Kansas,Big 12,9.0
-Kansas State,Sun Belt,1.0
-Kansas State,Big 12,9.0
-Kent State,MAC,6.0
-Kentucky,SEC,10.0
-Liberty,CUSA,3.0
-Liberty,Non-Major,2.0
-Liberty,Sun Belt,2.0
-Liberty,ACC,3.0
-Liberty,Ind,0.0
-Louisiana,Big 12,1.0
-Louisiana,Sun Belt,9.0
-Louisiana,CUSA,1.0
-Louisiana,Non-Major,1.0
-Louisiana Tech,CUSA,8.0
-Louisiana Tech,Non-Major,1.0
-Louisiana Tech,Ind,1.0
-Louisiana Tech,Sun Belt,1.0
-Louisiana-Monroe,Ind,2.0
-Louisiana-Monroe,Sun Belt,8.0
-Louisiana-Monroe,CUSA,2.0
-Louisville,CUSA,1.0
-Louisville,ACC,10.0
-LSU,SEC,10.0
-Marshall,Non-Major,1.0
-Marshall,Sun Belt,1.0
-Marshall,CUSA,7.0
-Maryland,Big Ten,8.0
-Massachusetts,Sun Belt,1.0
-Massachusetts,Ind,0.0
-Memphis,Sun Belt,1.0
-Memphis,American,8.0
-Memphis,Non-Major,1.0
-Miami (FL),CUSA,1.0
-Miami (FL),ACC,10.0
-Miami (OH),MAC,6.0
-Michigan,Big Ten,8.0
-Michigan State,Big Ten,8.0
-Middle Tennessee State,Ind,1.0
-Middle Tennessee State,Sun Belt,2.0
-Middle Tennessee State,CUSA,8.0
-Minnesota,Big Ten,8.0
-Mississippi State,SEC,10.0
-Missouri,SEC,10.0
-Navy,Ind,2.0
-Navy,American,8.0
-Navy,MWC,1.0
-Nebraska,Big Ten,8.0
-Nevada,MWC,8.0
-Nevada-Las Vegas,MWC,8.0
-New Mexico,MWC,8.0
-New Mexico State,Ind,0.0
-North Carolina,ACC,10.0
-North Carolina,Non-Major,1.0
-North Carolina State,ACC,10.0
-North Carolina State,Ind,1.0
-North Texas,Non-Major,1.0
-North Texas,American,1.0
-North Texas,CUSA,8.0
-Northern Illinois,MAC,6.0
-Northwestern,Big Ten,8.0
-Notre Dame,ACC,9.0
-Notre Dame,American,1.0
-Ohio,MAC,6.0
-Ohio State,Big Ten,8.0
-Oklahoma,Non-Major,1.0
-Oklahoma,Big 12,9.0
-Oklahoma State,American,1.0
-Oklahoma State,Big 12,9.0
-Old Dominion,CUSA,0.0
-Ole Miss,SEC,10.0
-Oregon,Pac-12,6.0
-Oregon State,Pac-12,6.0
-Penn State,Big Ten,8.0
-Pitt,Non-Major,1.0
-Pitt,ACC,10.0
-Purdue,Big Ten,8.0
-Rice,CUSA,7.0
-Rutgers,Big Ten,8.0
-San Diego State,MWC,7.0
-San Jose State,MWC,8.0
-SMU,Sun Belt,1.0
-SMU,CUSA,1.0
-SMU,Non-Major,1.0
-SMU,American,8.0
-South Alabama,CUSA,2.0
-South Alabama,American,1.0
-South Alabama,Sun Belt,8.0
-South Carolina,SEC,10.0
-South Florida,Non-Major,1.0
-South Florida,ACC,1.0
-South Florida,American,8.0
-Southern Mississippi,Sun Belt,1.0
-Southern Mississippi,CUSA,9.0
-Southern Mississippi,American,1.0
-Southern Mississippi,Ind,1.0
-Stanford,Pac-12,6.0
-Syracuse,ACC,10.0
-Syracuse,Ind,1.0
-Temple,American,8.0
-Tennessee,SEC,10.0
-Texas,CUSA,1.0
-Texas,Big 12,10.0
-Texas A&M,SEC,10.0
-Texas Christian,Big 12,9.0
-Texas State,American,1.0
-Texas State,CUSA,1.0
-Texas State,Sun Belt,8.0
-Texas State,ACC,1.0
-Texas State,Ind,1.0
-Texas Tech,Non-Major,1.0
-Texas Tech,Big 12,9.0
-Toledo,MAC,6.0
-Troy,CUSA,2.0
-Troy,Ind,1.0
-Troy,Sun Belt,7.0
-Troy,Non-Major,1.0
-Tulane,Sun Belt,1.0
-Tulane,American,9.0
-Tulane,CUSA,1.0
-Tulane,Ind,1.0
-Tulsa,Big 12,1.0
-Tulsa,American,8.0
-UAB,Non-Major,1.0
-UAB,ACC,1.0
-UAB,Sun Belt,2.0
-UAB,CUSA,8.0
-UCF,ACC,1.0
-UCF,American,8.0
-UCLA,Pac-12,6.0
-USC,Pac-12,6.0
-Utah,Pac-12,6.0
-Utah State,MWC,8.0
-UTEP,Non-Major,2.0
-UTEP,Big 12,1.0
-UTEP,Sun Belt,1.0
-UTEP,CUSA,8.0
-UTSA,Sun Belt,1.0
-UTSA,Non-Major,1.0
-UTSA,CUSA,8.0
-UTSA,Ind,2.0
-Vanderbilt,SEC,10.0
-Virginia,ACC,11.0
-Virginia,Non-Major,1.0
-Virginia Tech,ACC,10.0
-Virginia Tech,Ind,1.0
-Wake Forest,ACC,9.0
-Wake Forest,Non-Major,1.0
-Washington,Pac-12,6.0
-Washington State,Pac-12,6.0
-West Virginia,Non-Major,1.0
-West Virginia,Big 12,9.0
-Western Kentucky,ACC,1.0
-Western Kentucky,Ind,2.0
-Western Kentucky,CUSA,7.0
-Western Kentucky,Non-Major,1.0
-Western Michigan,MAC,6.0
-Wisconsin,Big Ten,8.0
-Wyoming,MWC,8.0
+Abilene Christian,FCS,0
+Adams State,D2,0
+Adrian,D3,0
+Air Force,FBS - Mountain West,8
+Akron,FBS - MAC,6
+Alabama,SEC,10
+Alabama A&M,FCS,0
+Alabama State,FCS,0
+Albany,FCS,0
+Albany State,D2,0
+Albion,D3,0
+Albright,D3,0
+Alcorn State,FCS,0
+Alderson Broaddus,D2,0
+Alfred,D3,0
+Alfred State,D3,0
+Allegheny,D3,0
+Alma,D3,0
+American International College,D2,0
+Amherst,D3,0
+Anderson,D3,0
+Angelo State,D2,0
+Anna Maria,D3,0
+Appalachian State,FBS - Sun Belt,11
+Arizona,Pac 12,6
+Arizona State,Pac 12,6
+Arkansas,SEC,10
+Arkansas State,FBS - Sun Belt,12
+Arkansas Tech,D2,0
+Arkansas-Pine Bluff,FCS,0
+Arkansas–Monticello,D2,0
+Army,FBS - Independent,11
+Ashland,D2,0
+Assumption College,D2,0
+Auburn,SEC,10
+Augsburg,D3,0
+Augustana,D3,0
+Augustana College,D2,0
+Aurora,D3,0
+Austin,D3,0
+Austin Peay,FCS,0
+Averett,D3,0
+Azusa Pacific,D2,0
+BYU,FBS - Independent,8
+Baldwin-Wallace,D3,0
+Ball State,FBS - MAC,6
+Bates,D3,0
+Baylor,Big 12,9
+Becker,D3,0
+Beloit,D3,0
+Bemidji State,D2,0
+Benedict College,D2,0
+Benedictine,D3,0
+Bentley,D2,0
+Berry,D3,0
+Bethany,D3,0
+Bethel,D3,0
+Bethune-Cookman,FCS,0
+Birmingham-Southern,D3,0
+Black Hills State,D2,0
+Bloomsburg,D2,0
+Bluffton,D3,0
+Boise State,FBS - Mountain West,8
+Boston College,ACC,11
+Bowdoin,D3,0
+Bowie State,D2,0
+Bowling Green,FBS - MAC,0
+Brevard College,D2,0
+Bridgewater,D3,0
+Bridgewater State,D3,0
+Brockport,D3,0
+Brown,FCS,0
+Bryant,FCS,0
+Bucknell,FCS,0
+Buena Vista,D3,0
+Buffalo,FBS - MAC,6
+Buffalo State,D3,0
+Butler,FCS,0
+Cal Lutheran,D3,0
+Cal Poly,FCS,0
+California,Pac 12,6
+Campbell,FCS,0
+Capital,D3,0
+Carleton,D3,0
+Carnegie Mellon,D3,0
+Carroll,D3,0
+Carson–Newman,D2,0
+Carthage,D3,0
+Case Western Reserve,D3,0
+Castleton,D3,0
+Catawba College,D2,0
+Catholic,D3,0
+Central,D3,0
+Central Arkansas,FCS,0
+Central Connecticut State,FCS,0
+Central Michigan,FBS - MAC,6
+Central Missouri,D2,0
+Central Oklahoma,D2,0
+Central State,D2,0
+Central Washington,D2,0
+Centre,D3,0
+Chadron State College,D2,0
+Chapman,D3,0
+Charleston,D2,0
+Charleston Southern,FCS,0
+Charlotte,FBS - CUSA,9
+Chattanooga,FCS,0
+Cheyney,D2,0
+Chicago,D3,0
+Chowan,D2,0
+Christopher Newport,D3,0
+Cincinnati,FBS - AAC,11
+Claremont-Mudd-Scripps,D3,0
+Clarion,D2,0
+Clark Atlanta,D2,0
+Clemson,ACC,11
+Coast Guard,D3,0
+Coastal Carolina,FCS,13
+Coe,D3,0
+Colby,D3,0
+Colgate,FCS,0
+College of New Jersey,D3,0
+Colorado,Pac 12,6
+Colorado Mesa,D2,0
+Colorado Mines,D2,0
+Colorado State,FBS - Mountain West,8
+Colorado State–Pueblo,D2,0
+Columbia,FCS,0
+Concord,D2,0
+Concordia (IL),D3,0
+Concordia (MN),D3,0
+Concordia (WI),D3,0
+Concordia–St. Paul,D2,0
+Connecticut,FBS - AAC,0
+Cornell,FCS,0
+Cornell College,D3,0
+Cortland State,D3,0
+Crown,D3,0
+Curry,D3,0
+Dartmouth,FCS,0
+Davidson,FCS,0
+Dayton,FCS,0
+DePauw,D3,0
+Defiance,D3,0
+Delaware,FCS,0
+Delaware State,FCS,0
+Delaware Valley,D3,0
+Delta State,D2,0
+Denison,D3,0
+Dickinson,D3,0
+Dixie State,D2,0
+Drake,FCS,0
+Dubuque,D3,0
+Duke,ACC,12
+Duquesne,FCS,0
+Earlham,D3,0
+East Carolina,FBS - AAC,10
+East Central,D2,0
+East Stroudsburg,D2,0
+East Texas Baptist,D3,0
+Eastern Illinois,FCS,0
+Eastern Kentucky,FCS,0
+Eastern Michigan,FBS - MAC,6
+Eastern New Mexico,D2,0
+Eastern Washington,FCS,0
+Edinboro,D2,0
+Elizabeth City State,D2,0
+Elmhurst,D3,0
+Elon,FCS,0
+Emory & Henry,D3,0
+Emporia State,D2,0
+Endicott,D3,0
+Eureka,D3,0
+FDU-Florham,D3,0
+Fairmont State,D2,0
+Fayetteville State,D2,0
+Ferris State,D2,0
+Ferrum,D3,0
+Findlay,D2,0
+Fitchburg State,D3,0
+Florida,SEC,10
+Florida A&M,FCS,0
+Florida Atlantic,FBS - CUSA,8
+Florida International,FBS - CUSA,10
+Florida State,ACC,11
+Florida Tech,D2,0
+Fordham,FCS,0
+Fort Hays State,D2,0
+Fort Lewis College,D2,0
+Fort Valley State,D2,0
+Framingham State,D3,0
+Franklin,D3,0
+Franklin & Marshall,D3,0
+Fresno State,FBS - Mountain West,8
+Frostburg State,D3,0
+Furman,FCS,0
+Gallaudet University,D3,0
+Gannon,D2,0
+Gardner–Webb,FCS,0
+Geneva College,D3,0
+Georgetown,FCS,0
+Georgia,SEC,10
+Georgia Southern,FBS - Sun Belt,12
+Georgia State,FBS - Sun Belt,9
+Georgia Tech,ACC,11
+Gettysburg,D3,0
+Glenville State College,D2,0
+Grambling State,FCS,0
+Grand Valley State,D2,0
+Greensboro,D3,0
+Greenville,D3,0
+Grinnell,D3,0
+Grove City,D3,0
+Guilford,D3,0
+Gustavus Adolphus,D3,0
+Hamilton,D3,0
+Hamline,D3,0
+Hampden–Sydney,D3,0
+Hampton,FCS,0
+Hanover,D3,0
+Harding,D2,0
+Hardin–Simmons,D3,0
+Hartwick,D3,0
+Harvard,FCS,0
+Hawaii,FBS - Mountain West,8
+Heidelberg,D3,0
+Henderson State,D2,0
+Hendrix,D3,0
+Hillsdale College,D2,0
+Hiram,D3,0
+Hobart,D3,0
+Holy Cross,FCS,0
+Hope,D3,0
+Houston,FBS - AAC,8
+Houston Baptist,FCS,0
+Howard,FCS,0
+Howard Payne,D3,0
+Humboldt State,D2,0
+Huntingdon,D3,0
+Husson,D3,0
+Idaho,FBS - Sun Belt,0
+Idaho State,FCS,0
+Illinois,Big Ten,8
+Illinois College,D3,0
+Illinois State,FCS,0
+Illinois Wesleyan,D3,0
+Incarnate Word,FCS,0
+Indiana,Big Ten,8
+Indiana (PA),D2,0
+Indiana State,FCS,0
+Indianapolis,D2,0
+Iowa,Big Ten,8
+Iowa State,Big 12,11
+Iowa Wesleyan,D3,0
+Ithaca,D3,0
+Jackson State,FCS,0
+Jacksonville,FCS,0
+Jacksonville State,FCS,0
+James Madison,FCS,0
+John Carroll,D3,0
+Johns Hopkins,D3,0
+Johnson C. Smith,D2,0
+Juniata,D3,0
+Kalamazoo,D3,0
+Kansas,Big 12,10
+Kansas State,Big 12,10
+Kean,D3,0
+Kent State,FBS - MAC,6
+Kentucky,SEC,10
+Kentucky State,D2,0
+Kentucky Wesleyan College,D2,0
+Kenyon,D3,0
+King's,D3,0
+Knox,D3,0
+Kutztown,D2,0
+LSU,SEC,10
+La Verne,D3,0
+LaGrange,D3,0
+Lafayette,FCS,0
+Lake Erie College,D2,0
+Lake Forest,D3,0
+Lakeland College,D3,0
+Lamar,FCS,0
+Lane College,D2,0
+Lawrence,D3,0
+Lebanon Valley,D3,0
+Lehigh,FCS,0
+Lenoir–Rhyne,D2,0
+Lewis & Clark,D3,0
+Liberty,FCS,10
+Limestone College,D2,0
+Lincoln (MO),D2,0
+Lincoln (PA),D2,0
+Lindenwood,D2,0
+Linfield,D3,0
+Livingstone College,D2,0
+Lock Haven,D2,0
+Long Island–Post,D2,0
+Loras,D3,0
+Louisiana College,D3,0
+Louisiana Tech,FBS - CUSA,11
+Louisiana-Lafayette,FBS - Sun Belt,0
+Louisiana-Monroe,FBS - Sun Belt,12
+Louisville,ACC,11
+Luther,D3,0
+Lycoming,D3,0
+MIT,D3,0
+MacMurray,D3,0
+Macalester,D3,0
+Maine,FCS,0
+Maine Maritime,D3,0
+Malone,D2,0
+Manchester,D3,0
+Maranatha Baptist,D3,0
+Marietta,D3,0
+Mars Hill College,D2,0
+Marshall,FBS - CUSA,9
+Martin Luther,D3,0
+Mary,D2,0
+Mary Hardin–Baylor,D3,0
+Maryland,Big Ten,8
+Maryville,D3,0
+Mass-Dartmouth,D3,0
+Massachusetts,FBS - MAC,1
+Massachusetts Maritime,D3,0
+McDaniel,D3,0
+McKendree,D2,0
+McMurry,D2,0
+McNeese State,FCS,0
+Memphis,FBS - AAC,10
+Mercer,FCS,0
+Merchant Marine,D3,0
+Mercyhurst,D2,0
+Merrimack College,D2,0
+Methodist,D3,0
+Miami (FL),ACC,11
+Miami (OH),FBS - MAC,6
+Michigan,Big Ten,8
+Michigan State,Big Ten,8
+Michigan Tech,D2,0
+Middle Tennessee,FBS - CUSA,0
+Middlebury,D3,0
+Midwestern State,D2,0
+Miles College,D2,0
+Millersville,D2,0
+Millikin,D3,0
+Millsaps,D3,0
+Minnesota,Big Ten,8
+Minnesota State–Mankato,D2,0
+Minnesota State–Moorhead,D2,0
+Minnesota-Morris,D3,0
+Minnesota–Crookston,D2,0
+Minnesota–Duluth,D2,0
+Minot State,D2,0
+Misericordia,D3,0
+Mississippi College,D2,0
+Mississippi College,D3,0
+Mississippi State,SEC,10
+Mississippi Valley State,FCS,0
+Missouri,SEC,10
+Missouri S&T,D2,0
+Missouri Southern State,D2,0
+Missouri State,FCS,0
+Missouri Western State,D2,0
+Monmouth,FCS,0
+Monmouth (IL),D3,0
+Montana,FCS,0
+Montana State,FCS,0
+Montclair State,D3,0
+Moravian,D3,0
+Morehead State,FCS,0
+Morehouse College,D2,0
+Morgan State,FCS,0
+Mount Ida,D3,0
+Mount Union,D3,0
+Mt. St. Joseph,D3,0
+Muhlenberg,D3,0
+Murray State,FCS,0
+Muskingum,D3,0
+NC State,ACC,0
+Navy,FBS - AAC,11
+Nebraska,Big Ten,8
+Nebraska–Kearney,D2,0
+Nevada,FBS - Mountain West,8
+New Hampshire,FCS,0
+New Haven,D2,0
+New Mexico,FBS - Mountain West,8
+New Mexico Highlands,D2,0
+New Mexico State,FBS - Sun Belt,0
+Newberry College,D2,0
+Nicholls State,FCS,0
+Nichols,D3,0
+Norfolk State,FCS,0
+North Alabama,D2,0
+North Carolina,ACC,11
+North Carolina A&T,FCS,0
+North Carolina Central,FCS,0
+North Carolina Wesleyan,D3,0
+North Carolina–Pembroke,D2,0
+North Central,D3,0
+North Dakota,FCS,0
+North Dakota State,FCS,0
+North Greenville,D2,0
+North Park,D3,0
+North Texas,FBS - CUSA,10
+Northeastern State,D2,0
+Northern Arizona,FCS,0
+Northern Colorado,FCS,0
+Northern Illinois,FBS - MAC,6
+Northern Iowa,FCS,0
+Northern Michigan,D2,0
+Northern State,D2,0
+Northwest Missouri State,D2,0
+Northwestern,Big Ten,8
+Northwestern Oklahoma State,D2,0
+Northwestern State,FCS,0
+Northwood,D2,0
+Norwich,D3,0
+Notre Dame,FBS - Independent,10
+Notre Dame College,D2,0
+Oberlin,D3,0
+Occidental,D3,0
+Ohio,FBS - MAC,6
+Ohio Dominican,D2,0
+Ohio Northern,D3,0
+Ohio State,Big Ten,8
+Ohio Wesleyan,D3,0
+Oklahoma,Big 12,10
+Oklahoma Panhandle State,D2,0
+Oklahoma State,Big 12,10
+Old Dominion,FBS - CUSA,0
+Ole Miss,SEC,10
+Olivet,D3,0
+Oregon,Pac 12,6
+Oregon State,Pac 12,6
+Otterbein,D3,0
+Ouachita Baptist,D2,0
+Pace,D2,0
+Pacific,D3,0
+Pacific Lutheran,D3,0
+Paine College,D2,0
+Penn State,Big Ten,8
+Pennsylvania,FCS,0
+Pitt,ACC,11
+Pittsburg State,D2,0
+Plymouth State,D3,0
+Pomona-Pitzer,D3,0
+Portland State,FCS,0
+Prairie View A&M,FCS,0
+Presbyterian,FCS,0
+Princeton,FCS,0
+Puget Sound,D3,0
+Purdue,Big Ten,8
+Quincy,D2,0
+RPI,D3,0
+Randolph–Macon,D3,0
+Redlands,D3,0
+Rhode Island,FCS,0
+Rhodes,D3,0
+Rice,FBS - CUSA,7
+Richmond,FCS,0
+Ripon,D3,0
+Robert Morris,FCS,0
+Rochester,D3,0
+Rockford,D3,0
+Rose–Hulman,D3,0
+Rowan,D3,0
+Rutgers,Big Ten,8
+SMU,FBS - AAC,11
+SUNY-Maritime,D3,0
+SUNY-Morrisville,D3,0
+Sacramento State,FCS,0
+Sacred Heart,FCS,0
+Saginaw Valley State,D2,0
+Saint Anselm College,D2,0
+Saint Francis,FCS,0
+Saint Joseph's College,D2,0
+Salisbury,D3,0
+Salve Regina,D3,0
+Sam Houston State,FCS,0
+Samford,FCS,0
+San Diego,FCS,0
+San Diego State,FBS - Mountain West,7
+San Jose State,FBS - Mountain West,8
+Savannah State,FCS,0
+Seton Hill,D2,0
+Sewanee,D3,0
+Shaw,D2,0
+Shenandoah,D3,0
+Shepherd,D2,0
+Shippensburg,D2,0
+Shorter,D2,0
+Simon Fraser,D2,0
+Simpson,D3,0
+Sioux Falls,D2,0
+Slippery Rock,D2,0
+South Alabama,FBS - Sun Belt,11
+South Carolina,SEC,10
+South Carolina State,FCS,0
+South Dakota,FCS,0
+South Dakota Mines,D2,0
+South Dakota State,FCS,0
+South Florida,FBS - AAC,10
+Southeast Missouri State,FCS,0
+Southeastern Louisiana,FCS,0
+Southeastern Oklahoma State,D2,0
+Southern,FCS,0
+Southern Arkansas,D2,0
+Southern Connecticut State,D2,0
+Southern Illinois,FCS,0
+Southern Miss,FBS - CUSA,0
+Southern Nazarene,D2,0
+Southern Utah,FCS,0
+Southern Virginia,D3,0
+Southwest Baptist,D2,0
+Southwest Minnesota State,D2,0
+Southwestern,D3,0
+Southwestern Oklahoma State,D2,0
+Springfield,D3,0
+St. Augustine's,D2,0
+St. Cloud State,D2,0
+St. John Fisher,D3,0
+St. John's,D3,0
+St. Lawrence,D3,0
+St. Norbert,D3,0
+St. Olaf,D3,0
+St. Scholastica,D3,0
+St. Thomas,D3,0
+St. Vincent,D3,0
+Stanford,Pac 12,6
+Stephen F. Austin,FCS,0
+Stetson,FCS,0
+Stevenson,D3,0
+Stillman College,D2,0
+Stonehill College,D2,0
+Stony Brook,FCS,0
+Sul Ross State,D3,0
+Susquehanna,D3,0
+Syracuse,ACC,11
+TCU,Big 12,0
+Tarleton State,D2,0
+Temple,FBS - AAC,8
+Tennessee,SEC,10
+Tennessee State,FCS,0
+Tennessee Tech,FCS,0
+Texas,Big 12,11
+Texas A&M,SEC,10
+Texas A&M–Commerce,D2,0
+Texas A&M–Kingsville,D2,0
+Texas Lutheran,D3,0
+Texas Southern,FCS,0
+Texas State,FBS - Sun Belt,12
+Texas Tech,Big 12,10
+The Citadel,FCS,0
+Thiel,D3,0
+Thomas More,D3,0
+Tiffin,D2,0
+Toledo,FBS - MAC,6
+Towson,FCS,0
+Trine (formerly Tri-State),D3,0
+Trinity (CT),D3,0
+Trinity (TX),D3,0
+Troy,FBS - Sun Belt,11
+Truman State,D2,0
+Tufts,D3,0
+Tulane,FBS - AAC,12
+Tulsa,FBS - AAC,9
+Tusculum College,D2,0
+Tuskegee,D2,0
+UAB,FBS - CUSA,12
+UC Davis,FCS,0
+UCF,FBS - AAC,9
+UCLA,Pac 12,6
+UNLV,FBS - Mountain West,0
+USC,Pac 12,6
+UT Martin,FCS,0
+UTEP,FBS - CUSA,12
+UTSA,FBS - CUSA,12
+UW–Eau Claire,D3,0
+UW–La Crosse,D3,0
+UW–Oshkosh,D3,0
+UW–Platteville,D3,0
+UW–River Falls,D3,0
+UW–Stevens Point,D3,0
+UW–Stout,D3,0
+UW–Whitewater,D3,0
+Union,D3,0
+Upper Iowa,D2,0
+Urbana,D2,0
+Ursinus,D3,0
+Utah,Pac 12,6
+Utah State,FBS - Mountain West,8
+Utica,D3,0
+VMI,FCS,0
+Valdosta State,D2,0
+Valparaiso,FCS,0
+Vanderbilt,SEC,10
+Villanova,FCS,0
+Virginia,ACC,12
+Virginia State,D2,0
+Virginia Tech,ACC,11
+Virginia Union,D2,0
+Virginia–Wise,D2,0
+Wabash,D3,0
+Wagner,FCS,0
+Wake Forest,ACC,10
+Walsh,D2,0
+Wartburg,D3,0
+Washburn,D2,0
+Washington,Pac 12,6
+Washington & Jefferson,D3,0
+Washington & Lee,D3,0
+Washington (MO),D3,0
+Washington State,Pac 12,6
+Wayne State,D2,0
+Wayne State College,D2,0
+Waynesburg,D3,0
+Weber State,FCS,0
+Wesley,D3,0
+Wesleyan,D3,0
+West Alabama,D2,0
+West Chester,D2,0
+West Georgia,D2,0
+West Liberty,D2,0
+West Texas A&M,D2,0
+West Virginia,Big 12,10
+West Virginia State,D2,0
+West Virginia Wesleyan College,D2,0
+Western Carolina,FCS,0
+Western Connecticut,D3,0
+Western Illinois,FCS,0
+Western Kentucky,FBS - CUSA,11
+Western Michigan,FBS - MAC,6
+Western New England,D3,0
+Western New Mexico,D2,0
+Western Oregon,D2,0
+Western State Colorado,D2,0
+Westfield State,D3,0
+Westminster (MO),D3,0
+Westminster (PA),D3,0
+Wheaton,D3,0
+Whittier,D3,0
+Whitworth,D3,0
+Widener,D3,0
+Wilkes,D3,0
+Willamette,D3,0
+William & Mary,FCS,0
+William Jewell College,D2,0
+William Paterson,D3,0
+Williams,D3,0
+Wilmington,D3,0
+Wingate,D2,0
+Winona State,D2,0
+Winston–Salem State,D2,0
+Wisconsin,Big Ten,8
+Wisconsin Lutheran,D3,0
+Wittenberg,D3,0
+Wofford,FCS,0
+Wooster,D3,0
+Worcester Poly,D3,0
+Worcester State,D3,0
+Wyoming,FBS - Mountain West,8
+Yale,FCS,0
+Youngstown State,FCS,0
