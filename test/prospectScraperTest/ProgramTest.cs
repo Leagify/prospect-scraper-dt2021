@@ -1,4 +1,5 @@
-﻿using System;
+﻿using prospectScraper;
+using System;
 using Xunit;
 
 namespace prospectScraperTest
@@ -13,35 +14,42 @@ namespace prospectScraperTest
         [InlineData(12, "1'0")]
         public void Converts_Height_To_Inches(int expectedHeightInInches, string heightInFt)
         {
-            var actual = prospectScraper.Program.ConvertHeightToInches(heightInFt, "FOO");
+            //Act
+            int actual = Player.ConvertHeightToInches(heightInFt, "FOO");
 
+            //Assert
             Assert.Equal(expectedHeightInInches, actual);
         }
 
         [Fact]
         public void Draft_Date_Defaults_To_Today()
         {
-            var expected = DateTime.Now.ToString("yyyy-MM-dd");
+            //Arrange
+            string expected = DateTime.Now.ToString("yyyy-MM-dd");
 
-            var actual = prospectScraper.Program.ChangeDateStringToDateTime(InvalidDateString, true).ToString("yyyy-MM-dd");
+            string actual = ProspectScraper.ChangeDateStringToDateTime(InvalidDateString, true).ToString("yyyy-MM-dd");
 
+            //Assert
             Assert.Equal(expected, actual);
         }
 
         [Fact]
         public void Formats_Draft_Date()
         {
-            var expected = "2019-05-21";
+            //Arrange
+            string expected = "2019-05-21";
 
-            var actual = prospectScraper.Program.ChangeDateStringToDateTime(ValidDateString, true).ToString("yyyy-MM-dd");
+            string actual = ProspectScraper.ChangeDateStringToDateTime(ValidDateString, true).ToString("yyyy-MM-dd");
 
+            //Assert
             Assert.Equal(expected, actual);
         }
 
         [Fact]
         public void Invalid_Schools_Returns_Unmodified()
         {
-            Assert.Equal("hogWarts", prospectScraper.Program.CheckSchool("hogWarts"));
+            //Assert
+            Assert.Equal("hogWarts", School.CheckSchool("hogWarts"));
         }
 
         [Theory]
@@ -49,8 +57,10 @@ namespace prospectScraperTest
         [InlineData("North Carolina State", "NC State")]
         public void Valid_Schools(string input, string expected)
         {
-            var actual = prospectScraper.Program.CheckSchool(input);
+            //Act
+            string actual = School.CheckSchool(input);
 
+            //Assert
             Assert.Equal(expected, actual);
         }
     }

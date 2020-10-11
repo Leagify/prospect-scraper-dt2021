@@ -6,8 +6,8 @@ namespace prospectScraper.Maps
     {
         public PointProjectionCsvMap()
         {
-            Map(m => m.rank).Name("Rank");
-            Map(m => m.projectedPoints).Name("Points");
+            Map(m => m.Rank).Name("Rank");
+            Map(m => m.ProjectedPoints).Name("Points");
         }
     }
 }

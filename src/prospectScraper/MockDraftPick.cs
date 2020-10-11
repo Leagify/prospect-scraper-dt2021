@@ -1,11 +1,11 @@
-using CsvHelper;
-using CsvHelper.Configuration;
-using prospectScraper.Maps;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Linq;
+using CsvHelper;
+using CsvHelper.Configuration;
+using prospectScraper.Maps;
 
 namespace prospectScraper
 {
@@ -22,8 +22,8 @@ namespace prospectScraper
         public string pickDate;
         public string state;
 
+        public MockDraftPick() { }
 
-        public MockDraftPick(){}
         public MockDraftPick(string pick, string team, string name, string school, string pos, string relativeVal, string pickDate)
         {
             this.pickNumber = pick;
@@ -33,136 +33,108 @@ namespace prospectScraper
             this.school = school;
             this.position = pos;
             this.reachValue = relativeVal;
-            this.leagifyPoints = convertPickToPoints(pick, this.round);
+            this.leagifyPoints = ConvertPickToPoints(pick, this.round);
             this.pickDate = pickDate;
             this.state = GetState(school);
         }
+
         public static int ConvertPickToRound(string pick)
         {
-            // Compensatory picks added on 2/1/20
-            int intpick = 0;
-            var canParse = int.TryParse(pick, out intpick);
-            if (canParse)
-            {
-                /* 
-                    Pick numbers without comp picks:
-                    Picks 1-32 : Round 1
-                    Picks 33-64: Round 2
-                    Picks 65-96: Round 3
-                    Picks 97-128: Round 4
-                    Picks 129-159: Round 5
-                    Picks 160-191: Round 6
-                    Picks 192-223: Round 7
+            bool canParse = int.TryParse(pick, out int intPick);
 
+            if (!canParse)
+                return 0;
+
+            /*
+                Pick numbers without comp picks:
+                Picks 1 - 32 : Round 1
+                    Picks 33 - 64: Round 2
+                    Picks 65 - 96: Round 3
+                    Picks 97 - 128: Round 4
+                    Picks 129 - 159: Round 5
+                    Picks 160 - 191: Round 6
+                    Picks 192 - 223: Round 7
                     Pick numbers with comp picks:
-                    Round 1 = picks 1-32
-                    Round 2 = picks 33-64 
-                    Round 3 = picks 65-103
-                    Round 4 = picks 104-146
-                    Round 5 = picks 147-179
-                    Round 6 = picks 180-214
-                    Round 7 = picks 215-255
+                Round 1 = picks 1 - 32
+                    Round 2 = picks 33 - 64
+                    Round 3 = picks 65 - 103
+                    Round 4 = picks 104 - 146
+                    Round 5 = picks 147 - 179
+                    Round 6 = picks 180 - 214
+                    Round 7 = picks 215 - 255
                 */
-                if(intpick >= 1 && intpick <= 32)
-                {
-                    return 1;
-                } else if (intpick >= 33 && intpick <= 64)
-                {
-                    return 2;
-                } else if (intpick >= 65 && intpick <=103)
-                {
-                    return 3;
-                } else if (intpick >= 104 && intpick <= 146)
-                {
-                    return 4;
-                } else if (intpick >= 147 && intpick <= 179)
-                {
-                    return 5;
-                } else if (intpick >= 180 && intpick <= 214)
-                {
-                    return 6;
-                } else if (intpick >= 215 && intpick <= 255)
-                {
-                    return 7;
-                }
-                return 0;
-            }
-            else
-            {
-                return 0;
-            }
-            
-        }
-        public static int convertPickToPoints(string pick, int round)
-        {
-            int intpick = 0;
-            var canParse = int.TryParse(pick, out intpick);
-            if (canParse)
-            {
-                /* 
-                    Top Pick: 40 Points
-                    Picks 2-10: 35 Points
-                    Picks 11-20: 30 Points
-                    Picks 21-32: 25 Points
-                    Picks 33-48: 20 Points
-                    Picks 49-64: 15 Points
-                    Round 3: 10 Points
-                    Round 4: 8 Points
-                    Round 5: 7 Points
-                    Round 6: 6 Points
-                    Round 7: 5 Points
-                */
-                if(intpick == 1)
-                {
-                    return 40;
-                }
-                else if (intpick >= 2 && intpick <= 10)
-                {
-                    return 35;
-                }
-                else if (intpick >= 11 && intpick <= 20)
-                {
-                    return 30;
-                }
-                else if (intpick >= 21 && intpick <= 32)
-                {
-                    return 25;
-                }
-                else if (intpick >= 33 && intpick <= 48)
-                {
-                    return 20;
-                }
-                else if (intpick >= 49 && intpick <= 64)
-                {
-                    return 15;
-                } 
-                else if (round == 3)
-                {
-                    return 10;
-                } 
-                else if (round == 4)
-                {
-                    return 8;
-                } 
-                else if (round == 5)
-                {
-                    return 7;
-                } 
-                else if (round == 6)
-                {
-                    return 6;
-                } 
-                else if (round == 7)
-                {
-                    return 5;
-                }
-            }
+            if (intPick >= 1 && intPick <= 32)
+                return 1;
+
+            if (intPick >= 33 && intPick <= 64)
+                return 2;
+
+            if (intPick >= 65 && intPick <= 103)
+                return 3;
+
+            if (intPick >= 104 && intPick <= 146)
+                return 4;
+
+            if (intPick >= 147 && intPick <= 179)
+                return 5;
+
+            if (intPick >= 180 && intPick <= 214)
+                return 6;
+
+            if (intPick >= 215 && intPick <= 255)
+                return 7;
+
             return 0;
+        }
+
+        public static int ConvertPickToPoints(string pick, int round)
+        {
+            bool canParse = int.TryParse(pick, out int intPick);
+            if (!canParse) return 0;
+            /*
+                Top Pick: 40 Points
+                Picks 2 - 10: 35 Points
+                Picks 11 - 20: 30 Points
+                Picks 21 - 32: 25 Points
+                Picks 33 - 48: 20 Points
+                Picks 49 - 64: 15 Points
+                Round 3: 10 Points
+                Round 4: 8 Points
+                Round 5: 7 Points
+                Round 6: 6 Points
+                Round 7: 5 Points
+                */
+            if (intPick == 1)
+                return 40;
+
+            if (intPick >= 2 && intPick <= 10)
+                return 35;
+
+            if (intPick >= 11 && intPick <= 20)
+                return 30;
+
+            if (intPick >= 21 && intPick <= 32)
+                return 25;
+
+            if (intPick >= 33 && intPick <= 48)
+                return 20;
+
+            if (intPick >= 49 && intPick <= 64)
+                return 15;
+
+            return round switch
+            {
+                3 => 10,
+                4 => 8,
+                5 => 7,
+                6 => 6,
+                7 => 5,
+                _ => 0
+            };
         }
 
         public static string GetState(string school)
         {
-            // Get Schools and the States where they are located.
             List<School> schoolsAndConferences;
             using (var reader = new StreamReader($"info{Path.DirectorySeparatorChar}SchoolStatesAndConferences.csv"))
             using (var csv = new CsvReader(reader, CultureInfo.CurrentCulture))
@@ -171,31 +143,22 @@ namespace prospectScraper
                 schoolsAndConferences = csv.GetRecords<School>().ToList();
             }
             var stateResult = from s in schoolsAndConferences
-                                 where s.schoolName == school
-                                 select s.state;
+                              where s.schoolName == school
+                              select s.state;
 
-            var srfd = stateResult.FirstOrDefault();
-            string sr = "";
+            string? srfd = stateResult.FirstOrDefault();
+            string sr = string.Empty;
 
             if (srfd != null)
             {
-                sr = srfd.ToString();
+                sr = srfd;
             }
             else
             {
                 Console.WriteLine("Error matching school!");
             }
-            
 
-            if(sr.Length > 0)
-            {
-                return sr;
-            }
-            else
-            {
-                return string.Empty;
-            }
-            //return stateResult.FirstOrDefault().ToString();
+            return sr.Length > 0 ? sr : string.Empty;
         }
     }
 
