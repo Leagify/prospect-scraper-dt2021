@@ -3,6 +3,7 @@ using HtmlAgilityPack;
 using prospectScraper.DTOs;
 using prospectScraper.Maps;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
@@ -82,7 +83,7 @@ namespace prospectScraper
 
         public async Task RunTheMockDraft(bool parseDate)
         {
-            string draftDate  = string.Empty;
+            string draftDate = string.Empty;
 
             var listOfDraftPicks = new List<MockDraftPick>();
             for (int i = 1; i < 7; i++)
@@ -296,7 +297,7 @@ namespace prospectScraper
             string destinationFile = $"ranks{Path.DirectorySeparatorChar}joinedRanks2021.csv";
 
             // Specify wildcard search to match CSV files that will be combined
-            StreamWriter fileDest = new StreamWriter(destinationFile, false);
+            var fileDest = new StreamWriter(destinationFile, false);
 
             for (int i = 0; i < filePaths.Count; i++)
             {
@@ -387,7 +388,7 @@ namespace prospectScraper
                 ranks = csv.GetRecords<ProspectRankSimple>().ToList();
             }
 
-            var schoolMismatches = Mismatches(ranks, schoolsAndConferences);
+            var schoolMismatches = Mismatches(ranks, schoolsAndConferences).ToList();
 
             bool noMismatches = true;
 
@@ -537,7 +538,7 @@ namespace prospectScraper
         {
             File.AppendAllText($"logs{Path.DirectorySeparatorChar}Status.log", $"Checking for mismatches in {description}...{Environment.NewLine}");
 
-            var schoolMismatches = Mismatches(listOfPicks, SchoolsAndConferences());
+            var schoolMismatches = Mismatches(listOfPicks, SchoolsAndConferences()).ToList();
 
             if (!schoolMismatches.Any())
             {
@@ -566,15 +567,7 @@ namespace prospectScraper
         {
             File.AppendAllText($"logs{Path.DirectorySeparatorChar}Status.log", "Checking for mismatches in " + csvFileName + "....." + Environment.NewLine);
 
-            var schoolsAndConferences = new List<School>();
-            using (var reader = new StreamReader($"info{Path.DirectorySeparatorChar}SchoolStatesAndConferences.csv"))
-            using (var csv = new CsvReader(reader, CultureInfo.CurrentCulture))
-            {
-                csv.Configuration.RegisterClassMap<SchoolCsvMap>();
-                schoolsAndConferences = csv.GetRecords<School>().ToList();
-            }
-
-            List<MockDraftPick> ranks;
+            var ranks = new List<MockDraftPick>();
             using (var reader = new StreamReader(csvFileName))
             using (var csv = new CsvReader(reader, CultureInfo.CurrentCulture))
             {
@@ -582,7 +575,13 @@ namespace prospectScraper
                 ranks = csv.GetRecords<MockDraftPick>().ToList();
             }
 
-            var schoolMismatches = Mismatches(ranks, schoolsAndConferences);
+            var schoolMismatches = new List<SchoolMismatchDTO>();
+            using (var reader = new StreamReader($"info{Path.DirectorySeparatorChar}SchoolStatesAndConferences.csv"))
+            using (var csv = new CsvReader(reader, CultureInfo.CurrentCulture))
+            {
+                csv.Configuration.RegisterClassMap<SchoolCsvMap>();
+                schoolMismatches = Mismatches(ranks, csv.GetRecords<School>().ToList()).ToList();
+            }
 
             if (!schoolMismatches.Any())
             {
@@ -598,34 +597,34 @@ namespace prospectScraper
             }
         }
 
-        private static List<SchoolMismatchDTO> Mismatches(List<ProspectRankSimple> draftPicks, List<School> schools)
+        private static IEnumerable<SchoolMismatchDTO> Mismatches(List<ProspectRankSimple> draftPicks, List<School> schools)
         {
-            return (from r in draftPicks
-                    join school in schools
-                     on r.School equals school.SchoolName into mm
-                    from school in mm.DefaultIfEmpty()
-                    where school is null
-                    select new SchoolMismatchDTO()
-                    {
-                        Rank = r.Rank.ToString(),
-                        Name = r.PlayerName,
-                        College = r.School
-                    }).ToList();
+            return from r in draftPicks
+                   join school in schools
+                       on r.School equals school.SchoolName into mm
+                   from school in mm.DefaultIfEmpty()
+                   where school is null
+                   select new SchoolMismatchDTO()
+                   {
+                       Rank = r.Rank.ToString(),
+                       Name = r.PlayerName,
+                       College = r.School
+                   };
         }
 
-        private static List<SchoolMismatchDTO> Mismatches(List<MockDraftPick> draftPicks, List<School> schools)
+        private static IEnumerable<SchoolMismatchDTO> Mismatches(List<MockDraftPick> draftPicks, List<School> schools)
         {
-            return (from r in draftPicks
-                    join school in schools
-                        on r.School equals school.SchoolName into mm
-                    from school in mm.DefaultIfEmpty()
-                    where school is null
-                    select new SchoolMismatchDTO()
-                    {
-                        Rank = r.PickNumber,
-                        Name = r.PlayerName,
-                        College = r.School
-                    }).ToList();
+            return from r in draftPicks
+                   join school in schools
+                       on r.School equals school.SchoolName into mm
+                   from school in mm.DefaultIfEmpty()
+                   where school is null
+                   select new SchoolMismatchDTO()
+                   {
+                       Rank = r.PickNumber,
+                       Name = r.PlayerName,
+                       College = r.School
+                   };
         }
     }
 }
