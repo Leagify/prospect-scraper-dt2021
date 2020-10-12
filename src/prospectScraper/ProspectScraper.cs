@@ -3,7 +3,6 @@ using HtmlAgilityPack;
 using prospectScraper.DTOs;
 using prospectScraper.Maps;
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
@@ -16,24 +15,24 @@ namespace prospectScraper
 {
     public class ProspectScraper
     {
-        private readonly HtmlWeb webGet = new HtmlWeb
+        private readonly HtmlWeb _webGet = new HtmlWeb
         {
             UserAgent = "Mozilla/5.0 (Windows NT 6.3; WOW64; rv:31.0) Gecko/20100101 Firefox/31.0"
         };
 
 
-        public void RunTheBigBoards(bool parseDate = true)
+        public async Task RunTheBigBoardsAsync(bool parseDate = true)
         {
             File.WriteAllText($"logs{Path.DirectorySeparatorChar}Status.log", "");
             File.WriteAllText($"logs{Path.DirectorySeparatorChar}Prospects.log", "");
 
             Console.WriteLine("Getting data...");
 
-            var document1 = webGet.Load("https://www.drafttek.com/2021-NFL-Draft-Big-Board/Top-NFL-Draft-Prospects-2021-Page-1.asp");
-            var document2 = webGet.Load("https://www.drafttek.com/2021-NFL-Draft-Big-Board/Top-NFL-Draft-Prospects-2021-Page-2.asp");
-            var document3 = webGet.Load("https://www.drafttek.com/2021-NFL-Draft-Big-Board/Top-NFL-Draft-Prospects-2021-Page-3.asp");
-            var document4 = webGet.Load("https://www.drafttek.com/2021-NFL-Draft-Big-Board/Top-NFL-Draft-Prospects-2021-Page-4.asp");
-            var document5 = webGet.Load("https://www.drafttek.com/2021-NFL-Draft-Big-Board/Top-NFL-Draft-Prospects-2021-Page-5.asp");
+            var document1 = _webGet.Load("https://www.drafttek.com/2021-NFL-Draft-Big-Board/Top-NFL-Draft-Prospects-2021-Page-1.asp");
+            var document2 = _webGet.Load("https://www.drafttek.com/2021-NFL-Draft-Big-Board/Top-NFL-Draft-Prospects-2021-Page-2.asp");
+            var document3 = _webGet.Load("https://www.drafttek.com/2021-NFL-Draft-Big-Board/Top-NFL-Draft-Prospects-2021-Page-3.asp");
+            var document4 = _webGet.Load("https://www.drafttek.com/2021-NFL-Draft-Big-Board/Top-NFL-Draft-Prospects-2021-Page-4.asp");
+            var document5 = _webGet.Load("https://www.drafttek.com/2021-NFL-Draft-Big-Board/Top-NFL-Draft-Prospects-2021-Page-5.asp");
 
             Console.WriteLine("Parsing data...");
 
@@ -56,18 +55,18 @@ namespace prospectScraper
             Console.WriteLine("Creating csv...");
 
             //Write projects to csv with date.
-            using (var writer = new StreamWriter(csvFileName))
-            using (var csv = new CsvWriter(writer, CultureInfo.CurrentCulture))
+            await using (var writer = new StreamWriter(csvFileName))
+            await using (var csv = new CsvWriter(writer, CultureInfo.CurrentCulture))
             {
                 csv.Configuration.RegisterClassMap<ProspectRankingMap>();
                 csv.WriteRecords(list1);
                 csv.WriteRecords(list2);
                 csv.WriteRecords(list3);
-                if (list4.Count > 0)
+                if (list4.Any())
                 {
                     csv.WriteRecords(list4);
                 }
-                if (list5.Count > 0)
+                if (list5.Any())
                 {
                     csv.WriteRecords(list5);
                 }
@@ -76,7 +75,7 @@ namespace prospectScraper
             CheckForMismatches(csvFileName);
             CreateCombinedCsv();
             CheckForMismatches($"ranks{Path.DirectorySeparatorChar}combinedRanks2021.csv");
-            CreateCombinedCsvWithExtras();
+            await CreateCombinedCsvWithExtras();
 
             Console.WriteLine("Big Board Completed.");
         }
@@ -90,7 +89,7 @@ namespace prospectScraper
             {
                 var sb = new StringBuilder($"https://www.drafttek.com/2021-NFL-Mock-Draft/2021-NFL-Mock-Draft-Round-");
                 sb.Append($"{i}.asp");
-                var doc = webGet.Load(sb.ToString());
+                var doc = _webGet.Load(sb.ToString());
                 if (i == 1)
                 {
                     // Need to get date of mock draft eventually.
