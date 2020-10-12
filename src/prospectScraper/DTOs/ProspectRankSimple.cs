@@ -1,4 +1,4 @@
-namespace prospectScraper
+namespace prospectScraper.DTOs
 {
     public class ProspectRankSimple
     {

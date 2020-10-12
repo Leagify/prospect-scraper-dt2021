@@ -1,4 +1,5 @@
 ﻿using CsvHelper.Configuration;
+using prospectScraper.DTOs;
 
 namespace prospectScraper.Maps
 {
