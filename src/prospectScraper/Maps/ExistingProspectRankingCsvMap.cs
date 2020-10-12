@@ -6,16 +6,16 @@ namespace prospectScraper.Maps
     {
         public ExistingProspectRankingCsvMap()
         {
-            Map(m => m.rank).Name("Rank");
-            Map(m => m.change).Name("Change");
-            Map(m => m.playerName).Name("Player");
-            Map(m => m.school).Name("School");
-            Map(m => m.position1).Name("Position");
-            Map(m => m.height).Name("Height").ConvertUsing(map => Player.ConvertHeightToInches(map.GetField("Height"), map.GetField("Player")).ToString());
-            Map(m => m.weight).Name("Weight");
-            Map(m => m.collegeClass).Name("CollegeClass");
-            Map(m => m.rankingDateString).Name("Date");
-            Map(m => m.draftStatus).Name("DraftStatus");
+            Map(m => m.Rank).Name("Rank");
+            Map(m => m.Change).Name("Change");
+            Map(m => m.PlayerName).Name("Player");
+            Map(m => m.School).Name("School");
+            Map(m => m.Position1).Name("Position");
+            Map(m => m.Height).Name("Height").ConvertUsing(map => Player.ConvertHeightToInches(map.GetField("Height"), map.GetField("Player")).ToString());
+            Map(m => m.Weight).Name("Weight");
+            Map(m => m.CollegeClass).Name("CollegeClass");
+            Map(m => m.RankingDateString).Name("Date");
+            Map(m => m.DraftStatus).Name("DraftStatus");
         }
     }
 }

@@ -14,17 +14,17 @@ namespace prospectScraper
             {
                 Console.WriteLine(
                     "No Arguments provided - Type \"bb\" for big board, \"md\" for mock draft, \"all\" for both. Running both by default...");
-                prospectScraper.RunTheBigBoards(parseDate);
+                prospectScraper.RunTheBigBoards();
                 Console.WriteLine(
                     "No Arguments- Type bb for big board, md for mock draft, all for both. Running both by default.....");
-                prospectScraper.RunTheBigBoards(parseDate);
+                prospectScraper.RunTheBigBoards();
             }
             else
             {
-                string context = args[0].ToString().ToLower();
+                string context = args[0].ToLower();
                 if (args.Length >= 2)
                 {
-                    string ignoreDate = args[1].ToString().ToLower();
+                    string ignoreDate = args[1].ToLower();
                     if (ignoreDate == "ignoredate")
                     {
                         parseDate = false;

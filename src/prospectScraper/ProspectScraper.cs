@@ -7,9 +7,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Linq;
-using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 
 namespace prospectScraper
 {
@@ -208,10 +206,20 @@ namespace prospectScraper
                                     .Replace("\t", "")
                                     .Replace(" ", "");
 
-            var mdp = new MockDraftPick(pickNumber, teamCity, playerName, playerSchool, playerPosition, reachValue, pickDate);
-            File.AppendAllText($"logs{Path.DirectorySeparatorChar}Prospects.log", "Mock Draft Round: " + mdp.round + Environment.NewLine);
-            File.AppendAllText($"logs{Path.DirectorySeparatorChar}Prospects.log", "Pick Number: " + mdp.pickNumber + Environment.NewLine);
-            File.AppendAllText($"logs{Path.DirectorySeparatorChar}Prospects.log", "Player: " + mdp.playerName + Environment.NewLine);
+            var mdp = new MockDraftPick()
+            {
+                Pick = int.Parse(pickNumber),
+                PickNumber = pickNumber,
+                TeamCity = teamCity,
+                PlayerName = playerName,
+                School = playerSchool,
+                Position = playerPosition,
+                ReachValue = reachValue,
+                PickDate = pickDate
+            };
+            File.AppendAllText($"logs{Path.DirectorySeparatorChar}Prospects.log", "Mock Draft Round: " + mdp.Round + Environment.NewLine);
+            File.AppendAllText($"logs{Path.DirectorySeparatorChar}Prospects.log", "Pick Number: " + mdp.PickNumber + Environment.NewLine);
+            File.AppendAllText($"logs{Path.DirectorySeparatorChar}Prospects.log", "Player: " + mdp.PlayerName + Environment.NewLine);
             return mdp;
         }
 
@@ -344,30 +352,30 @@ namespace prospectScraper
             // Use linq to join the stuff back together, then write it out again.
             var combinedHistoricalRanks = from r in prospectRanks
                                           join school in schoolsAndConferences
-                                            on r.school equals school.schoolName
+                                            on r.School equals school.SchoolName
                                           join region in statesAndRegions
-                                            on school.state equals region.state
+                                            on school.State equals region.State
                                           join positions in positionsAndTypes
-                                            on r.position1 equals positions.PositionName
+                                            on r.Position1 equals positions.PositionName
                                           join rank in ranksToProjectedPoints
-                                            on r.rank equals rank.Rank
+                                            on r.Rank equals rank.Rank
                                           select new
                                           {
-                                              Rank = r.rank,
-                                              Change = r.change,
-                                              Name = r.playerName,
-                                              Position = r.position1,
-                                              College = r.school,
-                                              Conference = school.conference,
-                                              State = school.state,
-                                              Region = region.region,
-                                              Height = r.height,
-                                              Weight = r.weight,
-                                              CollegeClass = r.collegeClass,
+                                              Rank = r.Rank,
+                                              Change = r.Change,
+                                              Name = r.PlayerName,
+                                              Position = r.Position1,
+                                              College = r.School,
+                                              school.Conference,
+                                              school.State,
+                                              Region = region.RegionCode,
+                                              r.Height,
+                                              r.Weight,
+                                              r.CollegeClass,
                                               positions.PositionGroup,
                                               positions.PositionAspect,
-                                              ProspectStatus = r.draftStatus,
-                                              Date = r.rankingDateString,
+                                              ProspectStatus = r.DraftStatus,
+                                              Date = r.RankingDateString,
                                               Points = rank.ProjectedPoints
                                           };
 
@@ -529,7 +537,19 @@ namespace prospectScraper
                         // The header is in the table, so I need to ignore it here.
                         if (change != "CNG")
                         {
-                            prospectList.Add(new ProspectRanking(dateOfRanks, rank, change, playerName, school, position1, height, weight, collegeClass, draftStatus));
+                            prospectList.Add(new ProspectRanking()
+                            {
+                                Date = dateOfRanks,
+                                Rank = rank,
+                                Change = change,
+                                PlayerName = playerName,
+                                School = school,
+                                Position1 = position1,
+                                Height = height,
+                                Weight = weight,
+                                CollegeClass = collegeClass,
+                                DraftStatus = draftStatus
+                            });
                         }
                     }
                 }
@@ -607,14 +627,14 @@ namespace prospectScraper
         {
             return (from r in draftPicks
                     join school in schools
-                     on r.school equals school.schoolName into mm
+                     on r.School equals school.SchoolName into mm
                     from school in mm.DefaultIfEmpty()
                     where school is null
                     select new SchoolMismatchDTO()
                     {
-                        Rank = r.rank.ToString(),
-                        Name = r.playerName,
-                        College = r.school
+                        Rank = r.Rank.ToString(),
+                        Name = r.PlayerName,
+                        College = r.School
                     }).ToList();
         }
 
@@ -622,14 +642,14 @@ namespace prospectScraper
         {
             return (from r in draftPicks
                     join school in schools
-                        on r.school equals school.schoolName into mm
+                        on r.School equals school.SchoolName into mm
                     from school in mm.DefaultIfEmpty()
                     where school is null
                     select new SchoolMismatchDTO()
                     {
-                        Rank = r.pickNumber,
-                        Name = r.playerName,
-                        College = r.school
+                        Rank = r.PickNumber,
+                        Name = r.PlayerName,
+                        College = r.School
                     }).ToList();
         }
     }

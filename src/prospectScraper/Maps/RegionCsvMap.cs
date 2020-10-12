@@ -6,8 +6,8 @@ namespace prospectScraper.Maps
     {
         public RegionCsvMap()
         {
-            Map(m => m.state).Name("State");
-            Map(m => m.region).Name("Region");
+            Map(m => m.State).Name("State");
+            Map(m => m.RegionCode).Name("Region");
         }
     }
 }
