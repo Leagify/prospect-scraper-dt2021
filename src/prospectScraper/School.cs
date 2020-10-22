@@ -32,7 +32,7 @@ namespace prospectScraper
                 "Mississippi St." => "Mississippi State",
                 "Oklahoma St" => "Oklahoma State",
                 "Boise St" => "Boise State",
-                "Lenoir-Rhyne" => "Lenoir–Rhyne",
+                "Lenoir-Rhyne" => "Lenoirï¿½Rhyne",
                 "NCState" => "NC State",
                 "W Michigan" => "Western Michigan",
                 "UL Lafayette" => "Louisiana-Lafayette",
@@ -59,6 +59,12 @@ namespace prospectScraper
                 "UL Monroe" => "Louisiana-Monroe",
                 "Central Missouri St" => "Central Missouri",
                 "North Carolina State" => "NC State",
+                "Iowa St" => "Iowa State",
+                "South Dakota St" => "South Dakota State",
+                "Arizona St" => "Arizona State",
+                "Middle TN" => "Middle Tennessee",
+                "San Jose St" => "San Jose State",
+                "Michigan St" => "Michigan State",
                 _ => schoolName,
             };
             return schoolName;
