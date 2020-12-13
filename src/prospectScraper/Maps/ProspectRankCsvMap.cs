@@ -1,4 +1,5 @@
 ﻿using CsvHelper.Configuration;
+using prospectScraper.DTOs;
 
 namespace prospectScraper.Maps
 {
@@ -6,10 +7,10 @@ namespace prospectScraper.Maps
     {
         public ProspectRankSimpleCsvMap()
         {
-            Map(m => m.rank).Name("Rank");
-            Map(m => m.playerName).Name("Player");
-            Map(m => m.school).Name("School");
-            Map(m => m.rankingDateString).Name("Date");
+            Map(m => m.Rank).Name("Rank");
+            Map(m => m.PlayerName).Name("Player");
+            Map(m => m.School).Name("School");
+            Map(m => m.RankingDateString).Name("Date");
         }
     }
 }

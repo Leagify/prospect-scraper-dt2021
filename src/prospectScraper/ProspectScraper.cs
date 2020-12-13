@@ -15,22 +15,24 @@ namespace prospectScraper
 {
     public class ProspectScraper
     {
-        public void RunTheBigBoards(bool parseDate = true)
+        private readonly HtmlWeb _webGet = new HtmlWeb
+        {
+            UserAgent = "Mozilla/5.0 (Windows NT 6.3; WOW64; rv:31.0) Gecko/20100101 Firefox/31.0"
+        };
+
+
+        public async Task RunTheBigBoardsAsync(bool parseDate = true)
         {
             File.WriteAllText($"logs{Path.DirectorySeparatorChar}Status.log", "");
             File.WriteAllText($"logs{Path.DirectorySeparatorChar}Prospects.log", "");
 
             Console.WriteLine("Getting data...");
 
-            var webGet = new HtmlWeb
-            {
-                UserAgent = "Mozilla/5.0 (Windows NT 6.3; WOW64; rv:31.0) Gecko/20100101 Firefox/31.0"
-            };
-            var document1 = webGet.Load("https://www.drafttek.com/2021-NFL-Draft-Big-Board/Top-NFL-Draft-Prospects-2021-Page-1.asp");
-            var document2 = webGet.Load("https://www.drafttek.com/2021-NFL-Draft-Big-Board/Top-NFL-Draft-Prospects-2021-Page-2.asp");
-            var document3 = webGet.Load("https://www.drafttek.com/2021-NFL-Draft-Big-Board/Top-NFL-Draft-Prospects-2021-Page-3.asp");
-            var document4 = webGet.Load("https://www.drafttek.com/2021-NFL-Draft-Big-Board/Top-NFL-Draft-Prospects-2021-Page-4.asp");
-            var document5 = webGet.Load("https://www.drafttek.com/2021-NFL-Draft-Big-Board/Top-NFL-Draft-Prospects-2021-Page-5.asp");
+            var document1 = _webGet.Load("https://www.drafttek.com/2021-NFL-Draft-Big-Board/Top-NFL-Draft-Prospects-2021-Page-1.asp");
+            var document2 = _webGet.Load("https://www.drafttek.com/2021-NFL-Draft-Big-Board/Top-NFL-Draft-Prospects-2021-Page-2.asp");
+            var document3 = _webGet.Load("https://www.drafttek.com/2021-NFL-Draft-Big-Board/Top-NFL-Draft-Prospects-2021-Page-3.asp");
+            var document4 = _webGet.Load("https://www.drafttek.com/2021-NFL-Draft-Big-Board/Top-NFL-Draft-Prospects-2021-Page-4.asp");
+            var document5 = _webGet.Load("https://www.drafttek.com/2021-NFL-Draft-Big-Board/Top-NFL-Draft-Prospects-2021-Page-5.asp");
 
             Console.WriteLine("Parsing data...");
 
@@ -53,85 +55,63 @@ namespace prospectScraper
             Console.WriteLine("Creating csv...");
 
             //Write projects to csv with date.
-            using (var writer = new StreamWriter(csvFileName))
-            using (var csv = new CsvWriter(writer, CultureInfo.CurrentCulture))
+            await using (var writer = new StreamWriter(csvFileName))
+            await using (var csv = new CsvWriter(writer, CultureInfo.CurrentCulture))
             {
                 csv.Configuration.RegisterClassMap<ProspectRankingMap>();
                 csv.WriteRecords(list1);
                 csv.WriteRecords(list2);
                 csv.WriteRecords(list3);
-                if (list4.Count > 0)
+                if (list4.Any())
                 {
                     csv.WriteRecords(list4);
                 }
-                if (list5.Count > 0)
+                if (list5.Any())
                 {
                     csv.WriteRecords(list5);
                 }
             }
 
             CheckForMismatches(csvFileName);
-            CreateCombinedCSV();
+            CreateCombinedCsv();
             CheckForMismatches($"ranks{Path.DirectorySeparatorChar}combinedRanks2021.csv");
-            CreateCombinedCSVWithExtras();
+            await CreateCombinedCsvWithExtras();
 
             Console.WriteLine("Big Board Completed.");
         }
 
-        public void RunTheMockDraft(bool parseDate)
+        public async Task RunTheMockDraft(bool parseDate)
         {
-            var webGet = new HtmlWeb
+            string draftDate = string.Empty;
+
+            var listOfDraftPicks = new List<MockDraftPick>();
+            for (int i = 1; i < 7; i++)
             {
-                UserAgent = "Mozilla/5.0 (Windows NT 6.3; WOW64; rv:31.0) Gecko/20100101 Firefox/31.0"
-            };
-            var document1 = webGet.Load("https://www.drafttek.com/2021-NFL-Mock-Draft/2021-NFL-Mock-Draft-Round-1.asp");
-            var document3 = webGet.Load("https://www.drafttek.com/2021-NFL-Mock-Draft/2021-NFL-Mock-Draft-Round-2.asp");
-            var document4 = webGet.Load("https://www.drafttek.com/2021-NFL-Mock-Draft/2021-NFL-Mock-Draft-Round-3.asp");
-            var document5 = webGet.Load("https://www.drafttek.com/2021-NFL-Mock-Draft/2021-NFL-Mock-Draft-Round-4.asp");
-            var document6 = webGet.Load("https://www.drafttek.com/2021-NFL-Mock-Draft/2021-NFL-Mock-Draft-Round-6.asp");
-
-            // Need to get date of mock draft eventually.
-            HtmlNode hn = document1.DocumentNode;
-            HtmlNode hi1 = hn.SelectSingleNode("//*[@id='HeadlineInfo1']");
-            DateTime mockDraftDate = ChangeDateStringToDateTime(hi1.InnerText.Replace(" EST", "").Trim(), parseDate);
-            string draftDate = mockDraftDate.ToString("yyyy-MM-dd");
-
-
-            List<MockDraftPick> list1 = GetMockDraft(document1, draftDate);
-            List<MockDraftPick> list2 = GetMockDraft(webGet.Load("https://www.drafttek.com/2021-NFL-Mock-Draft/2021-NFL-Mock-Draft-Round-1b.asp"), draftDate);
-            List<MockDraftPick> list3 = GetMockDraft(document3, draftDate);
-            List<MockDraftPick> list4 = GetMockDraft(document4, draftDate);
-            List<MockDraftPick> list5 = GetMockDraft(document5, draftDate);
-            List<MockDraftPick> list6 = GetMockDraft(document6, draftDate);
-
-            //This is the file name we are going to write.
-            var csvFileName = $"mocks{Path.DirectorySeparatorChar}{draftDate}-mock.csv";
+                var sb = new StringBuilder($"https://www.drafttek.com/2021-NFL-Mock-Draft/2021-NFL-Mock-Draft-Round-");
+                sb.Append($"{i}.asp");
+                var doc = _webGet.Load(sb.ToString());
+                if (i == 1)
+                {
+                    // Need to get date of mock draft eventually.
+                    var hn = doc.DocumentNode;
+                    var hi1 = hn.SelectSingleNode("//*[@id='HeadlineInfo1']");
+                    var mockDraftDate = ChangeDateStringToDateTime(hi1.InnerText.Replace(" EST", "").Trim(), parseDate);
+                    draftDate = mockDraftDate.ToString("yyyy-MM-dd");
+                }
+                listOfDraftPicks.AddRange(GetMockDraft(doc, draftDate));
+            }
 
             Console.WriteLine("Creating csv...");
-
-            //Write projects to csv with date.
-            using (var writer = new StreamWriter(csvFileName))
-            using (var csv = new CsvWriter(writer, CultureInfo.CurrentCulture))
+            await using (var writer = new StreamWriter($"mocks{Path.DirectorySeparatorChar}{draftDate}-mock.csv"))
+            await using (var csv = new CsvWriter(writer, CultureInfo.CurrentCulture))
             {
                 csv.Configuration.RegisterClassMap<MockDraftPickMap>();
-                csv.WriteRecords(list1);
-                csv.WriteRecords(list2);
-                csv.WriteRecords(list3);
-                csv.WriteRecords(list4);
-                csv.WriteRecords(list5);
-                csv.WriteRecords(list6);
+                csv.WriteRecords(listOfDraftPicks);
             }
 
             Console.WriteLine("Checking for mock draft mismatches...");
-            CheckForMockDraftMismatches(list1, "top of the first round");
-            CheckForMockDraftMismatches(list2, "second half of the first round");
-            CheckForMockDraftMismatches(list3, "second round");
-            CheckForMockDraftMismatches(list4, "third round");
-            CheckForMockDraftMismatches(list5, "fourth/fifth round");
-            CheckForMockDraftMismatches(list6, "sixth/seventh round");
-
+            CheckForMockDraftMismatches(listOfDraftPicks, "All drafts.");
             CheckForMockDraftMismatches($"mocks{Path.DirectorySeparatorChar}{draftDate}-mock.csv");
-
             Console.WriteLine("Behold, the draft! Mock Draft Completed.");
         }
 
@@ -140,16 +120,12 @@ namespace prospectScraper
             //Change date to proper date. The original format should be like this:
             //" May 21, 2019 2:00 AM EST"
             bool parseWorks = DateTime.TryParse(scrapedDate, out DateTime parsedDate);
-            string dateInNiceFormat = String.Empty;
 
             if (parseDate && parseWorks)
             {
                 return parsedDate;
             }
-            else
-            {
-                return DateTime.Now;
-            }
+            return DateTime.Now;
         }
 
         public static List<MockDraftPick> GetMockDraft(HtmlDocument doc, string pickDate)
@@ -208,10 +184,20 @@ namespace prospectScraper
                                     .Replace("\t", "")
                                     .Replace(" ", "");
 
-            var mdp = new MockDraftPick(pickNumber, teamCity, playerName, playerSchool, playerPosition, reachValue, pickDate);
-            File.AppendAllText($"logs{Path.DirectorySeparatorChar}Prospects.log", "Mock Draft Round: " + mdp.round + Environment.NewLine);
-            File.AppendAllText($"logs{Path.DirectorySeparatorChar}Prospects.log", "Pick Number: " + mdp.pickNumber + Environment.NewLine);
-            File.AppendAllText($"logs{Path.DirectorySeparatorChar}Prospects.log", "Player: " + mdp.playerName + Environment.NewLine);
+            var mdp = new MockDraftPick()
+            {
+                Pick = int.Parse(pickNumber),
+                PickNumber = pickNumber,
+                TeamCity = teamCity,
+                PlayerName = playerName,
+                School = playerSchool,
+                Position = playerPosition,
+                ReachValue = reachValue,
+                PickDate = pickDate
+            };
+            File.AppendAllText($"logs{Path.DirectorySeparatorChar}Prospects.log", "Mock Draft Round: " + mdp.Round + Environment.NewLine);
+            File.AppendAllText($"logs{Path.DirectorySeparatorChar}Prospects.log", "Pick Number: " + mdp.PickNumber + Environment.NewLine);
+            File.AppendAllText($"logs{Path.DirectorySeparatorChar}Prospects.log", "Player: " + mdp.PlayerName + Environment.NewLine);
             return mdp;
         }
 
@@ -235,16 +221,15 @@ namespace prospectScraper
             return dateInNiceFormat;
         }
 
-        private static void CreateCombinedCSV()
+        private static void CreateCombinedCsv()
         {
             //Combine ranks from CSV files to create a master CSV.
             var filePaths = Directory.GetFiles($"ranks{Path.DirectorySeparatorChar}", "20??-??-??-ranks.csv").ToList<String>();
             //The results are probably already sorted, but I don't trust that, so I'm going to sort manually.
             filePaths.Sort();
-            string destinationFile = $"ranks{Path.DirectorySeparatorChar}combinedRanks2021.csv";
 
             // Specify wildcard search to match CSV files that will be combined
-            using var fileDest = new StreamWriter(destinationFile, false);
+            using var fileDest = new StreamWriter($"ranks{Path.DirectorySeparatorChar}combinedRanks2021.csv", false);
             for (int i = 0; i < filePaths.Count; i++)
             {
                 string file = filePaths[i];
@@ -287,7 +272,7 @@ namespace prospectScraper
             return csv.GetRecords<PositionType>().ToList();
         }
 
-        private static void CreateCombinedCSVWithExtras()
+        private static async Task CreateCombinedCsvWithExtras()
         {
             File.AppendAllText($"logs{Path.DirectorySeparatorChar}Status.log", "Creating the big CSV....." + Environment.NewLine);
 
@@ -311,7 +296,7 @@ namespace prospectScraper
             string destinationFile = $"ranks{Path.DirectorySeparatorChar}joinedRanks2021.csv";
 
             // Specify wildcard search to match CSV files that will be combined
-            StreamWriter fileDest = new StreamWriter(destinationFile, false);
+            var fileDest = new StreamWriter(destinationFile, false);
 
             for (int i = 0; i < filePaths.Count; i++)
             {
@@ -344,38 +329,36 @@ namespace prospectScraper
             // Use linq to join the stuff back together, then write it out again.
             var combinedHistoricalRanks = from r in prospectRanks
                                           join school in schoolsAndConferences
-                                            on r.school equals school.schoolName
+                                            on r.School equals school.SchoolName
                                           join region in statesAndRegions
-                                            on school.state equals region.state
+                                            on school.State equals region.State
                                           join positions in positionsAndTypes
-                                            on r.position1 equals positions.PositionName
+                                            on r.Position1 equals positions.PositionName
                                           join rank in ranksToProjectedPoints
-                                            on r.rank equals rank.Rank
+                                            on r.Rank equals rank.Rank
                                           select new
                                           {
-                                              Rank = r.rank,
-                                              Change = r.change,
-                                              Name = r.playerName,
-                                              Position = r.position1,
-                                              College = r.school,
-                                              Conference = school.conference,
-                                              State = school.state,
-                                              Region = region.region,
-                                              Height = r.height,
-                                              Weight = r.weight,
-                                              CollegeClass = r.collegeClass,
+                                              r.Rank,
+                                              r.Change,
+                                              Name = r.PlayerName,
+                                              Position = r.Position1,
+                                              College = r.School,
+                                              school.Conference,
+                                              school.State,
+                                              Region = region.RegionCode,
+                                              r.Height,
+                                              r.Weight,
+                                              r.CollegeClass,
                                               positions.PositionGroup,
                                               positions.PositionAspect,
-                                              ProspectStatus = r.draftStatus,
-                                              Date = r.rankingDateString,
+                                              ProspectStatus = r.DraftStatus,
+                                              Date = r.RankingDateString,
                                               Points = rank.ProjectedPoints
                                           };
 
-
-
             //Write everything back to CSV, only better!
-            using (var writer = new StreamWriter($"ranks{Path.DirectorySeparatorChar}joinedRanks2021.csv"))
-            using (var csv = new CsvWriter(writer, CultureInfo.CurrentCulture))
+            await using (var writer = new StreamWriter($"ranks{Path.DirectorySeparatorChar}joinedRanks2021.csv"))
+            await using (var csv = new CsvWriter(writer, CultureInfo.CurrentCulture))
             {
                 csv.WriteRecords(combinedHistoricalRanks);
             }
@@ -404,7 +387,7 @@ namespace prospectScraper
                 ranks = csv.GetRecords<ProspectRankSimple>().ToList();
             }
 
-            var schoolMismatches = Mismatches(ranks, schoolsAndConferences);
+            var schoolMismatches = Mismatches(ranks, schoolsAndConferences).ToList();
 
             bool noMismatches = true;
 
@@ -529,7 +512,19 @@ namespace prospectScraper
                         // The header is in the table, so I need to ignore it here.
                         if (change != "CNG")
                         {
-                            prospectList.Add(new ProspectRanking(dateOfRanks, rank, change, playerName, school, position1, height, weight, collegeClass, draftStatus));
+                            prospectList.Add(new ProspectRanking()
+                            {
+                                Date = dateOfRanks,
+                                Rank = rank,
+                                Change = change,
+                                PlayerName = playerName,
+                                School = school,
+                                Position1 = position1,
+                                Height = height,
+                                Weight = weight,
+                                CollegeClass = collegeClass,
+                                DraftStatus = draftStatus
+                            });
                         }
                     }
                 }
@@ -542,7 +537,7 @@ namespace prospectScraper
         {
             File.AppendAllText($"logs{Path.DirectorySeparatorChar}Status.log", $"Checking for mismatches in {description}...{Environment.NewLine}");
 
-            var schoolMismatches = Mismatches(listOfPicks, SchoolsAndConferences());
+            var schoolMismatches = Mismatches(listOfPicks, SchoolsAndConferences()).ToList();
 
             if (!schoolMismatches.Any())
             {
@@ -571,15 +566,7 @@ namespace prospectScraper
         {
             File.AppendAllText($"logs{Path.DirectorySeparatorChar}Status.log", "Checking for mismatches in " + csvFileName + "....." + Environment.NewLine);
 
-            var schoolsAndConferences = new List<School>();
-            using (var reader = new StreamReader($"info{Path.DirectorySeparatorChar}SchoolStatesAndConferences.csv"))
-            using (var csv = new CsvReader(reader, CultureInfo.CurrentCulture))
-            {
-                csv.Configuration.RegisterClassMap<SchoolCsvMap>();
-                schoolsAndConferences = csv.GetRecords<School>().ToList();
-            }
-
-            List<MockDraftPick> ranks;
+            var ranks = new List<MockDraftPick>();
             using (var reader = new StreamReader(csvFileName))
             using (var csv = new CsvReader(reader, CultureInfo.CurrentCulture))
             {
@@ -587,7 +574,13 @@ namespace prospectScraper
                 ranks = csv.GetRecords<MockDraftPick>().ToList();
             }
 
-            var schoolMismatches = Mismatches(ranks, schoolsAndConferences);
+            var schoolMismatches = new List<SchoolMismatchDTO>();
+            using (var reader = new StreamReader($"info{Path.DirectorySeparatorChar}SchoolStatesAndConferences.csv"))
+            using (var csv = new CsvReader(reader, CultureInfo.CurrentCulture))
+            {
+                csv.Configuration.RegisterClassMap<SchoolCsvMap>();
+                schoolMismatches = Mismatches(ranks, csv.GetRecords<School>().ToList()).ToList();
+            }
 
             if (!schoolMismatches.Any())
             {
@@ -603,34 +596,34 @@ namespace prospectScraper
             }
         }
 
-        private static List<SchoolMismatchDTO> Mismatches(List<ProspectRankSimple> draftPicks, List<School> schools)
+        private static IEnumerable<SchoolMismatchDTO> Mismatches(List<ProspectRankSimple> draftPicks, List<School> schools)
         {
-            return (from r in draftPicks
-                    join school in schools
-                     on r.school equals school.schoolName into mm
-                    from school in mm.DefaultIfEmpty()
-                    where school is null
-                    select new SchoolMismatchDTO()
-                    {
-                        Rank = r.rank.ToString(),
-                        Name = r.playerName,
-                        College = r.school
-                    }).ToList();
+            return from r in draftPicks
+                   join school in schools
+                       on r.School equals school.SchoolName into mm
+                   from school in mm.DefaultIfEmpty()
+                   where school is null
+                   select new SchoolMismatchDTO()
+                   {
+                       Rank = r.Rank.ToString(),
+                       Name = r.PlayerName,
+                       College = r.School
+                   };
         }
 
-        private static List<SchoolMismatchDTO> Mismatches(List<MockDraftPick> draftPicks, List<School> schools)
+        private static IEnumerable<SchoolMismatchDTO> Mismatches(List<MockDraftPick> draftPicks, List<School> schools)
         {
-            return (from r in draftPicks
-                    join school in schools
-                        on r.school equals school.schoolName into mm
-                    from school in mm.DefaultIfEmpty()
-                    where school is null
-                    select new SchoolMismatchDTO()
-                    {
-                        Rank = r.pickNumber,
-                        Name = r.playerName,
-                        College = r.school
-                    }).ToList();
+            return from r in draftPicks
+                   join school in schools
+                       on r.School equals school.SchoolName into mm
+                   from school in mm.DefaultIfEmpty()
+                   where school is null
+                   select new SchoolMismatchDTO()
+                   {
+                       Rank = r.PickNumber,
+                       Name = r.PlayerName,
+                       College = r.School
+                   };
         }
     }
 }

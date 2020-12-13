@@ -30,11 +30,9 @@ namespace prospectScraper
                 int heightInInches = (feet * 12) + inches;
                 return heightInInches;
             }
-            else
-            {
-                File.AppendAllText($"logs{Path.DirectorySeparatorChar}Mismatches.log", $"Player {playerName} height of {height} not converted properly, entering 0 instead" + Environment.NewLine);
+            
+            File.AppendAllText($"logs{Path.DirectorySeparatorChar}Mismatches.log", $"Player {playerName} height of {height} not converted properly, entering 0 instead" + Environment.NewLine);
                 return 0;
-            }
         }
     }
 }

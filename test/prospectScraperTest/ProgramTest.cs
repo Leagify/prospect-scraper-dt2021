@@ -7,7 +7,6 @@ namespace prospectScraperTest
     public class ProgramTest
     {
         private const string InvalidDateString = "TEST";
-        private const string ValidDateString = "May 21, 2019 2:00 AM";
 
         [Theory]
         [InlineData(73, "6'1")]
@@ -33,23 +32,26 @@ namespace prospectScraperTest
             Assert.Equal(expected, actual);
         }
 
-        [Fact]
-        public void Formats_Draft_Date()
+        [Theory]
+        [InlineData("2019-05-21", "May 21, 2019 2:00 AM")]
+        [InlineData("2020-01-01", "January 1, 2020 2:00 AM")]
+        [InlineData("2010-12-25", "December 25, 2010 2:00 AM")]
+        public void Formats_Draft_Date(string expected, string validDateString)
         {
-            //Arrange
-            string expected = "2019-05-21";
-
-            string actual = ProspectScraper.ChangeDateStringToDateTime(ValidDateString, true).ToString("yyyy-MM-dd");
+            string actual = ProspectScraper.ChangeDateStringToDateTime(validDateString, true).ToString("yyyy-MM-dd");
 
             //Assert
             Assert.Equal(expected, actual);
         }
 
-        [Fact]
-        public void Invalid_Schools_Returns_Unmodified()
+        [Theory]
+        [InlineData("FakeSchool1")]
+        [InlineData("Hogwarts")]
+        [InlineData("MyAcademyWins")]
+        public void Invalid_Schools_Returns_Unmodified(string invalidSchool)
         {
             //Assert
-            Assert.Equal("hogWarts", School.CheckSchool("hogWarts"));
+            Assert.Equal(invalidSchool, School.CheckSchool(invalidSchool));
         }
 
         [Theory]

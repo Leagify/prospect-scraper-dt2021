@@ -7,6 +7,7 @@ namespace prospectScraper
     {
         public int Rank { get; set; }
         public string Change { get; set; }
+        public DateTime Date { get; set; }
         public string PlayerName { get; set; }
         public string School { get; set; }
         public string Position1 { get; set; }
@@ -14,22 +15,8 @@ namespace prospectScraper
         public int Weight { get; set; }
         public string CollegeClass { get; set; }
         public DateTime RankingDate { get; set; }
-        public string RankingDateString { get; set; }
-        public string DraftStatus { get; set; }
 
-        public ProspectRanking(DateTime date, int rank, string chg, string name, string school, string pos1, string height = "0", int weight = 0, string year = "", string draftstatus = "")
-        {
-            this.RankingDate = date;
-            this.Rank = rank;
-            this.Change = chg;
-            this.PlayerName = name;
-            this.School = school;
-            this.Position1 = pos1;
-            this.Height = height;
-            this.Weight = weight;
-            this.CollegeClass = year;
-            this.RankingDateString = date.ToString("yyyy-MM-dd");
-            this.DraftStatus = draftstatus;
-        }
+        public string RankingDateString => this.Date.ToString("yyyy-MM-dd") ?? this.RankingDate.ToString("yyyy-MM-dd");
+        public string DraftStatus { get; set; }
     }
 }

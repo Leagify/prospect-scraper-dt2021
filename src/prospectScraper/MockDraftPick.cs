@@ -1,42 +1,26 @@
+using CsvHelper;
+using prospectScraper.Maps;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Linq;
-using CsvHelper;
-using CsvHelper.Configuration;
-using prospectScraper.Maps;
 
 namespace prospectScraper
 {
     public class MockDraftPick
     {
-        public int round;
-        public string teamCity;
-        public string pickNumber;
-        public string playerName;
-        public string school;
-        public string position;
-        public string reachValue;
-        public int leagifyPoints;
-        public string pickDate;
-        public string state;
-
-        public MockDraftPick() { }
-
-        public MockDraftPick(string pick, string team, string name, string school, string pos, string relativeVal, string pickDate)
-        {
-            this.pickNumber = pick;
-            this.teamCity = team;
-            this.round = ConvertPickToRound(pick);
-            this.playerName = name;
-            this.school = school;
-            this.position = pos;
-            this.reachValue = relativeVal;
-            this.leagifyPoints = ConvertPickToPoints(pick, this.round);
-            this.pickDate = pickDate;
-            this.state = GetState(school);
-        }
+        public int Round { get; set; }
+        public string TeamCity { get; set; }
+        public string PickNumber { get; set; }
+        public string PlayerName { get; set; }
+        public string School { get; set; }
+        public int Pick { get; set; }
+        public string Position { get; set; }
+        public string ReachValue { get; set; }
+        public int LeagifyPoints => ConvertPickToPoints(Pick.ToString(), this.Round);
+        public string PickDate { get; set; }
+        public string State { get; set; }
 
         public static int ConvertPickToRound(string pick)
         {
@@ -143,8 +127,8 @@ namespace prospectScraper
                 schoolsAndConferences = csv.GetRecords<School>().ToList();
             }
             var stateResult = from s in schoolsAndConferences
-                              where s.schoolName == school
-                              select s.state;
+                              where s.SchoolName == school
+                              select s.State;
 
             string? srfd = stateResult.FirstOrDefault();
             string sr = string.Empty;
@@ -159,24 +143,6 @@ namespace prospectScraper
             }
 
             return sr.Length > 0 ? sr : string.Empty;
-        }
-    }
-
-    public sealed class MockDraftPickCsvMap : ClassMap<MockDraftPick>
-    {
-        public MockDraftPickCsvMap()
-        {
-            //Pick,Round,Player,School,Position,Team,ReachValue,Points,Date
-            Map(m => m.pickNumber).Name("Pick");
-            Map(m => m.round).Name("Round");
-            Map(m => m.playerName).Name("Player");
-            Map(m => m.school).Name("School");
-            Map(m => m.position).Name("Position");
-            Map(m => m.teamCity).Name("Team");
-            Map(m => m.reachValue).Name($"ReachValue");
-            Map(m => m.leagifyPoints).Name("Points");
-            Map(m => m.pickDate).Name("Date");
-            Map(m => m.state).Name("State");
         }
     }
 }
