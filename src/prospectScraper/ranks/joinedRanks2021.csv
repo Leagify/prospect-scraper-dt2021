@@ -103,7 +103,7 @@ Rank,Change,Name,Position,College,Conference,State,Region,Height,Weight,CollegeC
 102,-8,Marquis Hayes,OG,Oklahoma,Big 12,Oklahoma,South,77,320,RJR,OL,Off.,Eligible,2020-06-27,8
 103,+6,Nico Collins,WR,Michigan,Big Ten,Michigan,Midwest,76,222,SR,WR,Off.,Eligible,2020-06-27,8
 104,-7,Keaontay Ingram,RB,Texas,Big 12,Texas,South,72,220,JR,RB,Off.,Eligible,2020-06-27,8
-105,--,Anthony Hines,OLB,Texas A&M,SEC,Texas,South,75,226,JR,LB,Def.,Eligible,2020-06-27,8
+105,--,Anthony Hines III,OLB,Texas A&M,SEC,Texas,South,75,226,JR,LB,Def.,Eligible,2020-06-27,8
 106,-4,Matt Bushman,TE,BYU,FBS - Independent,Utah,West,77,245,SR,TE,Off.,Eligible,2020-06-27,8
 107,+14,Rashad Weaver,EDGE,Pitt,ACC,Pennsylvania,Northeast,77,270,RSR,DL,Def.,Eligible,2020-06-27,8
 108,+2,Dante Stills,DL5T,West Virginia,Big 12,West Virginia,South,76,278,SR,DL,Def.,Eligible,2020-06-27,8
@@ -381,7 +381,7 @@ Rank,Change,Name,Position,College,Conference,State,Region,Height,Weight,CollegeC
 380,NEW,Zach Davidson,TE,Central Missouri,D2,Missouri,Midwest,79,245,RJR,TE,Off.,Eligible,2020-06-27,1
 381,-4,Nyles Pinckney,DL3T,Clemson,ACC,South Carolina,South,73,295,RSR,DL,Def.,Eligible,2020-06-27,1
 382,-16,Doug Kramer,OC,Illinois,Big Ten,Illinois,Midwest,74,300,RSR,OL,Off.,Eligible,2020-06-27,1
-383,-4,Bobby Brown,DL3T,Texas A&M,SEC,Texas,South,76,315,JR,DL,Def.,Eligible,2020-06-27,1
+383,-4,Bobby Brown III,DL3T,Texas A&M,SEC,Texas,South,76,315,JR,DL,Def.,Eligible,2020-06-27,1
 384,NEW,Dylan Soehner,TE,Iowa State,Big 12,Iowa,Midwest,79,270,SR,TE,Off.,Eligible,2020-06-27,1
 385,-36,Julian Rochester,DL3T,Georgia,SEC,Georgia,South,77,300,SR,DL,Def.,Eligible,2020-06-27,1
 386,-17,McKenzie Milton,QB,UCF,FBS - AAC,Florida,South,71,185,RSR,QB,Off.,Eligible,2020-06-27,1
@@ -505,7 +505,7 @@ Rank,Change,Name,Position,College,Conference,State,Region,Height,Weight,CollegeC
 104,--,Marquis Hayes,OG,Oklahoma,Big 12,Oklahoma,South,77,320,RJR,OL,Off.,Eligible,2020-07-26,8
 105,--,Nico Collins,WR,Michigan,Big Ten,Michigan,Midwest,76,222,SR,WR,Off.,Eligible,2020-07-26,8
 106,--,Keaontay Ingram,RB,Texas,Big 12,Texas,South,72,220,JR,RB,Off.,Eligible,2020-07-26,8
-107,--,Anthony Hines,OLB,Texas A&M,SEC,Texas,South,75,226,JR,LB,Def.,Eligible,2020-07-26,8
+107,--,Anthony Hines III,OLB,Texas A&M,SEC,Texas,South,75,226,JR,LB,Def.,Eligible,2020-07-26,8
 108,--,Rashad Weaver,EDGE,Pitt,ACC,Pennsylvania,Northeast,77,270,RSR,DL,Def.,Eligible,2020-07-26,8
 109,--,Dante Stills,DL5T,West Virginia,Big 12,West Virginia,South,76,278,SR,DL,Def.,Eligible,2020-07-26,8
 110,--,Kenneth Gainwell,RBC,Memphis,FBS - AAC,Tennessee,South,71,191,RSO,RB,Off.,Eligible,2020-07-26,8
@@ -784,7 +784,7 @@ Rank,Change,Name,Position,College,Conference,State,Region,Height,Weight,CollegeC
 383,--,Ellis Brooks,OLB,Penn State,Big Ten,Pennsylvania,Northeast,73,234,RJR,LB,Def.,Eligible,2020-07-26,1
 384,--,Nyles Pinckney,DL3T,Clemson,ACC,South Carolina,South,73,295,RSR,DL,Def.,Eligible,2020-07-26,1
 385,--,Doug Kramer,OC,Illinois,Big Ten,Illinois,Midwest,74,300,RSR,OL,Off.,Eligible,2020-07-26,1
-386,--,Bobby Brown,DL3T,Texas A&M,SEC,Texas,South,76,315,JR,DL,Def.,Eligible,2020-07-26,1
+386,--,Bobby Brown III,DL3T,Texas A&M,SEC,Texas,South,76,315,JR,DL,Def.,Eligible,2020-07-26,1
 387,--,Dylan Soehner,TE,Iowa State,Big 12,Iowa,Midwest,79,270,SR,TE,Off.,Eligible,2020-07-26,1
 388,--,Julian Rochester,DL3T,Georgia,SEC,Georgia,South,77,300,SR,DL,Def.,Eligible,2020-07-26,1
 389,--,McKenzie Milton,QB,UCF,FBS - AAC,Florida,South,71,185,RSR,QB,Off.,Eligible,2020-07-26,1
@@ -905,7 +905,7 @@ Rank,Change,Name,Position,College,Conference,State,Region,Height,Weight,CollegeC
 104,--,Marquis Hayes,OG,Oklahoma,Big 12,Oklahoma,South,77,320,RJR,OL,Off.,Eligible,2020-08-10,8
 105,--,Nico Collins,WR,Michigan,Big Ten,Michigan,Midwest,76,222,SR,WR,Off.,Eligible,2020-08-10,8
 106,--,Keaontay Ingram,RB,Texas,Big 12,Texas,South,72,220,JR,RB,Off.,Eligible,2020-08-10,8
-107,--,Anthony Hines,OLB,Texas A&M,SEC,Texas,South,75,226,JR,LB,Def.,Eligible,2020-08-10,8
+107,--,Anthony Hines III,OLB,Texas A&M,SEC,Texas,South,75,226,JR,LB,Def.,Eligible,2020-08-10,8
 108,--,Rashad Weaver,EDGE,Pitt,ACC,Pennsylvania,Northeast,77,270,RSR,DL,Def.,Eligible,2020-08-10,8
 109,--,Dante Stills,DL5T,West Virginia,Big 12,West Virginia,South,76,278,SR,DL,Def.,Eligible,2020-08-10,8
 110,--,Kenneth Gainwell,RBC,Memphis,FBS - AAC,Tennessee,South,71,191,RSO,RB,Off.,Eligible,2020-08-10,8
@@ -1184,7 +1184,7 @@ Rank,Change,Name,Position,College,Conference,State,Region,Height,Weight,CollegeC
 383,--,Ellis Brooks,OLB,Penn State,Big Ten,Pennsylvania,Northeast,73,234,RJR,LB,Def.,Eligible,2020-08-10,1
 384,--,Nyles Pinckney,DL3T,Clemson,ACC,South Carolina,South,73,295,RSR,DL,Def.,Eligible,2020-08-10,1
 385,--,Doug Kramer,OC,Illinois,Big Ten,Illinois,Midwest,74,300,RSR,OL,Off.,Eligible,2020-08-10,1
-386,--,Bobby Brown,DL3T,Texas A&M,SEC,Texas,South,76,315,JR,DL,Def.,Eligible,2020-08-10,1
+386,--,Bobby Brown III,DL3T,Texas A&M,SEC,Texas,South,76,315,JR,DL,Def.,Eligible,2020-08-10,1
 387,--,Dylan Soehner,TE,Iowa State,Big 12,Iowa,Midwest,79,270,SR,TE,Off.,Eligible,2020-08-10,1
 388,--,Julian Rochester,DL3T,Georgia,SEC,Georgia,South,77,300,SR,DL,Def.,Eligible,2020-08-10,1
 389,--,McKenzie Milton,QB,UCF,FBS - AAC,Florida,South,71,185,RSR,QB,Off.,Eligible,2020-08-10,1
@@ -1305,7 +1305,7 @@ Rank,Change,Name,Position,College,Conference,State,Region,Height,Weight,CollegeC
 104,--,Marquis Hayes,OG,Oklahoma,Big 12,Oklahoma,South,77,320,RJR,OL,Off.,Eligible,2020-09-02,8
 105,--,Nico Collins,WR,Michigan,Big Ten,Michigan,Midwest,76,222,SR,WR,Off.,Eligible,2020-09-02,8
 106,--,Keaontay Ingram,RB,Texas,Big 12,Texas,South,72,220,JR,RB,Off.,Eligible,2020-09-02,8
-107,--,Anthony Hines,OLB,Texas A&M,SEC,Texas,South,75,226,JR,LB,Def.,Eligible,2020-09-02,8
+107,--,Anthony Hines III,OLB,Texas A&M,SEC,Texas,South,75,226,JR,LB,Def.,Eligible,2020-09-02,8
 108,--,Rashad Weaver,EDGE,Pitt,ACC,Pennsylvania,Northeast,77,270,RSR,DL,Def.,Eligible,2020-09-02,8
 109,--,Dante Stills,DL5T,West Virginia,Big 12,West Virginia,South,76,278,SR,DL,Def.,Eligible,2020-09-02,8
 110,--,Shaka Toney,EDGE,Penn State,Big Ten,Pennsylvania,Northeast,75,243,RSR,DL,Def.,Eligible,2020-09-02,8
@@ -1587,7 +1587,7 @@ Rank,Change,Name,Position,College,Conference,State,Region,Height,Weight,CollegeC
 386,--,Ellis Brooks,OLB,Penn State,Big Ten,Pennsylvania,Northeast,73,234,RJR,LB,Def.,Eligible,2020-09-02,1
 387,--,Nyles Pinckney,DL3T,Clemson,ACC,South Carolina,South,73,295,RSR,DL,Def.,Eligible,2020-09-02,1
 388,--,Doug Kramer,OC,Illinois,Big Ten,Illinois,Midwest,74,300,RSR,OL,Off.,Eligible,2020-09-02,1
-389,--,Bobby Brown,DL3T,Texas A&M,SEC,Texas,South,76,315,JR,DL,Def.,Eligible,2020-09-02,1
+389,--,Bobby Brown III,DL3T,Texas A&M,SEC,Texas,South,76,315,JR,DL,Def.,Eligible,2020-09-02,1
 390,--,Dylan Soehner,TE,Iowa State,Big 12,Iowa,Midwest,79,270,SR,TE,Off.,Eligible,2020-09-02,1
 391,--,Julian Rochester,DL3T,Georgia,SEC,Georgia,South,77,300,SR,DL,Def.,Eligible,2020-09-02,1
 392,--,McKenzie Milton,QB,UCF,FBS - AAC,Florida,South,71,185,RSR,QB,Off.,Eligible,2020-09-02,1
@@ -1704,7 +1704,7 @@ Rank,Change,Name,Position,College,Conference,State,Region,Height,Weight,CollegeC
 103,--,Marquis Hayes,OG,Oklahoma,Big 12,Oklahoma,South,77,320,RJR,OL,Off.,Eligible,2020-09-21,8
 104,--,Nico Collins,WR,Michigan,Big Ten,Michigan,Midwest,76,222,SR,WR,Off.,Eligible,2020-09-21,8
 105,--,Keaontay Ingram,RB,Texas,Big 12,Texas,South,72,220,JR,RB,Off.,Eligible,2020-09-21,8
-106,--,Anthony Hines,OLB,Texas A&M,SEC,Texas,South,75,226,JR,LB,Def.,Eligible,2020-09-21,8
+106,--,Anthony Hines III,OLB,Texas A&M,SEC,Texas,South,75,226,JR,LB,Def.,Eligible,2020-09-21,8
 107,--,Rashad Weaver,EDGE,Pitt,ACC,Pennsylvania,Northeast,77,270,RSR,DL,Def.,Eligible,2020-09-21,8
 108,--,Dante Stills,DL5T,West Virginia,Big 12,West Virginia,South,76,278,SR,DL,Def.,Eligible,2020-09-21,8
 109,--,Shaka Toney,EDGE,Penn State,Big Ten,Pennsylvania,Northeast,75,243,RSR,DL,Def.,Eligible,2020-09-21,8
@@ -1987,7 +1987,7 @@ Rank,Change,Name,Position,College,Conference,State,Region,Height,Weight,CollegeC
 386,--,Ellis Brooks,OLB,Penn State,Big Ten,Pennsylvania,Northeast,73,234,RJR,LB,Def.,Eligible,2020-09-21,1
 387,--,Nyles Pinckney,DL3T,Clemson,ACC,South Carolina,South,73,295,RSR,DL,Def.,Eligible,2020-09-21,1
 388,--,Doug Kramer,OC,Illinois,Big Ten,Illinois,Midwest,74,300,RSR,OL,Off.,Eligible,2020-09-21,1
-389,--,Bobby Brown,DL3T,Texas A&M,SEC,Texas,South,76,315,JR,DL,Def.,Eligible,2020-09-21,1
+389,--,Bobby Brown III,DL3T,Texas A&M,SEC,Texas,South,76,315,JR,DL,Def.,Eligible,2020-09-21,1
 390,--,Dylan Soehner,TE,Iowa State,Big 12,Iowa,Midwest,79,270,SR,TE,Off.,Eligible,2020-09-21,1
 391,--,Julian Rochester,DL3T,Georgia,SEC,Georgia,South,77,300,SR,DL,Def.,Eligible,2020-09-21,1
 392,--,McKenzie Milton,QB,UCF,FBS - AAC,Florida,South,71,185,RSR,QB,Off.,Eligible,2020-09-21,1
@@ -2105,7 +2105,7 @@ Rank,Change,Name,Position,College,Conference,State,Region,Height,Weight,CollegeC
 104,--,Marquis Hayes,OG,Oklahoma,Big 12,Oklahoma,South,77,320,RJR,OL,Off.,Eligible,2020-10-09,8
 105,--,Nico Collins,WR,Michigan,Big Ten,Michigan,Midwest,76,222,SR,WR,Off.,Eligible,2020-10-09,8
 106,--,Keaontay Ingram,RB,Texas,Big 12,Texas,South,72,220,JR,RB,Off.,Eligible,2020-10-09,8
-107,--,Anthony Hines,OLB,Texas A&M,SEC,Texas,South,75,226,JR,LB,Def.,Eligible,2020-10-09,8
+107,--,Anthony Hines III,OLB,Texas A&M,SEC,Texas,South,75,226,JR,LB,Def.,Eligible,2020-10-09,8
 108,--,Rashad Weaver,EDGE,Pitt,ACC,Pennsylvania,Northeast,77,270,RSR,DL,Def.,Eligible,2020-10-09,8
 109,--,Dante Stills,DL5T,West Virginia,Big 12,West Virginia,South,76,278,SR,DL,Def.,Eligible,2020-10-09,8
 110,--,Shaka Toney,EDGE,Penn State,Big Ten,Pennsylvania,Northeast,75,243,RSR,DL,Def.,Eligible,2020-10-09,8
@@ -2388,7 +2388,7 @@ Rank,Change,Name,Position,College,Conference,State,Region,Height,Weight,CollegeC
 387,--,Ellis Brooks,OLB,Penn State,Big Ten,Pennsylvania,Northeast,73,234,RJR,LB,Def.,Eligible,2020-10-09,1
 388,--,Nyles Pinckney,DL3T,Clemson,ACC,South Carolina,South,73,295,RSR,DL,Def.,Eligible,2020-10-09,1
 389,--,Doug Kramer,OC,Illinois,Big Ten,Illinois,Midwest,74,300,RSR,OL,Off.,Eligible,2020-10-09,1
-390,--,Bobby Brown,DL3T,Texas A&M,SEC,Texas,South,76,315,JR,DL,Def.,Eligible,2020-10-09,1
+390,--,Bobby Brown III,DL3T,Texas A&M,SEC,Texas,South,76,315,JR,DL,Def.,Eligible,2020-10-09,1
 391,--,Dylan Soehner,TE,Iowa State,Big 12,Iowa,Midwest,79,270,SR,TE,Off.,Eligible,2020-10-09,1
 392,--,Julian Rochester,DL3T,Georgia,SEC,Georgia,South,77,300,SR,DL,Def.,Eligible,2020-10-09,1
 393,--,McKenzie Milton,QB,UCF,FBS - AAC,Florida,South,71,185,RSR,QB,Off.,Eligible,2020-10-09,1
@@ -2535,7 +2535,7 @@ Rank,Change,Name,Position,College,Conference,State,Region,Height,Weight,CollegeC
 134,-69,Erroll Thompson,ILB,Mississippi State,SEC,Mississippi,South,73,250,RSR,LB,Def.,Eligible,2020-10-13,7
 135,+7,DeAngelo Malone,OLB,Western Kentucky,FBS - CUSA,Kentucky,South,76,230,JR,LB,Def.,Eligible,2020-10-13,7
 136,-13,Cary Angeline,TE,NC State,ACC,North Carolina,South,79,250,SR,TE,Off.,Eligible,2020-10-13,7
-137,-29,Anthony Hines,OLB,Texas A&M,SEC,Texas,South,75,226,JR,LB,Def.,Eligible,2020-10-13,7
+137,-29,Anthony Hines III,OLB,Texas A&M,SEC,Texas,South,75,226,JR,LB,Def.,Eligible,2020-10-13,7
 138,-48,Cole Van Lanen,OT,Wisconsin,Big Ten,Wisconsin,Midwest,77,312,RSR,OL,Off.,Eligible,2020-10-13,7
 139,-15,Damonte Coxie,WR,Memphis,FBS - AAC,Tennessee,South,75,197,SR,WR,Off.,Eligible,2020-10-13,7
 140,-48,Pooka Williams,RBC,Kansas,Big 12,Kansas,Midwest,70,170,JR,RB,Off.,Eligible,2020-10-13,7
@@ -2684,14 +2684,14 @@ Rank,Change,Name,Position,College,Conference,State,Region,Height,Weight,CollegeC
 283,+51,Shaun Jolly,CB,Appalachian State,FBS - Sun Belt,North Carolina,South,69,175,SR,DB,Def.,Eligible,2020-10-13,2
 284,-65,Aaron Banks,OG,Notre Dame,FBS - Independent,Indiana,Midwest,77,325,SR,OL,Off.,Eligible,2020-10-13,2
 285,+58,Amari Rodgers,WR,Clemson,ACC,South Carolina,South,69,210,SR,WR,Off.,Eligible,2020-10-13,2
-286,NEW,Rico Bussey Jr,WR,Hawaii,FBS - Mountain West,Hawaii,West,74,193,RSR,WR,Off.,Eligible,2020-10-13,2
+286,NEW,Rico Bussey Jr.,WR,Hawaii,FBS - Mountain West,Hawaii,West,74,193,RSR,WR,Off.,Eligible,2020-10-13,2
 287,-111,Jake Ferguson,TE,Wisconsin,Big Ten,Wisconsin,Midwest,77,230,RJR,TE,Off.,Eligible,2020-10-13,2
 288,NEW,Khalil Herbert,RBC,Virginia Tech,ACC,Virginia,South,69,205,RSR,RB,Off.,Eligible,2020-10-13,2
 289,-75,TaRiq Bracy,S,Notre Dame,FBS - Independent,Indiana,Midwest,70,170,JR,DB,Def.,Eligible,2020-10-13,2
 290,+20,Aubrey Solomon,DL3T,Tennessee,SEC,Tennessee,South,77,315,SR,DL,Def.,Eligible,2020-10-13,2
 291,+10,Nate Landman,OLB,Colorado,Pac 12,Colorado,West,75,230,SR,LB,Def.,Eligible,2020-10-13,2
 292,-88,Rakeem Boyd,RB,Arkansas,SEC,Arkansas,South,72,213,SR,RB,Off.,Eligible,2020-10-13,2
-293,NEW,Spencer K Brown,OT,Northern Iowa,FCS,Iowa,Midwest,81,320,RSR,OL,Off.,Eligible,2020-10-13,2
+293,NEW,Spencer K. Brown,OT,Northern Iowa,FCS,Iowa,Midwest,81,320,RSR,OL,Off.,Eligible,2020-10-13,2
 294,-104,Brady White,QB,Memphis,FBS - AAC,Tennessee,South,75,215,SR,QB,Off.,Eligible,2020-10-13,2
 295,-112,Landon Dickerson,OC,Alabama,SEC,Alabama,South,78,308,RSR,OL,Off.,Eligible,2020-10-13,2
 296,NEW,Al Blades Jr.,CB,Miami (FL),ACC,Florida,South,73,185,SR,DB,Def.,Eligible,2020-10-13,2
@@ -2781,7 +2781,7 @@ Rank,Change,Name,Position,College,Conference,State,Region,Height,Weight,CollegeC
 380,NEW,Cade Brewer,TE,Texas,Big 12,Texas,South,76,250,SR,TE,Off.,Eligible,2020-10-13,1
 381,+7,Ellis Brooks,OLB,Penn State,Big Ten,Pennsylvania,Northeast,73,234,RJR,LB,Def.,Eligible,2020-10-13,1
 382,+17,Greg Emerson,DL3T,Tennessee,SEC,Tennessee,South,75,300,JR,DL,Def.,Eligible,2020-10-13,1
-383,+8,Bobby Brown,DL3T,Texas A&M,SEC,Texas,South,76,315,JR,DL,Def.,Eligible,2020-10-13,1
+383,+8,Bobby Brown III,DL3T,Texas A&M,SEC,Texas,South,76,315,JR,DL,Def.,Eligible,2020-10-13,1
 384,-100,Tarron Jackson,EDGE,Coastal Carolina,FCS,South Carolina,South,74,265,SR,DL,Def.,Eligible,2020-10-13,1
 385,-15,Robert Cooper,DL1T,Florida State,ACC,Florida,South,74,332,JR,DL,Def.,Eligible,2020-10-13,1
 386,-112,Michael Saffell,OC,California,Pac 12,California,West,74,290,SR,OL,Off.,Eligible,2020-10-13,1
@@ -2936,7 +2936,7 @@ Rank,Change,Name,Position,College,Conference,State,Region,Height,Weight,CollegeC
 135,-69,Erroll Thompson,ILB,Mississippi State,SEC,Mississippi,South,73,250,RSR,LB,Def.,Eligible,2020-11-20,7
 136,+7,DeAngelo Malone,OLB,Western Kentucky,FBS - CUSA,Kentucky,South,76,230,JR,LB,Def.,Eligible,2020-11-20,7
 137,-13,Cary Angeline,TE,NC State,ACC,North Carolina,South,79,250,SR,TE,Off.,Eligible,2020-11-20,7
-138,-29,Anthony Hines,OLB,Texas A&M,SEC,Texas,South,75,226,JR,LB,Def.,Eligible,2020-11-20,7
+138,-29,Anthony Hines III,OLB,Texas A&M,SEC,Texas,South,75,226,JR,LB,Def.,Eligible,2020-11-20,7
 139,-48,Cole Van Lanen,OT,Wisconsin,Big Ten,Wisconsin,Midwest,77,312,RSR,OL,Off.,Eligible,2020-11-20,7
 140,-15,Damonte Coxie,WR,Memphis,FBS - AAC,Tennessee,South,75,197,SR,WR,Off.,Eligible,2020-11-20,7
 141,-48,Pooka Williams,RBC,Kansas,Big 12,Kansas,Midwest,70,170,JR,RB,Off.,Eligible,2020-11-20,7
@@ -3088,14 +3088,14 @@ Rank,Change,Name,Position,College,Conference,State,Region,Height,Weight,CollegeC
 287,+51,Shaun Jolly,CB,Appalachian State,FBS - Sun Belt,North Carolina,South,69,175,SR,DB,Def.,Eligible,2020-11-20,2
 288,-65,Aaron Banks,OG,Notre Dame,FBS - Independent,Indiana,Midwest,77,325,SR,OL,Off.,Eligible,2020-11-20,2
 289,+58,Amari Rodgers,WR,Clemson,ACC,South Carolina,South,69,210,SR,WR,Off.,Eligible,2020-11-20,2
-290,NEW,Rico Bussey Jr,WR,Hawaii,FBS - Mountain West,Hawaii,West,74,193,RSR,WR,Off.,Eligible,2020-11-20,2
+290,NEW,Rico Bussey Jr.,WR,Hawaii,FBS - Mountain West,Hawaii,West,74,193,RSR,WR,Off.,Eligible,2020-11-20,2
 291,-111,Jake Ferguson,TE,Wisconsin,Big Ten,Wisconsin,Midwest,77,230,RJR,TE,Off.,Eligible,2020-11-20,2
 292,NEW,Khalil Herbert,RBC,Virginia Tech,ACC,Virginia,South,69,205,RSR,RB,Off.,Eligible,2020-11-20,2
 293,-75,TaRiq Bracy,S,Notre Dame,FBS - Independent,Indiana,Midwest,70,170,JR,DB,Def.,Eligible,2020-11-20,2
 294,+20,Aubrey Solomon,DL3T,Tennessee,SEC,Tennessee,South,77,315,SR,DL,Def.,Eligible,2020-11-20,2
 295,+10,Nate Landman,OLB,Colorado,Pac 12,Colorado,West,75,230,SR,LB,Def.,Eligible,2020-11-20,2
 296,-88,Rakeem Boyd,RB,Arkansas,SEC,Arkansas,South,72,213,SR,RB,Off.,Eligible,2020-11-20,2
-297,NEW,Spencer K Brown,OT,Northern Iowa,FCS,Iowa,Midwest,81,320,RSR,OL,Off.,Eligible,2020-11-20,2
+297,NEW,Spencer K. Brown,OT,Northern Iowa,FCS,Iowa,Midwest,81,320,RSR,OL,Off.,Eligible,2020-11-20,2
 298,-104,Brady White,QB,Memphis,FBS - AAC,Tennessee,South,75,215,SR,QB,Off.,Eligible,2020-11-20,2
 299,-112,Landon Dickerson,OC,Alabama,SEC,Alabama,South,78,308,RSR,OL,Off.,Eligible,2020-11-20,2
 300,NEW,Al Blades Jr.,CB,Miami (FL),ACC,Florida,South,73,185,SR,DB,Def.,Eligible,2020-11-20,2
@@ -3185,7 +3185,7 @@ Rank,Change,Name,Position,College,Conference,State,Region,Height,Weight,CollegeC
 384,NEW,Cade Brewer,TE,Texas,Big 12,Texas,South,76,250,SR,TE,Off.,Eligible,2020-11-20,1
 385,+7,Ellis Brooks,OLB,Penn State,Big Ten,Pennsylvania,Northeast,73,234,RJR,LB,Def.,Eligible,2020-11-20,1
 386,+17,Greg Emerson,DL3T,Tennessee,SEC,Tennessee,South,75,300,JR,DL,Def.,Eligible,2020-11-20,1
-387,+8,Bobby Brown,DL3T,Texas A&M,SEC,Texas,South,76,315,JR,DL,Def.,Eligible,2020-11-20,1
+387,+8,Bobby Brown III,DL3T,Texas A&M,SEC,Texas,South,76,315,JR,DL,Def.,Eligible,2020-11-20,1
 388,-100,Tarron Jackson,EDGE,Coastal Carolina,FCS,South Carolina,South,74,265,SR,DL,Def.,Eligible,2020-11-20,1
 389,-15,Robert Cooper,DL1T,Florida State,ACC,Florida,South,74,332,JR,DL,Def.,Eligible,2020-11-20,1
 390,-112,Michael Saffell,OC,California,Pac 12,California,West,74,290,SR,OL,Off.,Eligible,2020-11-20,1
@@ -3390,7 +3390,7 @@ Rank,Change,Name,Position,College,Conference,State,Region,Height,Weight,CollegeC
 189,+27,Paddy Fisher,ILB,Northwestern,Big Ten,Illinois,Midwest,76,246,RSR,LB,Def.,Eligible,2020-11-25,5
 190,+999,Jaquarii Roberson,WR,Wake Forest,ACC,North Carolina,South,73,182,RJR,WR,Off.,Eligible,2020-11-25,5
 191,+71,Max Duffy,P,Kentucky,SEC,Kentucky,South,73,185,SR,P,ST,Eligible,2020-11-25,5
-192,+156,Spencer Brown,OT,Northern Iowa,FCS,Iowa,Midwest,81,321,RSR,OL,Off.,Eligible,2020-11-25,5
+192,+156,Spencer K. Brown,OT,Northern Iowa,FCS,Iowa,Midwest,81,321,RSR,OL,Off.,Eligible,2020-11-25,5
 193,+999,Greg Eisworth,S,Iowa State,Big 12,Iowa,Midwest,72,205,RSR,DB,Def.,Eligible,2020-11-25,5
 194,+183,Zach McCloud,OLB,Miami (FL),ACC,Florida,South,74,232,RSR,LB,Def.,Eligible,2020-11-25,5
 195,+56,Brant Kuithe,TE,Utah,Pac 12,Utah,West,74,235,JR,TE,Off.,Eligible,2020-11-25,5
@@ -3511,7 +3511,7 @@ Rank,Change,Name,Position,College,Conference,State,Region,Height,Weight,CollegeC
 310,-145,Ronnie Perkins,EDGE,Oklahoma,Big 12,Oklahoma,South,75,248,JR,DL,Def.,Eligible,2020-11-25,1
 311,-10,Brent Cimaglia,PK,Tennessee,SEC,Tennessee,South,72,210,SR,K,ST,Eligible,2020-11-25,1
 312,+999,Trevon Grimes,WR,Florida,SEC,Florida,South,76,215,SR,WR,Off.,Eligible,2020-11-25,1
-313,+999,Rico Bussey Jr,WR,Hawaii,FBS - Mountain West,Hawaii,West,74,193,RSR,WR,Off.,Eligible,2020-11-25,1
+313,+999,Rico Bussey Jr.,WR,Hawaii,FBS - Mountain West,Hawaii,West,74,193,RSR,WR,Off.,Eligible,2020-11-25,1
 314,-48,Jeremy Ruckert,TE,Ohio State,Big Ten,Ohio,Midwest,77,250,JR,TE,Off.,Eligible,2020-11-25,1
 315,+999,Kylen Granson,TE,SMU,FBS - AAC,Texas,South,74,235,SR,TE,Off.,Eligible,2020-11-25,1
 316,+29,Osa Odighizuwa,DL5T,UCLA,Pac 12,California,West,74,280,RSR,DL,Def.,Eligible,2020-11-25,1
@@ -3791,7 +3791,7 @@ Rank,Change,Name,Position,College,Conference,State,Region,Height,Weight,CollegeC
 190,--,Paddy Fisher,ILB,Northwestern,Big Ten,Illinois,Midwest,76,246,RSR,LB,Def.,Eligible,2020-12-25,5
 191,+55,Shemar Jean-Charles,CB,Appalachian State,FBS - Sun Belt,North Carolina,South,71,190,SR,DB,Def.,Eligible,2020-12-25,5
 192,--,Max Duffy,P,Kentucky,SEC,Kentucky,South,73,185,SR,P,ST,Eligible,2020-12-25,5
-193,--,Spencer Brown,OT,Northern Iowa,FCS,Iowa,Midwest,81,321,RSR,OL,Off.,Eligible,2020-12-25,5
+193,--,Spencer K. Brown,OT,Northern Iowa,FCS,Iowa,Midwest,81,321,RSR,OL,Off.,Eligible,2020-12-25,5
 194,-67,T.J. Carter,CB,Memphis,FBS - AAC,Tennessee,South,71,190,SR,DB,Def.,Eligible,2020-12-25,5
 195,-50,Cade Johnson,WRS,South Dakota State,FCS,South Dakota,Midwest,69,180,RSR,WR,Off.,Eligible,2020-12-25,5
 196,--,Zach McCloud,OLB,Miami (FL),ACC,Florida,South,74,232,RSR,LB,Def.,Eligible,2020-12-25,5
@@ -3919,7 +3919,7 @@ Rank,Change,Name,Position,College,Conference,State,Region,Height,Weight,CollegeC
 318,--,Myron Cunningham,OG,Arkansas,SEC,Arkansas,South,79,325,RSR,OL,Off.,Eligible,2020-12-25,1
 319,--,Ronnie Perkins,EDGE,Oklahoma,Big 12,Oklahoma,South,75,248,JR,DL,Def.,Eligible,2020-12-25,1
 320,--,Brent Cimaglia,PK,Tennessee,SEC,Tennessee,South,72,210,SR,K,ST,Eligible,2020-12-25,1
-321,--,Rico Bussey Jr,WR,Hawaii,FBS - Mountain West,Hawaii,West,74,193,RSR,WR,Off.,Eligible,2020-12-25,1
+321,--,Rico Bussey Jr.,WR,Hawaii,FBS - Mountain West,Hawaii,West,74,193,RSR,WR,Off.,Eligible,2020-12-25,1
 322,--,Jeremy Ruckert,TE,Ohio State,Big Ten,Ohio,Midwest,77,250,JR,TE,Off.,Eligible,2020-12-25,1
 323,NEW,C.J. Brewer,DL5T,Coastal Carolina,FCS,South Carolina,South,74,285,RSR,DL,Def.,Eligible,2020-12-25,1
 324,--,Kylen Granson,TE,SMU,FBS - AAC,Texas,South,74,235,SR,TE,Off.,Eligible,2020-12-25,1
