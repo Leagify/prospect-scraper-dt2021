@@ -191,7 +191,7 @@ Rank,Change,Player,School,Position,Height,Weight,CollegeClass,Date,DraftStatus
 190,--,Paddy Fisher,Northwestern,ILB,"6'4""",246,RSR,2020-12-25,Eligible
 191,+55,Shemar Jean-Charles,Appalachian State,CB,"5'11""",190,SR,2020-12-25,Eligible
 192,--,Max Duffy,Kentucky,P,"6'1""",185,SR,2020-12-25,Eligible
-193,--,Spencer Brown,Northern Iowa,OT,6'9'',321,RSR,2020-12-25,Eligible
+193,--,Spencer K. Brown,Northern Iowa,OT,6'9'',321,RSR,2020-12-25,Eligible
 194,-67,T.J. Carter,Memphis,CB,"5'11""",190,SR,2020-12-25,Eligible
 195,-50,Cade Johnson,South Dakota State,WRS,"5'9""",180,RSR,2020-12-25,Eligible
 196,--,Zach McCloud,Miami (FL),OLB,"6'2""",232,RSR,2020-12-25,Eligible
@@ -319,7 +319,7 @@ Rank,Change,Player,School,Position,Height,Weight,CollegeClass,Date,DraftStatus
 318,--,Myron Cunningham,Arkansas,OG,6'7'',325,RSR,2020-12-25,Eligible
 319,--,Ronnie Perkins,Oklahoma,EDGE,6'3'',248,JR,2020-12-25,Eligible
 320,--,Brent Cimaglia,Tennessee,PK,"6'0""",210,SR,2020-12-25,Eligible
-321,--,Rico Bussey Jr,Hawaii,WR,"6'2""",193,RSR,2020-12-25,Eligible
+321,--,Rico Bussey Jr.,Hawaii,WR,"6'2""",193,RSR,2020-12-25,Eligible
 322,--,Jeremy Ruckert,Ohio State,TE,"6'5""",250,JR,2020-12-25,Eligible
 323,NEW,C.J. Brewer,Coastal Carolina,DL5T,"6'2""",285,RSR,2020-12-25,Eligible
 324,--,Kylen Granson,SMU,TE,6'2'',235,SR,2020-12-25,Eligible

@@ -103,7 +103,7 @@ Rank,Change,Player,School,Position,Height,Weight,CollegeClass,Date,DraftStatus
 102,-8,Marquis Hayes,Oklahoma,OG,"6'5""",320,RJR,2020-06-27,Eligible
 103,+6,Nico Collins,Michigan,WR,"6'4""",222,SR,2020-06-27,Eligible
 104,-7,Keaontay Ingram,Texas,RB,6'0'',220,JR,2020-06-27,Eligible
-105,--,Anthony Hines,Texas A&M,OLB,"6'3""",226,JR,2020-06-27,Eligible
+105,--,Anthony Hines III,Texas A&M,OLB,"6'3""",226,JR,2020-06-27,Eligible
 106,-4,Matt Bushman,BYU,TE,"6'5""",245,SR,2020-06-27,Eligible
 107,+14,Rashad Weaver,Pitt,EDGE,"6'5""",270,RSR,2020-06-27,Eligible
 108,+2,Dante Stills,West Virginia,DL5T,"6'4""",278,SR,2020-06-27,Eligible
@@ -381,7 +381,7 @@ Rank,Change,Player,School,Position,Height,Weight,CollegeClass,Date,DraftStatus
 380,NEW,Zach Davidson,Central Missouri,TE,"6'7""",245,RJR,2020-06-27,Eligible
 381,-4,Nyles Pinckney,Clemson,DL3T,"6'1""",295,RSR,2020-06-27,Eligible
 382,-16,Doug Kramer,Illinois,OC,6'2'',300,RSR,2020-06-27,Eligible
-383,-4,Bobby Brown,Texas A&M,DL3T,"6'4""",315,JR,2020-06-27,Eligible
+383,-4,Bobby Brown III,Texas A&M,DL3T,"6'4""",315,JR,2020-06-27,Eligible
 384,NEW,Dylan Soehner,Iowa State,TE,"6'7""",270,SR,2020-06-27,Eligible
 385,-36,Julian Rochester,Georgia,DL3T,"6'5""",300,SR,2020-06-27,Eligible
 386,-17,McKenzie Milton,UCF,QB,"5'11""",185,RSR,2020-06-27,Eligible
@@ -505,7 +505,7 @@ Rank,Change,Player,School,Position,Height,Weight,CollegeClass,Date,DraftStatus
 104,--,Marquis Hayes,Oklahoma,OG,"6'5""",320,RJR,2020-07-26,Eligible
 105,--,Nico Collins,Michigan,WR,"6'4""",222,SR,2020-07-26,Eligible
 106,--,Keaontay Ingram,Texas,RB,6'0'',220,JR,2020-07-26,Eligible
-107,--,Anthony Hines,Texas A&M,OLB,"6'3""",226,JR,2020-07-26,Eligible
+107,--,Anthony Hines III,Texas A&M,OLB,"6'3""",226,JR,2020-07-26,Eligible
 108,--,Rashad Weaver,Pitt,EDGE,"6'5""",270,RSR,2020-07-26,Eligible
 109,--,Dante Stills,West Virginia,DL5T,"6'4""",278,SR,2020-07-26,Eligible
 110,--,Kenneth Gainwell,Memphis,RBC,"5'11""",191,RSO,2020-07-26,Eligible
@@ -784,7 +784,7 @@ Rank,Change,Player,School,Position,Height,Weight,CollegeClass,Date,DraftStatus
 383,--,Ellis Brooks,Penn State,OLB,"6'1""",234,RJR,2020-07-26,Eligible
 384,--,Nyles Pinckney,Clemson,DL3T,"6'1""",295,RSR,2020-07-26,Eligible
 385,--,Doug Kramer,Illinois,OC,6'2'',300,RSR,2020-07-26,Eligible
-386,--,Bobby Brown,Texas A&M,DL3T,"6'4""",315,JR,2020-07-26,Eligible
+386,--,Bobby Brown III,Texas A&M,DL3T,"6'4""",315,JR,2020-07-26,Eligible
 387,--,Dylan Soehner,Iowa State,TE,"6'7""",270,SR,2020-07-26,Eligible
 388,--,Julian Rochester,Georgia,DL3T,"6'5""",300,SR,2020-07-26,Eligible
 389,--,McKenzie Milton,UCF,QB,"5'11""",185,RSR,2020-07-26,Eligible
@@ -905,7 +905,7 @@ Rank,Change,Player,School,Position,Height,Weight,CollegeClass,Date,DraftStatus
 104,--,Marquis Hayes,Oklahoma,OG,"6'5""",320,RJR,2020-08-10,Eligible
 105,--,Nico Collins,Michigan,WR,"6'4""",222,SR,2020-08-10,Eligible
 106,--,Keaontay Ingram,Texas,RB,6'0'',220,JR,2020-08-10,Eligible
-107,--,Anthony Hines,Texas A&M,OLB,"6'3""",226,JR,2020-08-10,Eligible
+107,--,Anthony Hines III,Texas A&M,OLB,"6'3""",226,JR,2020-08-10,Eligible
 108,--,Rashad Weaver,Pitt,EDGE,"6'5""",270,RSR,2020-08-10,Eligible
 109,--,Dante Stills,West Virginia,DL5T,"6'4""",278,SR,2020-08-10,Eligible
 110,--,Kenneth Gainwell,Memphis,RBC,"5'11""",191,RSO,2020-08-10,Eligible
@@ -1184,7 +1184,7 @@ Rank,Change,Player,School,Position,Height,Weight,CollegeClass,Date,DraftStatus
 383,--,Ellis Brooks,Penn State,OLB,"6'1""",234,RJR,2020-08-10,Eligible
 384,--,Nyles Pinckney,Clemson,DL3T,"6'1""",295,RSR,2020-08-10,Eligible
 385,--,Doug Kramer,Illinois,OC,6'2'',300,RSR,2020-08-10,Eligible
-386,--,Bobby Brown,Texas A&M,DL3T,"6'4""",315,JR,2020-08-10,Eligible
+386,--,Bobby Brown III,Texas A&M,DL3T,"6'4""",315,JR,2020-08-10,Eligible
 387,--,Dylan Soehner,Iowa State,TE,"6'7""",270,SR,2020-08-10,Eligible
 388,--,Julian Rochester,Georgia,DL3T,"6'5""",300,SR,2020-08-10,Eligible
 389,--,McKenzie Milton,UCF,QB,"5'11""",185,RSR,2020-08-10,Eligible
@@ -1305,7 +1305,7 @@ Rank,Change,Player,School,Position,Height,Weight,CollegeClass,Date,DraftStatus
 104,--,Marquis Hayes,Oklahoma,OG,"6'5""",320,RJR,2020-09-02,Eligible
 105,--,Nico Collins,Michigan,WR,"6'4""",222,SR,2020-09-02,Eligible
 106,--,Keaontay Ingram,Texas,RB,6'0'',220,JR,2020-09-02,Eligible
-107,--,Anthony Hines,Texas A&M,OLB,"6'3""",226,JR,2020-09-02,Eligible
+107,--,Anthony Hines III,Texas A&M,OLB,"6'3""",226,JR,2020-09-02,Eligible
 108,--,Rashad Weaver,Pitt,EDGE,"6'5""",270,RSR,2020-09-02,Eligible
 109,--,Dante Stills,West Virginia,DL5T,"6'4""",278,SR,2020-09-02,Eligible
 110,--,Shaka Toney,Penn State,EDGE,"6'3""",243,RSR,2020-09-02,Eligible
@@ -1587,7 +1587,7 @@ Rank,Change,Player,School,Position,Height,Weight,CollegeClass,Date,DraftStatus
 386,--,Ellis Brooks,Penn State,OLB,"6'1""",234,RJR,2020-09-02,Eligible
 387,--,Nyles Pinckney,Clemson,DL3T,"6'1""",295,RSR,2020-09-02,Eligible
 388,--,Doug Kramer,Illinois,OC,6'2'',300,RSR,2020-09-02,Eligible
-389,--,Bobby Brown,Texas A&M,DL3T,"6'4""",315,JR,2020-09-02,Eligible
+389,--,Bobby Brown III,Texas A&M,DL3T,"6'4""",315,JR,2020-09-02,Eligible
 390,--,Dylan Soehner,Iowa State,TE,"6'7""",270,SR,2020-09-02,Eligible
 391,--,Julian Rochester,Georgia,DL3T,"6'5""",300,SR,2020-09-02,Eligible
 392,--,McKenzie Milton,UCF,QB,"5'11""",185,RSR,2020-09-02,Eligible
@@ -1704,7 +1704,7 @@ Rank,Change,Player,School,Position,Height,Weight,CollegeClass,Date,DraftStatus
 103,--,Marquis Hayes,Oklahoma,OG,"6'5""",320,RJR,2020-09-21,Eligible
 104,--,Nico Collins,Michigan,WR,"6'4""",222,SR,2020-09-21,Eligible
 105,--,Keaontay Ingram,Texas,RB,6'0'',220,JR,2020-09-21,Eligible
-106,--,Anthony Hines,Texas A&M,OLB,"6'3""",226,JR,2020-09-21,Eligible
+106,--,Anthony Hines III,Texas A&M,OLB,"6'3""",226,JR,2020-09-21,Eligible
 107,--,Rashad Weaver,Pitt,EDGE,"6'5""",270,RSR,2020-09-21,Eligible
 108,--,Dante Stills,West Virginia,DL5T,"6'4""",278,SR,2020-09-21,Eligible
 109,--,Shaka Toney,Penn State,EDGE,"6'3""",243,RSR,2020-09-21,Eligible
@@ -1987,7 +1987,7 @@ Rank,Change,Player,School,Position,Height,Weight,CollegeClass,Date,DraftStatus
 386,--,Ellis Brooks,Penn State,OLB,"6'1""",234,RJR,2020-09-21,Eligible
 387,--,Nyles Pinckney,Clemson,DL3T,"6'1""",295,RSR,2020-09-21,Eligible
 388,--,Doug Kramer,Illinois,OC,6'2'',300,RSR,2020-09-21,Eligible
-389,--,Bobby Brown,Texas A&M,DL3T,"6'4""",315,JR,2020-09-21,Eligible
+389,--,Bobby Brown III,Texas A&M,DL3T,"6'4""",315,JR,2020-09-21,Eligible
 390,--,Dylan Soehner,Iowa State,TE,"6'7""",270,SR,2020-09-21,Eligible
 391,--,Julian Rochester,Georgia,DL3T,"6'5""",300,SR,2020-09-21,Eligible
 392,--,McKenzie Milton,UCF,QB,"5'11""",185,RSR,2020-09-21,Eligible
@@ -2105,7 +2105,7 @@ Rank,Change,Player,School,Position,Height,Weight,CollegeClass,Date,DraftStatus
 104,--,Marquis Hayes,Oklahoma,OG,"6'5""",320,RJR,2020-10-09,Eligible
 105,--,Nico Collins,Michigan,WR,"6'4""",222,SR,2020-10-09,Eligible
 106,--,Keaontay Ingram,Texas,RB,6'0'',220,JR,2020-10-09,Eligible
-107,--,Anthony Hines,Texas A&M,OLB,"6'3""",226,JR,2020-10-09,Eligible
+107,--,Anthony Hines III,Texas A&M,OLB,"6'3""",226,JR,2020-10-09,Eligible
 108,--,Rashad Weaver,Pitt,EDGE,"6'5""",270,RSR,2020-10-09,Eligible
 109,--,Dante Stills,West Virginia,DL5T,"6'4""",278,SR,2020-10-09,Eligible
 110,--,Shaka Toney,Penn State,EDGE,"6'3""",243,RSR,2020-10-09,Eligible
@@ -2388,7 +2388,7 @@ Rank,Change,Player,School,Position,Height,Weight,CollegeClass,Date,DraftStatus
 387,--,Ellis Brooks,Penn State,OLB,"6'1""",234,RJR,2020-10-09,Eligible
 388,--,Nyles Pinckney,Clemson,DL3T,"6'1""",295,RSR,2020-10-09,Eligible
 389,--,Doug Kramer,Illinois,OC,6'2'',300,RSR,2020-10-09,Eligible
-390,--,Bobby Brown,Texas A&M,DL3T,"6'4""",315,JR,2020-10-09,Eligible
+390,--,Bobby Brown III,Texas A&M,DL3T,"6'4""",315,JR,2020-10-09,Eligible
 391,--,Dylan Soehner,Iowa State,TE,"6'7""",270,SR,2020-10-09,Eligible
 392,--,Julian Rochester,Georgia,DL3T,"6'5""",300,SR,2020-10-09,Eligible
 393,--,McKenzie Milton,UCF,QB,"5'11""",185,RSR,2020-10-09,Eligible
@@ -2535,7 +2535,7 @@ Rank,Change,Player,School,Position,Height,Weight,CollegeClass,Date,DraftStatus
 134,-69,Erroll Thompson,Mississippi State,ILB,"6'1""",250,RSR,2020-10-13,Eligible
 135,+7,DeAngelo Malone,Western Kentucky,OLB,"6'4""",230,JR,2020-10-13,Eligible
 136,-13,Cary Angeline,NC State,TE,"6'7""",250,SR,2020-10-13,Eligible
-137,-29,Anthony Hines,Texas A&M,OLB,"6'3""",226,JR,2020-10-13,Eligible
+137,-29,Anthony Hines III,Texas A&M,OLB,"6'3""",226,JR,2020-10-13,Eligible
 138,-48,Cole Van Lanen,Wisconsin,OT,"6'5""",312,RSR,2020-10-13,Eligible
 139,-15,Damonte Coxie,Memphis,WR,6'3'',197,SR,2020-10-13,Eligible
 140,-48,Pooka Williams,Kansas,RBC,"5'10""",170,JR,2020-10-13,Eligible
@@ -2684,14 +2684,14 @@ Rank,Change,Player,School,Position,Height,Weight,CollegeClass,Date,DraftStatus
 283,+51,Shaun Jolly,Appalachian State,CB,5'9'',175,SR,2020-10-13,Eligible
 284,-65,Aaron Banks,Notre Dame,OG,"6'5""",325,SR,2020-10-13,Eligible
 285,+58,Amari Rodgers,Clemson,WR,"5'9""",210,SR,2020-10-13,Eligible
-286,NEW,Rico Bussey Jr,Hawaii,WR,"6'2""",193,RSR,2020-10-13,Eligible
+286,NEW,Rico Bussey Jr.,Hawaii,WR,"6'2""",193,RSR,2020-10-13,Eligible
 287,-111,Jake Ferguson,Wisconsin,TE,"6'5""",230,RJR,2020-10-13,Eligible
 288,NEW,Khalil Herbert,Virginia Tech,RBC,"5'9""",205,RSR,2020-10-13,Eligible
 289,-75,TaRiq Bracy,Notre Dame,S,5'10'',170,JR,2020-10-13,Eligible
 290,+20,Aubrey Solomon,Tennessee,DL3T,"6'5""",315,SR,2020-10-13,Eligible
 291,+10,Nate Landman,Colorado,OLB,"6'3""",230,SR,2020-10-13,Eligible
 292,-88,Rakeem Boyd,Arkansas,RB,"6'0""",213,SR,2020-10-13,Eligible
-293,NEW,Spencer K Brown,Northern Iowa,OT,6'9'',320,RSR,2020-10-13,Eligible
+293,NEW,Spencer K. Brown,Northern Iowa,OT,6'9'',320,RSR,2020-10-13,Eligible
 294,-104,Brady White,Memphis,QB,6'3'',215,SR,2020-10-13,Eligible
 295,-112,Landon Dickerson,Alabama,OC,6'6'',308,RSR,2020-10-13,Eligible
 296,NEW,Al Blades Jr.,Miami (FL),CB,6'1'',185,SR,2020-10-13,Eligible
@@ -2781,7 +2781,7 @@ Rank,Change,Player,School,Position,Height,Weight,CollegeClass,Date,DraftStatus
 380,NEW,Cade Brewer,Texas,TE,"6'4""",250,SR,2020-10-13,Eligible
 381,+7,Ellis Brooks,Penn State,OLB,"6'1""",234,RJR,2020-10-13,Eligible
 382,+17,Greg Emerson,Tennessee,DL3T,"6'3""",300,JR,2020-10-13,Eligible
-383,+8,Bobby Brown,Texas A&M,DL3T,"6'4""",315,JR,2020-10-13,Eligible
+383,+8,Bobby Brown III,Texas A&M,DL3T,"6'4""",315,JR,2020-10-13,Eligible
 384,-100,Tarron Jackson,Coastal Carolina,EDGE,6'2'',265,SR,2020-10-13,Eligible
 385,-15,Robert Cooper,Florida State,DL1T,"6'2""",332,JR,2020-10-13,Eligible
 386,-112,Michael Saffell,California,OC,6'2'',290,SR,2020-10-13,Eligible
@@ -2936,7 +2936,7 @@ Rank,Change,Player,School,Position,Height,Weight,CollegeClass,Date,DraftStatus
 135,-69,Erroll Thompson,Mississippi State,ILB,"6'1""",250,RSR,2020-11-20,Eligible
 136,+7,DeAngelo Malone,Western Kentucky,OLB,"6'4""",230,JR,2020-11-20,Eligible
 137,-13,Cary Angeline,NC State,TE,"6'7""",250,SR,2020-11-20,Eligible
-138,-29,Anthony Hines,Texas A&M,OLB,"6'3""",226,JR,2020-11-20,Eligible
+138,-29,Anthony Hines III,Texas A&M,OLB,"6'3""",226,JR,2020-11-20,Eligible
 139,-48,Cole Van Lanen,Wisconsin,OT,"6'5""",312,RSR,2020-11-20,Eligible
 140,-15,Damonte Coxie,Memphis,WR,6'3'',197,SR,2020-11-20,Eligible
 141,-48,Pooka Williams,Kansas,RBC,"5'10""",170,JR,2020-11-20,Eligible
@@ -3088,14 +3088,14 @@ Rank,Change,Player,School,Position,Height,Weight,CollegeClass,Date,DraftStatus
 287,+51,Shaun Jolly,Appalachian State,CB,5'9'',175,SR,2020-11-20,Eligible
 288,-65,Aaron Banks,Notre Dame,OG,"6'5""",325,SR,2020-11-20,Eligible
 289,+58,Amari Rodgers,Clemson,WR,"5'9""",210,SR,2020-11-20,Eligible
-290,NEW,Rico Bussey Jr,Hawaii,WR,"6'2""",193,RSR,2020-11-20,Eligible
+290,NEW,Rico Bussey Jr.,Hawaii,WR,"6'2""",193,RSR,2020-11-20,Eligible
 291,-111,Jake Ferguson,Wisconsin,TE,"6'5""",230,RJR,2020-11-20,Eligible
 292,NEW,Khalil Herbert,Virginia Tech,RBC,"5'9""",205,RSR,2020-11-20,Eligible
 293,-75,TaRiq Bracy,Notre Dame,S,5'10'',170,JR,2020-11-20,Eligible
 294,+20,Aubrey Solomon,Tennessee,DL3T,"6'5""",315,SR,2020-11-20,Eligible
 295,+10,Nate Landman,Colorado,OLB,"6'3""",230,SR,2020-11-20,Eligible
 296,-88,Rakeem Boyd,Arkansas,RB,"6'0""",213,SR,2020-11-20,Eligible
-297,NEW,Spencer K Brown,Northern Iowa,OT,6'9'',320,RSR,2020-11-20,Eligible
+297,NEW,Spencer K. Brown,Northern Iowa,OT,6'9'',320,RSR,2020-11-20,Eligible
 298,-104,Brady White,Memphis,QB,6'3'',215,SR,2020-11-20,Eligible
 299,-112,Landon Dickerson,Alabama,OC,6'6'',308,RSR,2020-11-20,Eligible
 300,NEW,Al Blades Jr.,Miami (FL),CB,6'1'',185,SR,2020-11-20,Eligible
@@ -3185,7 +3185,7 @@ Rank,Change,Player,School,Position,Height,Weight,CollegeClass,Date,DraftStatus
 384,NEW,Cade Brewer,Texas,TE,"6'4""",250,SR,2020-11-20,Eligible
 385,+7,Ellis Brooks,Penn State,OLB,"6'1""",234,RJR,2020-11-20,Eligible
 386,+17,Greg Emerson,Tennessee,DL3T,"6'3""",300,JR,2020-11-20,Eligible
-387,+8,Bobby Brown,Texas A&M,DL3T,"6'4""",315,JR,2020-11-20,Eligible
+387,+8,Bobby Brown III,Texas A&M,DL3T,"6'4""",315,JR,2020-11-20,Eligible
 388,-100,Tarron Jackson,Coastal Carolina,EDGE,6'2'',265,SR,2020-11-20,Eligible
 389,-15,Robert Cooper,Florida State,DL1T,"6'2""",332,JR,2020-11-20,Eligible
 390,-112,Michael Saffell,California,OC,6'2'',290,SR,2020-11-20,Eligible
@@ -3390,7 +3390,7 @@ Rank,Change,Player,School,Position,Height,Weight,CollegeClass,Date,DraftStatus
 189,+27,Paddy Fisher,Northwestern,ILB,"6'4""",246,RSR,2020-11-25,Eligible
 190,+999,Jaquarii Roberson,Wake Forest,WR,"6'1""",182,RJR,2020-11-25,Eligible
 191,+71,Max Duffy,Kentucky,P,"6'1""",185,SR,2020-11-25,Eligible
-192,+156,Spencer Brown,Northern Iowa,OT,6'9'',321,RSR,2020-11-25,Eligible
+192,+156,Spencer K. Brown,Northern Iowa,OT,6'9'',321,RSR,2020-11-25,Eligible
 193,+999,Greg Eisworth,Iowa State,S,"6'0""",205,RSR,2020-11-25,Eligible
 194,+183,Zach McCloud,Miami (FL),OLB,"6'2""",232,RSR,2020-11-25,Eligible
 195,+56,Brant Kuithe,Utah,TE,"6'2""",235,JR,2020-11-25,Eligible
@@ -3511,7 +3511,7 @@ Rank,Change,Player,School,Position,Height,Weight,CollegeClass,Date,DraftStatus
 310,-145,Ronnie Perkins,Oklahoma,EDGE,6'3'',248,JR,2020-11-25,Eligible
 311,-10,Brent Cimaglia,Tennessee,PK,"6'0""",210,SR,2020-11-25,Eligible
 312,+999,Trevon Grimes,Florida,WR,"6'4""",215,SR,2020-11-25,Eligible
-313,+999,Rico Bussey Jr,Hawaii,WR,"6'2""",193,RSR,2020-11-25,Eligible
+313,+999,Rico Bussey Jr.,Hawaii,WR,"6'2""",193,RSR,2020-11-25,Eligible
 314,-48,Jeremy Ruckert,Ohio State,TE,"6'5""",250,JR,2020-11-25,Eligible
 315,+999,Kylen Granson,SMU,TE,6'2'',235,SR,2020-11-25,Eligible
 316,+29,Osa Odighizuwa,UCLA,DL5T,6'2'',280,RSR,2020-11-25,Eligible
@@ -3791,7 +3791,7 @@ Rank,Change,Player,School,Position,Height,Weight,CollegeClass,Date,DraftStatus
 190,--,Paddy Fisher,Northwestern,ILB,"6'4""",246,RSR,2020-12-25,Eligible
 191,+55,Shemar Jean-Charles,Appalachian State,CB,"5'11""",190,SR,2020-12-25,Eligible
 192,--,Max Duffy,Kentucky,P,"6'1""",185,SR,2020-12-25,Eligible
-193,--,Spencer Brown,Northern Iowa,OT,6'9'',321,RSR,2020-12-25,Eligible
+193,--,Spencer K. Brown,Northern Iowa,OT,6'9'',321,RSR,2020-12-25,Eligible
 194,-67,T.J. Carter,Memphis,CB,"5'11""",190,SR,2020-12-25,Eligible
 195,-50,Cade Johnson,South Dakota State,WRS,"5'9""",180,RSR,2020-12-25,Eligible
 196,--,Zach McCloud,Miami (FL),OLB,"6'2""",232,RSR,2020-12-25,Eligible
@@ -3919,7 +3919,7 @@ Rank,Change,Player,School,Position,Height,Weight,CollegeClass,Date,DraftStatus
 318,--,Myron Cunningham,Arkansas,OG,6'7'',325,RSR,2020-12-25,Eligible
 319,--,Ronnie Perkins,Oklahoma,EDGE,6'3'',248,JR,2020-12-25,Eligible
 320,--,Brent Cimaglia,Tennessee,PK,"6'0""",210,SR,2020-12-25,Eligible
-321,--,Rico Bussey Jr,Hawaii,WR,"6'2""",193,RSR,2020-12-25,Eligible
+321,--,Rico Bussey Jr.,Hawaii,WR,"6'2""",193,RSR,2020-12-25,Eligible
 322,--,Jeremy Ruckert,Ohio State,TE,"6'5""",250,JR,2020-12-25,Eligible
 323,NEW,C.J. Brewer,Coastal Carolina,DL5T,"6'2""",285,RSR,2020-12-25,Eligible
 324,--,Kylen Granson,SMU,TE,6'2'',235,SR,2020-12-25,Eligible
