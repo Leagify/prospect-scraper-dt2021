@@ -4499,3 +4499,403 @@ Rank,Change,Player,School,Position,Height,Weight,CollegeClass,Date,DraftStatus
 498,--,Joshua McMillon,Alabama,ILB,"6'3""",237,RSR,2021-01-10,Eligible
 499,--,Riko Jeffers,Texas Tech,ILB,6'2'',235,SR,2021-01-10,Eligible
 500,--,Dylan Soehner,Iowa State,TE,"6'7""",270,SR,2021-01-10,Eligible
+1,--,Trevor Lawrence,Clemson,QB,"6'6""",220,JR,2021-01-17,Eligible
+2,--,Penei Sewell,Oregon,OT,"6'5""",330,JR,2021-01-17,Eligible
+3,--,Ja'Marr Chase,LSU,WR,"6'1""",200,JR,2021-01-17,Eligible
+4,--,Justin Fields,Ohio State,QB,6'3'',228,JR,2021-01-17,Eligible
+5,--,Patrick Surtain II,Alabama,CB,"6'1""",203,JR,2021-01-17,Eligible
+6,--,Micah Parsons,Penn State,ILB,"6'2""",245,JR,2021-01-17,Eligible
+7,--,Zach Wilson,BYU,QB,6'3'',210,JR,2021-01-17,Eligible
+8,--,Jaylen Waddle,Alabama,WRS,"5'10""",182,JR,2021-01-17,Eligible
+9,--,Caleb Farley,Virginia Tech,CB,"6'2""",197,RJR,2021-01-17,Eligible
+10,--,Kyle Pitts,Florida,TE,"6'5""",239,JR,2021-01-17,Eligible
+11,--,DeVonta Smith,Alabama,WR,"6'1""",175,SR,2021-01-17,Eligible
+12,--,Trevon Moehrig,TCU,S,"6'2""",202,JR,2021-01-17,Eligible
+13,--,Rondale Moore,Purdue,WRS,"5'9""",175,JR,2021-01-17,Eligible
+14,--,Trey Lance,North Dakota State,QB,"6'3""",226,RSO,2021-01-17,Eligible
+15,-4,Gregory Rousseau,Miami (FL),EDGE,"6'5""",260,RSO,2021-01-17,Eligible
+16,--,Jaycee Horn,South Carolina,CB,"6'0""",200,JR,2021-01-17,Eligible
+17,--,Christian Darrisaw,Virginia Tech,OT,6'5'',314,RJR,2021-01-17,Eligible
+18,--,Kwity Paye,Michigan,DL5T,"6'4""",277,SR,2021-01-17,Eligible
+19,--,Wyatt Davis,Ohio State,OG,"6'4""",315,RJR,2021-01-17,Eligible
+20,--,Samuel Cosmi,Texas,OT,"6'7""",309,RJR,2021-01-17,Eligible
+21,--,Christian Barmore,Alabama,DL3T,"6'5""",310,RSO,2021-01-17,Eligible
+22,--,Rashod Bateman,Minnesota,WR,"6'1""",210,JR,2021-01-17,Eligible
+23,--,Jeremiah Owusu-Koramoah,Notre Dame,OLB,6'1'',216,SR,2021-01-17,Eligible
+24,--,Asante Samuel Jr.,Florida State,CB,"5'10""",180,JR,2021-01-17,Eligible
+25,--,Alex Leatherwood,Alabama,OT,"6'6""",312,SR,2021-01-17,Eligible
+26,--,Daviyon Nixon,Iowa,DL3T,"6'3""",305,JR,2021-01-17,Eligible
+27,--,Travis Etienne,Clemson,RB,"5'10""",210,SR,2021-01-17,Eligible
+28,--,Carlos Basham Jr.,Wake Forest,DL5T,"6'5""",285,RSR,2021-01-17,Eligible
+29,--,Andre Cisco,Syracuse,S,"6'0""",203,JR,2021-01-17,Eligible
+30,--,Mac Jones,Alabama,QB,6'2'',214,RJR,2021-01-17,Eligible
+31,--,Patrick Jones II,Pitt,EDGE,"6'5""",260,RSR,2021-01-17,Eligible
+32,--,Nick Bolton,Missouri,ILB,"6'0""",235,JR,2021-01-17,Eligible
+33,--,Rashawn Slater,Northwestern,OT,6'4'',314,SR,2021-01-17,Eligible
+34,--,Najee Harris,Alabama,RB,"6'2""",230,SR,2021-01-17,Eligible
+35,--,Kyle Trask,Florida,QB,6'4'',240,RSR,2021-01-17,Eligible
+36,--,Zaven Collins,Tulsa,OLB,6'4'',260,RJR,2021-01-17,Eligible
+37,--,Trey Smith,Tennessee,OG,"6'6""",330,SR,2021-01-17,Eligible
+38,--,Creed Humphrey,Oklahoma,OC,"6'5""",320,RJR,2021-01-17,Eligible
+39,--,Tyson Campbell,Georgia,CB,"6'2""",180,JR,2021-01-17,Eligible
+40,--,Alijah Vera-Tucker,USC,OG,"6'4""",315,RJR,2021-01-17,Eligible
+41,--,Jay Tufele,USC,DL3T,"6'3""",305,RJR,2021-01-17,Eligible
+42,--,Terrace Marshall,LSU,WR,"6'3""",200,JR,2021-01-17,Eligible
+43,--,Joseph Ossai,Texas,EDGE,"6'4""",253,JR,2021-01-17,Eligible
+44,--,Paulson Adebo,Stanford,CB,"6'1""",190,SR,2021-01-17,Eligible
+45,--,Seth Williams,Auburn,WR,"6'2""",224,JR,2021-01-17,Eligible
+46,--,Quincy Roche,Miami (FL),EDGE,"6'4""",235,RSR,2021-01-17,Eligible
+47,--,Chazz Surratt,North Carolina,OLB,"6'3""",230,RSR,2021-01-17,Eligible
+48,--,Richie Grant,UCF,S,"6'0""",194,RSR,2021-01-17,Eligible
+49,--,Marvin Wilson,Florida State,DL3T,"6'5""",311,SR,2021-01-17,Eligible
+50,--,Dylan Moses,Alabama,OLB,"6'3""",235,SR,2021-01-17,Eligible
+51,--,Rodarius Williams,Oklahoma State,CB,"6'0""",180,RSR,2021-01-17,Eligible
+52,--,Pat Freiermuth,Penn State,TE,"6'5""",250,JR,2021-01-17,Eligible
+53,--,Shaun Wade,Ohio State,CB,"6'1""",194,RJR,2021-01-17,Eligible
+54,--,Tyler Shelvin,LSU,DL1T,"6'3""",346,RJR,2021-01-17,Eligible
+55,--,Jalen Mayfield,Michigan,OT,"6'5""",320,RSO,2021-01-17,Eligible
+56,--,Joe Tryon,Washington,EDGE,"6'5""",262,RJR,2021-01-17,Eligible
+57,--,Elijah Molden,Washington,S,"5'10""",186,SR,2021-01-17,Eligible
+58,--,Elijah Moore,Ole Miss,WRS,"5'9""",184,JR,2021-01-17,Eligible
+59,--,Jevon Holland,Oregon,S,"6'1""",196,JR,2021-01-17,Eligible
+60,--,Jaylen Twyman,Pitt,DL5T,"6'2""",290,RJR,2021-01-17,Eligible
+61,--,Sage Surratt,Wake Forest,WR,"6'2""",215,RJR,2021-01-17,Eligible
+62,--,Shakur Brown,Michigan State,CB,"5'11""",190,RJR,2021-01-17,Eligible
+63,--,Josh Myers,Ohio State,OC,6'5'',312,RJR,2021-01-17,Eligible
+64,--,Alim McNeill,NC State,DL1T,"6'2""",315,JR,2021-01-17,Eligible
+65,--,Jayson Oweh,Penn State,EDGE,"6'5""",257,RSO,2021-01-17,Eligible
+66,--,Eric Stokes,Georgia,CB,"6'1""",185,RJR,2021-01-17,Eligible
+67,-20,Hamsah Nasirildeen,Florida State,S,"6'4""",215,SR,2021-01-17,Eligible
+68,--,Tylan Wallace,Oklahoma State,WR,"6'0""",185,SR,2021-01-17,Eligible
+69,--,Jaelan Phillips,Miami (FL),EDGE,"6'5""",255,RJR,2021-01-17,Eligible
+70,--,Walker Little,Stanford,OT,"6'7""",313,SR,2021-01-17,Eligible
+71,--,Kenneth Gainwell,Memphis,RB,"5'11""",191,RSO,2021-01-17,Eligible
+72,--,Israel Mukuamu,South Carolina,CB,"6'3""",205,JR,2021-01-17,Eligible
+73,--,Kadarius Toney,Florida,WR,5'11'',190,SR,2021-01-17,Eligible
+74,--,Paris Ford,Pitt,S,"6'0""",190,RJR,2021-01-17,Eligible
+75,--,Amon-Ra St. Brown,USC,WR,"6'1""",195,JR,2021-01-17,Eligible
+76,--,Ben Cleveland,Georgia,OG,"6'6""",335,RSR,2021-01-17,Eligible
+77,--,Jamie Newman,Georgia,QB,"6'4""",230,RSR,2021-01-17,Eligible
+78,--,Cameron McGrone,Michigan,OLB,6'1'',232,RSO,2021-01-17,Eligible
+79,--,Darius Stills,West Virginia,DL3T,"6'1""",292,SR,2021-01-17,Eligible
+80,--,Jabril Cox,LSU,OLB,"6'2""",233,RSR,2021-01-17,Eligible
+81,--,Liam Eichenberg,Notre Dame,OT,"6'6""",302,RSR,2021-01-17,Eligible
+82,-25,Trey Sermon,Ohio State,RB,"6'0""",224,SR,2021-01-17,Eligible
+83,--,Azeez Ojulari,Georgia,EDGE,"6'3""",240,RSO,2021-01-17,Eligible
+84,--,Javonte Williams,North Carolina,RB,"5'10""",220,JR,2021-01-17,Eligible
+85,--,Marlon Williams,UCF,WR,"6'0""",215,SR,2021-01-17,Eligible
+86,--,Hamilcar Rashed,Oregon State,EDGE,6'3'',248,RSR,2021-01-17,Eligible
+87,--,Michael Carter,North Carolina,RBC,"5'9""",195,SR,2021-01-17,Eligible
+88,--,Greg Newsome II,Northwestern,CB,"6'1""",190,JR,2021-01-17,Eligible
+89,--,Levi Onwuzurike,Washington,DL3T,"6'3""",293,RSR,2021-01-17,Eligible
+90,--,Brevin Jordan,Miami (FL),TE,"6'3""",245,JR,2021-01-17,Eligible
+91,--,Tedarrell Slaton,Florida,DL1T,"6'5""",358,SR,2021-01-17,Eligible
+92,--,Talanoa Hufanga,USC,S,"6'1""",215,JR,2021-01-17,Eligible
+93,--,Deonte Brown,Alabama,OG,6'4'',350,RSR,2021-01-17,Eligible
+94,--,Chuba Hubbard,Oklahoma State,RB,"6'1""",207,RJR,2021-01-17,Eligible
+95,--,Landon Dickerson,Alabama,OC,6'6'',325,RSR,2021-01-17,Eligible
+96,--,Daniel Faalele,Minnesota,OT,"6'8""",400,JR,2021-01-17,Eligible
+97,--,Anthony Schwartz,Auburn,WR,"6'0""",197,JR,2021-01-17,Eligible
+98,--,Jaelon Darden,North Texas,WRS,"5'9""",174,SR,2021-01-17,Eligible
+99,--,Dillon Radunz,North Dakota State,OT,6'6'',299,SR,2021-01-17,Eligible
+100,--,Chris Rumph II,Duke,EDGE,"6'3""",225,RJR,2021-01-17,Eligible
+101,--,Tutu Atwell,Louisville,WRS,"5'9""",156,JR,2021-01-17,Eligible
+102,--,Baron Browning,Ohio State,ILB,"6'3""",248,SR,2021-01-17,Eligible
+103,--,Dazz Newsome,North Carolina,WR,"5'11""",175,SR,2021-01-17,Eligible
+104,--,Richard LeCounte III,Georgia,S,"5'11""",190,SR,2021-01-17,Eligible
+105,--,Shaka Toney,Penn State,EDGE,"6'3""",243,RSR,2021-01-17,Eligible
+106,--,Damonte Coxie,Memphis,WR,6'3'',197,SR,2021-01-17,Eligible
+107,--,Jackson Carman,Clemson,OT,"6'5""",335,JR,2021-01-17,Eligible
+108,--,Jaret Patterson,Buffalo,RB,"5'9""",195,JR,2021-01-17,Eligible
+109,--,Drake Jackson,Kentucky,OC,6'2'',292,RSR,2021-01-17,Eligible
+110,--,Hunter Long,Boston College,TE,"6'5""",253,JR,2021-01-17,Eligible
+111,--,Nico Collins,Michigan,WR,"6'4""",222,SR,2021-01-17,Eligible
+112,--,Jimmy Morrissey,Pitt,OC,"6'3""",305,RSR,2021-01-17,Eligible
+113,--,Jonathan Marshall,Arkansas,DL1T,"6'3""",317,RSR,2021-01-17,Eligible
+114,--,Kenny Yeboah,Ole Miss,TE,6'4'',240,RSR,2021-01-17,Eligible
+115,--,Trey Hill,Georgia,OC,"6'4""",330,JR,2021-01-17,Eligible
+116,--,Shemar Jean-Charles,Appalachian State,CB,"5'11""",190,SR,2021-01-17,Eligible
+117,--,Divine Deablo,Virginia Tech,S,6'3'',226,RSR,2021-01-17,Eligible
+118,--,Dyami Brown,North Carolina,WR,"6'1""",185,JR,2021-01-17,Eligible
+119,--,Khalil Herbert,Virginia Tech,RBC,"5'9""",205,RSR,2021-01-17,Eligible
+120,--,Tyler Vaughns,USC,WR,"6'2""",190,RSR,2021-01-17,Eligible
+121,--,Pete Werner,Ohio State,ILB,6'3'',239,SR,2021-01-17,Eligible
+122,--,Tony Poljan,Virginia,TE,"6'7""",265,RSR,2021-01-17,Eligible
+123,--,Cary Angeline,NC State,TE,"6'7""",250,SR,2021-01-17,Eligible
+124,--,Bobby Brown III,Texas A&M,DL3T,"6'4""",315,JR,2021-01-17,Eligible
+125,--,Ihmir Smith-Marsette,Iowa,WR,"6'2""",175,SR,2021-01-17,Eligible
+126,--,Kylin Hill,Mississippi State,RB,"5'11""",215,SR,2021-01-17,Eligible
+127,--,Caden Sterns,Texas,S,"6'0""",210,JR,2021-01-17,Eligible
+128,--,Teven Jenkins,Oklahoma State,OT,6'6'',320,RSR,2021-01-17,Eligible
+129,--,Malik Herring,Georgia,DL5T,"6'3""",280,SR,2021-01-17,Eligible
+130,--,Keith Taylor,Washington,CB,"6'3""",196,SR,2021-01-17,Eligible
+131,--,Sam Ehlinger,Texas,QB,"6'3""",225,SR,2021-01-17,Eligible
+132,--,Elijah Mitchell,Louisiana-Lafayette,RB,"5'11""",221,SR,2021-01-17,Eligible
+133,--,Rashad Weaver,Pitt,EDGE,"6'5""",270,RSR,2021-01-17,Eligible
+134,--,Pooka Williams,Kansas,RBC,"5'10""",170,JR,2021-01-17,Eligible
+135,--,Alaric Jackson,Iowa,OT,"6'6""",315,RSR,2021-01-17,Eligible
+136,--,Olaijah Griffin,USC,CB,6'0'',170,JR,2021-01-17,Eligible
+137,--,Torrance Marable,Coastal Carolina,RBC,"5'10""",200,SR,2021-01-17,Eligible
+138,--,Damon Hazelton,Missouri,WR,"6'2""",215,RSR,2021-01-17,Eligible
+139,--,Tariq Thompson,San Diego State,S,"6'0""",200,SR,2021-01-17,Eligible
+140,--,J.D. Spielman,TCU,WRS,"5'9""",180,RSR,2021-01-17,Eligible
+141,--,Ta'Quon Graham,Texas,DL3T,"6'4""",294,SR,2021-01-17,Eligible
+142,--,K.J. Britt,Auburn,ILB,"6'0""",236,JR,2021-01-17,Eligible
+143,--,Ambry Thomas,Michigan,CB,"5'11""",174,SR,2021-01-17,Eligible
+144,--,Deommodore Lenoir,Oregon,CB,"5'11""",202,SR,2021-01-17,Eligible
+145,--,Monty Rice,Georgia,OLB,"6'1""",235,SR,2021-01-17,Eligible
+146,--,Ar'Darius Washington,TCU,S,"5'8""",175,RSO,2021-01-17,Eligible
+147,--,Isaac Taylor-Stuart,USC,CB,"6'2""",205,SR,2021-01-17,Eligible
+148,--,LaBryan Ray,Alabama,DL5T,"6'5""",292,SR,2021-01-17,Eligible
+149,--,Kylen Granson,SMU,TE,6'2'',235,SR,2021-01-17,Eligible
+150,-30,Charles Snowden,Virginia,OLB,"6'7""",235,SR,2021-01-17,Eligible
+151,--,Aaron Banks,Notre Dame,OG,"6'5""",330,RJR,2021-01-17,Eligible
+152,--,Paddy Fisher,Northwestern,ILB,"6'4""",246,RSR,2021-01-17,Eligible
+153,--,Max Duffy,Kentucky,P,"6'1""",185,SR,2021-01-17,Eligible
+154,--,Spencer K. Brown,Northern Iowa,OT,6'9'',321,RSR,2021-01-17,Eligible
+155,--,Cade Johnson,South Dakota State,WRS,"5'9""",180,RSR,2021-01-17,Eligible
+156,--,Tommy Togiai,Ohio State,DL3T,"6'2""",300,JR,2021-01-17,Eligible
+157,--,Kary Vincent Jr.,LSU,CB,"5'10""",182,SR,2021-01-17,Eligible
+158,--,JaCoby Stevens,LSU,S,6'1'',228,SR,2021-01-17,Eligible
+159,--,Osirus Mitchell,Mississippi State,WR,"6'5""",210,SR,2021-01-17,Eligible
+160,--,Marlon Tuipulotu,USC,DL3T,6'3'',305,RJR,2021-01-17,Eligible
+161,--,Jack Anderson,Texas Tech,OG,"6'5""",315,RJR,2021-01-17,Eligible
+162,--,Darren Hall,San Diego State,CB,"6'0""",190,JR,2021-01-17,Eligible
+163,--,Donovan Stiner,Florida,S,"6'1""",203,JR,2021-01-17,Eligible
+164,--,D'Wayne Eskridge,Western Michigan,WRS,"5'9""",188,SR,2021-01-17,Eligible
+165,--,Thomas Graham Jr.,Oregon,CB,"5'11""",197,SR,2021-01-17,Eligible
+166,--,Daelin Hayes,Notre Dame,EDGE,"6'4""",268,RSR,2021-01-17,Eligible
+167,--,Master Teague,Ohio State,RB,"5'11""",220,SR,2021-01-17,Eligible
+168,--,Tommy Kraemer,Notre Dame,OG,"6'6""",317,RSR,2021-01-17,Eligible
+169,--,Jordan Smith,UAB,EDGE,"6'7""",255,RJR,2021-01-17,Eligible
+170,--,Tyarise Stevenson,Tulsa,DL1T,"6'3""",351,RSR,2021-01-17,Eligible
+171,--,Marco Wilson,Florida,CB,"6'0""",190,RJR,2021-01-17,Eligible
+172,--,Shane Buechele,SMU,QB,"6'1""",207,RSR,2021-01-17,Eligible
+173,--,Cole Van Lanen,Wisconsin,OT,"6'5""",312,RSR,2021-01-17,Eligible
+174,--,Amari Rodgers,Clemson,WR,"5'9""",210,SR,2021-01-17,Eligible
+175,--,Sadarius Hutcherson,South Carolina,OG,"6'4""",320,RSR,2021-01-17,Eligible
+176,--,Camryn Bynum,California,CB,6'0'',180,RSR,2021-01-17,Eligible
+177,--,Rachad Wildgoose,Wisconsin,CB,5'11'',197,JR,2021-01-17,Eligible
+178,--,Jermar Jefferson,Oregon State,RBC,"5'9""",215,JR,2021-01-17,Eligible
+179,--,Jose Borregales,Miami (FL),PK,"5'10""",205,RSR,2021-01-17,Eligible
+180,--,Brennan Eagles,Texas,WR,"6'2""",225,JR,2021-01-17,Eligible
+181,+95,Tommy Doyle,Miami (OH),OT,6'8'',326,RSR,2021-01-17,Eligible
+182,--,Naquan Jones,Michigan State,DL1T,"6'4""",338,RSR,2021-01-17,Eligible
+183,--,Joshua Kaindoh,Florida State,EDGE,"6'7""",261,RJR,2021-01-17,Eligible
+184,--,Dicaprio Bootle,Nebraska,CB,"5'10""",180,RSR,2021-01-17,Eligible
+185,NEW,James Hudson,Cincinnati,OT,"6'5""",310,JR,2021-01-17,Eligible
+186,--,Kobie Whiteside,Missouri,DL3T,"6'1""",300,SR,2021-01-17,Eligible
+187,--,Kellen Mond,Texas A&M,QB,"6'3""",217,SR,2021-01-17,Eligible
+188,--,Demetric Felton,UCLA,RBC,"5'9""",189,JR,2021-01-17,Eligible
+189,--,Victor Dimukeje,Duke,EDGE,"6'2""",265,SR,2021-01-17,Eligible
+190,--,Xavier Kelly,Arkansas,DL3T,"6'4""",305,RSR,2021-01-17,Eligible
+191,--,Noah Gray,Duke,TE,"6'4""",240,SR,2021-01-17,Eligible
+192,--,Adrian Ealy,Oklahoma,OT,"6'6""",327,RJR,2021-01-17,Eligible
+193,--,Pressley Harvin III,Georgia Tech,P,"6'0""",255,SR,2021-01-17,Eligible
+194,--,Amen Ogbongbemiga,Oklahoma State,OLB,"6'1""",231,RSR,2021-01-17,Eligible
+195,--,T.J. Vasher,Texas Tech,WR,"6'6""",210,RSR,2021-01-17,Eligible
+196,--,Josh Imatorbhebhe,Illinois,WR,"6'2""",215,RSR,2021-01-17,Eligible
+197,--,Stevie Scott,Indiana,RB,"6'2""",231,JR,2021-01-17,Eligible
+198,--,Brady Christensen,BYU,OT,6'6'',300,RJR,2021-01-17,Eligible
+199,--,Ifeatu Melifonwu,Syracuse,CB,"6'3""",198,RJR,2021-01-17,Eligible
+200,--,Riley Patterson,Memphis,PK,"6'0""",190,SR,2021-01-17,Eligible
+201,--,Malcolm Koonce,Buffalo,EDGE,"6'3""",250,SR,2021-01-17,Eligible
+202,--,Robert Rochell,Central Arkansas,CB,6'2'',195,RSR,2021-01-17,Eligible
+203,--,Michal Menet,Penn State,OC,6'4'',305,RSR,2021-01-17,Eligible
+204,--,Ben Mason,Michigan,FB,"6'3""",254,SR,2021-01-17,Eligible
+205,--,Lorenzo Neal,Purdue,DL1T,6'3'',315,RSR,2021-01-17,Eligible
+206,--,D.J. Daniel,Georgia,CB,6'1'',185,SR,2021-01-17,Eligible
+207,--,Dez Fitzpatrick,Louisville,WR,"6'2""",204,RSR,2021-01-17,Eligible
+208,--,Brady White,Memphis,QB,6'3'',210,RSR,2021-01-17,Eligible
+209,--,Larry Rountree III,Missouri,RB,"5'10""",210,SR,2021-01-17,Eligible
+210,NEW,Tommy Tremble,Notre Dame,TE,6'4',248,JR,2021-01-17,Eligible
+211,--,Marquez Stevenson,Houston,WR,"6'0""",190,RSR,2021-01-17,Eligible
+212,--,Drew Himmelman,Illinois State,OT,6'9'',315,RSR,2021-01-17,Eligible
+213,--,Larry Borom,Missouri,OT,6'6'',332,JR,2021-01-17,Eligible
+214,--,Miller Forristall,Alabama,TE,"6'5""",242,RSR,2021-01-17,Eligible
+215,--,Al Blades Jr.,Miami (FL),CB,6'1'',185,SR,2021-01-17,Eligible
+216,--,Matt Allen,Michigan State,OC,6'3'',300,SR,2021-01-17,Eligible
+217,--,Tyson Dyer,New Mexico,P,"6'2""",198,SR,2021-01-17,Eligible
+218,--,Javian Hawkins,Louisville,RBC,"5'9""",182,RSO,2021-01-17,Eligible
+219,--,Shaun Jolly,Appalachian State,CB,5'9'',175,SR,2021-01-17,Eligible
+220,--,Jack Jones,Arizona State,CB,5'9'',171,SR,2021-01-17,Eligible
+221,--,Isaiahh Loudermilk,Wisconsin,DL5T,6'6'',291,RSR,2021-01-17,Eligible
+222,--,Erik Swenson,Oklahoma,OT,6'5'',326,RSR,2021-01-17,Eligible
+223,--,Hunter Duplessis,UTSA,PK,"5'8""",200,RSR,2021-01-17,Eligible
+224,--,Caleb Kelly,Oklahoma,ILB,"6'3""",225,RSR,2021-01-17,Eligible
+225,--,Trevon Grimes,Florida,WR,"6'4""",215,SR,2021-01-17,Eligible
+226,--,Demetrius Taylor,Appalachian State,DL3T,"6'1""",295,SR,2021-01-17,Eligible
+227,--,Mykel Jones,Tulane,WR,5'11'',191,SR,2021-01-17,Eligible
+228,--,Jonathon Cooper,Ohio State,EDGE,"6'4""",257,RSR,2021-01-17,Eligible
+229,+10,Antjuan Simmons,Michigan State,OLB,"6'0""",225,SR,2021-01-17,Eligible
+230,--,Ryan McCollum,Texas A&M,OC,6'5'',300,RSR,2021-01-17,Eligible
+231,--,LaRon Stokes,Oklahoma,DL5T,6'4'',278,SR,2021-01-17,Eligible
+232,--,Landon Young,Kentucky,OT,6'7'',321,SR,2021-01-17,Eligible
+233,--,K.J. Costello,Mississippi State,QB,"6'5""",225,RSR,2021-01-17,Eligible
+234,--,Tyree Gillespie,Missouri,S,6'0'',210,SR,2021-01-17,Eligible
+235,--,Kekaula Kaniho,Boise State,CB,5'9'',183,SR,2021-01-17,Eligible
+236,--,Matt Bushman,BYU,TE,"6'5""",245,SR,2021-01-17,Eligible
+237,--,Robert Hainsey,Notre Dame,OT,"6'5""",295,SR,2021-01-17,Eligible
+238,--,Rakeem Boyd,Arkansas,RB,"6'0""",213,SR,2021-01-17,Eligible
+239,--,Tory Carter,LSU,FB,"6'1""",250,JR,2021-01-17,Eligible
+240,--,Tony Fields II,West Virginia,OLB,6'0'',220,SR,2021-01-17,Eligible
+241,--,Todd Harris Jr.,LSU,S,"5'11""",186,SR,2021-01-17,Eligible
+242,NEW,Alex Kessman,Pitt,PK,"6'3""",190,RSR,2021-01-17,Eligible
+243,--,Rico Bussey Jr.,Hawaii,WR,"6'2""",193,RSR,2021-01-17,Eligible
+244,--,C.J. Brewer,Coastal Carolina,DL5T,"6'2""",285,RSR,2021-01-17,Eligible
+245,--,Osa Odighizuwa,UCLA,DL5T,6'2'',280,RSR,2021-01-17,Eligible
+246,NEW,Benjamin St-Juste,Minnesota,CB,"6'3""",205,JR,2021-01-17,Eligible
+247,--,Dax Milne,BYU,WR,"6'1""",190,JR,2021-01-17,Eligible
+248,--,Isaiah McDuffie,Boston College,OLB,"6'1""",224,RJR,2021-01-17,Eligible
+249,--,Damar Hamlin,Pitt,S,"6'1""",195,RSR,2021-01-17,Eligible
+250,--,Briley Moore,Kansas State,TE,"6'4""",250,SR,2021-01-17,Eligible
+251,--,Cornell Powell,Clemson,WR,"6'0""",201,SR,2021-01-17,Eligible
+252,NEW,Evan McPherson,Florida,PK,5'11,180,JR,2021-01-17,Eligible
+253,--,Max Richardson,Boston College,OLB,"6'0""",230,RSR,2021-01-17,Eligible
+254,--,Patrick Johnson,Tulane,EDGE,6'3'',250,SR,2021-01-17,Eligible
+255,--,Khyiris Tonga,BYU,DL1T,6'2'',326,SR,2021-01-17,Eligible
+256,--,Nick McCloud,Notre Dame,CB,"6'1""",192,RSR,2021-01-17,Eligible
+257,NEW,Pro Wells,TCU,TE,"6'4""",250,JR,2021-01-17,Eligible
+258,--,Caleb Huntley,Ball State,RB,"5'10""",226,SR,2021-01-17,Eligible
+259,--,Demetris Robertson,Georgia,WR,6'0'',190,SR,2021-01-17,Eligible
+260,--,Garret Wallow,TCU,OLB,6'2'',215,SR,2021-01-17,Eligible
+261,--,Shi Smith,South Carolina,WRS,5'10'',190,SR,2021-01-17,Eligible
+262,--,Chris Brown,Texas,S,"5'11""",187,SR,2021-01-17,Eligible
+263,+201,Kayode Awosika,Buffalo,OT,"6'5""",315,SR,2021-01-17,Eligible
+264,--,Oscar Bradburn,Virginia Tech,P,"6'1""",221,SR,2021-01-17,Eligible
+265,--,Spencer Brown,UAB,RB,"6'0""",220,SR,2021-01-17,Eligible
+266,--,Jack Wohlabaugh,Duke,OC,"6'4""",305,RSR,2021-01-17,Eligible
+267,--,O'Bryan Goodson,Memphis,DL3T,"6'1""",297,SR,2021-01-17,Eligible
+268,NEW,Anthony Hines,Texas A&M,OLB,"6'3""",226,JR,2021-01-17,Eligible
+269,--,Tuf Borland,Ohio State,ILB,"6'1""",230,RSR,2021-01-17,Eligible
+270,--,Nick Eubanks,Michigan,TE,"6'5""",236,RSR,2021-01-17,Eligible
+271,--,Austin Watkins,UAB,WR,"6'3""",205,RSR,2021-01-17,Eligible
+272,--,Calvin Ashley,Florida A&M,OG,6'7'',335,RJR,2021-01-17,Eligible
+273,--,Reed Blankenship,Middle Tennessee,S,"6'1""",196,SR,2021-01-17,Eligible
+274,--,Frank Darby,Arizona State,WR,6'1'',200,RSR,2021-01-17,Eligible
+275,--,Jordon Scott,Oregon,DL1T,"6'1""",322,SR,2021-01-17,Eligible
+276,--,Drew Dalman,Stanford,OC,"6'3""",300,RJR,2021-01-17,Eligible
+277,NEW,Brenden Knox,Marshall,RB,"6'0""",223,RJR,2021-01-17,Eligible
+278,--,Dan Moore Jr.,Texas A&M,OT,6'5'',315,SR,2021-01-17,Eligible
+279,--,Mitchell Brinkman,South Florida,TE,"6'3""",250,RSR,2021-01-17,Eligible
+280,--,James Wiggins,Cincinnati,S,"6'0""",202,RSR,2021-01-17,Eligible
+281,--,Feleipe Franks,Arkansas,QB,"6'6""",228,RSR,2021-01-17,Eligible
+282,--,Whop Philyor,Indiana,WR,"5'11""",180,SR,2021-01-17,Eligible
+283,--,Kyree Campbell,Florida,DL3T,"6'3""",304,SR,2021-01-17,Eligible
+284,--,Rhamondre Stevenson,Oklahoma,RB,"6'0""",236,SR,2021-01-17,Eligible
+285,--,Baveon Johnson,Florida State,OG,6'3'',307,RSR,2021-01-17,Eligible
+286,-45,Keith Duncan,Iowa,PK,"5'10""",180,SR,2021-01-17,Eligible
+287,--,Erroll Thompson,Mississippi State,ILB,"6'1""",250,RSR,2021-01-17,Eligible
+288,--,Michael Clemons,Texas A&M,EDGE,6'5'',270,RSR,2021-01-17,Eligible
+289,--,Jean Delance,Florida,OG,6'4'',316,RSR,2021-01-17,Eligible
+290,--,Aaron Robinson,UCF,CB,5'11'',193,RSR,2021-01-17,Eligible
+291,--,Michael Saffell,California,OC,6'2'',290,SR,2021-01-17,Eligible
+292,--,Greg McCrae,UCF,RBC,5'10'',175,SR,2021-01-17,Eligible
+293,--,JaQuan Bailey,Iowa State,EDGE,"6'2""",261,RSR,2021-01-17,Eligible
+294,NEW,Kendrick Green,Illinois,OG,"6'4""",315,JR,2021-01-17,Eligible
+295,--,Tarron Jackson,Coastal Carolina,EDGE,6'2'',265,RSR,2021-01-17,Eligible
+296,--,Warren Jackson,Colorado State,WR,6'6'',212,SR,2021-01-17,Eligible
+297,--,Ian Book,Notre Dame,QB,6'0'',206,RSR,2021-01-17,Eligible
+298,--,Zac Thomas,Appalachian State,QB,6'1'',210,RSR,2021-01-17,Eligible
+299,--,Adetokunbo Ogundeji,Notre Dame,EDGE,"6'4""",268,RSR,2021-01-17,Eligible
+300,--,Marlon Character,Louisville,CB,"6'1""",195,RSR,2021-01-17,Eligible
+301,--,William Bradley-King,Baylor,EDGE,"6'4""",248,SR,2021-01-17,Eligible
+302,--,Drue Chrisman,Ohio State,P,6'2'',222,RSR,2021-01-17,Eligible
+303,--,Emeka Emezie,NC State,WR,6'3'',220,SR,2021-01-17,Eligible
+304,--,Forrest Merrill,Arkansas State,DL1T,6'1'',349,RSR,2021-01-17,Eligible
+305,NEW,Brady Breeze,Oregon,S,"6'0""",196,SR,2021-01-17,Eligible
+306,--,Aubrey Solomon,Tennessee,DL1T,"6'5""",315,SR,2021-01-17,Eligible
+307,--,Blake Haubeil,Ohio State,PK,6'2'',230,SR,2021-01-17,Eligible
+308,--,Jonathan Adams Jr.,Arkansas State,WR,6'3'',210,SR,2021-01-17,Eligible
+309,--,Danny Davis III,Wisconsin,WR,6'0'',200,SR,2021-01-17,Eligible
+310,--,Myron Tagovailoa-Amosa,Notre Dame,DL5T,"6'3""",285,SR,2021-01-17,Eligible
+311,--,Shawn Davis,Florida,S,6'0'',206,SR,2021-01-17,Eligible
+312,--,Devin Taylor,Virginia Tech,CB,6'1'',200,RSR,2021-01-17,Eligible
+313,--,Racey McMath,LSU,WR,6'3'',224,SR,2021-01-17,Eligible
+314,-30,Elerson Smith,Northern Iowa,EDGE,6'6'',245,RSR,2021-01-17,Eligible
+315,--,Eli Howard,Texas Tech,DL5T,"6'4""",280,RSR,2021-01-17,Eligible
+316,--,Gerrid Doaks,Cincinnati,RB,6'0'',230,SR,2021-01-17,Eligible
+317,--,Raheem Blackshear,Virginia Tech,RBC,"5'9""",185,SR,2021-01-17,Eligible
+318,--,Mike Strachan,Charleston,WR,6'4'',225,RSR,2021-01-17,Eligible
+319,--,Jake Verity,East Carolina,PK,"6'1""",201,SR,2021-01-17,Eligible
+320,--,Ronnie Rivers,Fresno State,RBC,"5'8""",183,SR,2021-01-17,Eligible
+321,--,Joshuah Bledsoe,Missouri,S,6'0'',200,SR,2021-01-17,Eligible
+322,--,Cordell Volson,North Dakota State,OT,6'6'',313,SR,2021-01-17,Eligible
+323,--,Dion Novil,North Texas,DL1T,6'4'',330,SR,2021-01-17,Eligible
+324,--,Mike Hampton,South Florida,CB,6'0'',190,RSR,2021-01-17,Eligible
+325,--,Andrew Vasdardis,Michigan,OC,6'3'',296,RSR,2021-01-17,Eligible
+326,--,Stewart Reese,Florida,OG,6'5'',350,RSR,2021-01-17,Eligible
+327,--,Stone Forsythe,Florida,OT,6'8'',329,RSR,2021-01-17,Eligible
+328,--,Ty Chandler,Tennessee,RBC,"5'11""",201,SR,2021-01-17,Eligible
+329,--,Dayo Odeyingbo,Vanderbilt,DL5T,6'5'',279,SR,2021-01-17,Eligible
+330,--,Justin Foster,Clemson,EDGE,6'2'',265,SR,2021-01-17,Eligible
+331,--,Janarius Robinson,Florida State,EDGE,"6'5""",261,RSR,2021-01-17,Eligible
+332,--,Christian Holmes,Oklahoma State,CB,6'0'',200,RSR,2021-01-17,Eligible
+333,--,Darrick Forrest,Cincinnati,S,6'0'',198,SR,2021-01-17,Eligible
+334,--,Derrick Barnes,Purdue,ILB,"6'1""",240,SR,2021-01-17,Eligible
+335,--,Corey Bethley,TCU,DL3T,"6'2""",290,SR,2021-01-17,Eligible
+336,--,Aashari Crosswell,Arizona State,S,6'0'',205,JR,2021-01-17,Eligible
+337,--,Rayshard Ashby,Virginia Tech,ILB,"5'10""",230,SR,2021-01-17,Eligible
+338,--,Will Fries,Penn State,OT,6'6'',306,RSR,2021-01-17,Eligible
+339,--,Austin Faoliu,Oregon,DL3T,6'3'',293,SR,2021-01-17,Eligible
+340,--,Josh Palmer,Tennessee,WR,6'2'',210,SR,2021-01-17,Eligible
+341,--,Luke Farrell,Ohio State,TE,"6'6""",250,RSR,2021-01-17,Eligible
+342,--,Conner Olson,Minnesota,OC,"6'5""",305,RSR,2021-01-17,Eligible
+343,--,Luke Wattenberg,Washington,OC,6'5'',300,RSR,2021-01-17,Eligible
+344,--,Julian Rochester,Georgia,DL3T,"6'5""",300,RSR,2021-01-17,Eligible
+345,--,Neil Farrell Jr.,LSU,DL1T,6'4'',319,SR,2021-01-17,Eligible
+346,--,Theo Howard,Oklahoma,WR,6'0'',182,RSR,2021-01-17,Eligible
+347,--,Royce Newman,Ole Miss,OG,6'6'',310,RSR,2021-01-17,Eligible
+348,--,Lamont Wade,Penn State,S,5'9'',199,SR,2021-01-17,Eligible
+349,--,Marquiss Spencer,Mississippi State,DL5T,"6'4""",285,RSR,2021-01-17,Eligible
+350,--,Isaac Slade-Matautia,Oregon,OLB,6'1'',232,RSR,2021-01-17,Eligible
+351,--,Ty Clary,Arkansas,OC,6'4'',298,SR,2021-01-17,Eligible
+352,--,Vavae Malepeai,USC,RB,"6'0""",220,RSR,2021-01-17,Eligible
+353,--,Jamar Watson,Kentucky,EDGE,6'3'',244,RSR,2021-01-17,Eligible
+354,--,Chris Wilcox,BYU,CB,6'2'',197,RSR,2021-01-17,Eligible
+355,--,James Smith,Cincinnati,P,6'4'',235,SR,2021-01-17,Eligible
+356,--,Myles Jones,Texas A&M,CB,6'4'',185,SR,2021-01-17,Eligible
+357,--,Jamien Sherwood,Auburn,S,6'2'',220,SR,2021-01-17,Eligible
+358,--,Robert Jones,Middle Tennessee,OT,6'5'',330,SR,2021-01-17,Eligible
+359,--,Otis Anderson,UCF,RBC,"5'11""",174,SR,2021-01-17,Eligible
+360,--,Brandon Pili,USC,DL1T,6'3'',334,SR,2021-01-17,Eligible
+361,--,Chauncey Golston,Iowa,EDGE,"6'5""",270,RSR,2021-01-17,Eligible
+362,--,Viane Moala,Utah,DL1T,6'6'',323,RSR,2021-01-17,Eligible
+363,--,Robert Mahone,Boise State,RBC,5'10'',203,RSR,2021-01-17,Eligible
+364,--,Brenden Jaimes,Nebraska,OT,6'5'',300,SR,2021-01-17,Eligible
+365,--,Blake Gallagher,Northwestern,OLB,"6'1""",235,SR,2021-01-17,Eligible
+366,--,Tre Norwood,Oklahoma,CB,6'0'',194,RJR,2021-01-17,Eligible
+367,--,Jahad Woods,Washington State,ILB,"6'0""",225,RSR,2021-01-17,Eligible
+368,--,Quinn Nordin,Michigan,PK,6'0'',196,RSR,2021-01-17,Eligible
+369,--,Brett Heggie,Florida,OG,6'3'',321,RSR,2021-01-17,Eligible
+370,--,Treshaun Hayward,Western Michigan,ILB,"6'1""",225,SR,2021-01-17,Eligible
+371,--,Boe Wilson,Nebraska,OG,6'3'',300,RSR,2021-01-17,Eligible
+372,--,C.J. Avery,Louisville,OLB,5'11'',230,SR,2021-01-17,Eligible
+373,--,Vederian Lowe,Illinois,OT,6'6'',320,SR,2021-01-17,Eligible
+374,NEW,Nolan Cooney,Syracuse,P,"6'3""",202,RSR,2021-01-17,Eligible
+375,--,Stephen Carr,USC,RB,"6'0""",210,SR,2021-01-17,Eligible
+376,--,Jack Heflin,Iowa,DL3T,6'4'',317,RSR,2021-01-17,Eligible
+377,--,Trey Ragas,Louisiana-Lafayette,RB,"5'10""",218,SR,2021-01-17,Eligible
+378,+50,Zach Von Rosenberg,LSU,P,"6'5""",245,RSR,2021-01-17,Eligible
+379,--,Chris Owens,Alabama,OC,6'3'',315,RSR,2021-01-17,Eligible
+380,--,Jake Hansen,Illinois,OLB,6'1'',230,RSR,2021-01-17,Eligible
+381,--,Leonard Warner III,Florida State,ILB,"6'4""",234,SR,2021-01-17,Eligible
+382,--,Asim Rose,Kentucky,RB,"6'1""",210,SR,2021-01-17,Eligible
+383,--,Justin Hilliard,Ohio State,ILB,"6'1""",235,RSR,2021-01-17,Eligible
+384,--,Zane Zandier,Virginia,ILB,6'3'',230,SR,2021-01-17,Eligible
+385,--,Demario McCall,Ohio State,RBC,"5'9""",195,RSR,2021-01-17,Eligible
+386,--,K.D. Nixon,Colorado,WRS,5'8'',185,SR,2021-01-17,Eligible
+387,--,Abdul Adams,Syracuse,RBC,"5'11""",212,RSR,2021-01-17,Eligible
+388,--,J.C. Chalk,Clemson,TE,"6'3""",255,SR,2021-01-17,Eligible
+389,--,Peyton Ramsey,Northwestern,QB,6'2'',220,RSR,2021-01-17,Eligible
+390,--,Dorian Etheridge,Louisville,ILB,6'3'',230,SR,2021-01-17,Eligible
+391,--,Joshua McMillon,Alabama,ILB,"6'3""",237,RSR,2021-01-17,Eligible
+392,--,Riko Jeffers,Texas Tech,ILB,6'2'',235,SR,2021-01-17,Eligible
+393,--,Dylan Soehner,Iowa State,TE,"6'7""",270,SR,2021-01-17,Eligible
+394,--,Mekhi Sargent,Iowa,RBC,"5'9""",212,SR,2021-01-17,Eligible
+395,--,Shaun Beyer,Iowa,TE,"6'5""",222,RSR,2021-01-17,Eligible
+396,NEW,Christian Tutt,Auburn,CB,5'11,192,JR,2021-01-17,Eligible
+397,NEW,William Sherman,Colorado,OT,"6'4""",310,JR,2021-01-17,Eligible
+398,NEW,Blake Proehl,East Carolina,WR,"6'1""",186,JR,2021-01-17,Eligible
+399,NEW,Jamar Johnson,Indiana,S,"6'1""",197,JR,2021-01-17,Eligible
+400,NEW,Jamin Davis,Kentucky,ILB,"6'4""",234,JR,2021-01-17,Eligible
