@@ -66,6 +66,7 @@ namespace prospectScraper
                 "San Jose St" => "San Jose State",
                 "Michigan St" => "Michigan State",
                 "Lousiville" => "Louisville",
+                "UW-Whitewater" => "UW–Whitewater",
                 _ => schoolName,
             };
             return schoolName;
