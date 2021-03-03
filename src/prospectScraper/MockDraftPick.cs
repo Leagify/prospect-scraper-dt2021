@@ -145,8 +145,9 @@ namespace prospectScraper
             var stateResult = from s in schoolsAndConferences
                               where s.schoolName == school
                               select s.state;
-
+#nullable enable
             string? srfd = stateResult.FirstOrDefault();
+#nullable disable
             string sr = string.Empty;
 
             if (srfd != null)
