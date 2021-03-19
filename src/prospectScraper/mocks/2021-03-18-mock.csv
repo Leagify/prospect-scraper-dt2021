@@ -1,0 +1,217 @@
+Pick,Round,Player,School,Position,Team,ReachValue,Points,Date,State
+1,1,Trevor Lawrence,Clemson,QB,Jacksonville,+0,40,2021-03-18,South Carolina
+2,1,Zach Wilson,BYU,QB,NY Jets,-2,35,2021-03-18,Utah
+3,1,Justin Fields,Ohio State,QB,Carolina (SIM Trade),-2,35,2021-03-18,Ohio
+4,1,Trey Lance,North Dakota State,QB,New England (SIM Trade),-7,35,2021-03-18,North Dakota
+5,1,Penei Sewell,Oregon,OT,Cincinnati,+3,35,2021-03-18,Oregon
+6,1,Kyle Pitts,Florida,TE,Philadelphia,-1,35,2021-03-18,Florida
+7,1,DeVonta Smith,Alabama,WR,Detroit,-3,35,2021-03-18,Alabama
+8,1,Ja'Marr Chase,LSU,WR,Miami (SIM Trade),+5,35,2021-03-18,Louisiana
+9,1,Micah Parsons,Penn State,ILB,Denver,-5,35,2021-03-18,Pennsylvania
+10,1,Caleb Farley,Virginia Tech,CB,Dallas,+2,35,2021-03-18,Virginia
+11,1,Jaylen Waddle,Alabama,WRS,NY Giants,+5,30,2021-03-18,Alabama
+12,1,Jaycee Horn,South Carolina,CB,San Francisco,-3,30,2021-03-18,South Carolina
+13,1,Patrick Surtain II,Alabama,CB,LA Chargers,+4,30,2021-03-18,Alabama
+14,1,Gregory Rousseau,Miami (FL),EDGE,Minnesota,+1,30,2021-03-18,Florida
+15,1,Kwity Paye,Michigan,EDGE,Atlanta (SIM Trade),-4,30,2021-03-18,Michigan
+16,1,Greg Newsome II,Northwestern,CB,Arizona,-12,30,2021-03-18,Illinois
+17,1,Christian Darrisaw,Virginia Tech,OT,Las Vegas,-4,30,2021-03-18,Virginia
+18,1,Rashawn Slater,Northwestern,OT,Miami,+6,30,2021-03-18,Illinois
+19,1,Rashod Bateman,Minnesota,WR,Washington,-1,30,2021-03-18,Minnesota
+20,1,Mac Jones,Alabama,QB,Chicago,-6,30,2021-03-18,Alabama
+21,1,Samuel Cosmi,Texas,OT,Indianapolis,-1,25,2021-03-18,Texas
+22,1,Rondale Moore,Purdue,WRS,Tennessee,+4,25,2021-03-18,Indiana
+23,1,Wyatt Davis,Ohio State,OG,NY Jets (Trade),+7,25,2021-03-18,Ohio
+24,1,Zaven Collins,Tulsa,OLB,Pittsburgh,-13,25,2021-03-18,Oklahoma
+25,1,Christian Barmore,Alabama,DL1T,Jacksonville (Trade),+8,25,2021-03-18,Alabama
+26,1,Nick Bolton,Missouri,ILB,Cleveland,-6,25,2021-03-18,Missouri
+27,1,Trevon Moehrig,TCU,S,Baltimore,+4,25,2021-03-18,Texas
+28,1,Kadarius Toney,Florida,WR,New Orleans,-11,25,2021-03-18,Florida
+29,1,Asante Samuel Jr.,Florida State,CB,Green Bay,+4,25,2021-03-18,Florida
+30,1,Travis Etienne,Clemson,RB,Buffalo,+6,25,2021-03-18,South Carolina
+31,1,Teven Jenkins,Oklahoma State,OT,Kansas City,-64,25,2021-03-18,Oklahoma
+32,1,Daviyon Nixon,Iowa,DL3T,Tampa Bay,+5,25,2021-03-18,Iowa
+33,2,Richie Grant,UCF,S,Jacksonville,+4,20,2021-03-18,Florida
+34,2,Tyson Campbell,Georgia,CB,NY Jets,-9,20,2021-03-18,Georgia
+35,2,Najee Harris,Alabama,RB,Atlanta,+0,20,2021-03-18,Alabama
+36,2,Alijah Vera-Tucker,USC,OG,Miami (Trade),+2,20,2021-03-18,California
+37,2,Jeremiah Owusu-Koramoah,Notre Dame,OLB,Philadelphia,+7,20,2021-03-18,Indiana
+38,2,Azeez Ojulari,Georgia,EDGE,Cincinnati,+7,20,2021-03-18,Georgia
+39,2,Andre Cisco,Syracuse,S,Carolina,-6,20,2021-03-18,New York
+40,2,Marvin Wilson,Florida State,DL1T,Denver,-7,20,2021-03-18,Florida
+41,2,Joseph Ossai,Texas,EDGE,Detroit,+8,20,2021-03-18,Texas
+42,2,Jaelan Phillips,Miami (FL),EDGE,NY Giants,-6,20,2021-03-18,Florida
+43,2,Quinn Meinerz,UW–Whitewater,OC,San Francisco,-33,20,2021-03-18,Wisconsin
+44,2,Carlos Basham Jr.,Wake Forest,DL5T,Dallas,-9,20,2021-03-18,North Carolina
+45,2,Walker Little,Stanford,OT,Jacksonville (Trade),-42,20,2021-03-18,California
+46,2,Jevon Holland,Oregon,S,Atlanta (SIM Trade),-13,20,2021-03-18,Oregon
+47,2,Alex Leatherwood,Alabama,OT,LA Chargers,+9,20,2021-03-18,Alabama
+48,2,Hamsah Nasirildeen,Florida State,S,Las Vegas,-16,20,2021-03-18,Florida
+49,2,Creed Humphrey,Oklahoma,OC,Arizona,+7,15,2021-03-18,Oklahoma
+50,2,Jayson Oweh,Penn State,EDGE,Miami,-1,15,2021-03-18,Pennsylvania
+51,2,Jalen Mayfield,Michigan,OT,Washington,+5,15,2021-03-18,Michigan
+52,2,Elijah Moore,Ole Miss,WRS,Chicago,-5,15,2021-03-18,Mississippi
+53,2,Pat Freiermuth,Penn State,TE,Tennessee,+3,15,2021-03-18,Pennsylvania
+54,2,Trey Smith,Tennessee,OG,Indianapolis,+14,15,2021-03-18,Tennessee
+55,2,Landon Dickerson,Alabama,OC,Pittsburgh,-5,15,2021-03-18,Alabama
+56,2,Elijah Molden,Washington,CB,Seattle,+0,15,2021-03-18,Washington
+57,2,Dylan Moses,Alabama,OLB,LA Rams,+8,15,2021-03-18,Alabama
+58,2,Patrick Jones II,Pitt,EDGE,Baltimore,-9,15,2021-03-18,Pennsylvania
+59,2,Ifeatu Melifonwu,Syracuse,CB,Cleveland,-14,15,2021-03-18,New York
+60,2,Kyle Trask,Florida,QB,New Orleans,+19,15,2021-03-18,Florida
+61,2,Shaun Wade,Ohio State,FS,Buffalo,-4,15,2021-03-18,Ohio
+62,2,Tylan Wallace,Oklahoma State,WR,Green Bay,+10,15,2021-03-18,Oklahoma
+63,2,Terrace Marshall,LSU,WR,Kansas City,+27,15,2021-03-18,Louisiana
+64,2,Jackson Carman,Clemson,OT,Tampa Bay,-7,15,2021-03-18,South Carolina
+106,4,Tutu Atwell,Louisville,WRS,Jacksonville,+8,8,2021-03-18,Kentucky
+107,4,Chuba Hubbard,Oklahoma State,RB,NY Jets,+18,8,2021-03-18,Oklahoma
+108,4,Paulson Adebo,Stanford,CB,Atlanta,+5,8,2021-03-18,California
+109,4,Dazz Newsome,North Carolina,WR,Houston,+8,8,2021-03-18,North Carolina
+110,4,Damonte Coxie,Memphis,WR,Cleveland (Trade),+5,8,2021-03-18,Tennessee
+111,4,Marlon Williams,UCF,WR,Cincinnati,+2,8,2021-03-18,Florida
+112,4,Israel Mukuamu,South Carolina,CB,Detroit,+0,8,2021-03-18,South Carolina
+113,4,Caden Sterns,Texas,S,Miami (SIM Trade),-2,8,2021-03-18,Texas
+114,4,Jaret Patterson,Buffalo,RB,Denver,+7,8,2021-03-18,New York
+115,4,Divine Deablo,Virginia Tech,S,Dallas,-2,8,2021-03-18,Virginia
+116,4,Drake Jackson,Kentucky,OC,NY Giants,+8,8,2021-03-18,Kentucky
+117,4,Benjamin St-Juste,Minnesota,CB,San Francisco,-63,8,2021-03-18,Minnesota
+118,4,Marlon Tuipulotu,USC,DL3T,LA Chargers,+2,8,2021-03-18,California
+119,4,Aaron Banks,Notre Dame,OG,Minnesota,-2,8,2021-03-18,Indiana
+120,4,Sage Surratt,Wake Forest,WR,New England,+10,8,2021-03-18,North Carolina
+121,4,Jonathan Marshall,Arkansas,DL1T,Las Vegas (Trade),-10,8,2021-03-18,Arkansas
+122,4,Kenny Yeboah,Ole Miss,TE,Houston (Trade),+8,8,2021-03-18,Mississippi
+123,4,K.J. Britt,Auburn,ILB,Miami,-16,8,2021-03-18,Alabama
+124,4,Kellen Mond,Texas A&M,QB,Washington,-19,8,2021-03-18,Texas
+125,4,Tommy Togiai,Ohio State,DL3T,Minnesota (Trade),-24,8,2021-03-18,Ohio
+126,4,Spencer K. Brown,Northern Iowa,OT,Tennessee,-21,8,2021-03-18,Iowa
+127,4,Paddy Fisher,Northwestern,ILB,Indianapolis,-34,8,2021-03-18,Illinois
+128,4,Rodarius Williams,Oklahoma State,CB,Pittsburgh,-2,8,2021-03-18,Oklahoma
+129,4,Jack Anderson,Texas Tech,OG,Seattle,-24,8,2021-03-18,Texas
+130,4,Khalil Herbert,Virginia Tech,RBC,Jacksonville (Trade),+12,8,2021-03-18,Virginia
+131,4,Trey Hill,Georgia,OC,Baltimore,+6,8,2021-03-18,Georgia
+132,4,Ar'Darius Washington,TCU,S,Cleveland,+12,8,2021-03-18,Texas
+133,4,Tony Poljan,Virginia,TE,New Orleans,+9,8,2021-03-18,Virginia
+134,4,JaCoby Stevens,LSU,S,Minnesota (Trade),-16,8,2021-03-18,Louisiana
+135,4,Ta'Quon Graham,Texas,DL3T,Green Bay,-9,8,2021-03-18,Texas
+136,4,Jimmy Morrissey,Pitt,OC,Kansas City,-32,8,2021-03-18,Pennsylvania
+137,4,Dayo Odeyingbo,Vanderbilt,DL5T,Tampa Bay,+26,8,2021-03-18,Tennessee
+138,4,Jordan Smith,UAB,EDGE,Dallas (Comp),-13,8,2021-03-18,Alabama
+139,4,Michal Menet,Penn State,OC,New England (Comp),-49,8,2021-03-18,Pennsylvania
+140,4,Cary Angeline,NC State,TE,Pittsburgh (Comp),+14,8,2021-03-18,North Carolina
+141,4,Kylin Hill,Mississippi State,RB,LA Rams (Comp),+13,8,2021-03-18,Mississippi
+142,4,Tariq Thompson,San Diego State,S,Green Bay (Comp),+5,8,2021-03-18,California
+143,4,Thomas Graham Jr.,Oregon,CB,Minnesota (Comp),-14,8,2021-03-18,Oregon
+144,4,Keith Taylor,Washington,CB,Kansas City (Comp),+12,8,2021-03-18,Washington
+145,4,Charles Snowden,Virginia,OLB,Jacksonville,+16,8,2021-03-18,Virginia
+146,4,Ihmir Smith-Marsette,Iowa,WR,NY Jets,+19,8,2021-03-18,Iowa
+147,5,Olaijah Griffin,USC,CB,Houston,+12,7,2021-03-18,California
+148,5,Tedarrell Slaton,Florida,DL1T,Atlanta,+14,7,2021-03-18,Florida
+149,5,Kylen Granson,SMU,TE,Cincinnati,+8,7,2021-03-18,Texas
+150,5,Sam Ehlinger,Texas,QB,Philadelphia,-13,7,2021-03-18,Texas
+151,5,Darren Hall,San Diego State,CB,Carolina,-4,7,2021-03-18,California
+152,5,Jamien Sherwood,Auburn,S,Denver,+7,7,2021-03-18,Alabama
+153,5,Bobby Brown III,Texas A&M,DL1T,Detroit,-1,7,2021-03-18,Texas
+154,5,Daelin Hayes,Notre Dame,EDGE,NY Jets (Trade),-8,7,2021-03-18,Indiana
+155,5,Damon Hazelton,Missouri,WR,San Francisco,+19,7,2021-03-18,Missouri
+156,5,Pooka Williams,Kansas,RBC,Philadelphia (Trade),+18,7,2021-03-18,Kansas
+157,5,Shane Buechele,SMU,QB,Minnesota,-20,7,2021-03-18,Texas
+158,5,Tommy Kraemer,Notre Dame,OG,New England,-6,7,2021-03-18,Indiana
+159,5,Donovan Stiner,Florida,S,LA Chargers,+3,7,2021-03-18,Florida
+160,5,Sadarius Hutcherson,South Carolina,OG,Arizona,-9,7,2021-03-18,South Carolina
+161,5,Shemar Jean-Charles,Appalachian State,CB,Buffalo (Trade),+2,7,2021-03-18,North Carolina
+162,5,Xavier Kelly,Arkansas,DL3T,Las Vegas (Trade),-21,7,2021-03-18,Arkansas
+163,5,Marco Wilson,Florida,CB,Washington,-2,7,2021-03-18,Florida
+164,5,Monty Rice,Georgia,OLB,Chicago,+24,7,2021-03-18,Georgia
+165,5,Trill Williams,Syracuse,CB,Indianapolis,-1,7,2021-03-18,New York
+166,5,Shaka Toney,Penn State,EDGE,Tennessee,-1,7,2021-03-18,Pennsylvania
+167,5,Alaric Jackson,Iowa,OT,Seattle,-8,7,2021-03-18,Iowa
+168,5,Tommy Tremble,Notre Dame,TE,Minnesota (Trade),-39,7,2021-03-18,Indiana
+169,5,Brady White,Memphis,QB,Cleveland (Trade),-35,7,2021-03-18,Tennessee
+170,5,Wyatt Hubert,Kansas State,EDGE,Jacksonville,+0,7,2021-03-18,Kansas
+171,5,Nico Collins,Michigan,WR,Baltimore,+23,7,2021-03-18,Michigan
+172,5,Tommy Doyle,Miami (OH),OT,San Francisco (Trade),-4,7,2021-03-18,Ohio
+173,5,Brady Christensen,BYU,OT,Green Bay,-23,7,2021-03-18,Utah
+174,5,Joshua Kaindoh,Florida State,EDGE,Buffalo,-4,7,2021-03-18,Florida
+175,5,James Hudson,Cincinnati,OT,Kansas City,-4,7,2021-03-18,Ohio
+176,5,Tyler Vaughns,USC,WR,Tampa Bay,+24,7,2021-03-18,California
+177,5,Osa Odighizuwa,UCLA,DL5T,Green Bay (Comp),-34,7,2021-03-18,California
+178,5,Adrian Ealy,Oklahoma,OT,Dallas (Comp),-8,7,2021-03-18,Oklahoma
+179,5,Amen Ogbongbemiga,Oklahoma State,OLB,Atlanta (Comp),-11,7,2021-03-18,Oklahoma
+180,6,Malik Herring,Georgia,DL5T,San Francisco (Comp),+20,6,2021-03-18,Georgia
+181,6,Jamin Davis,Kentucky,ILB,Kansas City (Comp),-11,6,2021-03-18,Kentucky
+182,6,O'Bryan Goodson,Memphis,DL3T,Atlanta (Comp),-69,6,2021-03-18,Tennessee
+183,6,Noah Gray,Duke,TE,Baltimore (Comp),-2,6,2021-03-18,North Carolina
+184,6,Ryan McCollum,Texas A&M,OC,Tennessee (Trade),-40,6,2021-03-18,Texas
+185,6,Larry Borom,Missouri,OT,NY Jets (Trade),-24,6,2021-03-18,Missouri
+186,6,Amari Rodgers,Clemson,WR,Atlanta,+28,6,2021-03-18,South Carolina
+187,6,Elijah Mitchell,Louisiana-Lafayette,RB,Houston,+54,6,2021-03-18,Louisiana
+188,6,D.J. Daniel,Georgia,CB,Philadelphia,+17,6,2021-03-18,Georgia
+189,6,Torrance Marable,Coastal Carolina,RBC,Cincinnati,+47,6,2021-03-18,South Carolina
+190,6,Camryn Bynum,California,CB,Denver,+18,6,2021-03-18,California
+191,6,T.J. Vasher,Texas Tech,WR,Dallas (Trade),+0,6,2021-03-18,Texas
+192,6,Matt Bushman,BYU,TE,Carolina,-2,6,2021-03-18,Utah
+193,6,Victor Dimukeje,Duke,EDGE,San Francisco,+11,6,2021-03-18,North Carolina
+194,6,Jermar Jefferson,Oregon State,RBC,New England (Trade),+21,6,2021-03-18,Oregon
+195,6,Kary Vincent Jr.,LSU,CB,NY Giants,+11,6,2021-03-18,Louisiana
+196,6,Kelvin Joseph,Kentucky,CB,New England,+9,6,2021-03-18,Kentucky
+197,6,Demetric Felton,UCLA,RBC,LA Chargers,+16,6,2021-03-18,California
+198,6,Marquez Stevenson,Houston,WR,Minnesota,-10,6,2021-03-18,Texas
+199,6,Landon Young,Kentucky,OT,NY Giants (Trade),-27,6,2021-03-18,Kentucky
+200,6,Tyree Gillespie,Missouri,S,Houston (Trade),-27,6,2021-03-18,Missouri
+201,6,Josh Imatorbhebhe,Illinois,WR,Las Vegas (Trade),+8,6,2021-03-18,Illinois
+202,6,Malcolm Koonce,Buffalo,EDGE,Chicago,+3,6,2021-03-18,New York
+203,6,Tuf Borland,Ohio State,ILB,LA Chargers (Trade),-51,6,2021-03-18,Ohio
+204,6,Khyiris Tonga,BYU,DL1T,Indianapolis,-6,6,2021-03-18,Utah
+205,6,Damar Hamlin,Pitt,S,Kansas City (Trade),-29,6,2021-03-18,Pennsylvania
+206,6,Stevie Scott,Indiana,RB,Seattle,+11,6,2021-03-18,Indiana
+207,6,Robert Hainsey,Notre Dame,OT,LA Rams,-22,6,2021-03-18,Indiana
+208,6,Naquan Jones,Michigan State,DL1T,Baltimore,-17,6,2021-03-18,Michigan
+209,6,Jordon Scott,Oregon,DL1T,Cleveland,-52,6,2021-03-18,Oregon
+210,6,Robert Rochell,Central Arkansas,CB,Houston (Trade),+10,6,2021-03-18,Arkansas
+211,6,Quintin Morris,Bowling Green,TE,Buffalo,+14,6,2021-03-18,Ohio
+212,6,Javian Hawkins,Louisville,RBC,Green Bay,-5,6,2021-03-18,Kentucky
+213,6,Calvin Ashley,Florida A&M,OG,Tennessee (Trade),-46,6,2021-03-18,Florida
+214,6,Kayode Awosika,Buffalo,OT,Pittsburgh (Trade),-34,6,2021-03-18,New York
+215,7,Antjuan Simmons,Michigan State,OLB,Tampa Bay (Comp),-8,5,2021-03-18,Michigan
+216,7,Tony Fields II,West Virginia,OLB,New Orleans (Comp),-15,5,2021-03-18,West Virginia
+217,7,Shi Smith,South Carolina,WRS,Atlanta (Comp),+14,5,2021-03-18,South Carolina
+218,7,Kendrick Green,Illinois,OG,Green Bay (Comp),-64,5,2021-03-18,Illinois
+219,7,Chris Brown,Texas,S,Chicago (Comp),-34,5,2021-03-18,Texas
+220,7,Brennan Eagles,Texas,WR,Carolina (Comp),+18,5,2021-03-18,Texas
+221,7,Adetokunbo Ogundeji,Notre Dame,EDGE,Minnesota (Comp),-64,5,2021-03-18,Indiana
+222,7,Drew Dalman,Stanford,OC,Philadelphia (Comp),-40,5,2021-03-18,California
+223,7,Dan Moore Jr.,Texas A&M,OT,Philadelphia (Comp),-41,5,2021-03-18,Texas
+224,7,Deommodore Lenoir,Oregon,CB,Carolina (Comp),+18,5,2021-03-18,Oregon
+225,7,Larry Rountree III,Missouri,RB,Dallas (Comp),+20,5,2021-03-18,Missouri
+226,7,Lorenzo Neal,Purdue,DL1T,Chicago (Comp),-45,5,2021-03-18,Indiana
+227,7,Tre' McKitty,Georgia,TE,Jacksonville,+5,5,2021-03-18,Georgia
+228,7,Davis Mills,Stanford,QB,San Francisco (Trade),-119,5,2021-03-18,California
+229,7,Cameron Sample,Tulane,EDGE,Houston,+11,5,2021-03-18,Louisiana
+230,7,Kyree Campbell,Florida,DL3T,Miami (Trade),-38,5,2021-03-18,Florida
+231,7,Mustafa Johnson,Colorado,DL5T,Cincinnati,+19,5,2021-03-18,Colorado
+232,7,James Wiggins,Cincinnati,S,Philadelphia,-34,5,2021-03-18,Ohio
+233,7,Tay Gowan,UCF,CB,Cincinnati (Trade),+19,5,2021-03-18,Florida
+234,7,Cade Johnson,South Dakota State,WRS,Buffalo (Trade),-26,5,2021-03-18,South Dakota
+235,7,Isaiahh Loudermilk,Wisconsin,DL5T,Denver,+22,5,2021-03-18,Wisconsin
+236,7,Briley Moore,Kansas State,TE,Dallas,+1,5,2021-03-18,Kansas
+237,7,K.J. Costello,Mississippi State,QB,Denver (Trade),-20,5,2021-03-18,Mississippi
+238,7,Erroll Thompson,Mississippi State,ILB,Philadelphia (Trade),-37,5,2021-03-18,Mississippi
+239,7,Carlo Kemp,Michigan,DL5T,LA Chargers,+20,5,2021-03-18,Michigan
+240,7,David Moore,Grambling State,OG,Minnesota,-70,5,2021-03-18,Louisiana
+241,7,Jonathon Cooper,Ohio State,EDGE,New England,+20,5,2021-03-18,Ohio
+242,7,Pro Wells,TCU,TE,Arizona,-2,5,2021-03-18,Texas
+243,7,Nick Eubanks,Michigan,TE,Washington (Trade),-15,5,2021-03-18,Michigan
+244,7,Frank Darby,Arizona State,WR,Pittsburgh (Trade),+29,5,2021-03-18,Arizona
+245,7,Dax Milne,BYU,WRS,Washington,-33,5,2021-03-18,Utah
+246,7,Ambry Thomas,Michigan,CB,Arizona (Trade),+18,5,2021-03-18,Michigan
+247,7,Trevon Grimes,Florida,WR,Indianapolis,+27,5,2021-03-18,Florida
+248,7,Cole Van Lanen,Wisconsin,OT,Jacksonville (Trade),-17,5,2021-03-18,Wisconsin
+249,7,Mark Webb,Georgia,S,NY Jets (Trade),-30,5,2021-03-18,Georgia
+250,7,Patrick Johnson,Tulane,EDGE,Tampa Bay (Trade),+8,5,2021-03-18,Louisiana
+251,7,Nick McCloud,Notre Dame,CB,LA Rams,+8,5,2021-03-18,Indiana
+252,7,Austin Watkins,UAB,WR,Denver (Trade),+19,5,2021-03-18,Alabama
+253,7,Earnest Brown IV,Northwestern,EDGE,Pittsburgh (Trade),-23,5,2021-03-18,Illinois
+254,7,Whop Philyor,Indiana,WR,Green Bay,-13,5,2021-03-18,Indiana
+255,7,Greg McCrae,UCF,RBC,Cleveland (Trade),-25,5,2021-03-18,Florida
+256,0,Grant Stuard,Houston,OLB,Tennessee (Trade),+20,0,2021-03-18,Texas
+257,0,Rachad Wildgoose,Wisconsin,CB,Tampa Bay,+2,0,2021-03-18,Wisconsin
