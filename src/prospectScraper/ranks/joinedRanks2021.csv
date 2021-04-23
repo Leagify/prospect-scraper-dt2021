@@ -9085,3 +9085,501 @@ Rank,Change,Name,Position,College,Conference,State,Region,Height,Weight,CollegeC
 498,--,Erik Krommenhoek,TE,USC,Pac 12,California,West,77,260,SR,TE,Off.,Eligible,2021-04-12,1
 499,--,Kato Nelson,QB,Akron,FBS - MAC,Ohio,Midwest,72,212,RSR,QB,Off.,Eligible,2021-04-12,1
 500,--,Logan Harris,OG,Wyoming,FBS - Mountain West,Wyoming,West,75,310,SR,OL,Off.,Eligible,2021-04-12,1
+1,--,Trevor Lawrence,QB,Clemson,ACC,South Carolina,South,78,220,JR,QB,Off.,Eligible,2021-04-19,35
+2,--,Penei Sewell,OT,Oregon,Pac 12,Oregon,West,77,331,JR,OL,Off.,Eligible,2021-04-19,35
+3,--,Ja'Marr Chase,WR,LSU,SEC,Louisiana,South,73,200,JR,WR,Off.,Eligible,2021-04-19,35
+4,--,Zach Wilson,QB,BYU,FBS - Independent,Utah,West,75,210,JR,QB,Off.,Eligible,2021-04-19,35
+5,--,Kyle Pitts,TE,Florida,SEC,Florida,South,77,239,JR,TE,Off.,Eligible,2021-04-19,35
+6,--,Justin Fields,QB,Ohio State,Big Ten,Ohio,Midwest,75,228,JR,QB,Off.,Eligible,2021-04-19,35
+7,--,Jaylen Waddle,WRS,Alabama,SEC,Alabama,South,70,182,JR,WR,Off.,Eligible,2021-04-19,35
+8,--,Patrick Surtain II,CB,Alabama,SEC,Alabama,South,73,203,JR,DB,Def.,Eligible,2021-04-19,35
+9,--,DeVonta Smith,WR,Alabama,SEC,Alabama,South,73,175,SR,WR,Off.,Eligible,2021-04-19,35
+10,--,Trey Lance,QB,North Dakota State,FCS,North Dakota,Midwest,75,226,RSO,QB,Off.,Eligible,2021-04-19,35
+11,--,Rashawn Slater,OT,Northwestern,Big Ten,Illinois,Midwest,76,314,SR,OL,Off.,Eligible,2021-04-19,30
+12,+1,Micah Parsons,ILB,Penn State,Big Ten,Pennsylvania,Northeast,74,245,JR,LB,Def.,Eligible,2021-04-19,30
+13,--,Jaycee Horn,CB,South Carolina,SEC,South Carolina,South,72,200,JR,DB,Def.,Eligible,2021-04-19,30
+14,--,Christian Darrisaw,OT,Virginia Tech,ACC,Virginia,South,77,314,RJR,OL,Off.,Eligible,2021-04-19,30
+15,--,Mac Jones,QB,Alabama,SEC,Alabama,South,74,214,RJR,QB,Off.,Eligible,2021-04-19,30
+16,--,Trevon Moehrig,S,TCU,Big 12,Texas,South,74,202,JR,DB,Def.,Eligible,2021-04-19,30
+17,--,Jaelan Phillips,EDGE,Miami (FL),ACC,Florida,South,77,255,RJR,DL,Def.,Eligible,2021-04-19,30
+18,--,Kwity Paye,EDGE,Michigan,Big Ten,Michigan,Midwest,76,277,SR,DL,Def.,Eligible,2021-04-19,30
+19,--,Azeez Ojulari,EDGE,Georgia,SEC,Georgia,South,75,249,RSO,DL,Def.,Eligible,2021-04-19,30
+20,+2,Alijah Vera-Tucker,OG,USC,Pac 12,California,West,76,315,RJR,OL,Off.,Eligible,2021-04-19,30
+21,--,Christian Barmore,DL3T,Alabama,SEC,Alabama,South,77,310,RSO,DL,Def.,Eligible,2021-04-19,30
+22,-2,Rashod Bateman,WR,Minnesota,Big Ten,Minnesota,Midwest,73,210,JR,WR,Off.,Eligible,2021-04-19,30
+23,--,Asante Samuel Jr.,CB,Florida State,ACC,Florida,South,70,180,JR,DB,Def.,Eligible,2021-04-19,30
+24,--,Greg Newsome II,CB,Northwestern,Big Ten,Illinois,Midwest,73,190,JR,DB,Def.,Eligible,2021-04-19,30
+25,--,Samuel Cosmi,OT,Texas,Big 12,Texas,South,79,309,RJR,OL,Off.,Eligible,2021-04-19,30
+26,--,Travis Etienne,RB,Clemson,ACC,South Carolina,South,70,210,SR,RB,Off.,Eligible,2021-04-19,25
+27,--,Jeremiah Owusu-Koramoah,OLB,Notre Dame,FBS - Independent,Indiana,Midwest,73,216,SR,LB,Def.,Eligible,2021-04-19,25
+28,--,Alex Leatherwood,OT,Alabama,SEC,Alabama,South,78,312,SR,OL,Off.,Eligible,2021-04-19,25
+29,--,Rondale Moore,WRS,Purdue,Big Ten,Indiana,Midwest,67,165,JR,WR,Off.,Eligible,2021-04-19,25
+30,--,Wyatt Davis,OG,Ohio State,Big Ten,Ohio,Midwest,76,315,RJR,OL,Off.,Eligible,2021-04-19,25
+31,--,Caleb Farley,CB,Virginia Tech,ACC,Virginia,South,74,197,RJR,DB,Def.,Eligible,2021-04-19,25
+32,--,Richie Grant,S,UCF,FBS - AAC,Florida,South,72,194,RSR,DB,Def.,Eligible,2021-04-19,25
+33,+4,Teven Jenkins,OT,Oklahoma State,Big 12,Oklahoma,South,78,320,RSR,OL,Off.,Eligible,2021-04-19,25
+34,--,Zaven Collins,OLB,Tulsa,FBS - AAC,Oklahoma,South,76,260,RJR,LB,Def.,Eligible,2021-04-19,25
+35,--,Joseph Ossai,EDGE,Texas,Big 12,Texas,South,76,253,JR,DL,Def.,Eligible,2021-04-19,25
+36,+4,Gregory Rousseau,EDGE,Miami (FL),ACC,Florida,South,77,260,RSO,DL,Def.,Eligible,2021-04-19,20
+37,--,Terrace Marshall,WR,LSU,SEC,Louisiana,South,75,200,JR,WR,Off.,Eligible,2021-04-19,20
+38,--,Jayson Oweh,EDGE,Penn State,Big Ten,Pennsylvania,Northeast,77,257,RSO,DL,Def.,Eligible,2021-04-19,20
+39,--,Jalen Mayfield,OT,Michigan,Big Ten,Michigan,Midwest,77,320,RSO,OL,Off.,Eligible,2021-04-19,20
+40,--,Nick Bolton,ILB,Missouri,SEC,Missouri,Midwest,72,235,JR,LB,Def.,Eligible,2021-04-19,20
+41,--,Najee Harris,RB,Alabama,SEC,Alabama,South,74,230,SR,RB,Off.,Eligible,2021-04-19,20
+42,--,Daviyon Nixon,DL3T,Iowa,Big Ten,Iowa,Midwest,75,305,JR,DL,Def.,Eligible,2021-04-19,20
+43,--,Trey Smith,OG,Tennessee,SEC,Tennessee,South,78,330,SR,OL,Off.,Eligible,2021-04-19,20
+44,--,Kadarius Toney,WR,Florida,SEC,Florida,South,71,190,SR,WR,Off.,Eligible,2021-04-19,20
+45,--,Carlos Basham Jr.,DL5T,Wake Forest,ACC,North Carolina,South,77,285,RSR,DL,Def.,Eligible,2021-04-19,20
+46,--,Creed Humphrey,OC,Oklahoma,Big 12,Oklahoma,South,77,320,RJR,OL,Off.,Eligible,2021-04-19,20
+47,--,Tyson Campbell,CB,Georgia,SEC,Georgia,South,74,180,JR,DB,Def.,Eligible,2021-04-19,20
+48,--,Andre Cisco,S,Syracuse,ACC,New York,Northeast,72,203,JR,DB,Def.,Eligible,2021-04-19,20
+49,--,Jevon Holland,S,Oregon,Pac 12,Oregon,West,73,196,JR,DB,Def.,Eligible,2021-04-19,20
+50,--,Dylan Moses,OLB,Alabama,SEC,Alabama,South,75,235,SR,LB,Def.,Eligible,2021-04-19,20
+51,--,Jay Tufele,DL3T,USC,Pac 12,California,West,74,310,RJR,DL,Def.,Eligible,2021-04-19,20
+52,--,Levi Onwuzurike,DL3T,Washington,Pac 12,Washington,West,75,293,RSR,DL,Def.,Eligible,2021-04-19,20
+53,--,Jabril Cox,OLB,LSU,SEC,Louisiana,South,74,233,RSR,LB,Def.,Eligible,2021-04-19,20
+54,--,Javonte Williams,RB,North Carolina,ACC,North Carolina,South,70,220,JR,RB,Off.,Eligible,2021-04-19,20
+55,--,Liam Eichenberg,OT,Notre Dame,FBS - Independent,Indiana,Midwest,78,302,RSR,OL,Off.,Eligible,2021-04-19,20
+56,--,Pat Freiermuth,TE,Penn State,Big Ten,Pennsylvania,Northeast,77,250,JR,TE,Off.,Eligible,2021-04-19,20
+57,--,Jaylen Twyman,DL5T,Pitt,ACC,Pennsylvania,Northeast,74,290,RJR,DL,Def.,Eligible,2021-04-19,20
+58,--,Elijah Moore,WRS,Ole Miss,SEC,Mississippi,South,69,184,JR,WR,Off.,Eligible,2021-04-19,20
+59,--,Tylan Wallace,WR,Oklahoma State,Big 12,Oklahoma,South,72,185,SR,WR,Off.,Eligible,2021-04-19,20
+60,--,Ben Cleveland,OG,Georgia,SEC,Georgia,South,78,335,RSR,OL,Off.,Eligible,2021-04-19,15
+61,--,Landon Dickerson,OC,Alabama,SEC,Alabama,South,78,325,RSR,OL,Off.,Eligible,2021-04-19,15
+62,--,Elijah Molden,CB,Washington,Pac 12,Washington,West,70,186,SR,DB,Def.,Eligible,2021-04-19,15
+63,+7,Amon-Ra St. Brown,WR,USC,Pac 12,California,West,73,195,JR,WR,Off.,Eligible,2021-04-19,15
+64,--,Hamsah Nasirildeen,S,Florida State,ACC,Florida,South,76,215,SR,DB,Def.,Eligible,2021-04-19,15
+65,--,Jackson Carman,OT,Clemson,ACC,South Carolina,South,77,335,JR,OL,Off.,Eligible,2021-04-19,15
+66,--,Joe Tryon,EDGE,Washington,Pac 12,Washington,West,77,262,RJR,DL,Def.,Eligible,2021-04-19,15
+67,--,Seth Williams,WR,Auburn,SEC,Alabama,South,74,224,JR,WR,Off.,Eligible,2021-04-19,15
+68,-6,Marvin Wilson,DL1T,Florida State,ACC,Florida,South,75,319,SR,DL,Def.,Eligible,2021-04-19,15
+69,--,Alim McNeill,DL3T,NC State,ACC,North Carolina,South,74,320,JR,DL,Def.,Eligible,2021-04-19,15
+70,--,Eric Stokes,CB,Georgia,SEC,Georgia,South,73,185,RJR,DB,Def.,Eligible,2021-04-19,15
+71,-12,Tyler Shelvin,DL1T,LSU,SEC,Louisiana,South,75,346,RJR,DL,Def.,Eligible,2021-04-19,10
+72,--,Cameron McGrone,OLB,Michigan,Big Ten,Michigan,Midwest,73,232,RSO,LB,Def.,Eligible,2021-04-19,10
+73,--,Dyami Brown,WR,North Carolina,ACC,North Carolina,South,73,185,JR,WR,Off.,Eligible,2021-04-19,10
+74,--,Chazz Surratt,OLB,North Carolina,ACC,North Carolina,South,75,230,RSR,LB,Def.,Eligible,2021-04-19,10
+75,--,Dillon Radunz,OT,North Dakota State,FCS,North Dakota,Midwest,78,299,SR,OL,Off.,Eligible,2021-04-19,10
+76,+9,Jamin Davis,ILB,Kentucky,SEC,Kentucky,South,76,234,JR,LB,Def.,Eligible,2021-04-19,10
+77,--,Ronnie Perkins,OLB,Oklahoma,Big 12,Oklahoma,South,76,230,JR,LB,Def.,Eligible,2021-04-19,10
+78,--,Michael Carter,RBC,North Carolina,ACC,North Carolina,South,69,195,SR,RB,Off.,Eligible,2021-04-19,10
+79,--,Baron Browning,ILB,Ohio State,Big Ten,Ohio,Midwest,75,248,SR,LB,Def.,Eligible,2021-04-19,10
+80,--,Ifeatu Melifonwu,CB,Syracuse,ACC,New York,Northeast,75,212,RJR,DB,Def.,Eligible,2021-04-19,10
+81,--,Kyle Trask,QB,Florida,SEC,Florida,South,76,240,RSR,QB,Off.,Eligible,2021-04-19,10
+82,--,Quinn Meinerz,OC,UW–Whitewater,D3,Wisconsin,Midwest,75,320,SR,OL,Off.,Eligible,2021-04-19,10
+83,--,Josh Myers,OC,Ohio State,Big Ten,Ohio,Midwest,77,312,RJR,OL,Off.,Eligible,2021-04-19,10
+84,--,Kenneth Gainwell,RB,Memphis,FBS - AAC,Tennessee,South,71,191,RSO,RB,Off.,Eligible,2021-04-19,10
+85,--,Talanoa Hufanga,S,USC,Pac 12,California,West,73,215,JR,DB,Def.,Eligible,2021-04-19,10
+86,-8,Kellen Mond,QB,Texas A&M,SEC,Texas,South,75,217,SR,QB,Off.,Eligible,2021-04-19,10
+87,--,Patrick Jones II,EDGE,Pitt,ACC,Pennsylvania,Northeast,77,260,RSR,DL,Def.,Eligible,2021-04-19,10
+88,--,D'Wayne Eskridge,WRS,Western Michigan,FBS - MAC,Michigan,Midwest,69,188,SR,WR,Off.,Eligible,2021-04-19,10
+89,--,Walker Little,OT,Stanford,Pac 12,California,West,79,313,SR,OL,Off.,Eligible,2021-04-19,10
+90,--,Rashad Weaver,EDGE,Pitt,ACC,Pennsylvania,Northeast,77,270,RSR,DL,Def.,Eligible,2021-04-19,10
+91,--,Spencer K. Brown,OT,Northern Iowa,FCS,Iowa,Midwest,81,321,RSR,OL,Off.,Eligible,2021-04-19,10
+92,--,Kelvin Joseph,CB,Kentucky,SEC,Kentucky,South,73,192,JR,DB,Def.,Eligible,2021-04-19,10
+93,--,Paulson Adebo,CB,Stanford,Pac 12,California,West,73,190,SR,DB,Def.,Eligible,2021-04-19,10
+94,--,Tutu Atwell,WRS,Louisville,ACC,Kentucky,South,69,156,JR,WR,Off.,Eligible,2021-04-19,10
+95,--,Aaron Robinson,CB,UCF,FBS - AAC,Florida,South,71,193,RSR,DB,Def.,Eligible,2021-04-19,10
+96,--,Marlon Tuipulotu,DL3T,USC,Pac 12,California,West,73,308,RJR,DL,Def.,Eligible,2021-04-19,10
+97,--,Brevin Jordan,TE,Miami (FL),ACC,Florida,South,75,245,JR,TE,Off.,Eligible,2021-04-19,10
+98,--,Dayo Odeyingbo,DL5T,Vanderbilt,SEC,Tennessee,South,77,279,SR,DL,Def.,Eligible,2021-04-19,10
+99,-8,Darius Stills,DL5T,West Virginia,Big 12,West Virginia,South,73,285,SR,DL,Def.,Eligible,2021-04-19,10
+100,+25,Brady Christensen,OT,BYU,FBS - Independent,Utah,West,78,300,RJR,OL,Off.,Eligible,2021-04-19,10
+101,--,Quincy Roche,EDGE,Miami (FL),ACC,Florida,South,76,235,RSR,DL,Def.,Eligible,2021-04-19,8
+102,--,Anthony Schwartz,WR,Auburn,SEC,Alabama,South,72,197,JR,WR,Off.,Eligible,2021-04-19,8
+103,--,Chuba Hubbard,RB,Oklahoma State,Big 12,Oklahoma,South,73,207,RJR,RB,Off.,Eligible,2021-04-19,8
+104,--,Caden Sterns,S,Texas,Big 12,Texas,South,72,210,JR,DB,Def.,Eligible,2021-04-19,8
+105,--,Hunter Long,TE,Boston College,ACC,Massachusetts,Northeast,77,253,JR,TE,Off.,Eligible,2021-04-19,8
+106,-7,Shaun Wade,CB,Ohio State,Big Ten,Ohio,Midwest,73,194,RJR,DB,Def.,Eligible,2021-04-19,8
+107,--,Bobby Brown III,DL1T,Texas A&M,SEC,Texas,South,75,325,JR,DL,Def.,Eligible,2021-04-19,8
+108,--,Deonte Brown,OG,Alabama,SEC,Alabama,South,76,350,RSR,OL,Off.,Eligible,2021-04-19,8
+109,--,Pete Werner,ILB,Ohio State,Big Ten,Ohio,Midwest,75,239,SR,LB,Def.,Eligible,2021-04-19,8
+110,+12,Aaron Banks,OG,Notre Dame,FBS - Independent,Indiana,Midwest,77,330,RJR,OL,Off.,Eligible,2021-04-19,8
+111,+12,Tommy Tremble,TE,Notre Dame,FBS - Independent,Indiana,Midwest,76,248,JR,TE,Off.,Eligible,2021-04-19,8
+112,--,Khalil Herbert,RBC,Virginia Tech,ACC,Virginia,South,69,205,RSR,RB,Off.,Eligible,2021-04-19,8
+113,--,Jamie Newman,QB,Georgia,SEC,Georgia,South,76,230,RSR,QB,Off.,Eligible,2021-04-19,8
+114,--,Paris Ford,S,Pitt,ACC,Pennsylvania,Northeast,72,190,RJR,DB,Def.,Eligible,2021-04-19,8
+115,-10,Damonte Coxie,WR,Memphis,FBS - AAC,Tennessee,South,75,197,SR,WR,Off.,Eligible,2021-04-19,8
+116,--,Israel Mukuamu,CB,South Carolina,SEC,South Carolina,South,75,205,JR,DB,Def.,Eligible,2021-04-19,8
+117,--,Tommy Togiai,DL3T,Ohio State,Big Ten,Ohio,Midwest,74,300,JR,DL,Def.,Eligible,2021-04-19,8
+118,--,Ar'Darius Washington,S,TCU,Big 12,Texas,South,68,175,RSO,DB,Def.,Eligible,2021-04-19,8
+119,--,Sage Surratt,WR,Wake Forest,ACC,North Carolina,South,74,215,RJR,WR,Off.,Eligible,2021-04-19,8
+120,-11,Drake Jackson,OC,Kentucky,SEC,Kentucky,South,74,292,RSR,OL,Off.,Eligible,2021-04-19,8
+121,--,Ihmir Smith-Marsette,WR,Iowa,Big Ten,Iowa,Midwest,74,175,SR,WR,Off.,Eligible,2021-04-19,7
+122,+13,James Hudson,OT,Cincinnati,FBS - AAC,Ohio,Midwest,77,310,JR,OL,Off.,Eligible,2021-04-19,7
+123,--,Divine Deablo,S,Virginia Tech,ACC,Virginia,South,75,226,RSR,DB,Def.,Eligible,2021-04-19,7
+124,--,Marlon Williams,WR,UCF,FBS - AAC,Florida,South,72,215,SR,WR,Off.,Eligible,2021-04-19,7
+125,+13,Nico Collins,WR,Michigan,Big Ten,Michigan,Midwest,76,222,SR,WR,Off.,Eligible,2021-04-19,7
+126,-20,Jaelon Darden,WRS,North Texas,FBS - CUSA,Texas,South,69,174,SR,WR,Off.,Eligible,2021-04-19,7
+127,--,Trey Hill,OC,Georgia,SEC,Georgia,South,76,330,JR,OL,Off.,Eligible,2021-04-19,7
+128,+31,Derrick Barnes,ILB,Purdue,Big Ten,Indiana,Midwest,73,240,SR,LB,Def.,Eligible,2021-04-19,7
+129,--,Charles Snowden,OLB,Virginia,ACC,Virginia,South,78,232,SR,LB,Def.,Eligible,2021-04-19,7
+130,+30,Shaka Toney,EDGE,Penn State,Big Ten,Pennsylvania,Northeast,75,243,RSR,DL,Def.,Eligible,2021-04-19,7
+131,--,Trill Williams,CB,Syracuse,ACC,New York,Northeast,74,198,JR,DB,Def.,Eligible,2021-04-19,7
+132,--,Jonathan Marshall,DL1T,Arkansas,SEC,Arkansas,South,75,317,RSR,DL,Def.,Eligible,2021-04-19,7
+133,--,Marco Wilson,CB,Florida,SEC,Florida,South,72,190,RJR,DB,Def.,Eligible,2021-04-19,7
+134,--,Olaijah Griffin,CB,USC,Pac 12,California,West,72,170,JR,DB,Def.,Eligible,2021-04-19,7
+135,--,Hamilcar Rashed,EDGE,Oregon State,Pac 12,Oregon,West,75,248,RSR,DL,Def.,Eligible,2021-04-19,7
+136,--,Shakur Brown,CB,Michigan State,Big Ten,Michigan,Midwest,71,190,RJR,DB,Def.,Eligible,2021-04-19,7
+137,+15,Milton Williams,DL5T,Louisiana Tech,FBS - CUSA,Louisiana,South,76,278,RJR,DL,Def.,Eligible,2021-04-19,7
+138,--,Rodarius Williams,CB,Oklahoma State,Big 12,Oklahoma,South,72,193,RSR,DB,Def.,Eligible,2021-04-19,7
+139,--,Tariq Thompson,S,San Diego State,FBS - Mountain West,California,West,72,200,SR,DB,Def.,Eligible,2021-04-19,7
+140,--,Chris Rumph II,EDGE,Duke,ACC,North Carolina,South,75,225,RJR,DL,Def.,Eligible,2021-04-19,7
+141,--,Keith Taylor,CB,Washington,Pac 12,Washington,West,75,191,SR,DB,Def.,Eligible,2021-04-19,7
+142,--,Tedarrell Slaton,DL1T,Florida,SEC,Florida,South,77,358,SR,DL,Def.,Eligible,2021-04-19,7
+143,--,Cameron Sample,EDGE,Tulane,FBS - AAC,Louisiana,South,75,280,SR,DL,Def.,Eligible,2021-04-19,7
+144,--,Monty Rice,OLB,Georgia,SEC,Georgia,South,73,235,SR,LB,Def.,Eligible,2021-04-19,7
+145,--,Trey Sermon,RB,Ohio State,Big Ten,Ohio,Midwest,72,224,SR,RB,Off.,Eligible,2021-04-19,7
+146,--,Demetric Felton,RBC,UCLA,Pac 12,California,West,69,189,JR,RB,Off.,Eligible,2021-04-19,7
+147,--,Ta'Quon Graham,DL3T,Texas,Big 12,Texas,South,76,294,SR,DL,Def.,Eligible,2021-04-19,7
+148,--,JaCoby Stevens,S,LSU,SEC,Louisiana,South,73,228,SR,DB,Def.,Eligible,2021-04-19,7
+149,+16,Amari Rodgers,WR,Clemson,ACC,South Carolina,South,69,210,SR,WR,Off.,Eligible,2021-04-19,7
+150,--,Jamien Sherwood,S,Auburn,SEC,Alabama,South,74,220,SR,DB,Def.,Eligible,2021-04-19,7
+151,+36,Robert Rochell,CB,Central Arkansas,FCS,Arkansas,South,72,195,RSR,DB,Def.,Eligible,2021-04-19,6
+152,--,Tony Poljan,TE,Virginia,ACC,Virginia,South,79,265,RSR,TE,Off.,Eligible,2021-04-19,6
+153,--,Rhamondre Stevenson,RB,Oklahoma,Big 12,Oklahoma,South,72,236,SR,RB,Off.,Eligible,2021-04-19,6
+154,--,Darren Hall,CB,San Diego State,FBS - Mountain West,California,West,72,190,JR,DB,Def.,Eligible,2021-04-19,6
+155,--,Tommy Doyle,OT,Miami (OH),FBS - MAC,Ohio,Midwest,80,326,RSR,OL,Off.,Eligible,2021-04-19,6
+156,-14,K.J. Britt,ILB,Auburn,SEC,Alabama,South,72,236,JR,LB,Def.,Eligible,2021-04-19,6
+157,--,Jordan Smith,EDGE,UAB,FBS - CUSA,Alabama,South,79,255,RJR,DL,Def.,Eligible,2021-04-19,6
+158,--,Jack Anderson,OG,Texas Tech,Big 12,Texas,South,77,315,RJR,OL,Off.,Eligible,2021-04-19,6
+159,+36,Benjamin St-Juste,CB,Minnesota,Big Ten,Minnesota,Midwest,75,200,JR,DB,Def.,Eligible,2021-04-19,6
+160,--,Robert Hainsey,OT,Notre Dame,FBS - Independent,Indiana,Midwest,77,295,SR,OL,Off.,Eligible,2021-04-19,6
+161,--,Damon Hazelton,WR,Missouri,SEC,Missouri,Midwest,74,215,RSR,WR,Off.,Eligible,2021-04-19,6
+162,--,Adrian Ealy,OT,Oklahoma,Big 12,Oklahoma,South,78,327,RJR,OL,Off.,Eligible,2021-04-19,6
+163,--,Kylin Hill,RBC,Mississippi State,SEC,Mississippi,South,71,215,SR,RB,Off.,Eligible,2021-04-19,6
+164,-15,Sadarius Hutcherson,OG,South Carolina,SEC,South Carolina,South,76,320,RSR,OL,Off.,Eligible,2021-04-19,6
+165,--,Daelin Hayes,EDGE,Notre Dame,FBS - Independent,Indiana,Midwest,76,268,RSR,DL,Def.,Eligible,2021-04-19,6
+166,--,Malik Herring,DL5T,Georgia,SEC,Georgia,South,75,283,SR,DL,Def.,Eligible,2021-04-19,6
+167,+18,Javian Hawkins,RBC,Louisville,ACC,Kentucky,South,69,182,RSO,RB,Off.,Eligible,2021-04-19,6
+168,--,Alaric Jackson,OT,Iowa,Big Ten,Iowa,Midwest,78,315,RSR,OL,Off.,Eligible,2021-04-19,6
+169,--,Dazz Newsome,WR,North Carolina,ACC,North Carolina,South,71,175,SR,WR,Off.,Eligible,2021-04-19,6
+170,--,Paddy Fisher,ILB,Northwestern,Big Ten,Illinois,Midwest,76,246,RSR,LB,Def.,Eligible,2021-04-19,6
+171,-15,Josh Imatorbhebhe,WR,Illinois,Big Ten,Illinois,Midwest,74,215,RSR,WR,Off.,Eligible,2021-04-19,6
+172,--,Richard LeCounte III,S,Georgia,SEC,Georgia,South,71,190,SR,DB,Def.,Eligible,2021-04-19,6
+173,--,Thomas Graham Jr.,CB,Oregon,Pac 12,Oregon,West,70,193,SR,DB,Def.,Eligible,2021-04-19,6
+174,--,Donovan Stiner,S,Florida,SEC,Florida,South,73,203,JR,DB,Def.,Eligible,2021-04-19,6
+175,--,Jaret Patterson,RB,Buffalo,FBS - MAC,New York,Northeast,69,195,JR,RB,Off.,Eligible,2021-04-19,6
+176,--,Wyatt Hubert,EDGE,Kansas State,Big 12,Kansas,Midwest,75,270,JR,DL,Def.,Eligible,2021-04-19,6
+177,--,Tommy Kraemer,OG,Notre Dame,FBS - Independent,Indiana,Midwest,78,317,RSR,OL,Off.,Eligible,2021-04-19,6
+178,+20,Tamorrion Terry,WR,Florida State,ACC,Florida,South,76,209,RJR,WR,Off.,Eligible,2021-04-19,6
+179,--,D.J. Daniel,CB,Georgia,SEC,Georgia,South,72,183,SR,DB,Def.,Eligible,2021-04-19,6
+180,--,Camryn Bynum,CB,California,Pac 12,California,West,72,198,RSR,DB,Def.,Eligible,2021-04-19,6
+181,--,Jose Borregales,PK,Miami (FL),ACC,Florida,South,70,205,RSR,K,ST,Eligible,2021-04-19,5
+182,+20,Amen Ogbongbemiga,OLB,Oklahoma State,Big 12,Oklahoma,South,73,231,RSR,LB,Def.,Eligible,2021-04-19,5
+183,--,Shane Buechele,QB,SMU,FBS - AAC,Texas,South,73,207,RSR,QB,Off.,Eligible,2021-04-19,5
+184,--,Joshua Kaindoh,EDGE,Florida State,ACC,Florida,South,79,261,RJR,DL,Def.,Eligible,2021-04-19,5
+185,+21,Davis Mills,QB,Stanford,Pac 12,California,West,76,198,RJR,QB,Off.,Eligible,2021-04-19,5
+186,--,Elijah Mitchell,RB,Louisiana-Lafayette,FBS - Sun Belt,Louisiana,South,71,221,SR,RB,Off.,Eligible,2021-04-19,5
+187,--,Larry Borom,OT,Missouri,SEC,Missouri,Midwest,78,332,JR,OL,Off.,Eligible,2021-04-19,5
+188,--,Damar Hamlin,S,Pitt,ACC,Pennsylvania,Northeast,73,195,RSR,DB,Def.,Eligible,2021-04-19,5
+189,--,Victor Dimukeje,EDGE,Duke,ACC,North Carolina,South,74,265,SR,DL,Def.,Eligible,2021-04-19,5
+190,-18,Sam Ehlinger,QB,Texas,Big 12,Texas,South,75,225,SR,QB,Off.,Eligible,2021-04-19,5
+191,--,Kary Vincent Jr.,CB,LSU,SEC,Louisiana,South,70,182,SR,DB,Def.,Eligible,2021-04-19,5
+192,--,Noah Gray,TE,Duke,ACC,North Carolina,South,76,240,SR,TE,Off.,Eligible,2021-04-19,5
+193,+21,Mustafa Johnson,DL5T,Colorado,Pac 12,Colorado,West,74,290,SR,DL,Def.,Eligible,2021-04-19,5
+194,--,Tre' McKitty,TE,Georgia,SEC,Georgia,South,77,241,SR,TE,Off.,Eligible,2021-04-19,5
+195,+21,Deommodore Lenoir,CB,Oregon,Pac 12,Oregon,West,71,202,SR,DB,Def.,Eligible,2021-04-19,5
+196,+23,Tony Fields II,OLB,West Virginia,Big 12,West Virginia,South,72,220,SR,LB,Def.,Eligible,2021-04-19,5
+197,--,Khyiris Tonga,DL1T,BYU,FBS - Independent,Utah,West,74,326,SR,DL,Def.,Eligible,2021-04-19,5
+198,--,Jonathon Cooper,EDGE,Ohio State,Big Ten,Ohio,Midwest,76,257,RSR,DL,Def.,Eligible,2021-04-19,5
+199,+52,Stone Forsythe,OT,Florida,SEC,Florida,South,80,329,RSR,OL,Off.,Eligible,2021-04-19,5
+200,--,Tyree Gillespie,S,Missouri,SEC,Missouri,Midwest,72,210,SR,DB,Def.,Eligible,2021-04-19,5
+201,--,Matt Bushman,TE,BYU,FBS - Independent,Utah,West,77,245,SR,TE,Off.,Eligible,2021-04-19,5
+202,+62,Payton Turner,EDGE,Houston,FBS - AAC,Texas,South,77,270,SR,DL,Def.,Eligible,2021-04-19,5
+203,--,Ben Mason,FB,Michigan,Big Ten,Michigan,Midwest,75,254,SR,RB,Off.,Eligible,2021-04-19,5
+204,--,Ambry Thomas,CB,Michigan,Big Ten,Michigan,Midwest,71,174,SR,DB,Def.,Eligible,2021-04-19,5
+205,-35,Jimmy Morrissey,OC,Pitt,ACC,Pennsylvania,Northeast,75,305,RSR,OL,Off.,Eligible,2021-04-19,5
+206,--,Marquez Stevenson,WR,Houston,FBS - AAC,Texas,South,72,190,RSR,WR,Off.,Eligible,2021-04-19,5
+207,--,Quintin Morris,TE,Bowling Green,FBS - MAC,Ohio,Midwest,76,248,SR,TE,Off.,Eligible,2021-04-19,5
+208,-20,Shemar Jean-Charles,CB,Appalachian State,FBS - Sun Belt,North Carolina,South,71,190,SR,DB,Def.,Eligible,2021-04-19,5
+209,--,D'Ante Smith,OT,East Carolina,FBS - AAC,North Carolina,South,77,294,SR,OL,Off.,Eligible,2021-04-19,5
+210,--,Tay Gowan,CB,UCF,FBS - AAC,Florida,South,74,185,RSR,DB,Def.,Eligible,2021-04-19,5
+211,--,Chauncey Golston,DL5T,Iowa,Big Ten,Iowa,Midwest,77,269,RSR,DL,Def.,Eligible,2021-04-19,5
+212,-34,Max Duffy,P,Kentucky,SEC,Kentucky,South,73,185,SR,P,ST,Eligible,2021-04-19,5
+213,--,Osa Odighizuwa,DL5T,UCLA,Pac 12,California,West,74,280,RSR,DL,Def.,Eligible,2021-04-19,5
+214,--,Dan Moore Jr.,OT,Texas A&M,SEC,Texas,South,77,315,SR,OL,Off.,Eligible,2021-04-19,5
+215,-19,Xavier Kelly,DL3T,Arkansas,SEC,Arkansas,South,76,305,RSR,DL,Def.,Eligible,2021-04-19,5
+216,+26,Garret Wallow,OLB,TCU,Big 12,Texas,South,74,215,SR,LB,Def.,Eligible,2021-04-19,5
+217,--,Isaiahh Loudermilk,DL5T,Wisconsin,Big Ten,Wisconsin,Midwest,78,291,RSR,DL,Def.,Eligible,2021-04-19,5
+218,--,Kenny Yeboah,TE,Ole Miss,SEC,Mississippi,South,76,240,RSR,TE,Off.,Eligible,2021-04-19,5
+219,--,Dez Fitzpatrick,WR,Louisville,ACC,Kentucky,South,74,202,SR,WR,Off.,Eligible,2021-04-19,5
+220,-20,Brady White,QB,Memphis,FBS - AAC,Tennessee,South,75,210,RSR,QB,Off.,Eligible,2021-04-19,5
+221,-20,Dicaprio Bootle,CB,Nebraska,Big Ten,Nebraska,Midwest,70,180,RSR,DB,Def.,Eligible,2021-04-19,5
+222,--,Carlo Kemp,DL5T,Michigan,Big Ten,Michigan,Midwest,75,286,SR,DL,Def.,Eligible,2021-04-19,5
+223,--,Naquan Jones,DL1T,Michigan State,Big Ten,Michigan,Midwest,76,338,RSR,DL,Def.,Eligible,2021-04-19,5
+224,-21,Malcolm Koonce,EDGE,Buffalo,FBS - MAC,New York,Northeast,75,250,SR,DL,Def.,Eligible,2021-04-19,5
+225,--,Rachad Wildgoose,CB,Wisconsin,Big Ten,Wisconsin,Midwest,71,197,JR,DB,Def.,Eligible,2021-04-19,5
+226,--,Jermar Jefferson,RBC,Oregon State,Pac 12,Oregon,West,69,215,JR,RB,Off.,Eligible,2021-04-19,5
+227,-20,T.J. Vasher,WR,Texas Tech,Big 12,Texas,South,78,210,RSR,WR,Off.,Eligible,2021-04-19,5
+228,--,Max Richardson,OLB,Boston College,ACC,Massachusetts,Northeast,72,230,RSR,LB,Def.,Eligible,2021-04-19,5
+229,+56,Elerson Smith,EDGE,Northern Iowa,FCS,Iowa,Midwest,78,245,RSR,DL,Def.,Eligible,2021-04-19,5
+230,--,Landon Young,OT,Kentucky,SEC,Kentucky,South,79,321,SR,OL,Off.,Eligible,2021-04-19,5
+231,-21,John Bates,TE,Boise State,FBS - Mountain West,Idaho,West,77,259,RSR,TE,Off.,Eligible,2021-04-19,5
+232,--,Pooka Williams,RBC,Kansas,Big 12,Kansas,Midwest,70,170,JR,RB,Off.,Eligible,2021-04-19,5
+233,--,James Wiggins,S,Cincinnati,FBS - AAC,Ohio,Midwest,72,202,RSR,DB,Def.,Eligible,2021-04-19,5
+234,--,Shi Smith,WRS,South Carolina,SEC,South Carolina,South,70,190,SR,WR,Off.,Eligible,2021-04-19,5
+235,--,Brennan Eagles,WR,Texas,Big 12,Texas,South,74,225,JR,WR,Off.,Eligible,2021-04-19,5
+236,-38,Pressley Harvin III,P,Georgia Tech,ACC,Georgia,South,72,255,SR,P,ST,Eligible,2021-04-19,5
+237,--,Trevon Grimes,WR,Florida,SEC,Florida,South,76,215,SR,WR,Off.,Eligible,2021-04-19,5
+238,--,Austin Watkins,WR,UAB,FBS - CUSA,Alabama,South,75,205,RSR,WR,Off.,Eligible,2021-04-19,5
+239,-39,Michal Menet,OC,Penn State,Big Ten,Pennsylvania,Northeast,76,305,RSR,OL,Off.,Eligible,2021-04-19,5
+240,--,Cole Van Lanen,OT,Wisconsin,Big Ten,Wisconsin,Midwest,77,312,RSR,OL,Off.,Eligible,2021-04-19,5
+241,--,Brenden Knox,RB,Marshall,FBS - CUSA,West Virginia,South,72,223,RJR,RB,Off.,Eligible,2021-04-19,5
+242,--,Jamar Johnson,S,Indiana,Big Ten,Indiana,Midwest,73,197,JR,DB,Def.,Eligible,2021-04-19,5
+243,--,Ryan McCollum,OC,Texas A&M,SEC,Texas,South,77,300,RSR,OL,Off.,Eligible,2021-04-19,5
+244,+27,Isaiah Dunn,CB,Oregon State,Pac 12,Oregon,West,72,193,SR,DB,Def.,Eligible,2021-04-19,5
+245,--,Grant Stuard,OLB,Houston,FBS - AAC,Texas,South,73,225,SR,LB,Def.,Eligible,2021-04-19,5
+246,-22,Tyson Dyer,P,New Mexico,FBS - Mountain West,New Mexico,West,74,198,SR,P,ST,Eligible,2021-04-19,5
+247,--,Evan McPherson,PK,Florida,SEC,Florida,South,71,180,JR,K,ST,Eligible,2021-04-19,5
+248,+27,Drew Dalman,OC,Stanford,Pac 12,California,West,75,300,RJR,OL,Off.,Eligible,2021-04-19,5
+249,--,Cary Angeline,TE,NC State,ACC,North Carolina,South,79,250,SR,TE,Off.,Eligible,2021-04-19,5
+250,--,Osirus Mitchell,WR,Mississippi State,SEC,Mississippi,South,77,210,SR,WR,Off.,Eligible,2021-04-19,5
+251,-44,Riley Patterson,PK,Memphis,FBS - AAC,Tennessee,South,72,190,SR,K,ST,Eligible,2021-04-19,2
+252,-21,Chris Wilcox,CB,BYU,FBS - Independent,Utah,West,74,197,RSR,DB,Def.,Eligible,2021-04-19,2
+253,--,Cornell Powell,WR,Clemson,ACC,South Carolina,South,72,201,SR,WR,Off.,Eligible,2021-04-19,2
+254,--,Anthony Hines,OLB,Texas A&M,SEC,Texas,South,75,226,JR,LB,Def.,Eligible,2021-04-19,2
+255,--,Elijah Ponder,DL5T,Cincinnati,FBS - AAC,Ohio,Midwest,74,275,RSR,DL,Def.,Eligible,2021-04-19,2
+256,--,Larry Rountree III,RBC,Missouri,SEC,Missouri,Midwest,70,210,SR,RB,Off.,Eligible,2021-04-19,2
+257,--,Kylen Granson,TE,SMU,FBS - AAC,Texas,South,74,235,SR,TE,Off.,Eligible,2021-04-19,2
+258,--,Mark Webb,S,Georgia,SEC,Georgia,South,74,210,SR,DB,Def.,Eligible,2021-04-19,2
+259,--,Tyler Vaughns,WR,USC,Pac 12,California,West,74,190,RSR,WR,Off.,Eligible,2021-04-19,2
+260,--,Frank Darby,WR,Arizona State,Pac 12,Arizona,West,73,200,RSR,WR,Off.,Eligible,2021-04-19,2
+261,--,Nick McCloud,CB,Notre Dame,FBS - Independent,Indiana,Midwest,73,192,RSR,DB,Def.,Eligible,2021-04-19,2
+262,--,Nick Eubanks,TE,Michigan,Big Ten,Michigan,Midwest,77,236,RSR,TE,Off.,Eligible,2021-04-19,2
+263,--,Tory Carter,FB,LSU,SEC,Louisiana,South,73,250,JR,RB,Off.,Eligible,2021-04-19,2
+264,--,Spencer Brown,RB,UAB,FBS - CUSA,Alabama,South,72,220,SR,RB,Off.,Eligible,2021-04-19,2
+265,--,O'Bryan Goodson,DL3T,Memphis,FBS - AAC,Tennessee,South,73,297,SR,DL,Def.,Eligible,2021-04-19,2
+266,+30,Simi Fehoko,WR,Stanford,Pac 12,California,West,76,227,JR,WR,Off.,Eligible,2021-04-19,2
+267,+30,Dax Milne,WR,BYU,FBS - Independent,Utah,West,73,190,JR,WR,Off.,Eligible,2021-04-19,2
+268,--,Patrick Johnson,EDGE,Tulane,FBS - AAC,Louisiana,South,75,250,SR,DL,Def.,Eligible,2021-04-19,2
+269,--,Kayode Awosika,OT,Buffalo,FBS - MAC,New York,Northeast,77,315,SR,OL,Off.,Eligible,2021-04-19,2
+270,--,Chris Brown,S,Texas,Big 12,Texas,South,71,187,SR,DB,Def.,Eligible,2021-04-19,2
+271,+31,Tarron Jackson,EDGE,Coastal Carolina,FCS,South Carolina,South,74,265,RSR,DL,Def.,Eligible,2021-04-19,2
+272,--,LaRon Stokes,DL5T,Oklahoma,Big 12,Oklahoma,South,76,278,SR,DL,Def.,Eligible,2021-04-19,2
+273,--,K.J. Costello,QB,Mississippi State,SEC,Mississippi,South,77,225,RSR,QB,Off.,Eligible,2021-04-19,2
+274,-25,Alex Kessman,PK,Pitt,ACC,Pennsylvania,Northeast,75,190,RSR,K,ST,Eligible,2021-04-19,2
+275,--,David Moore,OG,Grambling State,FCS,Louisiana,South,75,320,SR,OL,Off.,Eligible,2021-04-19,2
+276,--,Calvin Ashley,OG,Florida A&M,FCS,Florida,South,79,335,RJR,OL,Off.,Eligible,2021-04-19,2
+277,--,Kendrick Green,OG,Illinois,Big Ten,Illinois,Midwest,76,315,JR,OL,Off.,Eligible,2021-04-19,2
+278,--,Carson Green,OT,Texas A&M,SEC,Texas,South,78,320,SR,OL,Off.,Eligible,2021-04-19,2
+279,-26,Tyler Coyle,S,Purdue,Big Ten,Indiana,Midwest,74,215,RSR,DB,Def.,Eligible,2021-04-19,2
+280,--,Brandon Stephens,CB,SMU,FBS - AAC,Texas,South,73,219,SR,DB,Def.,Eligible,2021-04-19,2
+281,--,Darrick Forrest,S,Cincinnati,FBS - AAC,Ohio,Midwest,72,198,SR,DB,Def.,Eligible,2021-04-19,2
+282,--,Gary Brightwell,RB,Arizona,Pac 12,Arizona,West,72,218,SR,RB,Off.,Eligible,2021-04-19,2
+283,--,Jordon Scott,DL1T,Oregon,Pac 12,Oregon,West,73,322,SR,DL,Def.,Eligible,2021-04-19,2
+284,--,Rico Bussey Jr.,WR,Hawaii,FBS - Mountain West,Hawaii,West,74,193,RSR,WR,Off.,Eligible,2021-04-19,2
+285,-26,Pro Wells,TE,TCU,Big 12,Texas,South,76,250,JR,TE,Off.,Eligible,2021-04-19,2
+286,--,Torrance Marable,RBC,Coastal Carolina,FCS,South Carolina,South,70,200,SR,RB,Off.,Eligible,2021-04-19,2
+287,--,Keith Duncan,PK,Iowa,Big Ten,Iowa,Midwest,70,180,SR,K,ST,Eligible,2021-04-19,2
+288,--,Mark Gilbert,CB,Duke,ACC,North Carolina,South,73,175,RJR,DB,Def.,Eligible,2021-04-19,2
+289,-28,Oscar Bradburn,P,Virginia Tech,ACC,Virginia,South,73,221,SR,P,ST,Eligible,2021-04-19,2
+290,--,Jalen Camp,WR,Georgia Tech,ACC,Georgia,South,74,226,RSR,WR,Off.,Eligible,2021-04-19,2
+291,--,Brady Breeze,S,Oregon,Pac 12,Oregon,West,72,196,SR,DB,Def.,Eligible,2021-04-19,2
+292,--,Erroll Thompson,ILB,Mississippi State,SEC,Mississippi,South,73,250,RSR,LB,Def.,Eligible,2021-04-19,2
+293,--,Earnest Brown IV,EDGE,Northwestern,Big Ten,Illinois,Midwest,77,270,SR,DL,Def.,Eligible,2021-04-19,2
+294,--,Adetokunbo Ogundeji,EDGE,Notre Dame,FBS - Independent,Indiana,Midwest,76,268,RSR,DL,Def.,Eligible,2021-04-19,2
+295,--,Will Fries,OT,Penn State,Big Ten,Pennsylvania,Northeast,78,306,RSR,OL,Off.,Eligible,2021-04-19,2
+296,--,Zach Davidson,TE,Central Missouri,D2,Missouri,Midwest,79,245,RJR,TE,Off.,Eligible,2021-04-19,2
+297,--,William Bradley-King,EDGE,Baylor,Big 12,Texas,South,76,248,SR,DL,Def.,Eligible,2021-04-19,2
+298,--,Stevie Scott,RB,Indiana,Big Ten,Indiana,Midwest,74,231,JR,RB,Off.,Eligible,2021-04-19,2
+299,+33,Joshuah Bledsoe,S,Missouri,SEC,Missouri,Midwest,72,200,SR,DB,Def.,Eligible,2021-04-19,2
+300,--,Brenden Jaimes,OT,Nebraska,Big Ten,Nebraska,Midwest,77,300,SR,OL,Off.,Eligible,2021-04-19,2
+301,--,Jonathan Adams Jr.,WR,Arkansas State,FBS - Sun Belt,Arkansas,South,75,210,SR,WR,Off.,Eligible,2021-04-19,1
+302,--,Whop Philyor,WR,Indiana,Big Ten,Indiana,Midwest,71,180,SR,WR,Off.,Eligible,2021-04-19,1
+303,--,Jason Pinnock,CB,Pitt,ACC,Pennsylvania,Northeast,73,205,SR,DB,Def.,Eligible,2021-04-19,1
+304,--,Warren Jackson,WR,Colorado State,FBS - Mountain West,Colorado,West,78,212,SR,WR,Off.,Eligible,2021-04-19,1
+305,--,Marlon Character,CB,Louisville,ACC,Kentucky,South,73,195,RSR,DB,Def.,Eligible,2021-04-19,1
+306,--,Feleipe Franks,QB,Arkansas,SEC,Arkansas,South,78,228,RSR,QB,Off.,Eligible,2021-04-19,1
+307,+34,Shawn Davis,S,Florida,SEC,Florida,South,72,206,SR,DB,Def.,Eligible,2021-04-19,1
+308,--,Tuf Borland,ILB,Ohio State,Big Ten,Ohio,Midwest,73,230,RSR,LB,Def.,Eligible,2021-04-19,1
+309,--,Chris Evans,RB,Michigan,Big Ten,Michigan,Midwest,71,219,SR,RB,Off.,Eligible,2021-04-19,1
+310,--,Rakeem Boyd,RB,Arkansas,SEC,Arkansas,South,72,213,SR,RB,Off.,Eligible,2021-04-19,1
+311,--,Jacob Harris,WR,UCF,FBS - AAC,Florida,South,77,211,RSR,WR,Off.,Eligible,2021-04-19,1
+312,+34,Janarius Robinson,EDGE,Florida State,ACC,Florida,South,77,261,RSR,DL,Def.,Eligible,2021-04-19,1
+313,--,Drue Chrisman,P,Ohio State,Big Ten,Ohio,Midwest,74,222,RSR,P,ST,Eligible,2021-04-19,1
+314,--,Romeo McKnight,EDGE,Charlotte,FBS - CUSA,North Carolina,South,77,270,RSR,DL,Def.,Eligible,2021-04-19,1
+315,+35,Buddy Johnson,ILB,Texas A&M,SEC,Texas,South,74,234,SR,LB,Def.,Eligible,2021-04-19,1
+316,--,Luke Farrell,TE,Ohio State,Big Ten,Ohio,Midwest,78,250,RSR,TE,Off.,Eligible,2021-04-19,1
+317,--,Greg McCrae,RBC,UCF,FBS - AAC,Florida,South,70,175,SR,RB,Off.,Eligible,2021-04-19,1
+318,--,Cade Johnson,WRS,South Dakota State,FCS,South Dakota,Midwest,69,180,RSR,WR,Off.,Eligible,2021-04-19,1
+319,--,Forrest Merrill,DL1T,Arkansas State,FBS - Sun Belt,Arkansas,South,73,349,RSR,DL,Def.,Eligible,2021-04-19,1
+320,--,Blake Haubeil,PK,Ohio State,Big Ten,Ohio,Midwest,74,230,SR,K,ST,Eligible,2021-04-19,1
+321,--,Tre Brown,CB,Oklahoma,Big 12,Oklahoma,South,70,188,SR,DB,Def.,Eligible,2021-04-19,1
+322,+36,Royce Newman,OG,Ole Miss,SEC,Mississippi,South,78,310,RSR,OL,Off.,Eligible,2021-04-19,1
+323,--,Lorenzo Neal,DL1T,Purdue,Big Ten,Indiana,Midwest,75,315,RSR,DL,Def.,Eligible,2021-04-19,1
+324,+36,Tre Norwood,CB,Oklahoma,Big 12,Oklahoma,South,72,194,RJR,DB,Def.,Eligible,2021-04-19,1
+325,--,Ian Book,QB,Notre Dame,FBS - Independent,Indiana,Midwest,72,206,RSR,QB,Off.,Eligible,2021-04-19,1
+326,--,JaQuan Bailey,EDGE,Iowa State,Big 12,Iowa,Midwest,74,261,RSR,DL,Def.,Eligible,2021-04-19,1
+327,--,Antjuan Simmons,OLB,Michigan State,Big Ten,Michigan,Midwest,72,225,SR,LB,Def.,Eligible,2021-04-19,1
+328,--,Jovan Swann,DL5T,Indiana,Big Ten,Indiana,Midwest,74,280,GR,DL,Def.,Eligible,2021-04-19,1
+329,--,Eli Howard,DL5T,Texas Tech,Big 12,Texas,South,76,280,RSR,DL,Def.,Eligible,2021-04-19,1
+330,--,Antonio Nunn,WR,Buffalo,FBS - MAC,New York,Northeast,71,200,SR,WR,Off.,Eligible,2021-04-19,1
+331,--,Gerrid Doaks,RB,Cincinnati,FBS - AAC,Ohio,Midwest,72,230,SR,RB,Off.,Eligible,2021-04-19,1
+332,--,Mike Strachan,WR,Charleston,D2,West Virginia,South,76,225,RSR,WR,Off.,Eligible,2021-04-19,1
+333,--,Jake Curhan,OG,California,Pac 12,California,West,78,330,RSR,OL,Off.,Eligible,2021-04-19,1
+334,--,Isaiah McDuffie,OLB,Boston College,ACC,Massachusetts,Northeast,73,224,RJR,LB,Def.,Eligible,2021-04-19,1
+335,--,Jake Verity,PK,East Carolina,FBS - AAC,North Carolina,South,73,201,SR,K,ST,Eligible,2021-04-19,1
+336,--,Syrus Tuitele,OT,Fresno State,FBS - Mountain West,California,West,78,318,SR,OL,Off.,Eligible,2021-04-19,1
+337,--,Asim Rose,RB,Kentucky,SEC,Kentucky,South,73,210,SR,RB,Off.,Eligible,2021-04-19,1
+338,--,Briley Moore,TE,Kansas State,Big 12,Kansas,Midwest,76,250,SR,TE,Off.,Eligible,2021-04-19,1
+339,+39,Christian Uphoff,S,Illinois State,FCS,Illinois,Midwest,75,195,JR,DB,Def.,Eligible,2021-04-19,1
+340,--,Austin Faoliu,DL3T,Oregon,Pac 12,Oregon,West,75,293,SR,DL,Def.,Eligible,2021-04-19,1
+341,--,Mike Hampton,CB,South Florida,FBS - AAC,Florida,South,72,190,RSR,DB,Def.,Eligible,2021-04-19,1
+342,--,Caleb Huntley,RBC,Ball State,FBS - MAC,Indiana,Midwest,70,226,SR,RB,Off.,Eligible,2021-04-19,1
+343,--,E.J. Muhammad,CB,Nevada,FBS - Mountain West,Nevada,West,71,195,RSR,DB,Def.,Eligible,2021-04-19,1
+344,--,Racey McMath,WR,LSU,SEC,Louisiana,South,75,224,SR,WR,Off.,Eligible,2021-04-19,1
+345,--,Aashari Crosswell,S,Arizona State,Pac 12,Arizona,West,72,205,JR,DB,Def.,Eligible,2021-04-19,1
+346,--,Rayshard Ashby,ILB,Virginia Tech,ACC,Virginia,South,70,230,SR,LB,Def.,Eligible,2021-04-19,1
+347,--,Bryan Mills,CB,North Carolina Central,FCS,North Carolina,South,73,180,SR,DB,Def.,Eligible,2021-04-19,1
+348,--,Blake Proehl,WR,East Carolina,FBS - AAC,North Carolina,South,73,186,JR,WR,Off.,Eligible,2021-04-19,1
+349,--,Curtis Robinson,ILB,Stanford,Pac 12,California,West,74,235,RSR,LB,Def.,Eligible,2021-04-19,1
+350,--,Nate Hobbs,CB,Illinois,Big Ten,Illinois,Midwest,72,195,SR,DB,Def.,Eligible,2021-04-19,1
+351,--,Marquiss Spencer,DL5T,Mississippi State,SEC,Mississippi,South,76,285,RSR,DL,Def.,Eligible,2021-04-19,1
+352,--,Kawaan Baker,WR,South Alabama,FBS - Sun Belt,Alabama,South,73,210,SR,WR,Off.,Eligible,2021-04-19,1
+353,--,Jamar Watson,EDGE,Kentucky,SEC,Kentucky,South,75,244,RSR,DL,Def.,Eligible,2021-04-19,1
+355,--,James Smith,P,Cincinnati,FBS - AAC,Ohio,Midwest,76,235,SR,P,ST,Eligible,2021-04-19,1
+356,--,Braylon Jones,OC,Houston,FBS - AAC,Texas,South,76,315,RSR,OL,Off.,Eligible,2021-04-19,1
+357,--,Robert Jones,OT,Middle Tennessee,FBS - CUSA,Tennessee,South,77,330,SR,OL,Off.,Eligible,2021-04-19,1
+358,--,Blake Gallagher,OLB,Northwestern,Big Ten,Illinois,Midwest,73,235,SR,LB,Def.,Eligible,2021-04-19,1
+359,--,Justin Hilliard,ILB,Ohio State,Big Ten,Ohio,Midwest,73,235,RSR,LB,Def.,Eligible,2021-04-19,1
+360,--,Quinn Nordin,PK,Michigan,Big Ten,Michigan,Midwest,72,196,RSR,K,ST,Eligible,2021-04-19,1
+361,--,Josh Palmer,WR,Tennessee,SEC,Tennessee,South,74,210,SR,WR,Off.,Eligible,2021-04-19,1
+362,--,Nahshon Wright,CB,Oregon State,Pac 12,Oregon,West,76,188,JR,DB,Def.,Eligible,2021-04-19,1
+363,--,Shaun Beyer,TE,Iowa,Big Ten,Iowa,Midwest,77,222,RSR,TE,Off.,Eligible,2021-04-19,1
+364,--,Lamont Wade,S,Penn State,Big Ten,Pennsylvania,Northeast,69,199,SR,DB,Def.,Eligible,2021-04-19,1
+365,--,Kyree Campbell,DL3T,Florida,SEC,Florida,South,75,304,SR,DL,Def.,Eligible,2021-04-19,1
+366,--,Zac Thomas,QB,Appalachian State,FBS - Sun Belt,North Carolina,South,73,210,RSR,QB,Off.,Eligible,2021-04-19,1
+367,--,Brett Heggie,OG,Florida,SEC,Florida,South,75,321,RSR,OL,Off.,Eligible,2021-04-19,1
+368,--,Nolan Cooney,P,Syracuse,ACC,New York,Northeast,75,202,RSR,P,ST,Eligible,2021-04-19,1
+369,--,Zach Von Rosenberg,P,LSU,SEC,Louisiana,South,77,245,RSR,P,ST,Eligible,2021-04-19,1
+370,--,Brandon Kennedy,OC,Tennessee,SEC,Tennessee,South,75,300,RSR,OL,Off.,Eligible,2021-04-19,1
+371,--,Zane Zandier,ILB,Virginia,ACC,Virginia,South,75,230,SR,LB,Def.,Eligible,2021-04-19,1
+372,--,J.C. Chalk,TE,Clemson,ACC,South Carolina,South,75,255,SR,TE,Off.,Eligible,2021-04-19,1
+373,--,Jack Heflin,DL3T,Iowa,Big Ten,Iowa,Midwest,76,304,RSR,DL,Def.,Eligible,2021-04-19,1
+374,--,Peyton Ramsey,QB,Northwestern,Big Ten,Illinois,Midwest,74,220,RSR,QB,Off.,Eligible,2021-04-19,1
+375,--,Ben DeLuca,S,Charlotte,FBS - CUSA,North Carolina,South,73,215,RSR,DB,Def.,Eligible,2021-04-19,1
+376,--,Tre Harbison,RB,Charlotte,FBS - CUSA,North Carolina,South,71,215,GR,RB,Off.,Eligible,2021-04-19,1
+377,--,Jordyn Peters,CB,Auburn,SEC,Alabama,South,73,200,SR,DB,Def.,Eligible,2021-04-19,1
+378,--,Avery Williams,CB,Boise State,FBS - Mountain West,Idaho,West,69,188,RSR,DB,Def.,Eligible,2021-04-19,1
+379,--,Mekhi Sargent,RBC,Iowa,Big Ten,Iowa,Midwest,69,212,SR,RB,Off.,Eligible,2021-04-19,1
+380,--,Isaiah McKoy,WR,Kent State,FBS - MAC,Ohio,Midwest,75,182,JR,WR,Off.,Eligible,2021-04-19,1
+381,--,William Sherman,OT,Colorado,Pac 12,Colorado,West,76,310,JR,OL,Off.,Eligible,2021-04-19,1
+382,--,Deon Jackson,RB,Duke,ACC,North Carolina,South,71,220,SR,RB,Off.,Eligible,2021-04-19,1
+383,--,Nick Niemann,OLB,Iowa,Big Ten,Iowa,Midwest,75,234,RSR,LB,Def.,Eligible,2021-04-19,1
+384,--,Ben Skowronek,WR,Notre Dame,FBS - Independent,Indiana,Midwest,75,220,RSR,WR,Off.,Eligible,2021-04-19,1
+385,--,Noah Curtis,EDGE,Florida International,FBS - CUSA,Florida,South,78,267,SR,DL,Def.,Eligible,2021-04-19,1
+386,--,Marcus Murphy,S,Mississippi State,SEC,Mississippi,South,73,200,JR,DB,Def.,Eligible,2021-04-19,1
+387,--,Dai'Jean Dixon,WR,Nicholls State,FCS,Louisiana,South,76,200,SR,WR,Off.,Eligible,2021-04-19,1
+388,--,Darius Hodge,EDGE,Marshall,FBS - CUSA,West Virginia,South,74,245,RJR,DL,Def.,Eligible,2021-04-19,1
+389,--,Ernest Jones,OLB,South Carolina,SEC,South Carolina,South,74,230,JR,LB,Def.,Eligible,2021-04-19,1
+390,--,Mac McCain III,CB,North Carolina A&T,FCS,North Carolina,South,72,175,RSR,DB,Def.,Eligible,2021-04-19,1
+391,--,Dorian Etheridge,ILB,Louisville,ACC,Kentucky,South,75,230,SR,LB,Def.,Eligible,2021-04-19,1
+392,--,Adrian Hardy,WR,Louisiana Tech,FBS - CUSA,Louisiana,South,74,200,RJR,WR,Off.,Eligible,2021-04-19,1
+393,--,Oscar Draguicevich III,P,Washington State,Pac 12,Washington,West,71,182,RSR,P,ST,Eligible,2021-04-19,1
+394,+43,Zech McPhearson,CB,Texas Tech,Big 12,Texas,South,71,195,SR,DB,Def.,Eligible,2021-04-19,1
+395,--,Javon McKinley,WR,Notre Dame,FBS - Independent,Indiana,Midwest,74,215,GR,WR,Off.,Eligible,2021-04-19,1
+396,--,Jerry Jacobs,CB,Arkansas,SEC,Arkansas,South,71,203,RSR,DB,Def.,Eligible,2021-04-19,1
+397,--,Thomas Fletcher,LS,Alabama,SEC,Alabama,South,73,237,SR,ST,ST,Eligible,2021-04-19,1
+398,--,Jarell White,OLB,Cincinnati,FBS - AAC,Ohio,Midwest,70,212,SR,LB,Def.,Eligible,2021-04-19,1
+399,--,Eli Stove,WR,Auburn,SEC,Alabama,South,72,191,SR,WR,Off.,Eligible,2021-04-19,1
+400,--,Max Roberts,OLB,Boston College,ACC,Massachusetts,Northeast,73,250,SR,LB,Def.,Eligible,2021-04-19,1
+401,--,Matt Womack,OT,Alabama,SEC,Alabama,South,79,325,GR,OL,Off.,Eligible,2021-04-19,1
+402,--,Zayne Anderson,S,BYU,FBS - Independent,Utah,West,74,210,SR,DB,Def.,Eligible,2021-04-19,1
+403,--,B.J. Emmons,RB,Florida Atlantic,FBS - CUSA,Florida,South,71,215,RSR,RB,Off.,Eligible,2021-04-19,1
+404,--,Zeandae Johnson,DL5T,California,Pac 12,California,West,76,290,SR,DL,Def.,Eligible,2021-04-19,1
+405,--,Keyion Dixon,WRF,Eastern Kentucky,FCS,Kentucky,South,75,193,RSR,WR,Off.,Eligible,2021-04-19,1
+406,--,Kion Smith,OT,Fayetteville State,D2,North Carolina,South,78,295,RSR,OL,Off.,Eligible,2021-04-19,1
+407,--,D'Antne Demery,OT,Florida International,FBS - CUSA,Florida,South,78,294,SR,OL,Off.,Eligible,2021-04-19,1
+408,--,Dylan Soehner,TE,Iowa State,Big 12,Iowa,Midwest,79,270,SR,TE,Off.,Eligible,2021-04-19,1
+409,--,Brad Stewart Jr.,S,Florida,SEC,Florida,South,0,195,SR,DB,Def.,Eligible,2021-04-19,1
+410,--,Rashad Byrd,ILB,Georgia State,FBS - Sun Belt,Georgia,South,72,230,RSR,LB,Def.,Eligible,2021-04-19,1
+411,--,Bryce Thompson,CB,Tennessee,SEC,Tennessee,South,71,190,JR,DB,Def.,Eligible,2021-04-19,1
+412,--,Tre' Threat,EDGE,Jacksonville State,FCS,Alabama,South,74,250,SR,DL,Def.,Eligible,2021-04-19,1
+413,--,Camaron Cheeseman,LS,Michigan,Big Ten,Michigan,Midwest,76,237,SR,ST,ST,Eligible,2021-04-19,1
+414,--,Jhamon Ausbon,WR,Texas A&M,SEC,Texas,South,74,218,JR,WR,Off.,Eligible,2021-04-19,1
+415,--,Shane McGough,OT,Florida International,FBS - CUSA,Florida,South,74,302,RSR,OL,Off.,Eligible,2021-04-19,1
+416,--,Israel Tucker,RB,Louisiana Tech,FBS - CUSA,Louisiana,South,68,200,RSR,RB,Off.,Eligible,2021-04-19,1
+417,--,Landon Akers,WR,Iowa State,Big 12,Iowa,Midwest,72,191,RSR,WR,Off.,Eligible,2021-04-19,1
+418,--,Brontae Harris,CB,UAB,FBS - CUSA,Alabama,South,70,190,RSR,DB,Def.,Eligible,2021-04-19,1
+419,--,Donavaughn Campbell,OG,Louisiana Tech,FBS - CUSA,Louisiana,South,76,347,SR,OL,Off.,Eligible,2021-04-19,1
+420,--,Jaylon McClain-Sapp,CB,Marshall,FBS - CUSA,West Virginia,South,71,181,RSR,DB,Def.,Eligible,2021-04-19,1
+421,--,Harry Crider,OC,Indiana,Big Ten,Indiana,Midwest,75,311,SR,OL,Off.,Eligible,2021-04-19,1
+422,--,Miller Forristall,TE,Alabama,SEC,Alabama,South,77,242,RSR,TE,Off.,Eligible,2021-04-19,1
+423,--,Sam Cooper,OG,Merrimack College,D2,Massachusetts,Northeast,74,315,GR,OL,Off.,Eligible,2021-04-19,1
+424,--,Tavante Beckett,S,Marshall,FBS - CUSA,West Virginia,South,70,214,RSR,DB,Def.,Eligible,2021-04-19,1
+425,--,Connor Wedington,WR,Stanford,Pac 12,California,West,72,204,SR,WR,Off.,Eligible,2021-04-19,1
+426,--,John Raine,TE,Northwestern,Big Ten,Illinois,Midwest,74,230,GR,TE,Off.,Eligible,2021-04-19,1
+427,--,Tre Walker,WRF,San Jose State,FBS - Mountain West,California,West,71,180,SR,WR,Off.,Eligible,2021-04-19,1
+428,--,Joe Sculthorpe,OG,NC State,ACC,North Carolina,South,75,307,RSR,OL,Off.,Eligible,2021-04-19,1
+429,--,Phil Hoskins,DL3T,Kentucky,SEC,Kentucky,South,77,315,RSR,DL,Def.,Eligible,2021-04-19,1
+430,--,Jack Batho IV,OT,South Dakota Mines,D2,South Dakota,Midwest,80,315,SR,OL,Off.,Eligible,2021-04-19,1
+431,--,Artayvious Lynn,TE,TCU,Big 12,Texas,South,78,258,SR,TE,Off.,Eligible,2021-04-19,1
+432,+47,Ky'el Hemby,S,Southern Miss,FBS - CUSA,Mississippi,South,72,211,RSR,DB,Def.,Eligible,2021-04-19,1
+433,--,Donnie Corley,WRF,Texas Southern,FCS,Texas,South,74,190,SR,WR,Off.,Eligible,2021-04-19,1
+435,--,Joshua McMillon,ILB,Alabama,SEC,Alabama,South,75,237,RSR,LB,Def.,Eligible,2021-04-19,1
+436,--,Jaelin Fisher,OC,Charlotte,FBS - CUSA,North Carolina,South,74,285,RSR,OL,Off.,Eligible,2021-04-19,1
+437,--,Raymond Johnson III,EDGE,Georgia State,FBS - Sun Belt,Georgia,South,75,270,SR,DL,Def.,Eligible,2021-04-19,1
+438,--,Foster Sarell,OT,Stanford,Pac 12,California,West,78,315,RJR,OL,Off.,Eligible,2021-04-19,1
+439,--,Jared Hocker,OG,Texas A&M,SEC,Texas,South,77,325,SR,OL,Off.,Eligible,2021-04-19,1
+440,--,Tyree Thompson,OLB,Buffalo,FBS - MAC,New York,Northeast,73,205,GR,LB,Def.,Eligible,2021-04-19,1
+441,--,Ethan Tucky,OLB,Cincinnati,FBS - AAC,Ohio,Midwest,74,245,SR,LB,Def.,Eligible,2021-04-19,1
+442,--,Taaga Tuulima,OC,Hawaii,FBS - Mountain West,Hawaii,West,74,310,RSR,OL,Off.,Eligible,2021-04-19,1
+443,--,Zach Smith,QB,Tulsa,FBS - AAC,Oklahoma,South,75,227,RSR,QB,Off.,Eligible,2021-04-19,1
+444,--,Jarrod Hewitt,DL5T,Virginia Tech,ACC,Virginia,South,73,280,RSR,DL,Def.,Eligible,2021-04-19,1
+445,--,Michael Brown,OG,West Virginia,Big 12,West Virginia,South,75,348,RSR,OL,Off.,Eligible,2021-04-19,1
+446,--,Shaun Crawford,CB,Notre Dame,FBS - Independent,Indiana,Midwest,69,180,SR,DB,Def.,Eligible,2021-04-19,1
+447,--,Tristen Hoge,OG,BYU,FBS - Independent,Utah,West,76,310,RSR,OL,Off.,Eligible,2021-04-19,1
+448,--,Jamal Jones,RB,Arkansas State,FBS - Sun Belt,Arkansas,South,69,193,RSR,RB,Off.,Eligible,2021-04-19,1
+449,--,Antwan Davis,WR,Ball State,FBS - MAC,Indiana,Midwest,71,204,RSR,WR,Off.,Eligible,2021-04-19,1
+450,--,Otis Anderson,RBC,UCF,FBS - AAC,Florida,South,71,174,SR,RB,Off.,Eligible,2021-04-19,1
+451,--,Chris Garrett,EDGE,Concordia–St. Paul,D2,Minnesota,Midwest,76,245,SR,DL,Def.,Eligible,2021-04-19,1
+452,--,Justin Hughes,OLB,Kansas State,Big 12,Kansas,Midwest,73,229,SR,LB,Def.,Eligible,2021-04-19,1
+453,--,Brock Wright,TE,Notre Dame,FBS - Independent,Indiana,Midwest,76,257,SR,TE,Off.,Eligible,2021-04-19,1
+454,--,Brandin Echols,CB,Kentucky,SEC,Kentucky,South,71,178,SR,DB,Def.,Eligible,2021-04-19,1
+455,--,Joshua Fedd-Jackson,OG,NC State,ACC,North Carolina,South,75,323,SR,OL,Off.,Eligible,2021-04-19,1
+456,--,T.J. Simmons,WR,West Virginia,Big 12,West Virginia,South,74,198,RSR,WR,Off.,Eligible,2021-04-19,1
+457,--,Brandon Smith,WR,Iowa,Big Ten,Iowa,Midwest,75,219,SR,WR,Off.,Eligible,2021-04-19,1
+458,--,Leighton McCarthy,OLB,Florida Atlantic,FBS - CUSA,Florida,South,74,220,RSR,LB,Def.,Eligible,2021-04-19,1
+459,--,Giles Amos,TE,Arkansas,SEC,Arkansas,South,76,242,SR,TE,Off.,Eligible,2021-04-19,1
+460,--,Jack Stoll,TE,Nebraska,Big Ten,Nebraska,Midwest,76,260,RSR,TE,Off.,Eligible,2021-04-19,1
+461,--,Josiah Bronson,DL3T,Washington,Pac 12,Washington,West,75,300,RSR,DL,Def.,Eligible,2021-04-19,1
+462,--,Chase Behrndt,OC,West Virginia,Big 12,West Virginia,South,75,315,RSR,OL,Off.,Eligible,2021-04-19,1
+463,--,Micah Simon,WR,BYU,FBS - Independent,Utah,West,72,200,GR,WR,Off.,Eligible,2021-04-19,1
+464,--,Isaiah Kaufusi,OLB,BYU,FBS - Independent,Utah,West,74,220,SR,LB,Def.,Eligible,2021-04-19,1
+465,--,Ry Schneider,OC,Oklahoma State,Big 12,Oklahoma,South,74,320,RSR,OL,Off.,Eligible,2021-04-19,1
+466,--,Mike Collins,QB,Rice,FBS - CUSA,Texas,South,77,225,RSR,QB,Off.,Eligible,2021-04-19,1
+467,--,Trey Ragas,RB,Louisiana-Lafayette,FBS - Sun Belt,Louisiana,South,70,218,SR,RB,Off.,Eligible,2021-04-19,1
+468,--,Brett Kitrell,OC,Ohio,FBS - MAC,Ohio,Midwest,74,302,SR,OL,Off.,Eligible,2021-04-19,1
+469,--,Chandon Herring,OT,BYU,FBS - Independent,Utah,West,78,310,SR,OL,Off.,Eligible,2021-04-19,1
+470,--,Calvin Bundage,OLB,Oklahoma State,Big 12,Oklahoma,South,73,220,RSR,LB,Def.,Eligible,2021-04-19,1
+471,--,Nolan Laufenberg,OG,Air Force,FBS - Mountain West,Colorado,West,75,315,SR,OL,Off.,Eligible,2021-04-19,1
+472,--,Michael Carter II,S,Duke,ACC,North Carolina,South,70,190,SR,DB,Def.,Eligible,2021-04-19,1
+473,--,Jaylon Moore,OT,Western Michigan,FBS - MAC,Michigan,Midwest,76,311,RSR,OL,Off.,Eligible,2021-04-19,1
+474,--,Kevin Thomson,QB,Washington,Pac 12,Washington,West,73,200,RSR,QB,Off.,Eligible,2021-04-19,1
+475,--,Quinton Bohanna,DL1T,Kentucky,SEC,Kentucky,South,75,357,SR,DL,Def.,Eligible,2021-04-19,1
+476,--,Rakavius Chambers,OG,Duke,ACC,North Carolina,South,75,335,SR,OL,Off.,Eligible,2021-04-19,1
+477,--,Josh Ball,OT,Marshall,FBS - CUSA,West Virginia,South,79,308,SR,OL,Off.,Eligible,2021-04-19,1
+478,--,Brian Robinson Jr.,RB,Alabama,SEC,Alabama,South,73,228,SR,RB,Off.,Eligible,2021-04-19,1
+479,--,Sawyer Smith,QB,Kentucky,SEC,Kentucky,South,74,221,RSR,QB,Off.,Eligible,2021-04-19,1
+480,--,Brady Davis,QB,Illinois State,FCS,Illinois,Midwest,75,210,RSR,QB,Off.,Eligible,2021-04-19,1
+481,--,Milo Eifler,ILB,Illinois,Big Ten,Illinois,Midwest,74,225,RSR,LB,Def.,Eligible,2021-04-19,1
+482,--,Richard McBryde,ILB,SMU,FBS - AAC,Texas,South,72,232,RSR,LB,Def.,Eligible,2021-04-19,1
+483,--,Seth Joest,OC,Western Kentucky,FBS - CUSA,Kentucky,South,74,295,RSR,OL,Off.,Eligible,2021-04-19,1
+484,--,Shaq Smith,ILB,Maryland,Big Ten,Maryland,Northeast,73,245,RSR,LB,Def.,Eligible,2021-04-19,1
+485,--,Thomas MacVittie,QB,Kansas,Big 12,Kansas,Midwest,76,225,RSR,QB,Off.,Eligible,2021-04-19,1
+486,--,Brendon White,S,Rutgers,Big Ten,New Jersey,Northeast,74,220,SR,DB,Def.,Eligible,2021-04-19,1
+487,--,Nick Pickett,S,Oregon,Pac 12,Oregon,West,72,210,SR,DB,Def.,Eligible,2021-04-19,1
+488,--,David Curry,ILB,Georgia Tech,ACC,Georgia,South,73,230,RSR,LB,Def.,Eligible,2021-04-19,1
+489,--,Jon Dietzen,OG,Wisconsin,Big Ten,Wisconsin,Midwest,77,319,RSR,OL,Off.,Eligible,2021-04-19,1
+490,--,Scooter Harrington,TE,Stanford,Pac 12,California,West,76,250,RSR,TE,Off.,Eligible,2021-04-19,1
+491,--,Hunter Kampmoyer,TE,Oregon,Pac 12,Oregon,West,75,240,RSR,TE,Off.,Eligible,2021-04-19,1
+492,--,Bryce Foxworth,OG,Southern Miss,FBS - CUSA,Mississippi,South,75,307,SR,OL,Off.,Eligible,2021-04-19,1
+493,--,Daniel Crawford,TE,Northern Illinois,FBS - MAC,Illinois,Midwest,74,251,RSR,TE,Off.,Eligible,2021-04-19,1
+494,--,Noah Hannon,OC,Appalachian State,FBS - Sun Belt,North Carolina,South,72,272,SR,OL,Off.,Eligible,2021-04-19,1
+495,--,Anthony Butler,ILB,Liberty,FCS,Virginia,South,72,230,SR,LB,Def.,Eligible,2021-04-19,1
+496,--,Bryce Petersen,OC,Akron,FBS - MAC,Ohio,Midwest,74,295,SR,OL,Off.,Eligible,2021-04-19,1
+497,--,Elijah Sullivan,ILB,Kansas State,Big 12,Kansas,Midwest,72,215,RSR,LB,Def.,Eligible,2021-04-19,1
+498,--,Erik Krommenhoek,TE,USC,Pac 12,California,West,77,260,SR,TE,Off.,Eligible,2021-04-19,1
+499,--,Kato Nelson,QB,Akron,FBS - MAC,Ohio,Midwest,72,212,RSR,QB,Off.,Eligible,2021-04-19,1
+500,--,Logan Harris,OG,Wyoming,FBS - Mountain West,Wyoming,West,75,310,SR,OL,Off.,Eligible,2021-04-19,1
