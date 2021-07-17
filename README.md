@@ -14,7 +14,7 @@ For the previous year, this project existed in two separate projects, one for th
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io#https://github.com/Leagify/prospect-scraper-dt2021
 )
 
-Note- I assume that you are going to run this in GitPod (which runs Ubuntu 18.04), so it uses the `linux-x64` by default.  If you're in Windows, make sure to use the `-r win-x64` parameter when building or running, since the .csproj file has a linux runtime set by default.
+Note- I assume that you are going to run this in Gitpod (which runs Ubuntu 18.04), so it uses the `linux-x64` by default.  If you're in Windows, make sure to use the `-r win-x64` parameter when building or running, since the .csproj file has a linux runtime set by default.
 
 ### Running the application
 - Go to the `prospect-scraper-dt2021/src/prospectScraper` directory.
