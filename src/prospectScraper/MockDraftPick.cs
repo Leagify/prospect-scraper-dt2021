@@ -127,10 +127,11 @@ namespace prospectScraper
                 schoolsAndConferences = csv.GetRecords<School>().ToList();
             }
             var stateResult = from s in schoolsAndConferences
-                              where s.SchoolName == school
-                              select s.State;
-
+                              where s.schoolName == school
+                              select s.state;
+#nullable enable
             string? srfd = stateResult.FirstOrDefault();
+#nullable disable
             string sr = string.Empty;
 
             if (srfd != null)

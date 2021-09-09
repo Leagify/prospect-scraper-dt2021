@@ -57,6 +57,11 @@ namespace prospectScraper
                 "Middle TN" => "Middle Tennessee",
                 "San Jose St" => "San Jose State",
                 "Michigan St" => "Michigan State",
+                "Lousiville" => "Louisville",
+                "UW-Whitewater" => "UW–Whitewater",
+                "CIncinnati" => "Cincinnati",
+                "Concordia St. Paul" => "Concordia–St. Paul",
+                "Southern Mississippi" => "Southern Miss",
                 _ => schoolName,
             };
             return schoolName;
