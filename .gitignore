@@ -32,9 +32,11 @@ project.lock.json
 **/msbuild.err
 **/msbuild.wrn
 
-
 # Visual Studio 2015
 .vs/
 **/obj/prospectScraper.csproj.nuget.dgspec.json
 **/obj/prospectScraper.csproj.nuget.cache
 **/obj/project.assets.json
+
+# Jetbrains
+.idea*

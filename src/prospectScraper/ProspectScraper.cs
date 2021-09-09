@@ -15,16 +15,15 @@ namespace prospectScraper
 {
     public class ProspectScraper
     {
-        private readonly HtmlWeb _webGet = new HtmlWeb
+        private readonly HtmlWeb _webGet = new()
         {
             UserAgent = "Mozilla/5.0 (Windows NT 6.3; WOW64; rv:31.0) Gecko/20100101 Firefox/31.0"
         };
 
-
-        public async Task RunTheBigBoardsAsync(bool parseDate = true)
+        public static async Task RunTheBigBoardsAsync(bool parseDate = true)
         {
-            File.WriteAllText($"logs{Path.DirectorySeparatorChar}Status.log", "");
-            File.WriteAllText($"logs{Path.DirectorySeparatorChar}Prospects.log", "");
+            await File.WriteAllTextAsync($"logs{Path.DirectorySeparatorChar}Status.log", "");
+            await File.WriteAllTextAsync($"logs{Path.DirectorySeparatorChar}Prospects.log", "");
 
             Console.WriteLine("Getting data...");
 
@@ -33,7 +32,6 @@ namespace prospectScraper
                 UserAgent = "Mozilla/5.0 (Windows NT 6.3; WOW64; rv:31.0) Gecko/20100101 Firefox/31.0"
             };
             Console.WriteLine("Testing webGet.Load...");
-            var google = webGet.Load("https://google.com");
             Console.WriteLine("Getting data...");
             var document1 = webGet.Load("https://www.drafttek.com/2021-NFL-Draft-Big-Board/Top-NFL-Draft-Prospects-2021-Page-1.asp");
             var document2 = webGet.Load("https://www.drafttek.com/2021-NFL-Draft-Big-Board/Top-NFL-Draft-Prospects-2021-Page-2.asp");
@@ -44,20 +42,27 @@ namespace prospectScraper
             Console.WriteLine("Parsing data...");
 
             //Get ranking date
-            var dateOfRanks = document1.DocumentNode.SelectSingleNode("//*[@id='HeadlineInfo1']").InnerText.Replace(" EST", "").Trim();
+            string dateOfRanks = document1
+                .DocumentNode
+                .SelectSingleNode("//*[@id='HeadlineInfo1']")
+                .InnerText
+                .Replace(" EST", "")
+                .Trim();
+            
             var parsedDate = ChangeDateStringToDateTime(dateOfRanks, parseDate);
+            
             //Change date to proper date. The original format should be like this:
             //" May 21, 2019 2:00 AM EST"
             string dateInNiceFormat = parsedDate.ToString("yyyy-MM-dd");
 
-            List<ProspectRanking> list1 = GetProspects(document1, parsedDate, 1);
-            List<ProspectRanking> list2 = GetProspects(document2, parsedDate, 2);
-            List<ProspectRanking> list3 = GetProspects(document3, parsedDate, 3);
-            List<ProspectRanking> list4 = GetProspects(document4, parsedDate, 4);
-            List<ProspectRanking> list5 = GetProspects(document5, parsedDate, 5);
+            var list1 = GetProspects(document1, parsedDate, 1);
+            var list2 = GetProspects(document2, parsedDate, 2);
+            var list3 = GetProspects(document3, parsedDate, 3);
+            var list4 = GetProspects(document4, parsedDate, 4);
+            var list5 = GetProspects(document5, parsedDate, 5);
 
             //This is the file name we are going to write.
-            var csvFileName = $"ranks{Path.DirectorySeparatorChar}{dateInNiceFormat}-ranks.csv";
+            string csvFileName = $"ranks{Path.DirectorySeparatorChar}{dateInNiceFormat}-ranks.csv";
 
             Console.WriteLine("Creating csv...");
 
@@ -66,16 +71,17 @@ namespace prospectScraper
             await using (var csv = new CsvWriter(writer, CultureInfo.CurrentCulture))
             {
                 csv.Configuration.RegisterClassMap<ProspectRankingMap>();
-                csv.WriteRecords(list1);
-                csv.WriteRecords(list2);
-                csv.WriteRecords(list3);
+                await csv.WriteRecordsAsync(list1);
+                await csv.WriteRecordsAsync(list2);
+                await csv.WriteRecordsAsync(list3);
+                
                 if (list4.Any())
                 {
-                    csv.WriteRecords(list4);
+                    await csv.WriteRecordsAsync(list4);
                 }
                 if (list5.Any())
                 {
-                    csv.WriteRecords(list5);
+                    await csv.WriteRecordsAsync(list5);
                 }
             }
 
@@ -113,7 +119,7 @@ namespace prospectScraper
             await using (var csv = new CsvWriter(writer, CultureInfo.CurrentCulture))
             {
                 csv.Configuration.RegisterClassMap<MockDraftPickMap>();
-                csv.WriteRecords(listOfDraftPicks);
+                await csv.WriteRecordsAsync(listOfDraftPicks);
             }
 
             Console.WriteLine("Checking for mock draft mismatches...");
@@ -126,7 +132,7 @@ namespace prospectScraper
         {
             //Change date to proper date. The original format should be like this:
             //" May 21, 2019 2:00 AM EST"
-            bool parseWorks = DateTime.TryParse(scrapedDate, out DateTime parsedDate);
+            bool parseWorks = DateTime.TryParse(scrapedDate, out var parsedDate);
 
             if (parseDate && parseWorks)
             {
@@ -135,19 +141,23 @@ namespace prospectScraper
             return DateTime.Now;
         }
 
-        public static List<MockDraftPick> GetMockDraft(HtmlDocument doc, string pickDate)
+        public static IEnumerable<MockDraftPick> GetMockDraft(HtmlDocument doc, string pickDate)
         {
-            List<MockDraftPick> mdpList = new List<MockDraftPick>();
+            var mdpList = new List<MockDraftPick>();
             // This is still messy from debugging the different values.  It should be optimized.
             var dn = doc.DocumentNode;
             var dns = dn.SelectNodes("/html/body/div/div/div/table");
             foreach (var node in dns)
             {
-                bool hasTheStyle = node.Attributes.FirstOrDefault().Value.ToString().Contains("background-image: linear-gradient", StringComparison.OrdinalIgnoreCase);
+                bool hasTheStyle = node
+                    .Attributes
+                    .FirstOrDefault()
+                    .Value
+                    .Contains("background-image: linear-gradient", StringComparison.OrdinalIgnoreCase);
                 if (hasTheStyle)
                 {
                     var tr = node.SelectSingleNode("tr");
-                    MockDraftPick mockDraftPick = CreateMockDraftEntry(tr, pickDate);
+                    var mockDraftPick = CreateMockDraftEntry(tr, pickDate);
                     mdpList.Add(mockDraftPick);
                 }
             }
@@ -213,7 +223,7 @@ namespace prospectScraper
             string hi2 = headlineInfo.Replace(" EST", "").Trim();
             // TODO: Change date to proper date. The original format should be like this:
             //" May 21, 2019 2:00 AM EST"
-            bool parseWorks = DateTime.TryParse(hi2, out DateTime parsedDate);
+            bool parseWorks = DateTime.TryParse(hi2, out var parsedDate);
             string dateInNiceFormat;
             if (parseWorks)
             {
@@ -255,7 +265,7 @@ namespace prospectScraper
             }
         }
 
-        private static List<School> SchoolsAndConferencesFromCsv()
+        private static IEnumerable<School> SchoolsAndConferencesFromCsv()
         {
             using var reader = new StreamReader($"info{Path.DirectorySeparatorChar}SchoolStatesAndConferences.csv");
             using var csv = new CsvReader(reader, CultureInfo.CurrentCulture);
@@ -263,7 +273,7 @@ namespace prospectScraper
             return csv.GetRecords<School>().ToList();
         }
 
-        private static List<Region> StatesAndRegionsFromCsv()
+        private static IEnumerable<Region> StatesAndRegionsFromCsv()
         {
             using var reader = new StreamReader($"info{Path.DirectorySeparatorChar}StatesToRegions.csv");
             using var csv = new CsvReader(reader, CultureInfo.CurrentCulture);
@@ -271,7 +281,7 @@ namespace prospectScraper
             return csv.GetRecords<Region>().ToList();
         }
 
-        private static List<PositionType> PositionsAndTypesFromCsv()
+        private static IEnumerable<PositionType> PositionsAndTypesFromCsv()
         {
             using var reader = new StreamReader($"info{Path.DirectorySeparatorChar}PositionInfo.csv");
             using var csv = new CsvReader(reader, CultureInfo.CurrentCulture);
@@ -281,7 +291,7 @@ namespace prospectScraper
 
         private static async Task CreateCombinedCsvWithExtras()
         {
-            File.AppendAllText($"logs{Path.DirectorySeparatorChar}Status.log", "Creating the big CSV....." + Environment.NewLine);
+            await File.AppendAllTextAsync($"logs{Path.DirectorySeparatorChar}Status.log", "Creating the big CSV....." + Environment.NewLine);
 
             var schoolsAndConferences = SchoolsAndConferencesFromCsv();
             var statesAndRegions = StatesAndRegionsFromCsv();
@@ -309,7 +319,7 @@ namespace prospectScraper
             {
                 string file = filePaths[i];
 
-                string[] lines = File.ReadAllLines(file);
+                string[] lines = await File.ReadAllLinesAsync(file);
 
                 if (i > 0)
                 {
@@ -318,7 +328,7 @@ namespace prospectScraper
 
                 foreach (string line in lines)
                 {
-                    fileDest.WriteLine(line);
+                    await fileDest.WriteLineAsync(line);
                 }
             }
 
@@ -367,10 +377,10 @@ namespace prospectScraper
             await using (var writer = new StreamWriter($"ranks{Path.DirectorySeparatorChar}joinedRanks2021.csv"))
             await using (var csv = new CsvWriter(writer, CultureInfo.CurrentCulture))
             {
-                csv.WriteRecords(combinedHistoricalRanks);
+                await csv.WriteRecordsAsync(combinedHistoricalRanks);
             }
 
-            File.AppendAllText($"logs{Path.DirectorySeparatorChar}Status.log", "Creating the big CSV completed." + Environment.NewLine);
+            await File.AppendAllTextAsync($"logs{Path.DirectorySeparatorChar}Status.log", "Creating the big CSV completed." + Environment.NewLine);
         }
 
         private static void CheckForMismatches(string csvFileName)
@@ -443,12 +453,12 @@ namespace prospectScraper
                 int weight = 0;
                 string collegeClass = "";
 
-                foreach (HtmlNode table in tbl)
+                foreach (var table in tbl)
                 {
-                    foreach (HtmlNode row in table.SelectNodes("tr"))
+                    foreach (var row in table.SelectNodes("tr"))
                     {
 
-                        foreach (HtmlNode cell in row.SelectNodes("th|td"))
+                        foreach (var cell in row.SelectNodes("th|td"))
                         {
 
                             string Xpath = cell.XPath;
@@ -497,8 +507,6 @@ namespace prospectScraper
                                 case '9':
                                     // td[9]= Link to Bio (not used)
                                     continue;
-                                default:
-                                    break;
                             }
                         }
                         // Handle draft eligibility and declarations (done via row color)
@@ -603,7 +611,7 @@ namespace prospectScraper
             }
         }
 
-        private static IEnumerable<SchoolMismatchDTO> Mismatches(List<ProspectRankSimple> draftPicks, List<School> schools)
+        private static IEnumerable<SchoolMismatchDTO> Mismatches(IEnumerable<ProspectRankSimple> draftPicks, IEnumerable<School> schools)
         {
             return from r in draftPicks
                    join school in schools
@@ -618,7 +626,7 @@ namespace prospectScraper
                    };
         }
 
-        private static IEnumerable<SchoolMismatchDTO> Mismatches(List<MockDraftPick> draftPicks, List<School> schools)
+        private static IEnumerable<SchoolMismatchDTO> Mismatches(IEnumerable<MockDraftPick> draftPicks, IEnumerable<School> schools)
         {
             return from r in draftPicks
                    join school in schools

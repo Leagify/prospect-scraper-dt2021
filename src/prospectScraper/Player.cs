@@ -7,7 +7,7 @@ namespace prospectScraper
     public class Player
     {
         public string FirstName { get; set; }
-        public string FullName => string.Concat(FullName, " ", LastName);
+        public string FullName => $"{FullName} {LastName}";
         public string LastName { get; set; }
         public string MiddleName { get; set; }
 
@@ -20,6 +20,7 @@ namespace prospectScraper
             bool parseFeet = int.TryParse(feetAndInches[0], out int feet);
             int inches = 0;
             bool parseInches = false;
+            
             if (feetAndInches.Length > 1 && feetAndInches[1] != null)
             {
                 parseInches = int.TryParse(feetAndInches[1], out inches);

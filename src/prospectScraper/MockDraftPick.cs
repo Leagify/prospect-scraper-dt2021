@@ -29,7 +29,9 @@ namespace prospectScraper
             if (!canParse)
                 return 0;
 
-            /*
+            return intPick switch
+            {
+                /*
                 Pick numbers without comp picks:
                 Picks 1 - 32 : Round 1
                     Picks 33 - 64: Round 2
@@ -47,35 +49,24 @@ namespace prospectScraper
                     Round 6 = picks 180 - 214
                     Round 7 = picks 215 - 255
                 */
-            if (intPick >= 1 && intPick <= 32)
-                return 1;
-
-            if (intPick >= 33 && intPick <= 64)
-                return 2;
-
-            if (intPick >= 65 && intPick <= 103)
-                return 3;
-
-            if (intPick >= 104 && intPick <= 146)
-                return 4;
-
-            if (intPick >= 147 && intPick <= 179)
-                return 5;
-
-            if (intPick >= 180 && intPick <= 214)
-                return 6;
-
-            if (intPick >= 215 && intPick <= 255)
-                return 7;
-
-            return 0;
+                >= 1 and <= 32 => 1,
+                >= 33 and <= 64 => 2,
+                >= 65 and <= 103 => 3,
+                >= 104 and <= 146 => 4,
+                >= 147 and <= 179 => 5,
+                >= 180 and <= 214 => 6,
+                >= 215 and <= 255 => 7,
+                _ => 0
+            };
         }
 
         public static int ConvertPickToPoints(string pick, int round)
         {
             bool canParse = int.TryParse(pick, out int intPick);
             if (!canParse) return 0;
-            /*
+            return intPick switch
+            {
+                /*
                 Top Pick: 40 Points
                 Picks 2 - 10: 35 Points
                 Picks 11 - 20: 30 Points
@@ -88,32 +79,21 @@ namespace prospectScraper
                 Round 6: 6 Points
                 Round 7: 5 Points
                 */
-            if (intPick == 1)
-                return 40;
-
-            if (intPick >= 2 && intPick <= 10)
-                return 35;
-
-            if (intPick >= 11 && intPick <= 20)
-                return 30;
-
-            if (intPick >= 21 && intPick <= 32)
-                return 25;
-
-            if (intPick >= 33 && intPick <= 48)
-                return 20;
-
-            if (intPick >= 49 && intPick <= 64)
-                return 15;
-
-            return round switch
-            {
-                3 => 10,
-                4 => 8,
-                5 => 7,
-                6 => 6,
-                7 => 5,
-                _ => 0
+                1 => 40,
+                >= 2 and <= 10 => 35,
+                >= 11 and <= 20 => 30,
+                >= 21 and <= 32 => 25,
+                >= 33 and <= 48 => 20,
+                >= 49 and <= 64 => 15,
+                _ => round switch
+                {
+                    3 => 10,
+                    4 => 8,
+                    5 => 7,
+                    6 => 6,
+                    7 => 5,
+                    _ => 0
+                }
             };
         }
 
@@ -126,17 +106,17 @@ namespace prospectScraper
                 csv.Configuration.RegisterClassMap<SchoolCsvMap>();
                 schoolsAndConferences = csv.GetRecords<School>().ToList();
             }
-            var stateResult = from s in schoolsAndConferences
-                              where s.schoolName == school
-                              select s.state;
+            var stateResults = from s in schoolsAndConferences
+                              where s.SchoolName == school
+                              select s.State;
 #nullable enable
-            string? srfd = stateResult.FirstOrDefault();
+            string? stateResult = stateResults.FirstOrDefault();
 #nullable disable
             string sr = string.Empty;
 
-            if (srfd != null)
+            if (stateResult != null)
             {
-                sr = srfd;
+                sr = stateResult;
             }
             else
             {

@@ -15,10 +15,10 @@ namespace prospectScraper
             {
                 Console.WriteLine(
                     "No Arguments provided - Type \"bb\" for big board, \"md\" for mock draft, \"all\" for both. Running both by default...");
-                await prospectScraper.RunTheBigBoardsAsync();
+                await ProspectScraper.RunTheBigBoardsAsync();
                 Console.WriteLine(
                     "No Arguments- Type bb for big board, md for mock draft, all for both. Running both by default.....");
-                await prospectScraper.RunTheBigBoardsAsync();
+                await ProspectScraper.RunTheBigBoardsAsync();
             }
             else
             {
@@ -36,7 +36,7 @@ namespace prospectScraper
                 {
                     case "bb":
                         Console.WriteLine("Running Big Board");
-                        await prospectScraper.RunTheBigBoardsAsync(parseDate);
+                        await ProspectScraper.RunTheBigBoardsAsync(parseDate);
                         break;
                     case "md":
                         Console.WriteLine("Running Mock Draft");
@@ -44,12 +44,12 @@ namespace prospectScraper
                         break;
                     case "all":
                         Console.WriteLine("Running Big Board and Mock Draft");
-                        await prospectScraper.RunTheBigBoardsAsync(parseDate);
+                        await ProspectScraper.RunTheBigBoardsAsync(parseDate);
                         await prospectScraper.RunTheMockDraft(parseDate);
                         break;
                     default:
                         Console.WriteLine("Input argument of " + context + " not recognized.  Please try running again.");
-                        await prospectScraper.RunTheBigBoardsAsync(parseDate);
+                        await ProspectScraper.RunTheBigBoardsAsync(parseDate);
                         break;
                 }
             }
